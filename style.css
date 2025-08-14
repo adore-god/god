@@ -52,6 +52,10 @@ h1, h2, h3 {
  line-height: 0.9;
   text-transform: uppercase
 }
+h1 a, h2 a, h3 a {
+text-decoration: none !important;
+font-weight: 600 !important
+	}
 h1 {
 //line-height:0.8;
 text-align: center ;
