@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Search</title>
+<style>
+body { font-family: Arial, sans-serif; padding: 20px; }
+#searchBox { width: 100%; padding: 10px; font-size: 16px; }
+#results { list-style: none; padding: 0; }
+#results li { margin: 5px 0; }
+#results a { text-decoration: none; color: #0066cc; }
+#results a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<h1>Search</h1>
+<input type="text" id="searchBox" placeholder="Search...">
+<ul id="results"></ul>
+<script>
+async function loadIndex() {
+  const response = await fetch('searchIndex.json');
+  return await response.json();
+}
+
+document.getElementById('searchBox').addEventListener('input', async function() {
+  const query = this.value.toLowerCase();
+  const resultsList = document.getElementById('results');
+  resultsList.innerHTML = '';
+
+  if (!query) return;
+
+  const index = await loadIndex();
+  const results = index.filter(page =>
+    page.title.toLowerCase().includes(query) ||
+    page.content.toLowerCase().includes(query)
+  );
+
+  results.forEach(page => {
+    const li = document.createElement('li');
+    li.innerHTML = `<a href="${page.url}">${page.title}</a>`;
+    resultsList.appendChild(li);
+  });
+});
+</script>
+</body>
+</html>
