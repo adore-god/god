@@ -230,7 +230,7 @@ ul.series-links li a {
 }
 
 /* Mobile adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1168px) {
   .hamburger {
     display: block;
   }
