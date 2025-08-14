@@ -131,7 +131,9 @@ padding:10px 0;
 width:77%;
 letter-spacing: -0.02em
 }
-
+.search{
+padding:20px 0;
+	}
 .center {
 text-align: center;
 }
