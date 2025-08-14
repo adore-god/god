@@ -26,7 +26,12 @@ blockquote
 a[href*="blueletterbible.org"]:hover {
   color: #fff !important;
 }
-
+img {
+text-align:center;
+max-width:300px;
+width:200px;
+margin: 0 auto;
+	}
 
 .header {
 font-size: 1.4em;
