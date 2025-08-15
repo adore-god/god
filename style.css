@@ -10,7 +10,7 @@ html {
   margin: 0 auto;
   padding: 0 0em;
   letter-spacing: 0.01em;
-  background: #f5f5f5;
+  background: #ffffff;
   font-weight:500;
   -webkit-text-size-adjust: 100%; /* Safari, Chrome, iOS */
   -moz-text-size-adjust: 100%;    /* Firefox */
@@ -38,8 +38,6 @@ margin: 0 auto;
 float: none;
 width: 50%;
 height: 50%;
-border:0.5px solid #333;
-border-radius: 4px;
 opacity: 0.8
 	}
 
