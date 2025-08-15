@@ -37,7 +37,9 @@ text-align:center;
 margin: 0 auto;
 float: none;
 width: 50%;
-height: 50%
+height: 50%;
+border:0.5px solid #333;
+border-radius: 5px
 	}
 
 .header {
