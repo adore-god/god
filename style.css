@@ -217,7 +217,7 @@ ul.series-links li a {
 }
 
 .sidebar {
-  position: absolute; /* follows page scroll */
+  position: fixed; /* follows page scroll */
   top: 0;
   right: -300px;
   width: 250px;
@@ -229,11 +229,15 @@ ul.series-links li a {
   z-index: 1000;
 }
 
+.navig {
+height:100vh;
+overflow-y: scroll 
+}
 
 
 /* Hamburger icon */
 .hamburger {
- position: absolute ;
+ position: fixed ;
   top:  10px;
   right:10px;
   display: none;
