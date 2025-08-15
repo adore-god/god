@@ -21,7 +21,6 @@ width:100%;
   -ms-text-size-adjust: 100%;     /* IE/Edge */
   text-size-adjust: 100%;
 }
-
 .container {
 max-width: 800px;
   width:87%;
@@ -45,7 +44,7 @@ float: none;
 width: 50%;
 height: 50%;
 opacity: 0.8;
-max-width: 300px
+max-width: 200px
 	}
 
 .header {
