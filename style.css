@@ -13,7 +13,6 @@ html {
   color: #333;
 width:100%;
   margin: 0 auto;
-  text-align: center;
   letter-spacing: 0.01em;
   background: #ffffff;
   font-weight:500;
@@ -27,7 +26,6 @@ width:100%;
 max-width: 800px;
   width:87%;
   margin:0 auto;
-//  padding-right:10px;
   text-align: left
 }
 blockquote
@@ -40,7 +38,7 @@ a[href*="blueletterbible.org"]:hover {
 }
 
 img {
-	display: block;
+display: block;
 text-align:center;
 margin: 0 auto;
 float: none;
@@ -50,9 +48,8 @@ opacity: 0.8
 	}
 
 .header {
-	
 text-align: left;
-padding: 20px 0 0 15px
+padding: 15px 0 0 15px
 	}
 	.header a {
 		text-decoration:none;
@@ -68,8 +65,6 @@ h1, h2, h3 {
   text-align: left;
  margin: 3em 0  1em;
  line-height: 1;
-  //text-transform: uppercase
- 
 }
 h1 a, h2 a, h3 a {
 text-decoration: none !important;
@@ -78,7 +73,6 @@ font-weight: 600 !important
 h1 {
 text-align: center ;
 font-size:1.8em;
-//display: inline-block;
     border-top: 2px solid #333;
     border-bottom: 2px solid #333;  
    padding: 20px 5px;
@@ -96,7 +90,8 @@ small {
 font-size:10px	
 	}
 .footer {
-margin-top: 20vh
+margin-top: 20vh;
+text-align:center;
 	}
 	
 a {
@@ -134,9 +129,8 @@ strong {
 }
 
 blockquote {
-  //font-variant: small-caps;
   font-weight: 500;
-  font-size: 1.1em;
+  font-size: 1.2em;
 margin: 2em auto;
   text-align: left;
   border-bottom: 1px double#000;
@@ -153,7 +147,8 @@ text-align: center;
 }
 
 blockquote em, blockquote i, blockquote b {
-  font-style:normal
+  font-style:normal;
+  font-weight: 500 !important;
 }
 
 hr {
@@ -184,7 +179,7 @@ font-weight: 700
 height:5px
 }
 li {
-margin:10px 0
+margin:10px 20px
 }
 ol, ul {
 margin:18px 0;
@@ -192,8 +187,11 @@ list-style-type: none;
 padding-left:10px;
 }
 .sidebar ul {
-	padding-left: 20px
+	padding-left: 13px
 	}
+.sidebar li {
+margin:10px 0px
+}
 .sidebar a, ul li a {
 	text-decoration: none
 	}
@@ -249,8 +247,8 @@ padding: 0 20px 200px 10px;
 /* Hamburger icon */
 .hamburger {
  position: fixed ;
-  top:  10px;
-  right:10px;
+  top:  20px;
+  right:20px;
   display: none;
   font-size: 15px;
   cursor: pointer;
