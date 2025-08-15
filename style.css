@@ -5,9 +5,8 @@ html {
   font-size: 16px;
   line-height: 1.4;
   color: #333;
-  max-width: 600px;
-  width:95%;
-  margin: 0 auto;
+width:100%;
+  margin: 0;
   padding: 0 0em;
   letter-spacing: 0.01em;
   background: #ffffff;
@@ -17,8 +16,11 @@ html {
   -ms-text-size-adjust: 100%;     /* IE/Edge */
   text-size-adjust: 100%;
 }
-.container {
-
+main {
+max-width: 600px;
+  width:93%;
+  margin:0 auto;
+  padding-right:10px
 }
 
 blockquote
@@ -68,8 +70,7 @@ font-size:1.8em;
 //display: inline-block;
     border-top: 2px solid #333;
     border-bottom: 2px solid #333;  
-    padding: 5px 10px;      
-    padding: 20px 0;
+   padding: 20px 0;
 	}
 	h3 {
 text-align: left ;
