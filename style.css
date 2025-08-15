@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Trirong:wght@300;400;600&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-family: 'Trirong', serif;
   font-size: 16px;
   line-height: 1.4;
   color: #333;
 width:100%;
-  margin: 0;
-  padding: 0 0em;
+  margin: 0 auto;
+  text-align: center;
   letter-spacing: 0.01em;
   background: #ffffff;
   font-weight:500;
@@ -16,18 +22,18 @@ width:100%;
   -ms-text-size-adjust: 100%;     /* IE/Edge */
   text-size-adjust: 100%;
 }
-main {
-max-width: 600px;
-  width:93%;
-  margin:0 auto;
-  padding-right:10px
-}
 
+.container {
+max-width: 800px;
+  width:87%;
+  margin:0 auto;
+//  padding-right:10px;
+  text-align: left
+}
 blockquote
 a[href*="blueletterbible.org"] {
 font-size: 0.6em !important;
 }
-
 blockquote
 a[href*="blueletterbible.org"]:hover {
   color: #fff !important;
@@ -44,11 +50,16 @@ opacity: 0.8
 	}
 
 .header {
-font-size: 1.4em;
-text-transform: uppercase
+	
+text-align: left;
+padding: 20px 0 0 15px
 	}
 	.header a {
 		text-decoration:none;
+		font-weight: 800;
+font-size: 1.8em;
+text-transform: uppercase;
+font-variant: none
 		}
 		
 h1, h2, h3 {
@@ -70,7 +81,7 @@ font-size:1.8em;
 //display: inline-block;
     border-top: 2px solid #333;
     border-bottom: 2px solid #333;  
-   padding: 20px 0;
+   padding: 20px 5px;
 	}
 	h3 {
 text-align: left ;
@@ -89,8 +100,8 @@ margin-top: 20vh
 	}
 	
 a {
-  color:#000000;
-  font-weight:200;
+  color:#333;
+  font-weight:400;
   text-decoration: underline dotted;
 text-decoration-color: rgba(0,0,0,0.9); 
 text-decoration-thickness: 1px;
