@@ -156,6 +156,17 @@ font-style:700;
 font-size: 1.6em;
 font-variant: small-caps;
 }
+.start-here {
+margin: 2em auto;
+text-align: left;
+border-bottom: 2px double #000;
+border-top: 2px double #000;
+padding:10px 0;
+width : 80%
+	}
+.start-here a {
+font-weight: 700		
+		}
 .separator {
 height:5px
 }
@@ -177,7 +188,12 @@ padding-left:10px;
 ul.series-links li a {
 	text-transform: capitalize !important;
 	}
-
+.label-links a {
+	text-transform: uppercase !important;
+	font-weight:600;
+	letter-spacing:-0.03em;
+	text-decoration:none
+	}
 .flourish {
   height: 4px;
   width: 80px;
