@@ -39,7 +39,8 @@ float: none;
 width: 50%;
 height: 50%;
 border:0.5px solid #333;
-border-radius: 5px
+border-radius: 4px;
+opacity: 0.8
 	}
 
 .header {
