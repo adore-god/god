@@ -81,7 +81,9 @@ font-size:1.8em;
 text-align: left ;
 font-size:1.5em
 	}
-	
+.intro a {
+	text-decoration: none
+	}
 p {
   margin: 1.2em 0;
   text-indent: 0;
