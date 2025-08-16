@@ -53,15 +53,15 @@ padding: 15px 0 0 15px
 	}
 	.header a {
 		text-decoration:none;
-		font-weight: 700;
-font-size: 1.6em;
+		font-weight: 500;
+font-size: 1.5em;
 text-transform: uppercase;
 font-variant: none
 		}
 		
 h1, h2, h3 {
  font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 500;
   text-align: left;
  margin: 3em 0  1em;
  line-height: 1;
