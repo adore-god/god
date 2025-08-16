@@ -142,9 +142,7 @@ width:77%;
 letter-spacing: -0.02em
 }
 .search{
-padding: 10px 0 5px;
-font-variant:small-caps;
-font-size:1.3em
+
 	}
 .center {
 text-align: center;
@@ -199,9 +197,25 @@ margin:10px 10px
 .sidebar a, ul li a {
 	text-decoration: none
 	}
-	
+.sidebar .nav li:nth-of-type(n+3):nth-of-type(-n+15) {
+padding-left: 10px
+}
+.sidebar .nav li:nth-of-type(n+0):nth-of-type(-n+2)
+ {
+//padding: 10px 0 5px;
+font-variant:small-caps;
+font-size:1.3em
+}
+.sidebar .nav li:nth-child(16) {
+  font-variant:small-caps;
+font-size:1.3em
+}
+
+
 ul.series-links li a {
 	text-transform: capitalize !important;
+	font-variant:small-caps;
+font-size:1.3em
 	}
 .label-links a {
 	text-transform: uppercase !important;
