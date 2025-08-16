@@ -129,6 +129,10 @@ b {
 strong {
   font-weight: 700;
 }
+#blbTagger  {
+	font-family: Trirong !important
+	font-weight: 200 !important;
+}
 
 blockquote {
   font-weight: 500;
