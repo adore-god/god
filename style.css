@@ -91,6 +91,17 @@ p {
 small {
 font-size:10px	
 	}
+small.blockquote-cap {
+	display: block;
+	font-size: 0.8em;
+	margin-top:13px;
+	line-height: 1.1;
+	font-variant: none;
+	text-transform:none;
+	margin-left: 20px;
+	padding-right: 15px;
+	text-align:left
+	}
 .footer {
 margin-top: 20vh;
 text-align:center;
