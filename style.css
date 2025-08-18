@@ -347,8 +347,11 @@ padding: 0 20px 200px 10px;
 #searchBox::placeholder {
   font-style: italic;
 }
-
-.latest-posts {
-width: 70%;
-margin:0 auto
+	
+.latest-posts a {
+width: 90%;
+margin:0 auto;
+white-space: normal !important;
+  word-wrap: break-word ! important;
+  overflow-wrap: break-word !important;
 }	
