@@ -347,6 +347,10 @@ padding: 0 20px 200px 10px;
 #searchBox::placeholder {
   font-style: italic;
 }
+
+#results a {
+	font-weight:800
+	}
 	
 .latest-posts a {
 width: 90%;
