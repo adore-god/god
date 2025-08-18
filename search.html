@@ -37,6 +37,12 @@ BLB.Tagger.NoSearchClassNames = 'noTag doNotTag sidebar'; // CSS class list
 <a href="series-links.html">Series and Collections</a>
 </div>
 <ul id="results"></ul>
+
+<div class="latest-posts">
+<h4 class="center"> Latest Posts </h4> 
+<div id="latest-posts"></div>
+</div> 
+
 <script>
 async function loadIndex() {
   const response = await fetch('searchIndex.json');
