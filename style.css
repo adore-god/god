@@ -325,6 +325,7 @@ float: none;
 width: 50%;
 height: 50%;
 opacity: 0.8;
+min-width: 300px;
 max-width: 400px
 	}
 
