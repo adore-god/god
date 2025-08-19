@@ -325,7 +325,7 @@ float: none;
 width: 50%;
 height: 50%;
 opacity: 0.8;
-max-width: 300px
+max-width: 400px
 	}
 
 .header {
@@ -390,7 +390,7 @@ text-align:center;
 	
 a {
   color:#333;
-  font-weight:300;
+  font-weight:400;
   text-decoration: underline dotted;
 text-decoration-color: rgba(0,0,0,1); 
 text-decoration-thickness: 1px;
