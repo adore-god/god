@@ -323,10 +323,10 @@ text-align:center;
 margin: 0 auto;
 float: none;
 width: 50%;
-height: 50%;
+height: 100%;
 opacity: 0.8;
-min-width: 150px;
-max-width: 200px
+//min-width: 100px !important;
+//max-width: 150px !important ;
 	}
 
 .header {
