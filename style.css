@@ -447,6 +447,10 @@ blockquote em, blockquote i, blockquote b {
   font-style:normal;
   font-weight: 400 !important;
 }
+blockquote a {
+  font-style: normal;
+  font-weight: 400 !important;
+}
 
 hr {
   display:none
