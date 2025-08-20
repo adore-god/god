@@ -312,10 +312,14 @@ display: block;
 text-align:center;
 margin: 0 auto;
 float: none;
-width: 50%;
-height: 100%;
+width: 1024px;
+height: auto;
 opacity: 0.8;
-max-width: 150px !important ;
+height: 1024px;
+max-width: 77%;
+height: auto;
+padding: 0;
+opacity: 1;          
 }
 
 .header {
@@ -627,12 +631,15 @@ white-space: normal !important;
 }	
 
 
-
+@media (max-width: 800px) {
+ 
+  }
 
 
 
 /* Mobile adjustments */
 @media (max-width: 1168px) {
+
   .hamburger {
     display: block;
   }
@@ -644,3 +651,4 @@ white-space: normal !important;
   .content {
     margin-right: 0;
   }
+}
