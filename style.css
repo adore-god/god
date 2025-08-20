@@ -306,15 +306,6 @@ max-width: 800px;
   margin:0 auto;
   text-align: left
 }
-blockquote
-a[href*="blueletterbible.org"] {
-font-size: 0.6em !important;
-text-decoration: none
-}
-blockquote
-a[href*="blueletterbible.org"]:hover {
-  color: #fff !important;
-}
 
 img {
 display: block;
@@ -399,6 +390,15 @@ font-weight: 300;
 a:hover {
   text-decoration-style: solid;
 }
+blockquote
+a[href*="blueletterbible.org"] {
+font-size: 0.6em !important;
+text-decoration: none
+}
+blockquote
+a[href*="blueletterbible.org"]:hover {
+  color: #fff !important;
+}
 
 em {
   font-style: italic;
@@ -421,8 +421,9 @@ strong {
   font-weight: 400;
 }
 #blbTagger  {
-	font-family: Trirong !important
-	font-weight: 200 !important;
+	font-family: Trirong !important;
+	font-weight: 300 !important;
+	color:#222
 }
 
 blockquote {
@@ -436,9 +437,6 @@ padding:10px 0;
 width:77%;
 letter-spacing: -0.02em
 }
-.search{
-
-	}
 .center {
 text-align: center;
 }
