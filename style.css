@@ -423,7 +423,8 @@ strong {
 #blbTagger  {
 	font-family: Trirong !important;
 	font-weight: 300 !important;
-	color:#222
+	color:#222;
+	font-size: 1rem !important;
 }
 
 blockquote {
