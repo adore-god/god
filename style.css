@@ -432,8 +432,8 @@ blockquote {
   font-size: 1rem;
 margin: 2em auto;
   text-align: left;
-  border-bottom: 1px double#000;
-border-top: 1px double #000;
+  border-bottom: 3px double#666;
+border-top: 3px double #666;
 padding:10px 0;
 width:77%;
 letter-spacing: -0.02em
