@@ -316,10 +316,10 @@ width: 1024px;
 height: auto;
 opacity: 0.8;
 height: 1024px;
-max-width: 77%;
+max-width: 100%;
 height: auto;
 padding: 0;
-opacity: 1;          
+opacity: 0.8;          
 }
 
 .header {
