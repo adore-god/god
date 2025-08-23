@@ -67,7 +67,7 @@ img {
 /* =======================
    HEADINGS
    ======================= */
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-variant: small-caps;
   font-weight: 400;
   text-align: left;
@@ -76,7 +76,7 @@ h1, h2, h3 {
   opacity:0.9
 }
 
-h1 a, h2 a, h3 a {
+h1 a, h2 a, h3 a, h4 a {
   text-decoration: none !important;
   font-weight: 400 !important;
 }
@@ -95,6 +95,14 @@ h3 {
 }
 h3 strong {
    font-style: normal
+}
+h4 {
+   font-style: normal;
+   font-weight:400px;
+   font-size: 1.2em;
+   margin: 50px 0 0 0;
+   padding:0;
+   line-height: 1
 }
 /* =======================
    TEXT ELEMENTS
