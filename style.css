@@ -418,3 +418,98 @@ ul.series-links li a {
     margin-right: 0;
   }
 }
+
+/* =======================
+   DARK MODE (AUTO SWITCH)
+   ======================= */
+@media (prefers-color-scheme: dark) {
+
+  html, body {
+    background: #121212;
+    color: #e0e0e0;
+  }
+
+  .container, .content {
+    color: #e0e0e0;
+  }
+
+  img {
+    filter: invert(0.9) brightness(1.1) contrast(1.1);
+    
+  }
+
+  .header a {
+    color: #e0e0e0;
+  }
+
+  h1, h2, h3, h4 {
+    color: #f0f0f0;
+  }
+
+  h1 {
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+  }
+
+  .start-here {
+    border-top: 2px double #888;
+    border-bottom: 2px double #888;
+  }
+
+  a, a b {
+    color: #e0e0e0;
+    text-decoration-color: rgb(245, 245, 245)
+  }
+
+  a:hover {
+    text-decoration-style: solid;
+  }
+
+  blockquote {
+    //background: #1e1e1e;
+    border-left: 4px solid #444;
+   // color: #ccc;
+  }
+
+  blockquote a {
+    //color: #90caf9 !important;
+  }
+
+  .sidebar {
+    background: #1c1c1c;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.8);
+  }
+
+  .sidebar a,
+  ul li a {
+    color: #e0e0e0;
+  }
+
+  .sidebar .nav li:nth-of-type(n+0):nth-of-type(-n+2),
+  .sidebar .nav li:nth-child(16) {
+    color: #e0e0e0;
+  }
+
+  .flourish {
+    background: linear-gradient(to right, #888, #121212, #888);
+  }
+
+  #searchBox {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #888;
+  }
+
+  #searchBox:focus {
+    box-shadow: 0 0 8px rgba(144, 202, 249, 0.4);
+  }
+
+  #results a, .latest-posts a {
+    color: #90caf9;
+  }
+  
+}
+
+
+
+
