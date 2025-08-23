@@ -281,7 +281,9 @@ h3 {
   text-align: left;
   font-size: 1.5em;
 }
-
+h3 strong {
+   font-style: normal
+}
 /* =======================
    TEXT ELEMENTS
    ======================= */
@@ -312,12 +314,13 @@ small.blockquote-cap {
   text-align: center;
 }
 
-a {
+a, a b {
   color: #333;
   font-weight: 300;
   text-decoration: underline dotted;
-  text-decoration-color: rgba(0, 0, 0, 1);
-  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(0, 0, 0, 1.2);
+  text-decoration-thickness: 0.7px;
+  font-style: normal !important;
 }
 
 a:hover {
@@ -331,18 +334,18 @@ blockquote a[href*="blueletterbible.org"] {
 }
 
 blockquote a[href*="blueletterbible.org"]:hover {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 /* Inline emphasis */
 em, i {
-  font-style: italic;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 300;
 }
 
 b {
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
 }
 
 .bold {
@@ -352,12 +355,13 @@ b {
 }
 
 strong {
-  font-weight: 400;
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* Blockquotes */
 blockquote {
-  font-weight: 400;
+  font-weight:300;
   font-size: 1rem;
   margin: 1.8em auto;
   text-align: left;
