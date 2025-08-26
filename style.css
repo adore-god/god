@@ -548,7 +548,7 @@ html[data-theme="light"] img {
 }
 
 html[data-theme="light"] .red {
-    color: red !important;
+    color: darkred !important;
 }
 
 html[data-theme="light"] .header a,
