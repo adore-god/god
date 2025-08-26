@@ -21,14 +21,14 @@ function getCookie(name) {
 
 // Remove dark mode
 function removeDarkMode() {
-    document.body.classList.remove("dark-mode");
+    document.body.classList.remove("dark");
     setCookie("darkModeDisabled", "true", 30);
 }
 
 // Apply preference on load
 window.addEventListener("DOMContentLoaded", () => {
     if(getCookie("darkModeDisabled") === "true") {
-        document.body.classList.remove("dark-mode");
+        document.body.classList.remove("dark");
     }
 });
 
