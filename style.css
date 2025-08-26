@@ -395,6 +395,11 @@ ul.series-links li a {
   overflow-wrap: break-word !important;
 }
 
+#theme-toggle {
+	background:transparent
+	border:0;
+	color:#333;
+	}
 /* =======================
    RESPONSIVE
    ======================= */
@@ -514,8 +519,96 @@ ul.series-links li a {
   #results a, .latest-posts a {
     color: #90caf9;
   }
+  #theme-toggle {
+	background:transparent;
+	border:0;
+	color:#fff;
+	}
   
+  /* Override if user disables dark mode */
+  /* Override dark mode when data-theme="light" is set on <html> */
+html[data-theme="light"] body,
+html[data-theme="light"] html {
+    background: #fff !important;
+    color: #333 !important;
 }
+
+html[data-theme="light"] .container,
+html[data-theme="light"] .content {
+    color: #333 !important;
+}
+
+html[data-theme="light"] img {
+    filter: invert(0) brightness(1) contrast(1) !important;
+}
+
+html[data-theme="light"] .red {
+    color: red !important;
+}
+
+html[data-theme="light"] .header a,
+html[data-theme="light"] a,
+html[data-theme="light"] a b {
+    color: #333 !important;
+    text-decoration-color: #333 !important;
+}
+
+html[data-theme="light"] h1,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+html[data-theme="light"] h4 {
+    color: #333 !important;
+}
+
+html[data-theme="light"] h1 {
+    border-top: 1px solid #ccc !important;
+    border-bottom: 1px solid #ccc !important;
+}
+
+html[data-theme="light"] .start-here {
+    border-top: 2px double #ccc !important;
+    border-bottom: 2px double #ccc !important;
+}
+
+html[data-theme="light"] .sidebar {
+    background: #f5f5f5 !important;
+    box-shadow: none !important;
+}
+
+html[data-theme="light"] .sidebar a,
+html[data-theme="light"] ul li a {
+    color: #333 !important;
+}
+
+html[data-theme="light"] .flourish {
+    background: linear-gradient(to right, #ccc, #fff, #ccc) !important;
+}
+
+html[data-theme="light"] #searchBox {
+    background: #fff !important;
+    color: #333 !important;
+    border: 1px solid #ccc !important;
+}
+
+html[data-theme="light"] #searchBox:focus {
+    box-shadow: 0 0 8px rgba(0,0,0,0.2) !important;
+}
+
+html[data-theme="light"] #results a,
+html[data-theme="light"] .latest-posts a {
+    color: #333 !important;
+}
+
+html[data-theme="light"]   #theme-toggle {
+	background:transparent;
+	border:0;
+	color:#333;
+	}
+  
+  
+  
+  
+} /*Don't delete  */
 
 
 
