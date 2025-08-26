@@ -396,7 +396,8 @@ ul.series-links li a {
 }
 
 #theme-toggle {
-	background:transparent
+	display: none;
+	background:transparent;
 	border:0;
 	color:#333;
 	font-size: 1.6em;
@@ -523,6 +524,7 @@ ul.series-links li a {
     color: #90caf9;
   }
   #theme-toggle {
+    display:block;
 	background:transparent;
 	border:0;
 	color:#fff;
@@ -603,6 +605,7 @@ html[data-theme="light"] .latest-posts a {
 }
 
 html[data-theme="light"]   #theme-toggle {
+	display:block;
 	background:transparent;
 	border:0;
 	color:#333;
