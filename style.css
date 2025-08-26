@@ -524,7 +524,7 @@ ul.series-links li a {
     color: #90caf9;
   }
   #theme-toggle {
-    display:block;
+    display: inline;
 	background:transparent;
 	border:0;
 	color:#fff;
@@ -605,7 +605,7 @@ html[data-theme="light"] .latest-posts a {
 }
 
 html[data-theme="light"]   #theme-toggle {
-	display:block;
+	display: inline;
 	background:transparent;
 	border:0;
 	color:#333;
