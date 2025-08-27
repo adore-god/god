@@ -201,7 +201,15 @@ blockquote a {
   font-style: normal;
   font-weight: 400 !important;
 }
-
+blockquote.relaxed {
+  font-weight:300;
+  font-size: 1rem;
+  margin: 0em auto;
+  text-align: left;
+  padding: 10px 1%;
+  width: 89%;
+  letter-spacing: -0.02em;
+}
 .red {
      color:darkred;
    }
