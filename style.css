@@ -84,8 +84,8 @@ h1 a, h2 a, h3 a, h4 a {
 h1 {
   text-align: center;
   font-size: 1.8em;
-  border-top: 1px solid #444;
-  border-bottom: 1px solid #444;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
   padding: 22px 10px;
 }
 
@@ -580,13 +580,13 @@ html[data-theme="light"] h4 {
 }
 
 html[data-theme="light"] h1 {
-    border-top: 1px solid #ccc !important;
-    border-bottom: 1px solid #ccc !important;
+    border-top: 1px solid #aaa !important;
+    border-bottom: 1px solid #aaa !important;
 }
 
 html[data-theme="light"] .start-here {
-    border-top: 2px double #ccc !important;
-    border-bottom: 2px double #ccc !important;
+    border-top: 2px double #333 !important;
+    border-bottom: 2px double #333 !important;
 }
 
 html[data-theme="light"] .sidebar {
