@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-html {
+body{
   font-family: 'Trirong', serif;
   font-size: 16px;
   line-height: 1.4;
@@ -441,7 +441,7 @@ ul.series-links li a {
    ======================= */
 @media (prefers-color-scheme: dark) {
 
-  html, body {
+  body {
     background: #121212;
     color: #e0e0e0;
   }
@@ -532,11 +532,14 @@ ul.series-links li a {
 	border:0;
 	color:#e0e0e0;
 	}
+	
+	
+  } /*Don't delete  */
+  
   
   /* Override if user disables dark mode */
   /* Override dark mode when data-theme="light" is set on <html> */
-html[data-theme="light"] body,
-html[data-theme="light"] html {
+html[data-theme="light"] body {
     background: #fff !important;
     color: #333 !important;
 }
@@ -617,7 +620,7 @@ html[data-theme="light"]   #theme-toggle {
   
   
   
-} /*Don't delete  */
+
 
 
 
