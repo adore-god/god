@@ -38,9 +38,46 @@ BLB.Tagger.NoSearchClassNames = 'noTag doNotTag sidebar'; // CSS class list
 <h1>Search</h1>
 <div class="container">
 
-<script async src="https://cse.google.com/cse.js?cx=62434d5e426ae403f">
+
+
+<!-- Custom search box -->
+<div id="custom-search-container">
+  <input type="text" id="custom-search-input" placeholder="Search...">
+  <button id="custom-search-button">Search</button>
+</div>
+
+<!-- Where the results will appear -->
+<div id="custom-search-results">
+  <gcse:searchresults-only></gcse:searchresults-only>
+</div>
+
+<!-- Load Google CSE -->
+<script async src="https://cse.google.com/cse.js?cx=62434d5e426ae403f"></script>
+
+<script>
+function performSearch() {
+  var query = document.getElementById("custom-search-input").value;
+
+  // Execute search only if Google CSE is loaded
+  if (window.google && google.search && google.search.cse && google.search.cse.element) {
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (element) {
+      element.execute(query);
+    }
+  }
+}
+
+// Trigger search on button click
+document.getElementById("custom-search-button").addEventListener("click", performSearch);
+
+// Trigger search on pressing Enter
+document.getElementById("custom-search-input").addEventListener("keypress", function(e) {
+  if (e.key === 'Enter') {
+    performSearch();
+  }
+});
 </script>
-<div class="gcse-searchbox-only"></div>
+
 
 <br>
 
