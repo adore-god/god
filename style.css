@@ -13,7 +13,7 @@ body{
   font-family: 'Trirong', serif;
   font-size: 16px;
   line-height: 1.4;
-  color: #333;
+  color: #111;
   width: 100%;
   margin: 0 auto;
   letter-spacing: 0.01em;
@@ -137,7 +137,7 @@ small.blockquote-cap {
 }
 
 a, a b {
-  color: #333;
+  color: #111;
   font-weight: 300;
   text-decoration: underline dotted;
   text-decoration-color: rgba(0, 0, 0, 1.6);
@@ -266,7 +266,7 @@ ol, ul {
   position: fixed;
   top: 0;
   right: -300px;
-  width: 300px;
+  width: 280px;
   min-height: 100vh;
   background: #f5f5f5;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.8);
@@ -410,7 +410,7 @@ ul.series-links li a {
 	display: none;
 	background:transparent;
 	border:0;
-	color:#333;
+	color:#111;
 	font-size: 1.6em;
 	vertical-align: baseline;
     padding: 0 0 0 10px 
