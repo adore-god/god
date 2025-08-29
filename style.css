@@ -373,6 +373,7 @@ ul.series-links li a {
   display: flex;
   gap: 8px;
   margin-bottom: 0px;
+  padding:2px 0;
 }
 
 #custom-search-input {
@@ -581,7 +582,8 @@ ul.series-links li a {
 .gsc-control-wrapper-cse b,
 .gsc-webResult gsc-result,
 .gs-snippet,
-.gs-visibleUrl
+.gs-visibleUrl,
+.gcsc-find-more-on-google
  {
  	background-color: #121212 !important;
  	border:0 !important;
