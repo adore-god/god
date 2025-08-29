@@ -368,6 +368,7 @@ ul.series-links li a {
 /* =======================
    SEARCH
    ======================= */
+  
 .gsc-control-wrapper-cse,
 .gcse-search,
  {
@@ -385,8 +386,7 @@ ul.series-links li a {
    background: transparent !important 
 	}
 
-
-
+ 
 #searchBox,
 .srch-series-link {
   margin: 0 auto;
@@ -546,15 +546,7 @@ ul.series-links li a {
   .flourish {
     background: linear-gradient(to right, #888, #121212, #888);
   }
-
-.gsc-control-cse,
-.gsc-control-cse-en {
-	background: #121212 !important;
-    color: #e0e0e0 !important;
-	}
 	
-  
-
   #searchBox {
     background: #1e1e1e;
     color: #e0e0e0;
@@ -579,18 +571,11 @@ ul.series-links li a {
   } /*Don't delete  */
   
   
-  /* Override if user disables dark mode */
   /* Override dark mode when data-theme="light" is set on <html> */
 html[data-theme="light"] body {
     background: #fff !important;
     color: #111 !important;
 }
-
-html[data-theme="light"] .gsc-control-cse,
-html[data-theme="light"] .gsc-control-cse-en {
-	background: #ffffff !important;
-    color: #111 !important;
-	}
 
 html[data-theme="light"] .container,
 html[data-theme="light"] .content {
