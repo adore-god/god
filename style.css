@@ -583,13 +583,20 @@ ul.series-links li a {
 .gsc-webResult gsc-result,
 .gs-snippet,
 .gs-visibleUrl,
-.gcsc-find-more-on-google
- {
+.gcsc-find-more-on-google {
  	background-color: #121212 !important;
  	border:0 !important;
      color: #e0e0e0 !important;
  }
  
+.gsc-cursor {
+     color: #e0e0e0 !important;
+	}
+
+.gsc-cursor-chevron {
+	filter: invert(0.9) brightness(1.1) contrast(1.1) !important;
+	}
+	
  #custom-search-input {
     border: 0.7px solid #888;
     background: #1e1e1e;
@@ -739,7 +746,13 @@ html[data-theme="light"] .gcsc-find-more-on-google
  }
   
   
+html[data-theme="light"] .gsc-cursor {
+     color: #111 !important;
+	}
 
+html[data-theme="light"] .gsc-cursor-chevron {
+	filter: none !important;
+	}
 
 
 
