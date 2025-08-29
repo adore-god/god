@@ -383,10 +383,18 @@ ul.series-links li a {
   border: 0.7px solid #222;
   background-color: transparent;
   color: #222;
+  transition: all 0.3s ease;
+}
+
+#custom-search-input:focus {
+  border-color: #444;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
 }
 
 #custom-search-input::placeholder {
   font-style: italic;
+  font-family: Trirong;
+  font-size: 12px;
 }
 
 #custom-search-button {
@@ -396,17 +404,17 @@ ul.series-links li a {
   border: 0.7px solid #222;
   border-radius: 4px;
   cursor: pointer;
+  font-family: Trirong;
+  font-size: 14px;
 }
 
-
- 
 #searchBox,
 .srch-series-link {
   margin: 0;
 }
 
 #searchBox {
-  width: 225px;
+  width: 220px;
   margin-bottom: 20px;
   padding: 10px 15px;
   font-size: 14px;
@@ -423,6 +431,8 @@ ul.series-links li a {
 
 #searchBox::placeholder {
   font-style: italic;
+  font-family: Trirong;
+  font-size: 12px;
 }
 
 #results a {
@@ -542,10 +552,6 @@ ul.series-links li a {
     text-decoration-style: solid;
   }
 
-  blockquote {
-    
-  }
-
   blockquote a {
     //color: #90caf9 !important;
   }
@@ -603,6 +609,10 @@ ul.series-links li a {
     color: #e0e0e0;
 }
 
+#custom-search-input:focus {
+    box-shadow: 0 0 8px rgba(144, 202, 249, 0.4);
+  }
+
 #custom-search-button {
   color: #e0e0e0;
   border: 0.7px solid #888;
@@ -621,7 +631,7 @@ ul.series-links li a {
   }
 
   #results a, .latest-posts a {
-    color: #90caf9;
+    color: #e0e0e0;
   }
   #theme-toggle {
     display: inline;
@@ -695,6 +705,10 @@ html[data-theme="light"] #custom-search-input {
     border: 1px solid #ccc !important;
     background: transparent !important;
     color: #111 !important;
+}
+
+html[data-theme="light"] #custom-search-input:focus {
+    box-shadow: 0 0 8px rgba(0,0,0,0.2) !important;
 }
 
 html[data-theme="light"] #custom-search-button {
