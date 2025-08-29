@@ -369,11 +369,10 @@ ul.series-links li a {
    SEARCH
    ======================= */
 
-  
 #custom-search-container {
   display: flex;
   gap: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
 }
 
 #custom-search-input {
@@ -390,7 +389,7 @@ ul.series-links li a {
 }
 
 #custom-search-button {
-  padding: 8px 16px;
+  padding: 10px 16px;
   background-color: transparent;
   color: #222;
   border: 0.7px solid #222;
@@ -402,14 +401,14 @@ ul.series-links li a {
  
 #searchBox,
 .srch-series-link {
-  margin: 0 auto;
+  margin: 0;
 }
 
 #searchBox {
-  width: 250px;
+  width: 225px;
   margin-bottom: 20px;
   padding: 10px 15px;
-  font-size: 16px;
+  font-size: 14px;
   border: 1px solid #444;
   border-radius: 5px;
   outline: none;
