@@ -39,38 +39,40 @@ BLB.Tagger.NoSearchClassNames = 'noTag doNotTag sidebar'; // CSS class list
 <div class="container">
 
 
+
 <!-- Load Google CSE -->
 <script async src="https://cse.google.com/cse.js?cx=62434d5e426ae403f"></script>
 
-<!-- Your own search box + button -->
+<!-- Your own search box -->
 <form id="mySearchForm">
-  <input type="text" id="myQuery" placeholder="Search..." style="width:100%;max-width:400px;">
+  <input type="text" id="myQuery" placeholder="Search..." style="width: 100%; max-width: 400px;">
   <button type="submit">Search</button>
 </form>
 
-<!-- Results will show here -->
+<!-- Results container -->
 <div id="results"></div>
 
 <script>
   window.__gcse = {
     callback: function() {
-      // Render results container
+      // Render the results-only container
       google.search.cse.element.render({
         div: "results",
         tag: "searchresults-only",
-        attributes: {name: "results-only"}
+        attributes: { name: "results-only" }
       });
 
-      // Hook up form submit
-      document.getElementById("mySearchForm").addEventListener("submit", function(e) {
+      // Hook up your input box and button
+      const form = document.getElementById("mySearchForm");
+      const input = document.getElementById("myQuery");
+
+      form.addEventListener("submit", function(e) {
         e.preventDefault();
-        const query = document.getElementById("myQuery").value;
-        google.search.cse.element.getElement("results-only").execute(query);
+        google.search.cse.element.getElement("results-only").execute(input.value);
       });
     }
   };
 </script>
-
 
 
 
