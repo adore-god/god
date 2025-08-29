@@ -313,8 +313,6 @@ margin-left:8px
 /* Sidebar nav links */
 ul.series-links li a {
   text-transform: capitalize !important;
-  font-variant: small-caps;
-  font-size: 1.3em;
 }
 
 .label-links a {
