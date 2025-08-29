@@ -415,6 +415,13 @@ ul.series-links li a {
 	vertical-align: baseline;
     padding: 0 0 0 10px 
 	}
+	
+	
+#disqus_thread {
+	color:#111;
+	margin-top: 70px; 
+    font-family: Trirong !important
+	}
 /* =======================
    RESPONSIVE
    ======================= */
@@ -520,6 +527,7 @@ ul.series-links li a {
   .flourish {
     background: linear-gradient(to right, #888, #121212, #888);
   }
+
 
   #searchBox {
     background: #1e1e1e;
