@@ -368,9 +368,21 @@ ul.series-links li a {
 /* =======================
    SEARCH
    ======================= */
-.gsc-control-cse,
+.gsc-control-wrapper-cse,
+.gcse-search,
+ {
+   border: 0px solid transparent !important; 
+   background: transparent !important 
+	}
+	
 .gsc-control-cse-en {
-   border:0 !important;
+   border: 0px solid transparent !important; 
+   background: transparent !important 
+	}
+	
+.gsc-search-box {
+	border: 0px solid transparent !important; 
+   background: transparent !important 
 	}
 
 
