@@ -730,7 +730,8 @@ html[data-theme="light"] .gsc-control-wrapper-cse,
 html[data-theme="light"] .gsc-control-wrapper-cse b,
 html[data-theme="light"] .gsc-webResult gsc-result,
 html[data-theme="light"] .gs-snippet,
-html[data-theme="light"] .gs-visibleUrl
+html[data-theme="light"] .gs-visibleUrl,
+html[data-theme="light"] .gcsc-find-more-on-google
  {
  	background-color: #fff !important;
  	border:0 !important;
