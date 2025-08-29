@@ -549,12 +549,12 @@ ul.series-links li a {
   /* Override dark mode when data-theme="light" is set on <html> */
 html[data-theme="light"] body {
     background: #fff !important;
-    color: #333 !important;
+    color: #111 !important;
 }
 
 html[data-theme="light"] .container,
 html[data-theme="light"] .content {
-    color: #333 !important;
+    color: #111 !important;
 }
 
 html[data-theme="light"] img {
@@ -568,7 +568,7 @@ html[data-theme="light"] .red {
 html[data-theme="light"] .header a,
 html[data-theme="light"] a,
 html[data-theme="light"] a b {
-    color: #333 !important;
+    color: #111 !important;
     text-decoration-color: #333 !important;
 }
 
@@ -576,7 +576,7 @@ html[data-theme="light"] h1,
 html[data-theme="light"] h2,
 html[data-theme="light"] h3,
 html[data-theme="light"] h4 {
-    color: #333 !important;
+    color: #111 !important;
 }
 
 html[data-theme="light"] h1 {
@@ -585,8 +585,8 @@ html[data-theme="light"] h1 {
 }
 
 html[data-theme="light"] .start-here {
-    border-top: 2px double #333 !important;
-    border-bottom: 2px double #333 !important;
+    border-top: 2px double #111 !important;
+    border-bottom: 2px double #111 !important;
 }
 
 html[data-theme="light"] .sidebar {
@@ -596,7 +596,7 @@ html[data-theme="light"] .sidebar {
 
 html[data-theme="light"] .sidebar a,
 html[data-theme="light"] ul li a {
-    color: #333 !important;
+    color: #111 !important;
 }
 
 html[data-theme="light"] .flourish {
@@ -605,7 +605,7 @@ html[data-theme="light"] .flourish {
 
 html[data-theme="light"] #searchBox {
     background: #fff !important;
-    color: #333 !important;
+    color: #111 !important;
     border: 1px solid #ccc !important;
 }
 
@@ -615,14 +615,14 @@ html[data-theme="light"] #searchBox:focus {
 
 html[data-theme="light"] #results a,
 html[data-theme="light"] .latest-posts a {
-    color: #333 !important;
+    color: #111 !important;
 }
 
 html[data-theme="light"]   #theme-toggle {
 	display: inline;
 	background:transparent;
 	border:0;
-	color:#333;
+	color:#111;
 	}
   
   

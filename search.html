@@ -38,43 +38,9 @@ BLB.Tagger.NoSearchClassNames = 'noTag doNotTag sidebar'; // CSS class list
 <h1>Search</h1>
 <div class="container">
 
-
-<!-- Load Google CSE -->
-<script async src="https://cse.google.com/cse.js?cx=62434d5e426ae403f"></script>
-
-<!-- Your own search box -->
-<input type="text" id="myQuery" placeholder="Search with Google" style="width: 100%; max-width: 400px;">
-
-<!-- Results container -->
-<div id="results"></div>
-
-<script>
-  // Set up Google CSE when it loads
-  window.__gcse = {
-    callback: function() {
-      google.search.cse.element.render({
-        div: "results",
-        tag: "searchresults-only",
-        attributes: { name: "results-only" }
-      });
-    }
-  };
-
-  // Handle Enter key to trigger search
-  document.getElementById("myQuery").addEventListener("keypress", function(e) {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      google.search.cse.element.getElement("results-only").execute(this.value);
-    }
-  });
+<script async src="https://cse.google.com/cse.js?cx=62434d5e426ae403f">
 </script>
-
-
-
-
-
-
-
+<div class="gcse-search"></div>
 
 
 <input type="text" id="searchBox" placeholder="Search...">
