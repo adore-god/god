@@ -38,20 +38,44 @@ BLB.Tagger.NoSearchClassNames = 'noTag doNotTag sidebar'; // CSS class list
 <h1>Search</h1>
 <div class="container">
 
-<form action="https://cse.google.com/cse" method="get">
-  <!-- your unique search engine ID -->
-  <input type="hidden" name="cx" value="62434d5e426ae403f">
-  <!-- required parameter -->
-  <input type="hidden" name="ie" value="UTF-8">
-  
-  <!-- your own styled search input -->
-  <input id="searchBox" type="text" name="q" placeholder="Search my site...">
-  <button type="submit">Search</button>
-</form>
 
-<script async src="https://cse.google.com/cse.js?cx=62434d5e426ae403f">
-</script>
-<div class="gcse-searchresults-only"></div>
+
+<form id="search-form">
+    <input type="text" id="searchBox" placeholder="Search with Google"><br> 
+    <button type="submit">Go</button>
+  </form>
+
+  <!-- Where results will show -->
+  <div id="search-results">
+    <div class="gcse-searchresults-only" data-gname="results-only"></div>
+  </div>
+
+  <!-- Load Google CSE -->
+  <script async src="https://cse.google.com/cse.js?cx=62434d5e426ae403f"></script>
+  <script>
+    // Attach your form to Google CSE
+    document.getElementById('search-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var query = document.getElementById('search-input').value;
+      if (query) {
+        google.search.cse.element.getElement('results-only').execute(query);
+      }
+    });
+
+    // Ensure CSE is ready before rendering
+    window.__gcse = {
+      callback: function() {
+        if (document.readyState === 'complete') {
+          google.search.cse.element.render({
+            gname: 'results-only',
+            div: 'search-results',
+            tag: 'searchresults-only'
+          });
+        }
+      }
+    };
+  </script>
+
 
 
 
