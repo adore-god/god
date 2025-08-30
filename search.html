@@ -110,11 +110,12 @@ document.getElementById('searchBox').addEventListener('input', async function() 
 
   results.forEach(page => {
     const li = document.createElement('li');
-    li.innerHTML = `<a href="${page.url}">${page.title}</a>`;
+    li.innerHTML = `<a href="${page.url}" class="noTag">${page.title}</a>`;
     resultsList.appendChild(li);
   });
 });
 </script>
+
 </div>
 <div class="footer">
 © <a href="index.html">The Way</a>
