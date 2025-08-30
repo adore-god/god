@@ -110,7 +110,11 @@ document.getElementById('searchBox').addEventListener('input', async function() 
 
   results.forEach(page => {
     const li = document.createElement('li');
-    li.innerHTML = `<a href="${page.url}" class="noTag">${page.title}</a>`;
+    const a = document.createElement('a');
+    a.href = page.url;
+    a.textContent = page.title;
+    a.classList.add('noTag'); // add class here
+    li.appendChild(a);
     resultsList.appendChild(li);
   });
 });
