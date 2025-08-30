@@ -90,35 +90,83 @@ document.getElementById("custom-search-input").addEventListener("keypress", func
 </div> 
 
 <script>
-async function loadIndex() {
-  const response = await fetch('searchIndex.json');
-  return await response.json();
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const containerSelectors = ['#results', '#latest-posts'];
 
-document.getElementById('searchBox').addEventListener('input', async function() {
-  const query = this.value.toLowerCase();
-  const resultsList = document.getElementById('results');
-  resultsList.innerHTML = '';
+  // Add class to an element or to all anchors inside an element
+  function addNoTagToElement(el) {
+    if (!el) return;
+    if (el.tagName === 'A') el.classList.add('noTag');
+    if (el.querySelectorAll) el.querySelectorAll('a').forEach(a => a.classList.add('noTag'));
+  }
 
-  if (!query) return;
-
-  const index = await loadIndex();
-  const results = index.filter(page =>
-    page.title.toLowerCase().includes(query) ||
-    page.content.toLowerCase().includes(query)
-  );
-
-  results.forEach(page => {
-    const li = document.createElement('li');
-    const a = document.createElement('a');
-    a.href = page.url;
-    a.textContent = page.title;
-    a.classList.add('noTag'); // add class here
-    li.appendChild(a);
-    resultsList.appendChild(li);
+  // Initial pass: add to existing anchors in the containers
+  containerSelectors.forEach(sel => {
+    const c = document.querySelector(sel);
+    if (c) addNoTagToElement(c);
   });
+
+  // Watch the containers for new nodes and add the class to any new anchors
+  containerSelectors.forEach(sel => {
+    const c = document.querySelector(sel);
+    if (!c) return;
+    const observer = new MutationObserver(mutations => {
+      for (const m of mutations) {
+        for (const node of m.addedNodes) {
+          if (node.nodeType !== Node.ELEMENT_NODE) continue;
+          addNoTagToElement(node);
+        }
+      }
+    });
+    observer.observe(c, { childList: true, subtree: true });
+  });
+
+  // --- Your search code (unchanged behaviour) ---
+  async function loadIndex() {
+    try {
+      const response = await fetch('searchIndex.json');
+      if (!response.ok) throw new Error('Failed to fetch searchIndex.json: ' + response.status);
+      return await response.json();
+    } catch (e) {
+      console.error(e);
+      return [];
+    }
+  }
+
+  const searchBox = document.getElementById('searchBox');
+  const resultsList = document.getElementById('results');
+
+  if (searchBox && resultsList) {
+    searchBox.addEventListener('input', async function () {
+      const query = this.value.trim().toLowerCase();
+      resultsList.innerHTML = '';
+      if (!query) return;
+
+      const index = await loadIndex();
+      const results = index.filter(page =>
+        page.title.toLowerCase().includes(query) ||
+        page.content.toLowerCase().includes(query)
+      );
+
+      results.forEach(page => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = page.url;
+        a.textContent = page.title;
+        a.classList.add('noTag'); // <- the only change: ensure every generated link gets the class
+        li.appendChild(a);
+        resultsList.appendChild(li);
+      });
+
+      // safety pass
+      addNoTagToElement(resultsList);
+    });
+  } else {
+    console.warn('#searchBox or #results not found — search listener not attached');
+  }
 });
 </script>
+
 
 </div>
 <div class="footer">
