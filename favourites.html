@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style-fonts.css" media="print" onload="this.media='all'">
+  <title>Vintage Infographic</title>
+  <style>
+    /* ===== Base Typography ===== */
+    body {
+      font-family: "Trirong", serif;
+      font-weight:200;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      background: var(--paper);
+      color: var(--ink);
+      transition: background 0.3s, color 0.3s;
+    }
+    
+    .no-dis {
+     //display:none;
+    }
+    
+    h1, h2, h3 {
+      letter-spacing: -0.2px;
+      border-bottom: 0px double var(--ink);
+      padding-bottom: 0.2em;
+      margin-top: 0em;
+    }
+    h1 { 
+      font-size: 1em;
+      text-transform: uppercase;
+      font-weight:200;
+    }
+    h2 { 
+      font-size: 0.8em; 
+}
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem 2rem 2rem;
+    }
+    p {
+      line-height: 1.2;
+      font-size: 1em;
+    }
+    
+    small {
+      font-size:0.6px;
+      line-height: 2;
+    }
+    a {
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: var(--accent); /* inverts for contrast */
+}
+
+    /* ===== Infographic Cards ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      border: 0px solid var(--ink);
+      padding: 1rem;
+    }
+    .card h3 {
+      margin-top: 0;
+      font-weight:300;
+      font-size: 1.8em;
+      font-variant: small-caps
+    }
+
+    /* ===== Swatches ===== */
+    .swatches {
+      margin-bottom: 1.5rem;
+    }
+    .swatches button {
+      width: 14px;
+      height: 14px;
+      border: 0.7px solid var(--ink);
+      border-radius: 50%;
+      cursor: pointer;
+      display: inline-block;
+      margin-right: 0.5rem;
+      padding: 0;
+    }
+    .swatches button:hover {
+      transform: scale(1.1);
+    }
+
+    /* ===== Themes ===== */
+    :root {
+      --paper: #fdfaf4;
+      --paper-alt: #f5f1e8;
+      --ink: #1a1a1a;
+      --accent: #7a1f1f;
+    }
+    [data-theme="sepia"] {
+      --paper: #f4ecd8;
+      --paper-alt: #e9dec2;
+      --ink: #2b1d0e;
+      --accent: #7f4b23;
+    }
+    [data-theme="coal"] {
+      --paper: #2a2a2a;
+      --paper-alt: #3a3a3a;
+      --ink: #f0f0f0;
+      --accent: #b23b3b;
+    }
+    [data-theme="navy"] {
+      --paper: #121826;
+      --paper-alt: #1c2436;
+      --ink: #f5f7fa;
+      --accent: #274690;
+    }
+    [data-theme="scarlet"] {
+      --paper: darkred;
+      --paper-alt: #3d1111;
+      --ink: #fdf5f5;
+      --accent: #b30000;
+    }
+    [data-theme="black"] {
+      --paper: #000000;
+      --paper-alt: #111111;
+      --ink: #f2f2f2;
+      --accent: #cc0000;
+    }
+
+    /* Swatch Colours */
+    .swatch-default { background: #fdfaf4; }
+    .swatch-sepia   { background: #f4ecd8; }
+    .swatch-coal    { background: #2a2a2a; }
+    .swatch-navy    { background: #121826; }
+    .swatch-scarlet { background: #b30000; }
+    .swatch-black   { background: #000000; }
+  </style>
+</head>
+<body data-theme="default">
+  <div class="container">
+    <h1 class="no-dis"><a href="index.html"> The Way</a></h1>
+    <h2 class="no-dis">Favourite Quotes</h2>
+    <!-- Swatch Switcher -->
+    <div class="no-dis swatches">
+      <button class="swatch-default" onclick="setTheme('default')" aria-label="Default theme"></button>
+      <button class="swatch-sepia"   onclick="setTheme('sepia')" aria-label="Sepia theme"></button>
+      <button class="swatch-coal"    onclick="setTheme('coal')" aria-label="Coal theme"></button>
+      <button class="swatch-navy"    onclick="setTheme('navy')" aria-label="Deep Navy theme"></button>
+      <button class="swatch-scarlet" onclick="setTheme('scarlet')" aria-label="Scarlet theme"></button>
+      <button class="swatch-black"   onclick="setTheme('black')" aria-label="Black theme"></button>
+    </div>
+
+<br> <br> <br> 
+    <!-- Infographic Content -->
+    <div class="grid">
+      <div class="card">
+        
+        <p style="font-size:1.4em; line-height: 0.9; font-weight:300;text-indent:10px;">"..whoever keeps his word, in him truly the love of God is perfected. By this we may know that we are in him" <br> <small> — 1 John 2:5</small></p>
+        <p style="font-size:1em; text-transform: uppercase; text-indent:10px; margin-left:20px"> 
+        	'John' is a characterisation of the reader when he knows and exhalts the word of God - his "I AM"
+      </div>
+     
+    </div>
+  </div>
+
+  <script>
+    function setTheme(theme) {
+      document.body.setAttribute("data-theme", theme);
+      localStorage.setItem("theme", theme);
+    }
+    // Load saved theme
+    const saved = localStorage.getItem("theme");
+    if (saved) document.body.setAttribute("data-theme", saved);
+  </script>
+</body>
+</html>
