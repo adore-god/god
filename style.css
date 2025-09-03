@@ -217,6 +217,10 @@ blockquote.relaxed {
   text-align: center;
 }
 
+.spec-undline {
+text-decoration: underline dotted !important;
+}
+
 hr {
   display: none;
 }
