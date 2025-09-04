@@ -522,6 +522,12 @@ vertical-align: baseline
   box-shadow: none;
 }
 
+#share-copy {
+padding:20px 1em 0 1em;
+font-family: Trirong;
+text-transform: uppercase
+}
+	
 .share-menu a,
 .share-menu button {
   display: block;
