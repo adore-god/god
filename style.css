@@ -493,20 +493,18 @@ vertical-align: baseline
 .share-dropdown {
   position: relative;
   display: inline;
-  vertical-align: baseline;
+
 }
 
 .share-button {
   background: none;
   cursor: pointer;
-  padding: 0.3em 0.3em 0 0;
+  padding: 0.3em 0.4em 0 0;
   color:#111;
   font-family: Trirong;
-  font-size: 1.5em !important;
+  font-size: 1em !important;
   text-transform: uppercase;
   font-weight: 600;
-position: relative;
-bottom: -2px
 }
 
 .share-menu {
