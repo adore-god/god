@@ -721,13 +721,13 @@ vertical-align: baseline
 .share-menu {
   background: #1c1c1c;
   color:#e0e0e0;
-  border: 0.2px solid #111;
+  border: 0.2px solid #ccc;
   box-shadow: none
   position: absolute;
   top:20%;
   left: 0%;
   min-width: 85vw;
-  padding:1em
+  padding:1.3em 1.1em
 }
 
 .share-menu a,
