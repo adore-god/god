@@ -219,6 +219,8 @@ blockquote.relaxed {
 
 .spec-undline {
 text-decoration: underline dotted !important;
+  text-decoration-color: rgba(0, 0, 0, 1.6) !important;
+  text-decoration-thickness: 0.7px !important;
 }
 
 hr {
@@ -554,7 +556,10 @@ ul.series-links li a {
     color: #e0e0e0;
     text-decoration-color: rgb(245, 245, 245)
   }
-
+  
+.spec-undline {
+  text-decoration-color: rgb(245, 245, 245) !important;
+}
   a:hover {
     text-decoration-style: solid;
   }
