@@ -265,6 +265,8 @@ ol, ul {
   list-style-type: none;
 }
 
+
+
 /* =======================
    SIDEBAR
    ======================= */
@@ -321,6 +323,11 @@ ul.series-links li a {
   text-transform: capitalize !important;
 }
 
+.label-links  {
+display: inline;
+vertical-align: baseline
+}
+	
 .label-links a {
   text-transform: uppercase !important;
   font-weight: 600;
@@ -482,6 +489,58 @@ ul.series-links li a {
 .gsc-control-wrapper-cse b {
 	font-weight:500	
 		}
+		
+.share-dropdown {
+  position: relative;
+  display: inline;
+  vertical-align: baseline;
+}
+
+.share-button {
+  background: none;
+  cursor: pointer;
+  padding: 0.3em 0.3em 0 0;
+  color:#111;
+  font-family: Trirong;
+  font-size: 1.5em !important;
+  text-transform: uppercase;
+  font-weight: 600;
+position: relative;
+bottom: -2px
+}
+
+.share-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 0.25em;
+  margin-top: 0.5em;
+  min-width: 180px;
+  z-index: 1000;
+  font-family: Trirong;
+  padding:0.5em 0.2em
+}
+
+.share-menu a,
+.share-menu button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: #111;
+  cursor: pointer;
+}
+
+.share-menu a:hover,
+.share-menu button:hover {
+  background: #f2f2f2;
+}
+		
+		
 /* =======================
    RESPONSIVE
    ======================= */
@@ -652,7 +711,35 @@ ul.series-links li a {
 	border:0;
 	color:#e0e0e0;
 	}
-	
+
+.share-button {
+  background: none;
+  color:#e0e0e0;
+  border: none
+}
+
+.share-menu {
+  background: #1e1e1e;
+  color:#e0e0e0;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.share-menu a,
+.share-menu button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+.share-menu a:hover,
+.share-menu button:hover {
+  background: #121212;
+  color: #fff;
+  
+}
 	
   } /*Don't delete  */
   
@@ -782,6 +869,33 @@ html[data-theme="light"] .gsc-cursor-chevron {
 	filter: none !important;
 	}
 
+html[data-theme="light"] .share-button {
+  background: #fff;
+  border: 0px solid #ccc;
+  font-size: 1rem;
+  color:#111;
+}
 
+html[data-theme="light"] .share-menu {
+  background: #fff;
+  color:#111;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+html[data-theme="light"] .share-menu a,
+html[data-theme="light"] .share-menu button {
+  text-decoration: none;
+  background: #fff;
+  color: #111;
+  font-size: 1rem;
+}
+
+html[data-theme="light"] .share-menu a:hover,
+html[data-theme="light"] .share-menu button:hover {
+  background: #fff;
+  color: #111;
+  
+}
 
 
