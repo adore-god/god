@@ -505,6 +505,7 @@ vertical-align: baseline
   font-size: 1em !important;
   text-transform: uppercase;
   font-weight: 600;
+  border: none;
 }
 
 .share-menu {
