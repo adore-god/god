@@ -187,8 +187,6 @@ blockquote {
   font-size: 1rem;
   margin: 1.8em auto;
   text-align: left;
-  //border-top: 4px double #666;
-  //border-bottom: 4px double #666;
   padding: 10px 5%;
   width: 82%;
   letter-spacing: -0.02em;
@@ -216,7 +214,14 @@ blockquote.relaxed {
 .center {
   text-align: center;
 }
+.aforce {
+  text-decoration: underline dotted !important;
+  text-decoration-color: rgba(0, 0, 0, 1) !important;
+  text-decoration-thickness: 0.7px !important;
+  font-style: normal !important;  
+}
 
+	
 .spec-undline {
 text-decoration: underline dotted !important;
   text-decoration-color: rgba(0, 0, 0, 1.6) !important;
@@ -622,6 +627,10 @@ text-transform: uppercase
     text-decoration-color: rgb(245, 245, 245)
   }
   
+.aforce {
+	text-decoration-color: rgb(245, 245, 245) !important;
+	}
+	
 .spec-undline {
   text-decoration-color: rgb(245, 245, 245) !important;
 }
@@ -774,6 +783,10 @@ html[data-theme="light"] .red {
     color: darkred !important;
 }
 
+html[data-theme="light"] .aforce {
+	text-decoration-color: #333 !important;
+	}
+	
 html[data-theme="light"] .header a,
 html[data-theme="light"] a,
 html[data-theme="light"] a b {
