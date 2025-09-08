@@ -153,6 +153,7 @@ a:hover {
 blockquote a[href*="blueletterbible.org"] {
   font-size: 0.6em !important;
   text-decoration: none;
+  line-height: 1.8
 }
 
 blockquote a[href*="blueletterbible.org"]:hover {
