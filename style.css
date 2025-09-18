@@ -342,6 +342,7 @@ margin-left:8px
 /* Sidebar nav links */
 ul.series-links li a {
   text-transform: capitalize !important;
+  text-decoration: none;
 }
 
 .label-links  {
@@ -484,6 +485,7 @@ line-height: 1.4
   white-space: normal !important;
   word-wrap: break-word !important;
   overflow-wrap: break-word !important;
+  text-decoration: none;
 }
 
 #theme-toggle {
