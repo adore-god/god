@@ -218,7 +218,7 @@ blockquote i,
 blockquote b,
 blockquote a {
   font-style: normal;
-  font-weight: 400 !important;
+  font-weight: 300 !important;
 }
 blockquote.relaxed {
   font-weight:300;
