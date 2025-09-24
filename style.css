@@ -160,7 +160,8 @@ a:hover {
 .sclPage li a {
    text-decoration: none;
 	}
-	
+
+
 /* External links */
 blockquote a[href*="blueletterbible.org"] {
   font-size: 0.6em !important;
