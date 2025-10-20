@@ -118,17 +118,17 @@ h4 {
 .breadcrumb a {
   text-decoration: underline dotted;
   text-decoration-thickness: 0.7px;
-//text-decoration: none;
 }
 .breadcrumb a:hover {
   text-decoration: underline;
 }
 .breadcrumb-separator {
   margin: 0 0.25em;
+  font-size: 1.2em;
 }
 .breadcrumb-current,
 .breadcrumb span {
-  font-weight: 500;
+  font-weight: 600;
   font-style: italic;
 }
 
