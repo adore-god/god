@@ -53,6 +53,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  const currentURL = window.location.href;
+
+  // Full URLs to exclude
+  const excludeURLs = [
+    'https://god.thway.uk/',
+    'https://god.thway.uk/about_13.html',
+    'https://god.thway.uk/series-links.html',
+    'https://god.thway.uk/search.html'
+  ];
+
+  // Exit if current URL is in the exclude list
+  if (excludeURLs.includes(currentURL)) return;
+
   const labelLinks = document.querySelectorAll('.label-links a');
   const mainContent = document.querySelector('main.content');
   if (!mainContent) return;
