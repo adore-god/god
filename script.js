@@ -44,3 +44,60 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const labelLinks = document.querySelectorAll('.label-links a');
+  const mainContent = document.querySelector('main.content');
+  if (!mainContent) return;
+
+  // Create breadcrumb container
+  const breadcrumb = document.createElement('nav');
+  breadcrumb.className = 'breadcrumb';
+  breadcrumb.setAttribute('aria-label', 'Breadcrumb');
+
+  // Function to create a breadcrumb link (adds only "noTag" class)
+  function createCrumb(href, text) {
+    const a = document.createElement('a');
+    a.href = href;
+    a.textContent = text;
+    a.classList.add('noTag'); // Only add noTag
+    return a;
+  }
+
+  // Home link
+  breadcrumb.appendChild(createCrumb('https://god.thway.uk', 'Home'));
+
+  // Separator
+  const sep1 = document.createElement('span');
+  sep1.className = 'breadcrumb-separator';
+  sep1.textContent = ' › ';
+  breadcrumb.appendChild(sep1);
+
+  // Current page
+  const pageTitle = document.querySelector('h1')?.textContent || document.title;
+  const currentPage = document.createElement('span');
+  currentPage.textContent = pageTitle;
+  currentPage.className = 'breadcrumb-current';
+  breadcrumb.appendChild(currentPage);
+
+  // Add series/label links if they exist
+  labelLinks.forEach(link => {
+    const sep = document.createElement('span');
+    sep.className = 'breadcrumb-separator';
+    sep.textContent = ' › ';
+    breadcrumb.appendChild(sep);
+
+    const crumb = createCrumb(link.href, link.textContent);
+    breadcrumb.appendChild(crumb);
+  });
+
+  // Insert at the top of main content
+  mainContent.insertBefore(breadcrumb, mainContent.firstChild);
+});
