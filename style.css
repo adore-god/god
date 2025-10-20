@@ -383,14 +383,17 @@ ul.series-links li a {
 .label-links  {
 display: inline;
 vertical-align: baseline;
-line-height: 1.4
+line-height: 1.4;
 }
+.label-links {
+font-size: 0.75em;
+	}
 	
 .label-links a {
-  text-transform: uppercase !important;
   font-weight: 600;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.07em;
   text-decoration: none;
+  
 }
 
 /* Decorative flourish */
@@ -561,11 +564,11 @@ line-height: 1.4
   padding: 0em 0.4em 0 0;
   color:#111;
   font-family: Trirong;
-  font-size: 1em;
-  text-transform: uppercase;
+  font-size: 0.75em;
   font-weight: 600;
   border: none; 
-  line-height: 1.4
+  line-height: 1.4;
+  letter-spacing: -0.07em;
 }
 
 	
