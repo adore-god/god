@@ -93,11 +93,11 @@ document.addEventListener('DOMContentLoaded', () => {
   sep1.textContent = ' › ';
   breadcrumb.appendChild(sep1);
 
-  // Current page
+  // Current page wrapped in a span with noTag class
   const pageTitle = document.querySelector('h1')?.textContent || document.title;
   const currentPage = document.createElement('span');
   currentPage.textContent = pageTitle;
-  currentPage.className = 'breadcrumb-current';
+  currentPage.classList.add('noTag'); // Only 'noTag' class
   breadcrumb.appendChild(currentPage);
 
   // Add series/label links if they exist
