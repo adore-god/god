@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'https://god.thway.uk/',
     'https://god.thway.uk/about_13.html',
     'https://god.thway.uk/series-links.html',
-    'https://god.thway.uk/search.html'
+    'https://god.thway.uk/search.html',
   ];
 
   // Exit if current URL is in the exclude list
