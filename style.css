@@ -44,7 +44,7 @@ img {
   text-align: center;
   width: 80%;
   max-width: 300px;
-  height: 80%;
+  height: auto;
   opacity: 0.8;
   padding: 0;
 }
@@ -131,9 +131,6 @@ h4 {
   font-weight: 500;
   font-style: italic;
 }
-
-
-
 
 /* =======================
    TEXT ELEMENTS
@@ -619,7 +616,7 @@ text-transform: uppercase
     width: 60%;
     margin: 0 auto;
   }
-
+  
   .hamburger {
     top: 20px;
     right: 20%;
