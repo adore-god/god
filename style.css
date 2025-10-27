@@ -169,6 +169,10 @@ input[type="text"]:focus {
   width: 87%;
   font-size: 0.8em
 }
+
+a.redA {
+  text-decoration-color: red;
+	}
 	
 a, a b {
   color: #111;
