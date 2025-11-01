@@ -658,7 +658,7 @@ text-transform: uppercase
 
   img {
     filter: invert(0.9) brightness(1.1) contrast(1.1);
-    
+    mix-blend-mode: normal;
   }
 
   .red {
@@ -838,6 +838,7 @@ html[data-theme="light"] .content {
 
 html[data-theme="light"] img {
     filter: invert(0) brightness(1) contrast(1) !important;
+    mix-blend-mode: multiply;
 }
 
 html[data-theme="light"] .red {
