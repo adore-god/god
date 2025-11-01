@@ -833,6 +833,7 @@ text-transform: uppercase
 html[data-theme="light"] body {
     background: #F3E5C7 !important;
     color: #3E2D18 !important;
+    
 }
 
 html[data-theme="light"] .container,
