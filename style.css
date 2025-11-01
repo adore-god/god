@@ -47,6 +47,7 @@ img {
   height: auto;
   opacity: 0.8;
   padding: 0;
+  mix-blend-mode: multiply;
 }
 
 /* =======================
