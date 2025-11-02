@@ -136,18 +136,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const resultsList = document.getElementById('results');
 
   if (searchBox && resultsList) {
+    let debounceTimer;
     searchBox.addEventListener('input', async function () {
       const query = this.value.trim().toLowerCase();
       resultsList.innerHTML = '';
       if (!query) return;
 
-      // GA event for local search
+      // Debounce GA event
       if (typeof gtag === 'function') {
-        gtag('event', 'search', {
-          'search_term': query,
-          'event_category': 'Site Search',
-          'event_label': 'Local Search Box'
-        });
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+          gtag('event', 'search', {
+            'search_term': query,
+            'event_category': 'Site Search',
+            'event_label': 'Local Search Box'
+          });
+        }, 700); // Wait 700ms after last keystroke
       }
 
       const index = await loadIndex();
