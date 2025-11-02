@@ -72,6 +72,7 @@ img {
    HEADINGS
    ======================= */
 h1, h2, h3, h4 {
+margin: 2em 0 1em;
   font-variant: small-caps;
   font-weight: 400;
   text-align: left;
@@ -398,7 +399,12 @@ font-size: 0.75em;
   font-weight: 600;
   letter-spacing: -0.07em;
   text-decoration: none;
-  
+}
+
+table {
+    background: #f7ebdb !important;
+    color: #3E2D18 !important;
+    border: 0px;
 }
 
 /* Decorative flourish */
@@ -912,6 +918,12 @@ html[data-theme="light"] #searchBox {
     background: #f7ebdb !important;
     color: #3E2D18 !important;
     border: 1px solid #3E2D18 !important;
+}
+
+html[data-theme="light"] table {
+    background: #f7ebdb !important;
+    color: #3E2D18 !important;
+    border: 0px solid #3E2D18 !important;
 }
 
 html[data-theme="light"] #searchBox:focus {
