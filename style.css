@@ -621,7 +621,37 @@ text-transform: uppercase
 .share-menu button:hover {
   background: #f2f2f2;
 }
-		
+
+/* =======================
+   TABLE RESET
+   ======================= */
+table, td, th {
+    background-color: transparent !important; 
+    color: inherit !important;
+    border: none !important;
+    border-collapse: collapse !important;
+    filter: none !important;                  mix-blend-mode: normal !important;
+}
+
+/* Make sure tables respect dark/light theme */
+@media (prefers-color-scheme: dark) {
+  table, td, th {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+  }
+}
+
+html[data-theme="light"] table,
+html[data-theme="light"] td,
+html[data-theme="light"] th {
+    background-color: transparent !important;
+    color: #3E2D18 !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+}
+
 		
 /* =======================
    RESPONSIVE
@@ -692,7 +722,7 @@ text-transform: uppercase
     border-top: 2px double #888;
     border-bottom: 2px double #888;
   }
-
+    
   a, a b {
     color: #e0e0e0;
     text-decoration-color: rgb(245, 245, 245)
@@ -918,12 +948,6 @@ html[data-theme="light"] #searchBox {
     background: #f7ebdb !important;
     color: #3E2D18 !important;
     border: 1px solid #3E2D18 !important;
-}
-
-html[data-theme="light"] table {
-    background: #f7ebdb !important;
-    color: #3E2D18 !important;
-    border: 0px solid #3E2D18 !important;
 }
 
 html[data-theme="light"] #searchBox:focus {
