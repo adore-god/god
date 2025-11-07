@@ -8,12 +8,12 @@
             "name": "HNNH",
             "url": "https://god.thway.uk/about_13.html"
         },
-        "publisher": {
-            "@type": "Organization",
-            "name": "God - The Way",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://god.thway.uk/favicon.png"
+  "publisher": {
+  "@type": "Organization",
+  "name": "God - The Way",
+  "logo": {
+  "@type": "ImageObject",
+  "url": "https://god.thway.uk/favicon.png"
             }
         }
     };
