@@ -33,27 +33,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 
   const dateModified = await getLastModifiedFromSitemap();
 
-  // Main navigation items
-  const mainNavItems = [
-    { name: "Home", url: "https://god.thway.uk" },
-    { name: "Genesis Foundational Principles", url: "https://god.thway.uk/genesis-foundational-principles.html" },
-    { name: "God", url: "https://god.thway.uk/elohim-god.html" },
-    { name: "Timeline", url: "https://god.thway.uk/the-law-timeline.html" },
-    { name: "Creation", url: "https://god.thway.uk/genesis-1-creation.html" },
-    { name: "Seed", url: "https://god.thway.uk/genesis-111-seed.html" },
-    { name: "Man", url: "https://god.thway.uk/genesis-126-man.html" },
-    { name: "Woman", url: "https://god.thway.uk/genesis-223-woman.html" },
-    { name: "Love", url: "https://god.thway.uk/genesis-224-love.html" },
-    { name: "Sin", url: "https://god.thway.uk/genesis-47-sin.html" },
-    { name: "I AM", url: "https://god.thway.uk/exodus-314-i-am.html" },
-    { name: "Salvation", url: "https://god.thway.uk/jesus-christ-salvation.html" },
-    { name: "Ask, Believe, Receive", url: "https://god.thway.uk/ask-believe-receive-catalyst-for-love.html" },
-    { name: "Teachers of the Law", url: "https://god.thway.uk/teachers-fathers-of-law-assumption.html" },
-    { name: "Paul: The Mystery", url: "https://god.thway.uk/the-mystery-secret-bible-revealed.html" },
-    { name: "Series & Collections", url: "https://god.thway.uk/series-links.html" }
-  ];
-
-  // Build JSON-LD
+  // Build JSON-LD for Article only
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -75,13 +55,7 @@ document.addEventListener("DOMContentLoaded", async function() {
             "url": "https://god.thway.uk/favicon.png"
           }
         }
-      },
-      // Flatten SiteNavigationElement items
-      ...mainNavItems.map(item => ({
-        "@type": "SiteNavigationElement",
-        "name": item.name,
-        "url": item.url
-      }))
+      }
     ]
   };
 
@@ -91,6 +65,9 @@ document.addEventListener("DOMContentLoaded", async function() {
   script.text = JSON.stringify(jsonLd, null, 2);
   document.head.appendChild(script);
 });
+
+
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
