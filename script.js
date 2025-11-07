@@ -33,30 +33,26 @@ document.addEventListener("DOMContentLoaded", async function() {
 
   const dateModified = await getLastModifiedFromSitemap();
 
-  // Build JSON-LD for Article only
+  // Build JSON-LD (Now only contains BlogPosting entity)
   const jsonLd = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Article",
-        "headline": pageTitle,
-        "image": imageUrl,
-        "dateModified": dateModified,
-        "author": {
-          "@type": "Person",
-          "name": "HNNH",
-          "url": "https://god.thway.uk/about_13.html"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "God - The Way",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://god.thway.uk/favicon.png"
-          }
-        }
+    "@type": "BlogPosting", // Using the single entity structure
+    "headline": pageTitle,
+    "image": imageUrl,
+    "dateModified": dateModified,
+    "author": {
+      "@type": "Person",
+      "name": "HNNH",
+      "url": "https://god.thway.uk/about_13.html"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "God - The Way",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://god.thway.uk/favicon.png"
       }
-    ]
+    }
   };
 
   // Inject JSON-LD into <head>
