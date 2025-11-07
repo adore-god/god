@@ -4,86 +4,93 @@
 <meta charset="utf-8">
 <link href="https://god.thway.uk/search.html" rel="canonical">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<link rel="preconnect" href="https://www.blueletterbible.org" crossorigin><link rel="dns-prefetch" href="https://www.blueletterbible.org">
+<link rel="preconnect" href="https://www.blueletterbible.org" crossorigin>
+<link rel="dns-prefetch" href="https://www.blueletterbible.org">
 <link href="favicon.png" rel="icon" type="image/png">
 <link rel="manifest" href="manifest.json">
 <link href="style.css" rel="stylesheet">
 <link rel="stylesheet" href="style-fonts.css" media="print" onload="this.media='all'">
-<script src="https://www.blueletterbible.org/assets-v3/scripts/blbToolTip/BLB_ScriptTagger-min.js"></script><script>
-// Additional settings
+<script src="https://www.blueletterbible.org/assets-v3/scripts/blbToolTip/BLB_ScriptTagger-min.js"></script>
+<script>
 BLB.Tagger.Translation = 'BBE';
-BLB.Tagger.HyperLinks = 'hover'; // 'all', 'none', 'hover'
+BLB.Tagger.HyperLinks = 'hover';
 BLB.Tagger.HideTranslationAbbrev = true;
 BLB.Tagger.TargetNewWindow = true;
-BLB.Tagger.Style = 'line'; // 'line' or 'par'
-BLB.Tagger.NoSearchTagNames = 'h1,h2,h3,h4'; // HTML element list
-BLB.Tagger.NoSearchClassNames = 'noTag doNotTag sidebar'; // CSS class list
+BLB.Tagger.Style = 'line';
+BLB.Tagger.NoSearchTagNames = 'h1,h2,h3,h4';
+BLB.Tagger.NoSearchClassNames = 'noTag doNotTag sidebar';
 </script>
 <script src="script.js"></script>
 <script src="latest-arts.js"></script>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Z5M83Q78Z0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-Z5M83Q78Z0');
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5M83Q78Z0"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-Z5M83Q78Z0');
 </script>
+
 <title>Search</title>
+<meta name="description" content="Discover new content, explore updated articles, and browse article catalogues and series.">
 </head>
 <body>
-<div class="header"><a href="https://god.thway.uk">The Way</a><button id="theme-toggle">&#9680;</button><script src="script-dark-light.js"></script>
+<div class="header"><a href="https://god.thway.uk">The Way</a>
+<button id="theme-toggle">&#9680;</button><script src="script-dark-light.js"></script>
 </div>
+
 <h1>Search</h1>
 <div class="container">
 
-<!-- Custom search box -->
+<!-- Google CSE Search Box -->
 <div id="custom-search-container">
   <input type="text" id="custom-search-input" placeholder="Search site with Google">
   <button id="custom-search-button">Search</button>
 </div>
 
-<!-- Where the results will appear -->
 <div id="custom-search-results">
-  <gcse:searchresults-only></gcse:searchresults-only>
+	
+<script async src="https://cse.google.com/cse.js?cx=62434d5e426ae403f">
+</script>
+<div class="gcse-searchresults-only"></div>
 </div>
 
-<!-- Load Google CSE -->
-<script async src="https://cse.google.com/cse.js?cx=62434d5e426ae403f"></script>
-
 <script>
+// Google CSE search with GA tracking
 function performSearch() {
-  var query = document.getElementById("custom-search-input").value;
+  var query = document.getElementById("custom-search-input").value.trim();
+  if (!query) return;
 
-  // Execute search only if Google CSE is loaded
+  if (typeof gtag === 'function') {
+    gtag('event', 'search', {
+      'search_term': query,
+      'event_category': 'Site Search',
+      'event_label': 'Custom Search Box'
+    });
+  }
+
   if (window.google && google.search && google.search.cse && google.search.cse.element) {
     var element = google.search.cse.element.getElement('searchresults-only0');
-    if (element) {
-      element.execute(query);
-    }
+    if (element) element.execute(query);
   }
 }
 
-// Trigger search on button click
 document.getElementById("custom-search-button").addEventListener("click", performSearch);
-
-// Trigger search on pressing Enter
 document.getElementById("custom-search-input").addEventListener("keypress", function(e) {
-  if (e.key === 'Enter') {
-    performSearch();
-  }
+  if (e.key === 'Enter') performSearch();
 });
 </script>
 
+<!-- Local Site Search Box -->
 <input type="text" id="searchBox" placeholder="Site Search...">
 <div class="srch-series-link">
-<a href="series-links.html">Series and Collections</a> <br> 
+<a href="series-links.html">Series and Collections</a><br> 
 </div>
 <ul id="results"></ul>
 
 <div class="latest-posts">
-<h4 class="center">Latest Updates </h4> 
+<h4 class="center">Latest Updates</h4> 
 <div id="latest-posts"></div>
 </div> 
 
@@ -91,20 +98,17 @@ document.getElementById("custom-search-input").addEventListener("keypress", func
 document.addEventListener('DOMContentLoaded', () => {
   const containerSelectors = ['#results', '#latest-posts'];
 
-  // Add class to an element or to all anchors inside an element
   function addNoTagToElement(el) {
     if (!el) return;
     if (el.tagName === 'A') el.classList.add('noTag');
     if (el.querySelectorAll) el.querySelectorAll('a').forEach(a => a.classList.add('noTag'));
   }
 
-  // Initial pass: add to existing anchors in the containers
   containerSelectors.forEach(sel => {
     const c = document.querySelector(sel);
     if (c) addNoTagToElement(c);
   });
 
-  // Watch the containers for new nodes and add the class to any new anchors
   containerSelectors.forEach(sel => {
     const c = document.querySelector(sel);
     if (!c) return;
@@ -119,7 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(c, { childList: true, subtree: true });
   });
 
-  // --- Your search code (unchanged behaviour) ---
   async function loadIndex() {
     try {
       const response = await fetch('searchIndex.json');
@@ -135,10 +138,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const resultsList = document.getElementById('results');
 
   if (searchBox && resultsList) {
+    let debounceTimer;
     searchBox.addEventListener('input', async function () {
       const query = this.value.trim().toLowerCase();
       resultsList.innerHTML = '';
       if (!query) return;
+
+      // Debounce GA event
+      if (typeof gtag === 'function') {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+          gtag('event', 'search', {
+            'search_term': query,
+            'event_category': 'Site Search',
+            'event_label': 'Local Search Box'
+          });
+        }, 700); // Wait 700ms after last keystroke
+      }
 
       const index = await loadIndex();
       const results = index.filter(page =>
@@ -151,22 +167,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const a = document.createElement('a');
         a.href = page.url;
         a.textContent = page.title;
-        a.classList.add('noTag'); // <- the only change: ensure every generated link gets the class
+        a.classList.add('noTag');
         li.appendChild(a);
         resultsList.appendChild(li);
       });
 
-      // safety pass
       addNoTagToElement(resultsList);
     });
-  } else {
-    console.warn('#searchBox or #results not found — search listener not attached');
   }
 });
 </script>
 
-
 </div>
-<div class="footer">© 2025 <a href="https://god.thway.uk/">God - The Way</a>. All rights reserved. Use for AI training or reproduction is not permitted.</div>
+<div class="footer">© 2025 <a href="https://god.thway.uk/">God - The Way</a>. All rights reserved. Use for AI 
+training or reproduction is not permitted.</div>
 </body>
 </html>
