@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async function() {
   const currentUrl = window.location.href;
   const siteOrigin = window.location.origin;
 
-  // --- 1. DATA COLLECTION (UNCHANGED) ---
+  // --- 1. DATA COLLECTION ---
   const firstImg = document.querySelector('main img, body img');
   const imageUrl = firstImg ? new URL(firstImg.src, siteOrigin).href : siteOrigin + "/favicon.png";
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 
   const dateModified = await getLastModifiedFromSitemap();
 
-  // --- 2. BREADCRUMBLIST LOGIC (UNCHANGED) ---
+  // --- 2. BREADCRUMBLIST LOGIC ---
   let breadcrumbLd = null;
   const labelContainer = document.querySelector('p.label-links');
 
@@ -55,9 +55,9 @@ document.addEventListener("DOMContentLoaded", async function() {
     }
   }
 
-  // --- 3. NEW SITE-WIDE SCHEMAS ---
+  // --- 3. SITE-WIDE SCHEMAS ---
   
-  // Organization Schema (for E-A-T and entity definition)
+  // Organization Schema (E-A-T and Entity Definition)
   const organizationLd = {
     "@type": "Organization",
     "name": "God - The Way",
@@ -81,14 +81,24 @@ document.addEventListener("DOMContentLoaded", async function() {
     "url": siteOrigin + "/",
     "potentialAction": {
       "@type": "SearchAction",
-      // NOTE: Update this target URL if your search query parameter is different (e.g., ?q=)
+      // IMPORTANT: Verify if your site uses '?q=' for search queries!
       "target": siteOrigin + "/search?q={search_term_string}", 
       "query-input": "required name=search_term_string"
     }
   };
+  
+  // --- 4. CONCEPT ENTITY DEFINITION ---
+  
+  // The specific doctrine/theory your content is ABOUT
+  const lawOfAssumptionConcept = {
+    "@type": ["CreativeWork", "Thing"], 
+    "name": "Law of Assumption",
+    // Adding the specific context is optional but helps Google understand the entity
+    "description": "Biblical doctrine regarding the power of imagination and consciousness, as taught by Neville Goddard."
+  };
 
 
-  // --- 4. ASSEMBLE FINAL JSON-LD (@graph) ---
+  // --- 5. ASSEMBLE FINAL JSON-LD (@graph) ---
 
   const blogPostingLd = {
     "@type": "BlogPosting",
@@ -96,19 +106,21 @@ document.addEventListener("DOMContentLoaded", async function() {
     "headline": pageTitle,
     "image": imageUrl,
     "dateModified": dateModified, 
+    
+    // Explicitly link the article to the Law of Assumption concept
+    "about": lawOfAssumptionConcept, 
+    
     "author": { "@type": "Person", "name": "HNNH", "url": siteOrigin + "/about_13.html" },
-    // Reference the Organization by its structure for clean code
+    // Use the comprehensive Organization definition
     "publisher": organizationLd 
   };
 
-  // Start the graph with the Site-Wide entities
   const graph = [
     organizationLd,
     webSiteLd,
-    blogPostingLd // The primary content of the page
+    blogPostingLd 
   ];
   
-  // Conditionally add the Breadcrumbs
   if (breadcrumbLd) {
     graph.push(breadcrumbLd);
   }
@@ -118,12 +130,13 @@ document.addEventListener("DOMContentLoaded", async function() {
     "@graph": graph
   };
   
-  // --- 5. INJECT JSON-LD (UNCHANGED) ---
+  // --- 6. INJECT JSON-LD ---
   const script = document.createElement('script');
   script.type = 'application/ld+json';
   script.text = JSON.stringify(finalJsonLd, null, 2);
   document.head.appendChild(script);
 });
+
 
 
 
