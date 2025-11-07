@@ -88,14 +88,25 @@ document.addEventListener("DOMContentLoaded", async function() {
     }
   };
   
-  // ... (4. CONCEPT ENTITY DEFINITION - UNCHANGED) ...
+  // --- 4. CONCEPT ENTITY DEFINITION ---
   const lawOfAssumptionConcept = {
     "@type": ["CreativeWork", "Thing"], 
     "name": "Law of Assumption",
     "description": "Biblical doctrine regarding the power of imagination and consciousness, as taught by Neville Goddard."
   };
 
-  // ... (5. ASSEMBLE FINAL JSON-LD (@graph) - UNCHANGED) ...
+  // *** UPDATED CREATIVE WORK: Generic Holy Bible source ***
+  const holyBibleSource = {
+      "@type": "CreativeWork",
+      "@id": siteOrigin + "/source/holy-bible", // REMOVED: -kjv
+      "name": "The Holy Bible", // CHANGED: Generic name
+      "author": { "@type": "Person", "name": "Various Prophets and Apostles" },
+      "inLanguage": "en",
+      "description": "The foundational religious and spiritual text used as the primary source for all teaching on this site." // CHANGED: Generic description
+  };
+  // ------------------------------------------------------------------
+
+  // --- 5. ASSEMBLE FINAL JSON-LD (@graph) ---
 
   const blogPostingLd = {
     "@type": "BlogPosting",
@@ -104,11 +115,12 @@ document.addEventListener("DOMContentLoaded", async function() {
     "image": imageUrl,
     "dateModified": dateModified, 
     "about": lawOfAssumptionConcept, 
+    "isBasedOn": { "@id": siteOrigin + "/source/holy-bible" }, // UPDATED: Link uses the generic ID
     "author": { "@type": "Person", "name": "HNNH", "url": siteOrigin + "/about_13.html" },
     "publisher": organizationLd 
   };
 
-  const graph = [ organizationLd, webSiteLd, blogPostingLd ];
+  const graph = [ organizationLd, webSiteLd, holyBibleSource, blogPostingLd ];
   
   if (breadcrumbLd) {
     graph.push(breadcrumbLd);
@@ -125,6 +137,7 @@ document.addEventListener("DOMContentLoaded", async function() {
   script.text = JSON.stringify(finalJsonLd, null, 2);
   document.head.appendChild(script);
 });
+
 
 
 
