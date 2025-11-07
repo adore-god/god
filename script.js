@@ -3,10 +3,12 @@ document.addEventListener("DOMContentLoaded", async function() {
   const currentUrl = window.location.href;
   const siteOrigin = window.location.origin;
 
-  // ... (1. DATA COLLECTION - UNCHANGED) ...
+  // --- 1. DATA COLLECTION ---
+  // ... (getImageUrl logic remains the same) ...
   const firstImg = document.querySelector('main img, body img');
   const imageUrl = firstImg ? new URL(firstImg.src, siteOrigin).href : siteOrigin + "/favicon.png";
 
+  // Function to get lastmod from sitemap.xml (UNCHANGED)
   async function getLastModifiedFromSitemap() {
     try {
       const sitemapUrl = siteOrigin + "/sitemap.xml";
@@ -20,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         const loc = urls[i].getElementsByTagName("loc")[0]?.textContent;
         const lastmod = urls[i].getElementsByTagName("lastmod")[0]?.textContent;
         if (loc === currentUrl && lastmod) {
-          return new Date(lastmod).toISOString();
+          return lastmod; // Return string for direct use
         }
       }
       return new Date().toISOString();
@@ -32,9 +34,19 @@ document.addEventListener("DOMContentLoaded", async function() {
 
   const dateModified = await getLastModifiedFromSitemap();
 
+  // --- NEW STEP: INJECT THE DATE INTO THE HEAD ---
+  // This step makes the true lastmod date available inside the HTML file itself
+  const dateMeta = document.createElement('meta');
+  dateMeta.setAttribute('name', 'content-last-modified');
+  dateMeta.setAttribute('content', dateModified);
+  document.head.appendChild(dateMeta);
+  // --- END NEW STEP ---
+  
   // ... (2. BREADCRUMBLIST LOGIC - UNCHANGED) ...
   let breadcrumbLd = null;
   const labelContainer = document.querySelector('p.label-links');
+
+  // ... (Logic to build breadcrumbLd remains the same) ...
 
   if (labelContainer) {
     const firstTopicLink = labelContainer.querySelector('a');
@@ -55,47 +67,35 @@ document.addEventListener("DOMContentLoaded", async function() {
     }
   }
 
-  // --- 3. SITE-WIDE SCHEMAS ---
+  // ... (3. SITE-WIDE SCHEMAS - UNCHANGED) ...
   
-  // Organization Schema (E-A-T and Entity Definition)
-  const organizationLd = {
-    "@type": "Organization",
-    "name": "God - The Way",
-    "url": siteOrigin + "/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": siteOrigin + "/favicon.png"
-    },
-    "description": "Foundational biblical teaching and spiritual content focused on understanding the true nature and relationship between God and Man.",
-    "sameAs": [
-      siteOrigin + "/",
-      "https://www.tiktok.com/@god.thway.uk",
-      "https://hnnh.studio/",
-      "https://hnnh.studio/about.html" 
-    ]
+  const organizationLd = { 
+    "@type": "Organization", 
+    "name": "God - The Way", 
+    "url": siteOrigin + "/", 
+    "logo": { "@type": "ImageObject", "url": siteOrigin + "/favicon.png" },
+    "description": "Foundational biblical teaching and spiritual content focused on understanding the true nature of God and Man.",
+    "sameAs": [ siteOrigin + "/", "https://www.tiktok.com/@god.thway.uk", "https://hnnh.studio/", "https://hnnh.studio/about.html" ]
   };
 
-  // WebSite Schema (CORRECTED for Google Custom Search Engine!)
   const webSiteLd = {
     "@type": "WebSite",
     "url": siteOrigin + "/",
     "potentialAction": {
       "@type": "SearchAction",
-      // *** THE CRITICAL FIX ***
       "target": "https://www.google.com/search?q=site:god.thway.uk+{search_term_string}", 
       "query-input": "required name=search_term_string"
     }
   };
   
-  // --- 4. CONCEPT ENTITY DEFINITION ---
+  // ... (4. CONCEPT ENTITY DEFINITION - UNCHANGED) ...
   const lawOfAssumptionConcept = {
     "@type": ["CreativeWork", "Thing"], 
     "name": "Law of Assumption",
     "description": "Biblical doctrine regarding the power of imagination and consciousness, as taught by Neville Goddard."
   };
 
-
-  // --- 5. ASSEMBLE FINAL JSON-LD (@graph) ---
+  // ... (5. ASSEMBLE FINAL JSON-LD (@graph) - UNCHANGED) ...
 
   const blogPostingLd = {
     "@type": "BlogPosting",
@@ -108,11 +108,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     "publisher": organizationLd 
   };
 
-  const graph = [
-    organizationLd,
-    webSiteLd,
-    blogPostingLd 
-  ];
+  const graph = [ organizationLd, webSiteLd, blogPostingLd ];
   
   if (breadcrumbLd) {
     graph.push(breadcrumbLd);
