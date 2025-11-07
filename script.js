@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async function() {
   // Function to get lastmod from sitemap.xml
   async function getLastModifiedFromSitemap() {
     try {
-      const sitemapUrl = "https://god.thway.uk/sitemap.xml"; // update if needed
+      const sitemapUrl = "https://god.thway.uk/sitemap.xml";
       const response = await fetch(sitemapUrl);
       const text = await response.text();
       const parser = new DOMParser();
@@ -34,24 +34,24 @@ document.addEventListener("DOMContentLoaded", async function() {
 
   const dateModified = await getLastModifiedFromSitemap();
 
-  // Define breadcrumb items
-  const breadcrumbItems = [
-    { position: 1, name: "Home", item: "https://god.thway.uk" },
-    { position: 2, name: "Genesis Foundational Principles", item: "https://god.thway.uk/genesis-foundational-principles.html" },
-    { position: 3, name: "God", item: "https://god.thway.uk/elohim-god.html" },
-    { position: 4, name: "Timeline", item: "https://god.thway.uk/the-law-timeline.html" },
-    { position: 5, name: "Creation", item: "https://god.thway.uk/genesis-1-creation.html" },
-    { position: 6, name: "Seed", item: "https://god.thway.uk/genesis-111-seed.html" },
-    { position: 7, name: "Man", item: "https://god.thway.uk/genesis-126-man.html" },
-    { position: 8, name: "Woman", item: "https://god.thway.uk/genesis-223-woman.html" },
-    { position: 9, name: "Love", item: "https://god.thway.uk/genesis-224-love.html" },
-    { position: 10, name: "Sin", item: "https://god.thway.uk/genesis-47-sin.html" },
-    { position: 11, name: "I AM", item: "https://god.thway.uk/exodus-314-i-am.html" },
-    { position: 12, name: "Salvation", item: "https://god.thway.uk/jesus-christ-salvation.html" },
-    { position: 13, name: "Ask, Believe, Receive", item: "https://god.thway.uk/ask-believe-receive-catalyst-for-love.html" },
-    { position: 14, name: "Teachers of the Law", item: "https://god.thway.uk/teachers-fathers-of-law-assumption.html" },
-    { position: 15, name: "Paul: The Mystery", item: "https://god.thway.uk/the-mystery-secret-bible-revealed.html" },
-    { position: 16, name: "Series & Collections", item: "https://god.thway.uk/series-links.html" }
+  // Use the names and URLs from your breadcrumb array
+  const mainNavItems = [
+    { name: "Home", url: "https://god.thway.uk" },
+    { name: "Genesis Foundational Principles", url: "https://god.thway.uk/genesis-foundational-principles.html" },
+    { name: "God", url: "https://god.thway.uk/elohim-god.html" },
+    { name: "Timeline", url: "https://god.thway.uk/the-law-timeline.html" },
+    { name: "Creation", url: "https://god.thway.uk/genesis-1-creation.html" },
+    { name: "Seed", url: "https://god.thway.uk/genesis-111-seed.html" },
+    { name: "Man", url: "https://god.thway.uk/genesis-126-man.html" },
+    { name: "Woman", url: "https://god.thway.uk/genesis-223-woman.html" },
+    { name: "Love", url: "https://god.thway.uk/genesis-224-love.html" },
+    { name: "Sin", url: "https://god.thway.uk/genesis-47-sin.html" },
+    { name: "I AM", url: "https://god.thway.uk/exodus-314-i-am.html" },
+    { name: "Salvation", url: "https://god.thway.uk/jesus-christ-salvation.html" },
+    { name: "Ask, Believe, Receive", url: "https://god.thway.uk/ask-believe-receive-catalyst-for-love.html" },
+    { name: "Teachers of the Law", url: "https://god.thway.uk/teachers-fathers-of-law-assumption.html" },
+    { name: "Paul: The Mystery", url: "https://god.thway.uk/the-mystery-secret-bible-revealed.html" },
+    { name: "Series & Collections", url: "https://god.thway.uk/series-links.html" }
   ];
 
   const jsonLd = {
@@ -77,12 +77,13 @@ document.addEventListener("DOMContentLoaded", async function() {
         }
       },
       {
-        "@type": "BreadcrumbList",
-        "itemListElement": breadcrumbItems.map(item => ({
-          "@type": "ListItem",
-          "position": item.position,
+        "@type": "SiteNavigationElement",
+        "name": "Main Navigation",
+        "url": "https://god.thway.uk",
+        "hasPart": mainNavItems.map(item => ({
+          "@type": "SiteNavigationElement",
           "name": item.name,
-          "item": item.item
+          "url": item.url
         }))
       }
     ]
