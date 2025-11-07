@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async function() {
   const currentUrl = window.location.href;
   const siteOrigin = window.location.origin;
 
-  // --- 1. DATA COLLECTION ---
+  // ... (1. DATA COLLECTION - UNCHANGED) ...
   const firstImg = document.querySelector('main img, body img');
   const imageUrl = firstImg ? new URL(firstImg.src, siteOrigin).href : siteOrigin + "/favicon.png";
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 
   const dateModified = await getLastModifiedFromSitemap();
 
-  // --- 2. BREADCRUMBLIST LOGIC ---
+  // ... (2. BREADCRUMBLIST LOGIC - UNCHANGED) ...
   let breadcrumbLd = null;
   const labelContainer = document.querySelector('p.label-links');
 
@@ -75,25 +75,22 @@ document.addEventListener("DOMContentLoaded", async function() {
     ]
   };
 
-  // WebSite Schema (for Sitelinks Search Box)
+  // WebSite Schema (CORRECTED for Google Custom Search Engine!)
   const webSiteLd = {
     "@type": "WebSite",
     "url": siteOrigin + "/",
     "potentialAction": {
       "@type": "SearchAction",
-      // IMPORTANT: Verify if your site uses '?q=' for search queries!
-      "target": siteOrigin + "/search?q={search_term_string}", 
+      // *** THE CRITICAL FIX ***
+      "target": "https://www.google.com/search?q=site:god.thway.uk+{search_term_string}", 
       "query-input": "required name=search_term_string"
     }
   };
   
   // --- 4. CONCEPT ENTITY DEFINITION ---
-  
-  // The specific doctrine/theory your content is ABOUT
   const lawOfAssumptionConcept = {
     "@type": ["CreativeWork", "Thing"], 
     "name": "Law of Assumption",
-    // Adding the specific context is optional but helps Google understand the entity
     "description": "Biblical doctrine regarding the power of imagination and consciousness, as taught by Neville Goddard."
   };
 
@@ -106,12 +103,8 @@ document.addEventListener("DOMContentLoaded", async function() {
     "headline": pageTitle,
     "image": imageUrl,
     "dateModified": dateModified, 
-    
-    // Explicitly link the article to the Law of Assumption concept
     "about": lawOfAssumptionConcept, 
-    
     "author": { "@type": "Person", "name": "HNNH", "url": siteOrigin + "/about_13.html" },
-    // Use the comprehensive Organization definition
     "publisher": organizationLd 
   };
 
