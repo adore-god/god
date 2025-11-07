@@ -3,11 +3,10 @@ document.addEventListener("DOMContentLoaded", async function() {
   const currentUrl = window.location.href;
   const siteOrigin = window.location.origin;
 
-  
+  // --- 1. DATA COLLECTION (UNCHANGED) ---
   const firstImg = document.querySelector('main img, body img');
   const imageUrl = firstImg ? new URL(firstImg.src, siteOrigin).href : siteOrigin + "/favicon.png";
 
- 
   async function getLastModifiedFromSitemap() {
     try {
       const sitemapUrl = siteOrigin + "/sitemap.xml";
@@ -33,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 
   const dateModified = await getLastModifiedFromSitemap();
 
-
+  // --- 2. BREADCRUMBLIST LOGIC (UNCHANGED) ---
   let breadcrumbLd = null;
   const labelContainer = document.querySelector('p.label-links');
 
@@ -48,56 +47,68 @@ document.addEventListener("DOMContentLoaded", async function() {
       breadcrumbLd = {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": siteOrigin + "/" 
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": topicName,
-            "item": topicAbsoluteUrl
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": pageTitle
-          }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": siteOrigin + "/" },
+          { "@type": "ListItem", "position": 2, "name": topicName, "item": topicAbsoluteUrl },
+          { "@type": "ListItem", "position": 3, "name": pageTitle }
         ]
       };
     }
   }
 
-  // --- 3. ASSEMBLE FINAL JSON-LD (@graph) ---
+  // --- 3. NEW SITE-WIDE SCHEMAS ---
+  
+  // Organization Schema (for E-A-T and entity definition)
+  const organizationLd = {
+    "@type": "Organization",
+    "name": "God - The Way",
+    "url": siteOrigin + "/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": siteOrigin + "/favicon.png"
+    },
+    "description": "Foundational biblical teaching and spiritual content focused on understanding the true nature of God and Man.",
+    "sameAs": [
+      siteOrigin + "/",
+      "https://www.tiktok.com/@god.thway.uk",
+      "https://hnnh.studio/",
+      "https://hnnh.studio/about.html" 
+    ]
+  };
 
-  const blogPostingLd = {
-    "@type": "BlogPosting",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": currentUrl 
-    },
-    "headline": pageTitle,
-    "image": imageUrl,
-    // ONLY providing the accurate dateModified field!
-    "dateModified": dateModified, 
-    "author": {
-      "@type": "Person",
-      "name": "HNNH",
-      "url": siteOrigin + "/about_13.html"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "God - The Way",
-      "logo": {
-        "@type": "ImageObject",
-        "url": siteOrigin + "/favicon.png"
-      }
+  // WebSite Schema (for Sitelinks Search Box)
+  const webSiteLd = {
+    "@type": "WebSite",
+    "url": siteOrigin + "/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      // NOTE: Update this target URL if your search query parameter is different (e.g., ?q=)
+      "target": siteOrigin + "/search?q={search_term_string}", 
+      "query-input": "required name=search_term_string"
     }
   };
 
-  const graph = [blogPostingLd];
+
+  // --- 4. ASSEMBLE FINAL JSON-LD (@graph) ---
+
+  const blogPostingLd = {
+    "@type": "BlogPosting",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": currentUrl },
+    "headline": pageTitle,
+    "image": imageUrl,
+    "dateModified": dateModified, 
+    "author": { "@type": "Person", "name": "HNNH", "url": siteOrigin + "/about_13.html" },
+    // Reference the Organization by its structure for clean code
+    "publisher": organizationLd 
+  };
+
+  // Start the graph with the Site-Wide entities
+  const graph = [
+    organizationLd,
+    webSiteLd,
+    blogPostingLd // The primary content of the page
+  ];
+  
+  // Conditionally add the Breadcrumbs
   if (breadcrumbLd) {
     graph.push(breadcrumbLd);
   }
@@ -107,6 +118,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     "@graph": graph
   };
   
+  // --- 5. INJECT JSON-LD (UNCHANGED) ---
   const script = document.createElement('script');
   script.type = 'application/ld+json';
   script.text = JSON.stringify(finalJsonLd, null, 2);
