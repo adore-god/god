@@ -3,13 +3,11 @@ document.addEventListener("DOMContentLoaded", async function() {
   const currentUrl = window.location.href;
   const siteOrigin = window.location.origin;
 
-  // --- 1. DATA COLLECTION ---
-
-  // Find first image inside main or body
+  
   const firstImg = document.querySelector('main img, body img');
   const imageUrl = firstImg ? new URL(firstImg.src, siteOrigin).href : siteOrigin + "/favicon.png";
 
-  // Function to get lastmod from sitemap.xml (Keeping your robust logic)
+ 
   async function getLastModifiedFromSitemap() {
     try {
       const sitemapUrl = siteOrigin + "/sitemap.xml";
@@ -22,7 +20,6 @@ document.addEventListener("DOMContentLoaded", async function() {
       for (let i = 0; i < urls.length; i++) {
         const loc = urls[i].getElementsByTagName("loc")[0]?.textContent;
         const lastmod = urls[i].getElementsByTagName("lastmod")[0]?.textContent;
-        // Compare loc after normalization (trailing slash, etc.)
         if (loc === currentUrl && lastmod) {
           return new Date(lastmod).toISOString();
         }
@@ -36,7 +33,6 @@ document.addEventListener("DOMContentLoaded", async function() {
 
   const dateModified = await getLastModifiedFromSitemap();
 
-  // --- 2. BREADCRUMBLIST LOGIC ---
 
   let breadcrumbLd = null;
   const labelContainer = document.querySelector('p.label-links');
@@ -45,10 +41,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     const firstTopicLink = labelContainer.querySelector('a');
 
     if (firstTopicLink) {
-      // Get the Topic Name (e.g., "Genesis 2:24 Series")
       const topicName = firstTopicLink.textContent.trim();
-      
-      // Get the Topic URL and ensure it's absolute
       const topicRelativeUrl = firstTopicLink.getAttribute('href');
       const topicAbsoluteUrl = new URL(topicRelativeUrl, siteOrigin).href;
 
@@ -70,7 +63,7 @@ document.addEventListener("DOMContentLoaded", async function() {
           {
             "@type": "ListItem",
             "position": 3,
-            "name": pageTitle // The current page title
+            "name": pageTitle
           }
         ]
       };
@@ -87,9 +80,8 @@ document.addEventListener("DOMContentLoaded", async function() {
     },
     "headline": pageTitle,
     "image": imageUrl,
-    "dateModified": dateModified,
-    // Using dateModified as a fallback for datePublished if a publish date isn't easily found
-    "datePublished": dateModified, 
+    // ONLY providing the accurate dateModified field!
+    "dateModified": dateModified, 
     "author": {
       "@type": "Person",
       "name": "HNNH",
@@ -105,7 +97,6 @@ document.addEventListener("DOMContentLoaded", async function() {
     }
   };
 
-  // Build the final @graph array, including BreadcrumbList only if it was successfully built
   const graph = [blogPostingLd];
   if (breadcrumbLd) {
     graph.push(breadcrumbLd);
@@ -116,14 +107,12 @@ document.addEventListener("DOMContentLoaded", async function() {
     "@graph": graph
   };
   
-  // --- 4. INJECT JSON-LD ---
-
-  // Inject the final combined JSON-LD into <head>
   const script = document.createElement('script');
   script.type = 'application/ld+json';
   script.text = JSON.stringify(finalJsonLd, null, 2);
   document.head.appendChild(script);
 });
+
 
 
 
