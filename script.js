@@ -1,28 +1,33 @@
-// JSON-LD snippet for author and publisher
+// Inject JSON-LD for author, publisher, and headline
 (function() {
+    // Grab the page title as the headline
+    const pageTitle = document.title || "Default Headline";
+
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "Article",
+        "headline": pageTitle,
         "author": {
             "@type": "Person",
             "name": "HNNH",
             "url": "https://god.thway.uk/about_13.html"
         },
-  "publisher": {
-  "@type": "Organization",
-  "name": "God - The Way",
-  "logo": {
-  "@type": "ImageObject",
-  "url": "https://god.thway.uk/favicon.png"
+        "publisher": {
+            "@type": "Organization",
+            "name": "God - The Way",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://god.thway.uk/favicon.png"
             }
         }
     };
 
     const script = document.createElement('script');
     script.type = 'application/ld+json';
-    script.text = JSON.stringify(jsonLd, null, 2); // nicely formatted
+    script.text = JSON.stringify(jsonLd, null, 2); // formatted JSON-LD
     document.head.appendChild(script);
 })();
+
 
 
 
