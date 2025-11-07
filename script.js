@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", async function() {
           return new Date(lastmod).toISOString();
         }
       }
-      // fallback if no match
       return new Date().toISOString();
     } catch (e) {
       console.error("Error fetching sitemap lastmod:", e);
@@ -34,7 +33,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 
   const dateModified = await getLastModifiedFromSitemap();
 
-  // Use the names and URLs from your breadcrumb array
+  // Main navigation items
   const mainNavItems = [
     { name: "Home", url: "https://god.thway.uk" },
     { name: "Genesis Foundational Principles", url: "https://god.thway.uk/genesis-foundational-principles.html" },
@@ -54,6 +53,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     { name: "Series & Collections", url: "https://god.thway.uk/series-links.html" }
   ];
 
+  // Build JSON-LD
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -76,27 +76,21 @@ document.addEventListener("DOMContentLoaded", async function() {
           }
         }
       },
-      {
+      // Flatten SiteNavigationElement items
+      ...mainNavItems.map(item => ({
         "@type": "SiteNavigationElement",
-        "name": "Main Navigation",
-        "url": "https://god.thway.uk",
-        "hasPart": mainNavItems.map(item => ({
-          "@type": "SiteNavigationElement",
-          "name": item.name,
-          "url": item.url
-        }))
-      }
+        "name": item.name,
+        "url": item.url
+      }))
     ]
   };
 
+  // Inject JSON-LD into <head>
   const script = document.createElement('script');
   script.type = 'application/ld+json';
   script.text = JSON.stringify(jsonLd, null, 2);
   document.head.appendChild(script);
 });
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
