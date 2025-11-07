@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", async function() {
       "@type": "ImageObject",
       "url": siteOrigin + "/favicon.png"
     },
-    "description": "Foundational biblical teaching and spiritual content focused on understanding the true nature of God and Man.",
+    "description": "Foundational biblical teaching and spiritual content focused on understanding the true nature and relationship between God and Man.",
     "sameAs": [
       siteOrigin + "/",
       "https://www.tiktok.com/@god.thway.uk",
