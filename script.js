@@ -1,12 +1,16 @@
-// Inject JSON-LD for author, publisher, and headline
+// Inject JSON-LD for Article with headline, author, publisher, and first image
 (function() {
-    // Grab the page title as the headline
     const pageTitle = document.title || "Default Headline";
+
+    // Find the first <img> on the page
+    const firstImg = document.querySelector('main img, body img');
+    const imageUrl = firstImg ? firstImg.src : "https://god.thway.uk/images/favicon.png";
 
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": pageTitle,
+        "image": imageUrl,  // first image or default
         "author": {
             "@type": "Person",
             "name": "HNNH",
@@ -24,7 +28,7 @@
 
     const script = document.createElement('script');
     script.type = 'application/ld+json';
-    script.text = JSON.stringify(jsonLd, null, 2); // formatted JSON-LD
+    script.text = JSON.stringify(jsonLd, null, 2);
     document.head.appendChild(script);
 })();
 
