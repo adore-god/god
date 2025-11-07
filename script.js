@@ -1,73 +1,99 @@
-// Inject JSON-LD for Article + Breadcrumb after DOM is loaded
-document.addEventListener("DOMContentLoaded", function() {
-const pageTitle = document.title || "Default Headline";
+document.addEventListener("DOMContentLoaded", async function() {
+  const pageTitle = document.title || "Default Headline";
 
-// Grab last modified date from browser
-const dateModified = new Date(document.lastModified).toISOString();
+  // Find first image inside main or body
+  const firstImg = document.querySelector('main img, body img');
+  const imageUrl = firstImg ? firstImg.src : "https://god.thway.uk/favicon.png";
 
-// Find first image inside main or body
-const firstImg = document.querySelector('main img, body img');
-const imageUrl = firstImg ? firstImg.src : "https://god.thway.uk/favicon.png";
+  // Function to get lastmod from sitemap.xml
+  async function getLastModifiedFromSitemap() {
+    try {
+      const sitemapUrl = "https://god.thway.uk/sitemap.xml"; // update if needed
+      const response = await fetch(sitemapUrl);
+      const text = await response.text();
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(text, "application/xml");
+      
+      const urls = xmlDoc.getElementsByTagName("url");
+      const currentUrl = window.location.href;
 
-// Define breadcrumb items
-const breadcrumbItems = [
-{ position: 1, name: "Home", item: "https://god.thway.uk" },
-{ position: 2, name: "Genesis Foundational Principles", item: "https://god.thway.uk/genesis-foundational-principles.html" },
-{ position: 3, name: "God", item: "https://god.thway.uk/elohim-god.html" },
-{ position: 4, name: "Timeline", item: "https://god.thway.uk/the-law-timeline.html" },
-{ position: 5, name: "Creation", item: "https://god.thway.uk/genesis-1-creation.html" },
-{ position: 6, name: "Seed", item: "https://god.thway.uk/genesis-111-seed.html" },
-{ position: 7, name: "Man", item: "https://god.thway.uk/genesis-126-man.html" },
-{ position: 8, name: "Woman", item: "https://god.thway.uk/genesis-223-woman.html" },
-{ position: 9, name: "Love", item: "https://god.thway.uk/genesis-224-love.html" },
-{ position: 10, name: "Sin", item: "https://god.thway.uk/genesis-47-sin.html" },
-{ position: 11, name: "I AM", item: "https://god.thway.uk/exodus-314-i-am.html" },
-{ position: 12, name: "Salvation", item: "https://god.thway.uk/jesus-christ-salvation.html" },
-{ position: 13, name: "Ask, Believe, Receive", item: "https://god.thway.uk/ask-believe-receive-catalyst-for-love.html" },
-{ position: 14, name: "Teachers of the Law", item: "https://god.thway.uk/teachers-fathers-of-law-assumption.html" },
-{ position: 15, name: "Paul: The Mystery", item: "https://god.thway.uk/the-mystery-secret-bible-revealed.html" },
-{ position: 16, name: "Series & Collections", item: "https://god.thway.uk/series-links.html" }
-];
+      for (let i = 0; i < urls.length; i++) {
+        const loc = urls[i].getElementsByTagName("loc")[0]?.textContent;
+        const lastmod = urls[i].getElementsByTagName("lastmod")[0]?.textContent;
+        if (loc === currentUrl && lastmod) {
+          return new Date(lastmod).toISOString();
+        }
+      }
+      // fallback if no match
+      return new Date().toISOString();
+    } catch (e) {
+      console.error("Error fetching sitemap lastmod:", e);
+      return new Date().toISOString();
+    }
+  }
 
-const jsonLd = {
-"@context": "https://schema.org",
-"@graph": [
-{
-"@type": "Article",
-"headline": pageTitle,
-"image": imageUrl,
-"dateModified": dateModified,
-"author": {
-"@type": "Person",
-"name": "HNNH",
-"url": "https://god.thway.uk/about_13.html"
-},
-"publisher": {
-"@type": "Organization",
-"name": "God - The Way",
-"logo": {
-"@type": "ImageObject",
-"url": "https://god.thway.uk/favicon.png"
-}
-}
-},
-{
-"@type": "BreadcrumbList",
-"itemListElement": breadcrumbItems.map(item => ({
-"@type": "ListItem",
-"position": item.position,
-"name": item.name,
-"item": item.item
-}))
-}
-]
-};
+  const dateModified = await getLastModifiedFromSitemap();
 
-const script = document.createElement('script');
-script.type = 'application/ld+json';
-script.text = JSON.stringify(jsonLd, null, 2);
-document.head.appendChild(script);
+  // Define breadcrumb items
+  const breadcrumbItems = [
+    { position: 1, name: "Home", item: "https://god.thway.uk" },
+    { position: 2, name: "Genesis Foundational Principles", item: "https://god.thway.uk/genesis-foundational-principles.html" },
+    { position: 3, name: "God", item: "https://god.thway.uk/elohim-god.html" },
+    { position: 4, name: "Timeline", item: "https://god.thway.uk/the-law-timeline.html" },
+    { position: 5, name: "Creation", item: "https://god.thway.uk/genesis-1-creation.html" },
+    { position: 6, name: "Seed", item: "https://god.thway.uk/genesis-111-seed.html" },
+    { position: 7, name: "Man", item: "https://god.thway.uk/genesis-126-man.html" },
+    { position: 8, name: "Woman", item: "https://god.thway.uk/genesis-223-woman.html" },
+    { position: 9, name: "Love", item: "https://god.thway.uk/genesis-224-love.html" },
+    { position: 10, name: "Sin", item: "https://god.thway.uk/genesis-47-sin.html" },
+    { position: 11, name: "I AM", item: "https://god.thway.uk/exodus-314-i-am.html" },
+    { position: 12, name: "Salvation", item: "https://god.thway.uk/jesus-christ-salvation.html" },
+    { position: 13, name: "Ask, Believe, Receive", item: "https://god.thway.uk/ask-believe-receive-catalyst-for-love.html" },
+    { position: 14, name: "Teachers of the Law", item: "https://god.thway.uk/teachers-fathers-of-law-assumption.html" },
+    { position: 15, name: "Paul: The Mystery", item: "https://god.thway.uk/the-mystery-secret-bible-revealed.html" },
+    { position: 16, name: "Series & Collections", item: "https://god.thway.uk/series-links.html" }
+  ];
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": pageTitle,
+        "image": imageUrl,
+        "dateModified": dateModified,
+        "author": {
+          "@type": "Person",
+          "name": "HNNH",
+          "url": "https://god.thway.uk/about_13.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "God - The Way",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://god.thway.uk/favicon.png"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": breadcrumbItems.map(item => ({
+          "@type": "ListItem",
+          "position": item.position,
+          "name": item.name,
+          "item": item.item
+        }))
+      }
+    ]
+  };
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.text = JSON.stringify(jsonLd, null, 2);
+  document.head.appendChild(script);
 });
+
 
 
 
