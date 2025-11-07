@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     "name": "God - The Way", 
     "url": siteOrigin + "/", 
     "logo": { "@type": "ImageObject", "url": siteOrigin + "/favicon.png" },
-    "description": "Foundational biblical teaching and spiritual content focused on understanding the true nature relationship between God and Man given in Scripture.",
+    "description": "Foundational biblical teaching and spiritual content focused on understanding the nature and relationship between God and Man in Scripture.",
     "sameAs": [ siteOrigin + "/", "https://www.tiktok.com/@god.thway.uk", "https://hnnh.studio/", "https://hnnh.studio/about.html" ]
   };
 
