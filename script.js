@@ -1,3 +1,32 @@
+// JSON-LD snippet for author and publisher
+(function() {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "author": {
+            "@type": "Person",
+            "name": "HNNH",
+            "url": "https://god.thway.uk/about_13.html"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "God - The Way",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://god.thway.uk/favicon.png"
+            }
+        }
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(jsonLd, null, 2); // nicely formatted
+    document.head.appendChild(script);
+})();
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector(".share-button");
   const menu = document.getElementById("share-menu");
