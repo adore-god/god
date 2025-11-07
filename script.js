@@ -1,25 +1,28 @@
 document.addEventListener("DOMContentLoaded", async function() {
   const pageTitle = document.title || "Default Headline";
+  const currentUrl = window.location.href;
+  const siteOrigin = window.location.origin;
+
+  // --- 1. DATA COLLECTION ---
 
   // Find first image inside main or body
   const firstImg = document.querySelector('main img, body img');
-  const imageUrl = firstImg ? firstImg.src : "https://god.thway.uk/favicon.png";
+  const imageUrl = firstImg ? new URL(firstImg.src, siteOrigin).href : siteOrigin + "/favicon.png";
 
-  // Function to get lastmod from sitemap.xml
+  // Function to get lastmod from sitemap.xml (Keeping your robust logic)
   async function getLastModifiedFromSitemap() {
     try {
-      const sitemapUrl = "https://god.thway.uk/sitemap.xml";
+      const sitemapUrl = siteOrigin + "/sitemap.xml";
       const response = await fetch(sitemapUrl);
       const text = await response.text();
       const parser = new DOMParser();
       const xmlDoc = parser.parseFromString(text, "application/xml");
       
       const urls = xmlDoc.getElementsByTagName("url");
-      const currentUrl = window.location.href;
-
       for (let i = 0; i < urls.length; i++) {
         const loc = urls[i].getElementsByTagName("loc")[0]?.textContent;
         const lastmod = urls[i].getElementsByTagName("lastmod")[0]?.textContent;
+        // Compare loc after normalization (trailing slash, etc.)
         if (loc === currentUrl && lastmod) {
           return new Date(lastmod).toISOString();
         }
@@ -33,32 +36,92 @@ document.addEventListener("DOMContentLoaded", async function() {
 
   const dateModified = await getLastModifiedFromSitemap();
 
-  // Build JSON-LD (Now only contains BlogPosting entity)
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting", // Using the single entity structure
+  // --- 2. BREADCRUMBLIST LOGIC ---
+
+  let breadcrumbLd = null;
+  const labelContainer = document.querySelector('p.label-links');
+
+  if (labelContainer) {
+    const firstTopicLink = labelContainer.querySelector('a');
+
+    if (firstTopicLink) {
+      // Get the Topic Name (e.g., "Genesis 2:24 Series")
+      const topicName = firstTopicLink.textContent.trim();
+      
+      // Get the Topic URL and ensure it's absolute
+      const topicRelativeUrl = firstTopicLink.getAttribute('href');
+      const topicAbsoluteUrl = new URL(topicRelativeUrl, siteOrigin).href;
+
+      breadcrumbLd = {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": siteOrigin + "/" 
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": topicName,
+            "item": topicAbsoluteUrl
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": pageTitle // The current page title
+          }
+        ]
+      };
+    }
+  }
+
+  // --- 3. ASSEMBLE FINAL JSON-LD (@graph) ---
+
+  const blogPostingLd = {
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": currentUrl 
+    },
     "headline": pageTitle,
     "image": imageUrl,
     "dateModified": dateModified,
+    // Using dateModified as a fallback for datePublished if a publish date isn't easily found
+    "datePublished": dateModified, 
     "author": {
       "@type": "Person",
       "name": "HNNH",
-      "url": "https://god.thway.uk/about_13.html"
+      "url": siteOrigin + "/about_13.html"
     },
     "publisher": {
       "@type": "Organization",
       "name": "God - The Way",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://god.thway.uk/favicon.png"
+        "url": siteOrigin + "/favicon.png"
       }
     }
   };
 
-  // Inject JSON-LD into <head>
+  // Build the final @graph array, including BreadcrumbList only if it was successfully built
+  const graph = [blogPostingLd];
+  if (breadcrumbLd) {
+    graph.push(breadcrumbLd);
+  }
+
+  const finalJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": graph
+  };
+  
+  // --- 4. INJECT JSON-LD ---
+
+  // Inject the final combined JSON-LD into <head>
   const script = document.createElement('script');
   script.type = 'application/ld+json';
-  script.text = JSON.stringify(jsonLd, null, 2);
+  script.text = JSON.stringify(finalJsonLd, null, 2);
   document.head.appendChild(script);
 });
 
