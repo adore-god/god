@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Find first image inside main or body
     const firstImg = document.querySelector('main img, body img');
-    const imageUrl = firstImg ? firstImg.src : "https://god.thway.uk/images/default-image.webp";
+    const imageUrl = firstImg ? firstImg.src : "https://god.thway.uk/favicon.png";
 
     // Define breadcrumb items
     const breadcrumbItems = [
@@ -31,30 +31,30 @@ document.addEventListener("DOMContentLoaded", function() {
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": "Article",
-                "headline": pageTitle,
-                "image": imageUrl,
-                "author": {
-                    "@type": "Person",
-                    "name": "HNNH",
-                    "url": "https://god.thway.uk/about_13.html"
+"@type": "Article",
+"headline": pageTitle,
+"image": imageUrl,
+    "author": {
+    "@type": "Person",
+    "name": "HNNH",
+    "url": "https://god.thway.uk/about_13.html"
                 },
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "God - The Way",
-                    "logo": {
+     "publisher": {
+     "@type": "Organization",
+     "name": "God - The Way",
+     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://god.thway.uk/favicon.png"
+  "url": "https://god.thway.uk/favicon.png"
                     }
                 }
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": breadcrumbItems.map(item => ({
-                    "@type": "ListItem",
-                    "position": item.position,
-                    "name": item.name,
-                    "item": item.item
+"@type": "ListItem",
+"position": item.position,
+"name": item.name,
+"item": item.item
                 }))
             }
         ]
