@@ -53,14 +53,7 @@ img {
 /* =======================
    HEADER
    ======================= */
-.header {
-  text-align: center;
 
-}
-
-.header {
-	//margin-right: 15px;
-	}
 /* AMENDED: This rule now mirrors the general 'img' rule */
 header img {
   display: block;
