@@ -134,6 +134,7 @@ h4 {
 }
 
 .intro-smallcaps {
+  margin-top:1em;
   letter-spacing: 2.2px;
   font-size: 1.2em;
   font-variant: small-caps;
