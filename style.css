@@ -123,6 +123,57 @@ h4 {
    line-height: 1
 }
 
+
+/* =======================
+   INDEX
+   ======================= */
+
+.intro-center {
+  margin-top: 1vh;
+  text-align: center;
+}
+
+.intro-smallcaps {
+  letter-spacing: 2.2px;
+  font-size: 1.2em;
+  font-variant: small-caps;
+}
+
+.divider {
+  border-bottom: 1px solid #777;
+  width: 80%;
+  margin: 10px auto 20px;
+}
+
+.intro-links {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-weight: 900;
+  line-height: 1;
+  margin-top: 15px;
+}
+
+.nav-top {
+  height: 16px;
+  font-size: 1.105em;
+}
+
+.intro-text {
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.intro-paragraph {
+  text-align: left;
+}
+
+.foundational-verse {
+  font-variant: small-caps;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+
 /* =======================
    BREADCRUMB
    ======================= */
