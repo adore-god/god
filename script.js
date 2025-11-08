@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 
   // --- 1. DATA COLLECTION ---
   // ... (getImageUrl logic remains the same) ...
-  const firstImg = document.querySelector('main img, body img');
+  const firstImg = document.querySelector('main.content img');
   const imageUrl = firstImg ? new URL(firstImg.src, siteOrigin).href : siteOrigin + "/images/wp/god-theway-uk.webp";
 
   // Function to get lastmod from sitemap.xml (UNCHANGED)
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     "@type": "Organization", 
     "name": "God - The Way", 
     "url": siteOrigin + "/", 
-    "logo": { "@type": "ImageObject", "url": siteOrigin + "/favicon.png" },
+    "logo": { "@type": "ImageObject", "url": siteOrigin + "/images/wp/god-theway-uk.webp" },
     "description": "Foundational biblical teaching and spiritual content focused on understanding the nature and relationship between God and Man in Scripture.",
     "sameAs": [ siteOrigin + "/", "https://www.tiktok.com/@god.thway.uk", "https://hnnh.studio/", "https://hnnh.studio/about.html" ]
   };
