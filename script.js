@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", async function() {
   const siteOrigin = window.location.origin;
 
   // --- 1. DATA COLLECTION ---
-  // ... (getImageUrl logic remains the same) ...
   const firstImg = document.querySelector('main.content img');
   const imageUrl = firstImg ? new URL(firstImg.src, siteOrigin).href : siteOrigin + "/images/wp/god-theway-uk.webp";
 
@@ -35,19 +34,21 @@ document.addEventListener("DOMContentLoaded", async function() {
   const dateModified = await getLastModifiedFromSitemap();
 
   // --- NEW STEP: INJECT THE DATE INTO THE HEAD ---
-  // This step makes the true lastmod date available inside the HTML file itself
   const dateMeta = document.createElement('meta');
   dateMeta.setAttribute('name', 'content-last-modified');
   dateMeta.setAttribute('content', dateModified);
   document.head.appendChild(dateMeta);
   // --- END NEW STEP ---
   
-  // ... (2. BREADCRUMBLIST LOGIC - UNCHANGED) ...
+  // --- 2. BREADCRUMBLIST LOGIC - UPDATED FOR 4-LEVEL STRUCTURE ---
   let breadcrumbLd = null;
   const labelContainer = document.querySelector('p.label-links');
 
-  // ... (Logic to build breadcrumbLd remains the same) ...
-
+  // Define the fixed "Genesis Foundational Principles" link (Position 2)
+  const genesisName = "Genesis Foundational Principles";
+  const genesisUrl = siteOrigin + "/genesis-foundational-principles.html"; 
+  
+  // Check if the dynamic topic link exists (Position 3)
   if (labelContainer) {
     const firstTopicLink = labelContainer.querySelector('a');
 
@@ -56,18 +57,23 @@ document.addEventListener("DOMContentLoaded", async function() {
       const topicRelativeUrl = firstTopicLink.getAttribute('href');
       const topicAbsoluteUrl = new URL(topicRelativeUrl, siteOrigin).href;
 
+      // 4-LEVEL BREADCRUMB
       breadcrumbLd = {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": siteOrigin + "/" },
-          { "@type": "ListItem", "position": 2, "name": topicName, "item": topicAbsoluteUrl },
-          { "@type": "ListItem", "position": 3, "name": pageTitle }
+          { "@type": "ListItem", "position": 2, "name": genesisName, "item": genesisUrl }, // FIXED PARENT
+          { "@type": "ListItem", "position": 3, "name": topicName, "item": topicAbsoluteUrl }, // DYNAMIC TOPIC
+          { "@type": "ListItem", "position": 4, "name": pageTitle } // CURRENT PAGE
         ]
       };
     }
   }
+  // If no dynamic topic link is found, it will fall back to a 3-level list with the Genesis link (using the previous logic as a fallback might be safer, but for this specific page, we assume the dynamic link is present).
+  // I will keep the 4-level structure conditional on the existence of the dynamic link to match the original script's behavior.
 
-  // ... (3. SITE-WIDE SCHEMAS - UNCHANGED) ...
+
+  // --- 3. SITE-WIDE SCHEMAS - UNCHANGED ---
   
   const organizationLd = { 
     "@type": "Organization", 
@@ -95,14 +101,13 @@ document.addEventListener("DOMContentLoaded", async function() {
     "description": "Biblical doctrine regarding the power of imagination and consciousness, as taught by Neville Goddard."
   };
 
-  // *** UPDATED CREATIVE WORK: Generic Holy Bible source ***
   const holyBibleSource = {
       "@type": "CreativeWork",
-      "@id": siteOrigin + "/source/holy-bible", // REMOVED: -kjv
-      "name": "The Holy Bible", // CHANGED: Generic name
+      "@id": siteOrigin + "/source/holy-bible", 
+      "name": "The Holy Bible", 
       "author": { "@type": "Person", "name": "Various Prophets and Apostles" },
       "inLanguage": "en",
-      "description": "The foundational religious and spiritual text used as the primary source for all teaching on this site." // CHANGED: Generic description
+      "description": "The foundational religious and spiritual text used as the primary source for all teaching on this site."
   };
   // ------------------------------------------------------------------
 
@@ -115,7 +120,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     "image": imageUrl,
     "dateModified": dateModified, 
     "about": lawOfAssumptionConcept, 
-    "isBasedOn": { "@id": siteOrigin + "/source/holy-bible" }, // UPDATED: Link uses the generic ID
+    "isBasedOn": { "@id": siteOrigin + "/source/holy-bible" },
     "author": { "@type": "Person", "name": "HNNH", "url": siteOrigin + "/about_13.html" },
     "publisher": organizationLd 
   };
