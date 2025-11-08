@@ -164,8 +164,10 @@ width:100%;
 margin: 2em 0;
 }
 figure img {
+/* FIXED: Added mix-blend-mode to the more specific selector to ensure multiplication */
 border: 1px solid #3E2D18;
 border-radius:5px;
+mix-blend-mode: multiply; 
 }
 	
 small {
@@ -680,9 +682,9 @@ html[data-theme="light"] th {
     margin: 0 auto;
   }
   
+  /* FIXED: Removed conflicting right/top for hamburger on large screens */
   .hamburger {
-    top: 20px;
-    right: 20%;
+    /* Kept default fixed positioning from line 460 */
   }
 }
 
@@ -911,13 +913,14 @@ html[data-theme="light"] .content {
 }
 
 html[data-theme="light"] header img {
-   // filter: invert(0) brightness(1) contrast(1.1) !important;
+    filter: invert(0) brightness(1) contrast(1.1) !important;
 mix-blend-mode: multiply !important;
 }
 
 html[data-theme="light"] img {
     filter: invert(0) brightness(1) contrast(1.1) !important;
-mix-blend-mode: multiply !!important;
+    /* FIXED: Corrected the typo from !!important to !important */
+    mix-blend-mode: multiply !important; 
 }
 
 
@@ -1002,7 +1005,7 @@ html[data-theme="light"]   #theme-toggle {
 	display: inline;
 	background:transparent;
 	border:0;
-	color:#3E2D18;
+	color:#3E2D1D;
 	}
   
 html[data-theme="light"] #custom-search-results,
