@@ -50,12 +50,26 @@ img {
   mix-blend-mode: multiply;
 }
 
+
+
 /* =======================
    HEADER
    ======================= */
 .header {
   text-align: center;
-  padding: 35px 0 0 0px;
+
+}
+
+.header img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  opacity: 1;
+  padding: 30px 0 0 0;
+  filter: invert(1) brightness(0) contrast(0.9);
+ mix-blend-mode: multiply;
 }
 
 .header a {
@@ -702,10 +716,17 @@ html[data-theme="light"] th {
   .container, .content {
     color: #e0e0e0;
   }
+  
+  .header img {
+  filter: invert(1) brightness(1) contrast(0.9);
+ mix-blend-mode: normal;
+}
 
   img {
     filter: invert(0.9) brightness(1.1) contrast(1.1);
     mix-blend-mode: normal;
+    width:100%;
+    height: auto;
   }
 
   .red {
@@ -879,10 +900,16 @@ html[data-theme="light"] .content {
     color: #3E2D18 !important;
 }
 
+html[data-theme="light"] . header img {
+    filter: invert(0) brightness(1) contrast(1) !important;
+    mix-blend-mode: normal !important;
+}
+
 html[data-theme="light"] img {
     filter: invert(0) brightness(1) contrast(1) !important;
     mix-blend-mode: multiply;
 }
+
 
 html[data-theme="light"] .red {
     color: darkred !important;
