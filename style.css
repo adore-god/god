@@ -242,11 +242,12 @@ input[type="text"]:focus {
 }
 
 .footer {
-  margin: 2vh auto 30px;
+  margin: 4em auto 30px;
   text-align: center;
   max-width: 800px;
   width: 87%;
-  font-size: 0.8em
+  font-size: 0.8em; 
+  display: block;
 }
 
 a.redA {
