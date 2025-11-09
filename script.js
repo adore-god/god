@@ -3,7 +3,11 @@ document.addEventListener("DOMContentLoaded", async function() {
   const currentUrl = window.location.href;
   const siteOrigin = window.location.origin;
 
-  // --- 1. DATA COLLECTION ---
+  // Define the fixed "Genesis Foundational Principles" link and URL for easy comparison
+  const genesisName = "Genesis Foundational Principles";
+  const genesisUrl = siteOrigin + "/genesis-foundational-principles.html"; 
+  
+  // --- 1. DATA COLLECTION (UNCHANGED) ---
   const firstImg = document.querySelector('main.content img');
   const imageUrl = firstImg ? new URL(firstImg.src, siteOrigin).href : siteOrigin + "/images/wp/god-theway-uk.webp";
 
@@ -33,23 +37,31 @@ document.addEventListener("DOMContentLoaded", async function() {
 
   const dateModified = await getLastModifiedFromSitemap();
 
-  // --- NEW STEP: INJECT THE DATE INTO THE HEAD ---
+  // --- NEW STEP: INJECT THE DATE INTO THE HEAD (UNCHANGED) ---
   const dateMeta = document.createElement('meta');
   dateMeta.setAttribute('name', 'content-last-modified');
   dateMeta.setAttribute('content', dateModified);
   document.head.appendChild(dateMeta);
   // --- END NEW STEP ---
   
-  // --- 2. BREADCRUMBLIST LOGIC - UPDATED FOR 4-LEVEL STRUCTURE ---
+  // --- 2. BREADCRUMBLIST LOGIC - **UPDATED** ---
   let breadcrumbLd = null;
   const labelContainer = document.querySelector('p.label-links');
 
-  // Define the fixed "Genesis Foundational Principles" link (Position 2)
-  const genesisName = "Genesis Foundational Principles";
-  const genesisUrl = siteOrigin + "/genesis-foundational-principles.html"; 
-  
-  // Check if the dynamic topic link exists (Position 3)
-  if (labelContainer) {
+  // **NEW LOGIC START: Check if the current page IS the Genesis Foundational Principles page**
+  if (currentUrl === genesisUrl) {
+    // 2-LEVEL BREADCRUMB: Home -> Genesis Foundational Principles
+    breadcrumbLd = {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": siteOrigin + "/" },
+        { "@type": "ListItem", "position": 2, "name": genesisName } // Current page (no item URL needed)
+      ]
+    };
+  } else if (labelContainer) {
+  // **NEW LOGIC END: Continue with existing 4-level logic for child pages**
+  // This runs ONLY if the current page is NOT the main Genesis page.
+
     const firstTopicLink = labelContainer.querySelector('a');
 
     if (firstTopicLink) {
@@ -57,21 +69,19 @@ document.addEventListener("DOMContentLoaded", async function() {
       const topicRelativeUrl = firstTopicLink.getAttribute('href');
       const topicAbsoluteUrl = new URL(topicRelativeUrl, siteOrigin).href;
 
-      // 4-LEVEL BREADCRUMB
+      // 4-LEVEL BREADCRUMB: Home -> Genesis Parent -> Dynamic Topic -> Current Page
       breadcrumbLd = {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": siteOrigin + "/" },
-          { "@type": "ListItem", "position": 2, "name": genesisName, "item": genesisUrl }, // FIXED PARENT
-          { "@type": "ListItem", "position": 3, "name": topicName, "item": topicAbsoluteUrl }, // DYNAMIC TOPIC
-          { "@type": "ListItem", "position": 4, "name": pageTitle } // CURRENT PAGE
+          { "@type": "ListItem", "position": 2, "name": genesisName, "item": genesisUrl }, // Fixed Parent
+          { "@type": "ListItem", "position": 3, "name": topicName, "item": topicAbsoluteUrl }, // Dynamic Topic
+          { "@type": "ListItem", "position": 4, "name": pageTitle } // Current Page
         ]
       };
     }
   }
-  // If no dynamic topic link is found, it will fall back to a 3-level list with the Genesis link (using the previous logic as a fallback might be safer, but for this specific page, we assume the dynamic link is present).
-  // I will keep the 4-level structure conditional on the existence of the dynamic link to match the original script's behavior.
-
+  // --- END BREADCRUMBLIST LOGIC ---
 
   // --- 3. SITE-WIDE SCHEMAS - UNCHANGED ---
   
@@ -94,7 +104,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     }
   };
   
-  // --- 4. CONCEPT ENTITY DEFINITION ---
+  // --- 4. CONCEPT ENTITY DEFINITION - UNCHANGED ---
   const lawOfAssumptionConcept = {
     "@type": ["CreativeWork", "Thing"], 
     "name": "Law of Assumption",
@@ -111,7 +121,7 @@ document.addEventListener("DOMContentLoaded", async function() {
   };
   // ------------------------------------------------------------------
 
-  // --- 5. ASSEMBLE FINAL JSON-LD (@graph) ---
+  // --- 5. ASSEMBLE FINAL JSON-LD (@graph) - UNCHANGED ---
 
   const blogPostingLd = {
     "@type": "BlogPosting",
@@ -136,12 +146,13 @@ document.addEventListener("DOMContentLoaded", async function() {
     "@graph": graph
   };
   
-  // --- 6. INJECT JSON-LD ---
+  // --- 6. INJECT JSON-LD - UNCHANGED ---
   const script = document.createElement('script');
   script.type = 'application/ld+json';
   script.text = JSON.stringify(finalJsonLd, null, 2);
   document.head.appendChild(script);
 });
+
 
 
 
