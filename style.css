@@ -1129,7 +1129,7 @@ html[data-theme="light"] .share-menu button:hover {
      }
   .separator {
     text-align: center;
-    margin: 2em 0;
+    margin: 0em 0;
   }
 
   .separator img {
