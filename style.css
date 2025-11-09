@@ -502,7 +502,7 @@ table {
   top: 20px;
   right: 20px;
   display: none;
-  font-size: 20px; /* keeps the visual size */
+  font-size: 15px; /* keeps the visual size */
   cursor: pointer;
   padding: 15px;   /* increases clickable area */
   z-index: 2000;
@@ -774,15 +774,6 @@ html[data-theme="light"] th {
     color: #e0e0e0;
   }
   
-  /* REMOVED .header img specific rule here. It will now inherit from the general 'img' dark mode rule below. */
-  /* If you want the old header-specific filter back, uncomment the block below: */
-  /*
-  .header img {
-    filter: invert(1) brightness(1) contrast(0.9);
-    mix-blend-mode: normal;
-  }
-  */
-
  header img {
     //filter: invert(0.9) brightness(1.1) contrast(1.1);
     mix-blend-mode: normal;
@@ -1124,3 +1115,46 @@ html[data-theme="light"] .share-menu button:hover {
   color: #3E2D18;
   
 }
+
+
+  /* Genesis foundational styling */
+  .content-container {
+    max-width: 720px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  .read-more-link {
+     font-weight:bold;
+     text-transform:uppercase;
+     }
+  .separator {
+    text-align: center;
+    margin: 2em 0;
+  }
+
+  .separator img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  h3.def  {
+    font-weight: 600;
+    font-size: 1.25em;
+    margin-top: 4em;
+    margin-bottom: 0.4em;
+    border-bottom: 0.5px solid #444444;
+    padding-bottom: 0.2em;
+  }
+
+  p {
+    margin-bottom: 1.25em;
+    font-size: 1.05em;
+  }
+  .bible-quote {
+    font-style: italic;
+    margin-left: 1.5em;
+    border-left: 0.5px solid #444444;
+    padding-left: 1em;
+    margin-bottom: 1em;
+  }
