@@ -505,6 +505,7 @@ table {
   font-size: 20px;
   cursor: pointer;
   padding: 0;
+  z-index:2000;
 }
 
 .close-btn {
