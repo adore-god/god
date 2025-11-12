@@ -792,16 +792,13 @@ html[data-theme="light"] th {
   }
   
  header img {
-    //filter: invert(0.9) brightness(1.1) contrast(1.1);
-    mix-blend-mode: normal;
-  //  height: auto;
+    filter: invert(0.9) brightness(1.1) contrast(1.1);
+    mix-blend-mode: normal !!important;
   }
   
   img {
-    filter: invert(0.9) brightness(1.1) contrast(1.1);
-    mix-blend-mode: normal;
-   // width:100%;
-   // height: auto;
+    filter: invert(1) brightness(1.1) contrast(1.1);
+    mix-blend-mode: normal !important;
   }
 
   .red {
