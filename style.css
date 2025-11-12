@@ -83,6 +83,18 @@ header img {
 /* =======================
    HEADINGS
    ======================= */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
 h1, h2, h3, h4 {
 margin: 2em 0 1em;
   font-variant: small-caps;
