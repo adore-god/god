@@ -793,13 +793,17 @@ html[data-theme="light"] th {
   
  header img {
     filter: invert(0.9) brightness(1.1) contrast(1.1);
-    mix-blend-mode: normal !!important;
+    mix-blend-mode: normal;
   }
   
   img {
-    filter: invert(1) brightness(1.1) contrast(1.1);
-    mix-blend-mode: normal !important;
+    filter: invert(0.9) brightness(1.1) contrast(1.1);
+    mix-blend-mode: normal;
   }
+
+  figure img {
+    mix-blend-mode: normal; 
+}
 
   .red {
      color: #FF5964;
