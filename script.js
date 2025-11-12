@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector(".share-button");
   const menu = document.getElementById("share-menu");
