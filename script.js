@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const likeBtn = document.createElement('button');
     likeBtn.id = 'openLikeModal';
     likeBtn.className = 'like-btn';
-    likeBtn.textContent = '🖤';
+    likeBtn.textContent = '🧡';
 
     // Insert button before the .label-links container
     linkContainer.insertAdjacentElement('beforebegin', likeBtn);
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <iframe 
           src="https://docs.google.com/forms/d/e/1FAIpQLSfKjCBylt6GboFAnEPqZmfH3PmB3yEJqN87RTsBs2_WTxvfBw/viewform?embedded=true"
           width="100%" 
-          height="300" 
+          height="330" 
           style="border:none; overflow:hidden; border-radius:8px;"
           scrolling="yes"
           loading="lazy">
