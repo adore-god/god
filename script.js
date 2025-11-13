@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   // Find all .label-links containers
-  document.querySelectorAll('.label-links').forEach(linkContainer => {
+  document.querySelectorAll('.share-dropdown').forEach(linkContainer => {
 
     // Prevent adding multiple buttons/modals
     if (linkContainer.previousElementSibling && linkContainer.previousElementSibling.classList.contains('like-btn')) return;
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const likeBtn = document.createElement('button');
     likeBtn.id = 'openLikeModal';
     likeBtn.className = 'like-btn';
-    likeBtn.textContent = '🧡';
+    likeBtn.textContent = '💛';
 
     // Insert button before the .label-links container
     linkContainer.insertAdjacentElement('beforebegin', likeBtn);
