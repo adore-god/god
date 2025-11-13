@@ -847,7 +847,7 @@ html[data-theme="light"] th {
   
    .stand-out a, 
    .stand-out:visited {
-     color: #e0e0e0;
+     color: #e0e0e0 !important;
 	}
 	
 	.stand-out img {
