@@ -119,3 +119,61 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Find all .label-links containers
+  document.querySelectorAll('.label-links').forEach(linkContainer => {
+
+    // Prevent adding multiple buttons/modals
+    if (linkContainer.previousElementSibling && linkContainer.previousElementSibling.classList.contains('like-btn')) return;
+
+    // Create Like Button
+    const likeBtn = document.createElement('button');
+    likeBtn.id = 'openLikeModal';
+    likeBtn.className = 'like-btn';
+    likeBtn.textContent = '🖤';
+
+    // Insert button before the .label-links container
+    linkContainer.insertAdjacentElement('beforebegin', likeBtn);
+
+    // Create Modal Overlay
+    const modal = document.createElement('div');
+    modal.id = 'likeModal';
+    modal.className = 'modal';
+    modal.innerHTML = `
+      <div class="modal-content">
+        <span class="close-btn" id="closeLikeModal">&times;</span>
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfKjCBylt6GboFAnEPqZmfH3PmB3yEJqN87RTsBs2_WTxvfBw/viewform?embedded=true"
+          width="100%" 
+          height="300" 
+          style="border:none; overflow:hidden; border-radius:8px;"
+          scrolling="yes"
+          loading="lazy">
+        </iframe>
+      </div>
+    `;
+    linkContainer.insertAdjacentElement('beforebegin', modal);
+
+    // Grab references for event handlers
+    const openBtn = likeBtn;
+    const closeBtn = modal.querySelector('.close-btn');
+
+    openBtn.onclick = () => {
+      modal.style.display = 'block';
+    };
+
+    closeBtn.onclick = () => {
+      modal.style.display = 'none';
+    };
+
+    // Close modal if clicking outside content
+    window.onclick = (event) => {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    };
+  });
+});
