@@ -388,17 +388,35 @@ small {
 }
 
 .start-here {
+  font-weight: 500; 
+  font-size: 1em; 
+  padding: 12px 16px; 
   margin: 2em auto;
   text-align: left;
-  border-top: 2px double #000;
-  border-bottom: 2px double #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
   padding: 10px 0;
   width: 80%;
 }
 
 .start-here a {
   font-weight: 700;
+  text-transform: uppercase
 }
+
+.stand-out {
+padding: 12px 16px; 
+font-weight: 400; 
+font-size: 1em; 
+margin: 12px 0;	
+
+	}
+.stand-out a:link, 
+.stand-out:visited {
+font-weight: bold; 
+font-size: 1em; 
+color: #3E2D18;
+	}
 
 .separator {
   height: 5px;
@@ -823,10 +841,20 @@ html[data-theme="light"] th {
   }
 
   .start-here {
-    border-top: 2px double #888;
-    border-bottom: 2px double #888;
+    border-top: 2px solid #888;
+    border-bottom: 2px solid #888;
   }
-    
+  
+   .stand-out a, 
+   .stand-out:visited {
+     color: #e0e0e0;
+	}
+	
+	.stand-out img {
+    filter: invert(0) brightness(1.1) contrast(1.1);
+    mix-blend-mode: normal;
+  }
+	
   a, a b {
     color: #e0e0e0;
     text-decoration-color: rgb(245, 245, 245)
@@ -917,7 +945,8 @@ html[data-theme="light"] th {
     box-shadow: 0 0 8px rgba(144, 202, 249, 0.4);
   }
 
-  #results a, .latest-posts a {
+  #results a, 
+  .latest-posts a {
     color: #e0e0e0;
   }
   #theme-toggle {
