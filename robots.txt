@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://god.thway.uk/sitemap.xml
