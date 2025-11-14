@@ -703,10 +703,10 @@ table {
   border: 0.2px solid #666;
   border-radius: 0.05em;
   margin-top: 0.5em;
-  min-width: 180px;
+  min-width: 150px;
   z-index: 1000;
   font-family: Trirong;
-  padding:0.5em 0.2em;
+  padding:0em 0em;
   box-shadow: none;
 }
 
@@ -798,8 +798,8 @@ table, td, th {
     color: inherit !important;
     border: none !important;
     border-collapse: collapse !important;
-    filter: none !important;                  mix-blend-mode: normal !important;
-}
+    filter: none !important;
+    mix-blend-mode: normal !important;
 
 /* Make sure tables respect dark/light theme */
 @media (prefers-color-scheme: dark) {
