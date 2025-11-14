@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="modal-content">
         <span class="close-btn" id="closeLikeModal">&times;</span>
         <iframe 
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfKjCBylt6GboFAnEPqZmfH3PmB3yEJqN87RTsBs2_WTxvfBw/viewform?embedded=true"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfKjCBylt6GboFAnEPqZmfH3PmB3yEJqN87RTsBs2_WTxvfBw/viewform?usp=pp_url&entry.1015073811=Like"
           width="100%" 
           height="330" 
           style="border:none; overflow:hidden; border-radius:8px;"
