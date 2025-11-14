@@ -769,7 +769,7 @@ text-transform: uppercase
 .modal-content {
   background-color: #fff;
   margin: 15% auto; /* Center vertically & horizontally */
-  padding: 20px;
+  padding: 0;
   width: 90%;
   max-width: 400px;
   border-radius: 12px;

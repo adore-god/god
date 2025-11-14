@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const likeBtn = document.createElement('button');
     likeBtn.id = 'openLikeModal';
     likeBtn.className = 'like-btn';
-    likeBtn.textContent = '💛';
+    likeBtn.textContent = '';
 
     // Insert button before the .label-links container
     linkContainer.insertAdjacentElement('beforebegin', likeBtn);
