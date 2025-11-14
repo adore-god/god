@@ -692,6 +692,7 @@ table {
   border: none; 
   line-height: 1.4;
   letter-spacing: -0.07em;
+  text-transform: uppercase;
 }
 
 	
@@ -738,7 +739,7 @@ text-transform: uppercase
 .like-btn {
   background: none;
   cursor: pointer;
-  padding: 0em 0.8em 0 0;
+  padding: 0em 0.4em 0 0;
   color:#3E2D18;
   font-family: Trirong;
   font-size: 0.75em;
@@ -746,6 +747,7 @@ text-transform: uppercase
   border: none; 
   line-height: 1.4;
   letter-spacing: -0.07em;
+  text-transform: uppercase;
 }
 
 .like-btn:hover {
@@ -1012,7 +1014,7 @@ html[data-theme="light"] th {
 	color:#e0e0e0;
 	}
 
-.share-button {
+.share-button, .like-btn  {
   background: none;
   color:#e0e0e0;
   border: none
@@ -1187,10 +1189,9 @@ html[data-theme="light"] .gsc-cursor-chevron {
 	filter: none !important;
 	}
 
-html[data-theme="light"] .share-button {
+html[data-theme="light"] .share-button, html[data-theme="light"] .like-btn  {
   background: #f7ebdb;
   border: 0px solid #ccc;
-  font-size: 1rem;
   color:#3E2D18;
 }
 
