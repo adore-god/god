@@ -321,6 +321,10 @@ strong {
   font-style: normal;
 }
 
+.b7 {
+  font-weight: 700;
+	}
+
 /* Blockquotes */
 blockquote {
   font-weight:400;
