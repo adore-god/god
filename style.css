@@ -1263,3 +1263,28 @@ html[data-theme="light"] .share-menu button:hover {
     padding-left: 1em;
     margin-bottom: 1em;
   }
+
+.tiktok-follow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* left-align everything */
+    gap: 10px; /* space between icon and text */
+    margin: 20px 0;
+  }
+
+  .tiktok-follow .tiktok-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tiktok-follow .tiktok-text {
+    color: red;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+  }
+
+  
+  .tiktok-follow a:hover .tiktok-icon {
+    opacity: 0.8;
+  }
