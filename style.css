@@ -196,6 +196,7 @@ h4 {
 text-decoration: underline dotted;
   text-decoration-thickness: 0.7px;
   font-weight: 400 ! important;
+  font-style: normal !important;
 	}
 .breadcrumb {
   font-size: 0.7em;
