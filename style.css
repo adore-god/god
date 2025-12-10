@@ -192,7 +192,11 @@ h4 {
 /* =======================
    BREADCRUMB
    ======================= */
-   
+.gfp {
+text-decoration: underline dotted;
+  text-decoration-thickness: 0.7px;
+  font-weight: 400 ! important;
+	}
 .breadcrumb {
   font-size: 0.7em;
   margin-bottom: 2em;

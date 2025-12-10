@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener('DOMContentLoaded', () => {
   const currentURL = window.location.href;
 
-  // Full URLs to exclude
   const excludeURLs = [
     'https://god.thway.uk/',
     'https://god.thway.uk/about_13.html',
@@ -64,29 +63,45 @@ document.addEventListener('DOMContentLoaded', () => {
     'https://god.thway.uk/search.html',
   ];
 
-  // Exit if current URL is in the exclude list
   if (excludeURLs.includes(currentURL)) return;
 
   const labelLinks = document.querySelectorAll('.label-links a');
   const mainContent = document.querySelector('main.content');
   if (!mainContent) return;
 
-  // Create breadcrumb container
   const breadcrumb = document.createElement('nav');
   breadcrumb.className = 'breadcrumb';
   breadcrumb.setAttribute('aria-label', 'Breadcrumb');
 
-  // Function to create a breadcrumb link (adds only "noTag" class)
   function createCrumb(href, text) {
     const a = document.createElement('a');
     a.href = href;
     a.textContent = text;
-    a.classList.add('noTag'); // Only add noTag
+    a.classList.add('noTag');
     return a;
   }
 
-  // Home link
+  // Home
   breadcrumb.appendChild(createCrumb('https://god.thway.uk', 'Home'));
+
+  // Separator
+  const sep0 = document.createElement('span');
+  sep0.className = 'breadcrumb-separator';
+  sep0.textContent = ' › ';
+  breadcrumb.appendChild(sep0);
+
+  // Genesis Foundational Principles — opens sidebar instead of linking
+  const gfp = document.createElement('span');
+  gfp.textContent = 'Genesis Foundational Principles';
+  gfp.classList.add('gfp');
+  gfp.style.cursor = 'pointer';
+
+  gfp.addEventListener('click', () => {
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    if (sidebarToggle) sidebarToggle.checked = true;
+  });
+
+  breadcrumb.appendChild(gfp);
 
   // Separator
   const sep1 = document.createElement('span');
@@ -94,14 +109,14 @@ document.addEventListener('DOMContentLoaded', () => {
   sep1.textContent = ' › ';
   breadcrumb.appendChild(sep1);
 
-  // Current page wrapped in a span with noTag class
+  // Current page
   const pageTitle = document.querySelector('h1')?.textContent || document.title;
   const currentPage = document.createElement('span');
   currentPage.textContent = pageTitle;
-  currentPage.classList.add('noTag'); // Only 'noTag' class
+  currentPage.classList.add('noTag');
   breadcrumb.appendChild(currentPage);
 
-  // Add series/label links if they exist
+  // Labels (if any)
   labelLinks.forEach(link => {
     const sep = document.createElement('span');
     sep.className = 'breadcrumb-separator';
@@ -112,10 +127,11 @@ document.addEventListener('DOMContentLoaded', () => {
     breadcrumb.appendChild(crumb);
   });
 
-  // Insert at the top of main content
+  // Insert breadcrumb
   mainContent.insertBefore(breadcrumb, mainContent.firstChild);
 });
 
+ 
 
 
 
