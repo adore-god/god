@@ -112,7 +112,7 @@ h1 a, h2 a, h3 a, h4 a {
 h1 {
 	margin: 1em 0 1em;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2em;
   border-top: 1px solid #3E2D18;
   border-bottom: 1px solid #3E2D18;
   padding: 22px 1em;
@@ -120,7 +120,7 @@ h1 {
 
 h3 {
   text-align: left;
-  font-size: 1.4em;
+  font-size: 1.6em;
   padding:0;
   margin: 45px 0 5px
 }
@@ -130,7 +130,7 @@ h3 strong {
 h4 {
    font-style: normal;
    font-weight:500;
-   font-size: 1.2em;
+   font-size: 1.4em;
    margin: 50px 0 10px 0;
    padding:0;
    line-height: 1
