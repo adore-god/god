@@ -193,8 +193,8 @@ h4 {
    BREADCRUMB
    ======================= */
 .gfp {
-text-decoration: underline dotted;
-  text-decoration-thickness: 0.7px;
+text-decoration: underline solid;
+  text-decoration-thickness: 0.6px;
   font-weight: 400 ! important;
   font-style: normal !important;
 	}
@@ -203,8 +203,8 @@ text-decoration: underline dotted;
   margin-bottom: 2em;
 }
 .breadcrumb a {
-  text-decoration: underline dotted;
-  text-decoration-thickness: 0.7px;
+  text-decoration: underline solid;
+  text-decoration-thickness: 0.6px;
 }
 .breadcrumb a:hover {
   text-decoration: underline;
@@ -274,9 +274,9 @@ a.redA {
 a, a b {
   color: #3E2D18;
   font-weight: 400;
-  text-decoration: underline dotted;
+  text-decoration: underline solid;
   text-decoration-color: rgba(0, 0, 0, 1.7);
-  text-decoration-thickness: 0.7px;
+  text-decoration-thickness: 0.6px;
   font-style: normal !important;
 }
 
