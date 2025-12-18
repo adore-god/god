@@ -533,6 +533,34 @@ table {
   border-radius: 2px;
 }
 
+
+
+.sidebar-callout {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #b22222; /* darker red accent */
+  background: rgba(178, 34, 34, 0.05); /* very light red tint */
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.sidebar-callout strong {
+  font-weight: 600;
+  color: #b22222; /* subtle matching red for emphasis */
+}
+
+.sidebar-callout a {
+  margin-left: 0.4em;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #b22222; /* link stands out in same red */
+}
+
+.sidebar-callout a:hover {
+  opacity: 0.85;
+}
+
+
 /* =======================
    NAV + HAMBURGER
    ======================= */

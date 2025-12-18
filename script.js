@@ -44,6 +44,18 @@ document.addEventListener("DOMContentLoaded", () => {
       menu.style.display = "none";
     }
   });
+  
+    // Open sidebar from inline links
+  document.querySelectorAll('.open-sidebar').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation(); // 🔑 THIS is the missing piece
+      const sidebarToggle = document.getElementById('sidebar-toggle');
+      if (sidebarToggle) sidebarToggle.checked = true;
+    });
+  });
+  
+  
 });
 
 
