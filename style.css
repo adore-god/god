@@ -101,7 +101,7 @@ header img {
 
 h1, h2, h3, h4 {
 margin: 2em 0 1em;
-  font-variant: small-caps;
+  text-transform: uppercase;
   font-weight: 400;
   text-align: left;
   line-height: 1;
@@ -155,7 +155,7 @@ h4 {
   margin-top: 2em;
   letter-spacing: 2.2px;
   font-size: 1.2em;
-  font-variant: small-caps;
+  text-transform: uppercase;
 }
 
 .divider {
@@ -187,7 +187,7 @@ h4 {
 }
 
 .foundational-verse {
-  font-variant: small-caps;
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 1.2em;
 }
@@ -391,12 +391,12 @@ hr {
 
 small {
   font-size: 0.6em;
-  font-variant: small-caps;
+  text-transform: uppercase;
 }
 
 .more-link {
   font-size: 1.6em;
-  font-variant: small-caps;
+  text-transform: uppercase;
   font-weight: 700;
 }
 
@@ -486,7 +486,7 @@ ol, ul {
 
 .sidebar .nav li:nth-of-type(n+0):nth-of-type(-n+2),
 .sidebar .nav li:nth-child(16) {
-  font-variant: small-caps;
+  text-transform: uppercase;
   font-size: 1.3em;
 }
 
