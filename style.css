@@ -14,7 +14,7 @@
 
 body{
   font-family: 'Inter', serif;
-  font-size: 1em;
+  font-size: 100%;
   line-height: 1.5;
   color: #3E2D18;
   width: 100%;
@@ -603,7 +603,7 @@ table {
 
 #custom-search-input::placeholder {
   font-style: italic;
-  font-family: Trirong;
+  font-family: Inter;
   font-size: 12px;
 }
 
@@ -614,7 +614,7 @@ table {
   border: 0.7px solid #3E2D18;
   border-radius: 4px;
   cursor: pointer;
-  font-family: Trirong;
+  font-family: Inter;
   font-size: 14px;
 }
 
@@ -643,7 +643,7 @@ table {
 
 #searchBox::placeholder {
   font-style: italic;
-  font-family: Trirong;
+  font-family: Inter;
   font-size: 12px;
 }
 
@@ -676,7 +676,7 @@ table {
 #disqus_thread {
 	color:#111;
 	margin-top: 70px; 
-    font-family: Trirong !important
+    font-family: Inter !important
 	}
 	
 .gs-visibleUrl,
@@ -699,7 +699,7 @@ table {
   cursor: pointer;
   padding: 0em 0.4em 0 0;
   color:#3E2D18;
-  font-family: Trirong;
+  font-family: Inter;
   font-size: 0.75em;
   font-weight: 600;
   border: none; 
@@ -718,14 +718,14 @@ table {
   margin-top: 0.5em;
   min-width: 150px;
   z-index: 1000;
-  font-family: Trirong;
+  font-family: Inter;
   padding:0em 0em;
   box-shadow: none;
 }
 
 #share-copy {
 padding:20px 1em 0 1em;
-font-family: Trirong;
+font-family: Inter;
 text-transform: uppercase
 }
 	
@@ -754,7 +754,7 @@ text-transform: uppercase
   cursor: pointer;
   padding: 0em 0.4em 0 0;
   color:#3E2D18;
-  font-family: Trirong;
+  font-family: Inter;
   font-size: 0.75em;
   font-weight: 600;
   border: none; 
