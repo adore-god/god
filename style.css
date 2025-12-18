@@ -17,7 +17,7 @@ body{
   margin: 0 auto;
   letter-spacing: 0.01em;
   background: #f7ebdb;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -72,7 +72,7 @@ header img {
 
 .header a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 2em;
   text-transform: uppercase;
 }
@@ -98,7 +98,7 @@ header img {
 h1, h2, h3, h4 {
 margin: 2em 0 1em;
   font-variant: small-caps;
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
   line-height: 1;
   opacity:0.9
@@ -106,7 +106,7 @@ margin: 2em 0 1em;
 
 h1 a, h2 a, h3 a, h4 a {
   text-decoration: none !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
 }
 
 h1 {
@@ -129,7 +129,7 @@ h3 strong {
 }
 h4 {
    font-style: normal;
-   font-weight:400;
+   font-weight:500;
    font-size: 1.2em;
    margin: 50px 0 10px 0;
    padding:0;
@@ -184,7 +184,7 @@ h4 {
 
 .foundational-verse {
   font-variant: small-caps;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.2em;
 }
 
@@ -195,7 +195,7 @@ h4 {
 .gfp {
 text-decoration: underline solid;
   text-decoration-thickness: 0.6px;
-  font-weight: 400 ! important;
+  font-weight: 500 ! important;
   font-style: normal !important;
 	}
 .breadcrumb {
@@ -215,7 +215,7 @@ text-decoration: underline solid;
 }
 .breadcrumb-current,
 .breadcrumb span {
-  font-weight: 600;
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -273,7 +273,7 @@ a.redA {
 	
 a, a b {
   color: #3E2D18;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: underline solid;
   text-decoration-color: rgba(0, 0, 0, 1.7);
   text-decoration-thickness: 0.6px;
@@ -303,36 +303,36 @@ blockquote a[href*="blueletterbible.org"]:hover {
 /* Inline emphasis */
 em, i {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 b {
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
 .five {
-  font-weight: 500 ;
+  font-weight: 600 ;
   }
   
 .bold {
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   font-size: 1.5em;
 }
 
 strong {
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
 .b7 {
-  font-weight: 700;
+  font-weight: 800;
 	}
 
 /* Blockquotes */
 blockquote {
-  font-weight:400;
+  font-weight:500;
   font-size: 1rem;
   margin: 1em auto 1.2em;
   text-align: left;
@@ -350,10 +350,10 @@ blockquote i,
 blockquote b,
 blockquote a {
   font-style: normal;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
 }
 blockquote.relaxed {
-  font-weight:400;
+  font-weight:500;
   font-size: 1rem;
   margin: 0em auto;
   text-align: left;
@@ -393,11 +393,11 @@ small {
 .more-link {
   font-size: 1.6em;
   font-variant: small-caps;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .start-here {
-  font-weight: 500; 
+  font-weight: 600; 
   font-size: 1em; 
   padding: 12px 16px; 
   margin: 2em auto;
