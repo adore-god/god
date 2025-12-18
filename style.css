@@ -236,12 +236,18 @@ p {
 figure {
 width:100%;
 margin: 2em 0;
+
 }
 figure img {
 border: 1px solid #3E2D18;
 border-radius:5px;
 mix-blend-mode: multiply; 
 }
+figure figcaption {
+  font-size: 0.7em; 
+  padding:0.6em 0;
+}
+
 	
 small {
   font-size: 10px;
