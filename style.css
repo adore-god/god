@@ -2,6 +2,10 @@
    BASE STYLES
    ======================= */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,15 +13,15 @@
 }
 
 body{
-  font-family: 'Trirong', serif;
-  font-size: 16px;
-  line-height: 1.4;
+  font-family: 'Inter', serif;
+  font-size: 1em;
+  line-height: 1.5;
   color: #3E2D18;
   width: 100%;
   margin: 0 auto;
   letter-spacing: 0.01em;
   background: #f7ebdb;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -72,8 +76,8 @@ header img {
 
 .header a {
   text-decoration: none;
-  font-weight: 600;
-  font-size: 2em;
+  font-weight: 500;
+  font-size: 1.8em;
   text-transform: uppercase;
 }
 .header h1 {
@@ -98,7 +102,7 @@ header img {
 h1, h2, h3, h4 {
 margin: 2em 0 1em;
   font-variant: small-caps;
-  font-weight: 500;
+  font-weight: 400;
   text-align: left;
   line-height: 1;
   opacity:0.9
@@ -106,13 +110,13 @@ margin: 2em 0 1em;
 
 h1 a, h2 a, h3 a, h4 a {
   text-decoration: none !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 
 h1 {
 	margin: 1em 0 1em;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.8em;
   border-top: 1px solid #3E2D18;
   border-bottom: 1px solid #3E2D18;
   padding: 22px 1em;
@@ -120,7 +124,7 @@ h1 {
 
 h3 {
   text-align: left;
-  font-size: 1.6em;
+  font-size: 1.4em;
   padding:0;
   margin: 45px 0 5px
 }
@@ -129,8 +133,8 @@ h3 strong {
 }
 h4 {
    font-style: normal;
-   font-weight:500;
-   font-size: 1.4em;
+   font-weight:400;
+   font-size: 1.3em;
    margin: 50px 0 10px 0;
    padding:0;
    line-height: 1
@@ -163,7 +167,7 @@ h4 {
 .intro-links {
   font-size: 1.2em;
   letter-spacing: 1px;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1;
   margin-top: 15px;
 }
@@ -184,7 +188,7 @@ h4 {
 
 .foundational-verse {
   font-variant: small-caps;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.2em;
 }
 
@@ -195,7 +199,7 @@ h4 {
 .gfp {
 text-decoration: underline solid;
   text-decoration-thickness: 0.6px;
-  font-weight: 500 ! important;
+  font-weight: 400 ! important;
   font-style: normal !important;
 	}
 .breadcrumb {
@@ -215,7 +219,7 @@ text-decoration: underline solid;
 }
 .breadcrumb-current,
 .breadcrumb span {
-  font-weight: 700;
+  font-weight: 600;
   font-style: italic;
 }
 
@@ -273,7 +277,7 @@ a.redA {
 	
 a, a b {
   color: #3E2D18;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: underline solid;
   text-decoration-color: rgba(0, 0, 0, 1.7);
   text-decoration-thickness: 0.6px;
@@ -316,24 +320,24 @@ b {
   }
   
 .bold {
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 1.5em;
 }
 
 strong {
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 
 .b7 {
-  font-weight: 800;
+  font-weight: 700;
 	}
 
 /* Blockquotes */
 blockquote {
-  font-weight:500;
-  font-size: 1rem;
+  font-weight:400;
+  font-size: 1.05rem;
   margin: 1em auto 1.2em;
   text-align: left;
   padding: 10px 5%;
@@ -350,10 +354,10 @@ blockquote i,
 blockquote b,
 blockquote a {
   font-style: normal;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 blockquote.relaxed {
-  font-weight:500;
+  font-weight:400;
   font-size: 1rem;
   margin: 0em auto;
   text-align: left;
@@ -393,7 +397,7 @@ small {
 .more-link {
   font-size: 1.6em;
   font-variant: small-caps;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .start-here {
