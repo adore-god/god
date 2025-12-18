@@ -65,9 +65,9 @@ header img {
   margin: 0 auto;
   text-align: center;
   /* START AMENDMENTS */
-  width: 50%;
+  width: 40%;
   max-width: 400px;
-  opacity: 0.8;
+  opacity: 0.9;
   mix-blend-mode: multiply;
   /* END AMENDMENTS */
   height: auto;
@@ -154,7 +154,7 @@ h4 {
   display: block;
   margin-top: 2em;
   letter-spacing: 2.2px;
-  font-size: 1.2em;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
@@ -188,8 +188,8 @@ h4 {
 
 .foundational-verse {
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.2em;
+  font-weight: 500;
+  font-size: 1em;
 }
 
 
@@ -331,7 +331,7 @@ strong {
 }
 
 .b7 {
-  font-weight: 700;
+  font-weight: 600;
 	}
 
 /* Blockquotes */
