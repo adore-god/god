@@ -505,7 +505,7 @@ ol, ul {
 }
 .sidebar h2 {
 margin: 1.3em 0 0 8px;
-padding:0;
+padding: 0.5em 0;
 font-size: 1.6em;
 border-bottom: 0.4px solid #777;
 	}
