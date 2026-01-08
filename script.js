@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Separator
   const sep0 = document.createElement('span');
   sep0.className = 'breadcrumb-separator';
-  sep0.textContent = ' › ';
+  sep0.textContent = ' | ';
   breadcrumb.appendChild(sep0);
 
   // Genesis Foundational Principles — opens sidebar instead of linking
@@ -118,21 +118,29 @@ document.addEventListener('DOMContentLoaded', () => {
   // Separator
   const sep1 = document.createElement('span');
   sep1.className = 'breadcrumb-separator';
-  sep1.textContent = ' › ';
+  sep1.textContent = ' | ';
   breadcrumb.appendChild(sep1);
 
   // Current page
   const pageTitle = document.querySelector('h1')?.textContent || document.title;
-  const currentPage = document.createElement('span');
-  currentPage.textContent = pageTitle;
-  currentPage.classList.add('noTag');
-  breadcrumb.appendChild(currentPage);
+
+const currentPage = document.createElement('span');
+currentPage.textContent = pageTitle;
+
+// add the breadcrumb-current class
+currentPage.classList.add('breadcrumb-current');
+
+// keep noTag if you still need it
+currentPage.classList.add('noTag');
+
+breadcrumb.appendChild(currentPage);
+
 
   // Labels (if any)
   labelLinks.forEach(link => {
     const sep = document.createElement('span');
     sep.className = 'breadcrumb-separator';
-    sep.textContent = ' › ';
+    sep.textContent = ' | ';
     breadcrumb.appendChild(sep);
 
     const crumb = createCrumb(link.href, link.textContent);
