@@ -131,6 +131,13 @@ h3 {
 h3 strong {
    font-style: normal
 }
+
+h3.teach {
+	font-style: italic;
+	font-size: 1em;
+	margin:0
+	}
+	
 h4 {
    font-style: normal;
    font-weight:400;
@@ -198,7 +205,7 @@ h4 {
 .gfp {
 text-decoration: underline solid;
   text-decoration-thickness: 0.6px;
-  font-weight: 400 ! important;
+  font-weight: 600 ! important;
   font-style: normal !important;
 	}
 .breadcrumb {
@@ -209,6 +216,7 @@ text-decoration: underline solid;
 .breadcrumb a {
   text-decoration: underline solid;
   text-decoration-thickness: 0.6px;
+font-weight: 600; 
 }
 
 .breadcrumb a:hover {
@@ -223,7 +231,7 @@ text-decoration: underline solid;
 }
 
 .breadcrumb-current {
-  font-weight: 600;
+  
   font-style: italic;
 }
 
