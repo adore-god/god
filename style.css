@@ -459,6 +459,15 @@ color: #3E2D18;
   height: 5px;
 }
 
+.teach-more {
+   text-transform: uppercase
+}
+.teach-more ul li a,
+.teach-more ul li {
+   text-transform: none;
+   margin: 4px 0;
+}
+	
 li {
   margin: 10px 20px;
 }
