@@ -26,6 +26,7 @@ body{
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  
 }
 
 .container {
@@ -33,7 +34,7 @@ body{
   width: 87%;
   margin: 0 auto;
   text-align: left;
-  display: block 
+  display: block;
 }
 
 .content {
@@ -398,16 +399,38 @@ blockquote.relaxed {
 }
 
 #codeSnippet {
-  	background: #121212;
-    color: #e0e0e0;
-    padding: 0;
-    margin: 0em auto;
+  background: #121212;
+  color: #e0e0e0;
+  padding: 0;
+  margin: 0em auto;
   }
   .code-container {
   background: #121212;
-    color: #e0e0e0;
+  color: #e0e0e0;
     
   }
+  
+  .release {
+  margin: 1em auto;
+  padding: 1em 2em;
+  max-width: 400px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.release:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+  
 .spec-undline {
 text-decoration: underline dotted !important;
   text-decoration-color: rgba(0, 0, 0, 1.6) !important;
@@ -954,8 +977,12 @@ html[data-theme="light"] th {
 @media (prefers-color-scheme: dark) {
 
   body {
-    background: #121212;
+    //background: #121212;
     color: #e0e0e0;
+    background: linear-gradient(135deg, #000000, #555555);
+
+
+  
   }
 
   .container, .content {

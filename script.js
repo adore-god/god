@@ -1,4 +1,20 @@
 
+document.addEventListener("DOMContentLoaded", function () {
+    const footer = document.querySelector(".start-here");
+
+    if (footer) {
+        footer.insertAdjacentHTML(
+            "afterend",
+            '<div class="release"><a href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html">New Bible Verse Translator</a></div>'
+        );
+    }
+});
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector(".share-button");
   const menu = document.getElementById("share-menu");
