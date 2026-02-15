@@ -413,17 +413,21 @@ blockquote.relaxed {
   .release {
   margin: 1em auto;
   padding: 1em 2em;
-  max-width: 400px;
+  max-width: 250px;
   text-align: center;
-  font-weight: bold;
-  font-size: 1.2em;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 1em;
   color: #ffffff;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+     background: linear-gradient(135deg, #111, #333);
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.release a:link {
+text-decoration: none;
+font-weight: 800;	
+	}
 .release:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
@@ -979,10 +983,7 @@ html[data-theme="light"] th {
   body {
     //background: #121212;
     color: #e0e0e0;
-    background: linear-gradient(135deg, #000000, #555555);
-
-
-  
+    background: linear-gradient(90deg, #000000, #111111);
   }
 
   .container, .content {
@@ -1049,7 +1050,7 @@ html[data-theme="light"] th {
   }
 
   .sidebar {
-    background: #1c1c1c;
+    background: linear-gradient(90deg, #000000, #111111);
     border-left:0.2px solid #111
   }
 
