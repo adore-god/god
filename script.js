@@ -39,11 +39,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Close if clicked outside
-  document.addEventListener("click", (e) => {
-    if (!button.contains(e.target) && !menu.contains(e.target)) {
-      menu.style.display = "none";
-    }
-  });
+ // Replace your current toggle logic with this:
+button.addEventListener("click", (e) => {
+  e.stopPropagation(); // Prevents the "click outside" logic from firing immediately
+  const isVisible = window.getComputedStyle(menu).display === "block";
+  menu.style.display = isVisible ? "none" : "block";
+});
+
   
     // Open sidebar from inline links
   document.querySelectorAll('.open-sidebar').forEach(link => {
