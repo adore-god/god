@@ -402,7 +402,8 @@ blockquote.relaxed {
     color: #e0e0e0;
   }
   .code-container {
-  	
+  background: #121212;
+    color: #e0e0e0;
   }
 .spec-undline {
 text-decoration: underline dotted !important;
