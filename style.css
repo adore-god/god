@@ -400,10 +400,13 @@ blockquote.relaxed {
 #codeSnippet {
   	background: #121212;
     color: #e0e0e0;
+    padding: 0;
+    margin: 0em auto;
   }
   .code-container {
   background: #121212;
     color: #e0e0e0;
+    
   }
 .spec-undline {
 text-decoration: underline dotted !important;
