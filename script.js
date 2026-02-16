@@ -5,10 +5,24 @@ document.addEventListener("DOMContentLoaded", function () {
     if (footer) {
         footer.insertAdjacentHTML(
             "afterend",
-            '<div class="release"><a href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html">New Bible Passage and Verse Translator</a></div>'
+            '<div class="release"><a href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html" id="translator-link">New Bible Passage and Verse Translator</a></div>'
         );
+        const link = document.getElementById("translator-link");
+
+        link.addEventListener("click", function () {
+            
+            if (typeof gtag === "function") {
+                gtag("event", "click", {
+                    event_category: "Button",
+                    event_label: "Bible Translator Link",
+                });
+            }
+
+          
+        });
     }
 });
+
 
 
 
