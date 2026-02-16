@@ -7,10 +7,16 @@ document.addEventListener("DOMContentLoaded", function () {
             "afterend",
             '<div class="release"><a href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html" id="translator-link">New Bible Passage and Verse Translator</a></div>'
         );
+
         const link = document.getElementById("translator-link");
 
-        link.addEventListener("click", function () {
-            
+        link.addEventListener("click", function (e) {
+            // Prevent immediate navigation
+            e.preventDefault();
+
+            const href = link.href;
+
+            // Fire GA4 event
             if (typeof gtag === "function") {
                 gtag("event", "click", {
                     event_category: "Button",
@@ -18,14 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
 
-          
+            setTimeout(function () {
+                window.location.href = href;
+            }, 150); // 150ms is usually enough
         });
     }
 });
-
-
-
-
 
 
 
