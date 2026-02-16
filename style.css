@@ -449,6 +449,7 @@ blockquote.relaxed {
   font-family: monospace; 
   overflow: scroll;
   margin-bottom: 5px;
+  color:#ffffff;
 }
 
 pre code {
@@ -1249,6 +1250,11 @@ html[data-theme="light"] body {
     
 }
 
+html[data-theme="light"] .code-container,
+{
+	color: #ffffff !important;
+	
+	}
 html[data-theme="light"] .container,
 html[data-theme="light"] .content {
     color: #3E2D18 !important;
