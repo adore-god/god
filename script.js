@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (footer) {
         footer.insertAdjacentHTML(
             "afterend",
-            '<div class="release"><a href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html">New Bible Verse Translator</a></div>'
+            '<div class="release"><a href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html">New Bible Passage and Verse Translator</a></div>'
         );
     }
 });
