@@ -330,6 +330,29 @@ em, i {
   font-weight: 500;
 }
 
+.center-block {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.large-bold-em {
+  font-size: 1.2em;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.medium-bold-em {
+  font-weight: 600;
+}
+
+.arrow {
+  display: block;
+  margin: 1em 0; /* spacing between sections */
+}
+
+
 b {
   font-weight: 500;
   font-style: normal;
