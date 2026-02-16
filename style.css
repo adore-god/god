@@ -262,21 +262,26 @@ figure figcaption {
   font-size: 0.7em; 
   padding:0.6em 0;
 }
-img.reddit {
-	width:70px; 
-    display:inline;
-    margin-top:0px;
-    float:left;
-    padding: 0 10px 0 0;
-    vertical-align: middle;
-    
-	}
-	
-#redditBox {
+#redditContainer {
     font-size: 0.8em;
     margin: 60px 0;
-    width:90%;
-	}
+    display: flex;         
+    align-items: center;      
+    gap: 10px;                
+    flex-wrap: wrap;          
+}
+
+img.reddit {
+    width: 70px;
+    height: auto;
+    flex-shrink: 0;           
+}
+
+#redditBox {
+    font-size: 0.8em;
+    flex: 1;                  
+    min-width: 0;             
+}
 	
 small {
   font-size: 10px;
