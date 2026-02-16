@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (typeof gtag === "function") {
                 gtag("event", "click", {
                     event_category: "Button",
-                    event_label: "Bible Translator Link",
+                    event_label: "Bible_Translator_Link",
                 });
             }
 
