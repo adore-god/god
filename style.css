@@ -439,19 +439,41 @@ blockquote.relaxed {
   font-style: normal !important;  
 }
 
-#codeSnippet {
-  background: #000000;
-  color: #e0e0e0;
+.code-container {
+ max-height:150px;
+  position: relative;
+  background-color: #000000;
+  border: 2px solid #ccc;
+  padding: 0px;
+  border-radius: 5px;
+  font-family: monospace; 
+  overflow: scroll;
+  margin-bottom: 5px;
+}
+
+pre code {
+  display: block;
   padding: 0;
-  margin: 0em auto;
-  display:block;
-  overflow: hidden;
-  }
-  .code-container {
-  background: #000000;
-  color: #e0e0e0;
-    
-  }
+  margin: 0;
+}
+
+
+
+.button2 {
+  position: absolute; /* Position the button in the corner */
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button2:hover {
+  background-color: #2980b9;
+}
   
   .release {
   margin: 1em auto;
