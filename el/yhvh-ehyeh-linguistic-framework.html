@@ -315,17 +315,23 @@ END OF KEY
 
 <script> 
 function copyToClipboard() {
-  // Get the text content of the code snippet element
   const codeText = document.getElementById("codeSnippet").textContent;
 
-  // Use the Clipboard API to write the text
   navigator.clipboard.writeText(codeText).then(() => {
-    // Optional: Provide user feedback
     alert("Code copied to clipboard!");
+
+    if (typeof gtag === "function") {
+      gtag("event", "click", {
+        event_category: "Button",
+        event_label: "Copy to Clipboard",
+      });
+    }
+
   }).catch(err => {
     console.error('Could not copy text: ', err);
   });
 }
+
 
 </script>
 
