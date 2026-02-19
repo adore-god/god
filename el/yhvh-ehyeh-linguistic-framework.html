@@ -349,7 +349,7 @@ function copyToClipboard() {
     alert("Code copied to clipboard!");
 
     if (typeof gtag === "function") {
-      gtag("event", "click", {
+      gtag("event", "copy_bible_key", {
         event_category: "Button",
         event_label: "copy_bible_key",
       });
