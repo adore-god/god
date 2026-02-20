@@ -232,7 +232,6 @@ font-weight: 600;
 }
 
 .breadcrumb-current {
-  
   font-style: italic;
 }
 
@@ -398,11 +397,14 @@ blockquote a[href*="blueletterbible.org"]:hover {
   color: #000 !important;
 }
 
-/* Inline emphasis */
 em, i {
   font-style: normal;
   font-weight: 500;
 }
+
+.italic {
+  font-style: italic;	
+	}
 
 .center-block {
   padding: 0;
