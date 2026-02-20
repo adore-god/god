@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Fire GA4 event
             if (typeof gtag === "function") {
-                gtag("event", "click", {
+                gtag("event", "Bible_Translator_Link", {
                     event_category: "Button",
                     event_label: "Bible_Translator_Link",
                 });

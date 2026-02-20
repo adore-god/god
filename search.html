@@ -6,10 +6,10 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <link rel="preconnect" href="https://www.blueletterbible.org" crossorigin>
 <link rel="dns-prefetch" href="https://www.blueletterbible.org">
-<link href="favicon.png" rel="icon" type="image/png">
-<link rel="manifest" href="manifest.json">
-<link href="style.css" rel="stylesheet">
-<link rel="stylesheet" href="style-fonts.css" media="print" onload="this.media='all'">
+<link href="/favicon.png" rel="icon" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link href="/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/style-fonts.css" media="print" onload="this.media='all'">
 <script src="https://www.blueletterbible.org/assets-v3/scripts/blbToolTip/BLB_ScriptTagger-min.js"></script>
 <script>
 BLB.Tagger.Translation = 'BBE';
@@ -63,7 +63,7 @@ function performSearch() {
   if (!query) return;
 
   if (typeof gtag === 'function') {
-    gtag('event', 'search', {
+    gtag('event', 'custom_search', {
       'search_term': query,
       'event_category': 'Site Search',
       'event_label': 'Custom Search Box'
