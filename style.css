@@ -271,6 +271,31 @@ figure figcaption {
     flex-wrap: wrap;          
 }
 
+#Verse-Link-Container {
+    font-size: 0.9em;
+    display: flex;         
+    align-items: center;      
+    gap: 10px;                
+    flex-wrap: wrap;
+margin: 1em auto;
+  padding: 0.5em 0.5em;
+  max-width: 250px;
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #ffffff;
+     background: linear-gradient(135deg, #0B2B45, #1C5991);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;          
+}
+img.key-icon {
+    width: 110px;
+    height: auto;
+    flex-shrink: 0; 
+	}
+
 img.reddit {
     width: 70px;
     height: auto;
@@ -282,7 +307,22 @@ img.reddit {
     flex: 1;                  
     min-width: 0;             
 }
-	
+
+#VerseLinkBox {
+    font-size: 0.8em;
+    flex: 1;                  
+    min-width: 0;             
+}
+#Verse-Link-Container a:link {
+text-decoration: none;
+font-weight: 800;	
+	}
+#Verse-Link-Container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
 small {
   font-size: 10px;
 }
@@ -475,31 +515,6 @@ pre code {
 .button2:hover {
   background-color: #2980b9;
 }
-  
-  .release {
-  margin: 1em auto;
-  padding: 1em 2em;
-  max-width: 250px;
-  text-align: center;
-  line-height: 1;
-  text-transform: uppercase;
-  font-size: 1em;
-  color: #ffffff;
-     background: linear-gradient(135deg, #111, #333);
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.release a:link {
-text-decoration: none;
-font-weight: 800;	
-	}
-.release:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-}
-
   
 .spec-undline {
 text-decoration: underline dotted !important;
@@ -1069,6 +1084,11 @@ html[data-theme="light"] th {
   }
   
   img.reddit {
+    filter: invert(0);
+    mix-blend-mode: normal;
+	}
+	
+	img.key-icon {
     filter: invert(0);
     mix-blend-mode: normal;
 	}
