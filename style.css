@@ -275,9 +275,9 @@ figure figcaption {
     font-size: 0.9em;
     display: flex;         
     align-items: center;      
-    gap: 10px;                
+    gap: 10px;    
     flex-wrap: wrap;
-margin: 1em auto;
+   margin: 1em auto;
   padding: 0.5em 0.5em;
   max-width: 250px;
   text-align: center;
@@ -290,6 +290,20 @@ margin: 1em auto;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;          
 }
+
+.lingua-divina {
+	width: 100%;
+	display:block;
+	}
+img.lingua-divina2 {
+    width: 70vw;
+  max-width: 70vw;
+  height: auto;          /* keeps natural height ratio */
+  display: block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+	}
+	
 img.key-icon {
     width: 110px;
     height: auto;
@@ -1088,7 +1102,7 @@ html[data-theme="light"] th {
     mix-blend-mode: normal;
 	}
 	
-	img.key-icon {
+	img.key-icon, .lingua-divina2 {
     filter: invert(0);
     mix-blend-mode: normal;
 	}
@@ -1272,7 +1286,8 @@ html[data-theme="light"] body {
     
 }
 
-html[data-theme="light"] .code-container,
+html[data-theme="light"] .code-container, 
+html[data-theme="light"] #VerseLinkBox a
 {
 	color: #ffffff !important;
 	
@@ -1286,13 +1301,15 @@ html[data-theme="light"] header img {
     filter: invert(0) brightness(1) contrast(1.1) !important;
 mix-blend-mode: multiply !important;
 }
+html[data-theme="light"] .key-icon {
+    filter: invert(0) brightness(1) contrast(1.1) !important;
+mix-blend-mode: normal !important;
+}
 
 html[data-theme="light"] img {
     filter: invert(0) brightness(1) contrast(1.1) !important;
-    /* FIXED: Corrected the typo from !!important to !important */
     mix-blend-mode: multiply !important; 
 }
-
 
 html[data-theme="light"] .red {
     color: darkred !important;
@@ -1435,9 +1452,6 @@ html[data-theme="light"] .share-menu button:hover {
   color: #3E2D18;
   
 }
-
-
-  /* Genesis foundational styling */
   .content-container {
     max-width: 720px;
     margin: 0 auto;
