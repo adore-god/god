@@ -296,9 +296,9 @@ figure figcaption {
 	display:block;
 	}
 img.lingua-divina2 {
-    width: 70vw;
-  max-width: 70vw;
-  height: auto;          /* keeps natural height ratio */
+    width:60vw;
+  max-width: 60vw;
+  height: auto;    /
   display: block;
   margin-left: 50%;
   transform: translateX(-50%);
