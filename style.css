@@ -20,7 +20,7 @@ body{
   width: 100%;
   margin: 0 auto;
   letter-spacing: 0.01em;
-  background: #f7ebdb;
+  background: #ffffff;
   font-weight: 400;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -99,28 +99,27 @@ header img {
   white-space: nowrap !important;
   border: 0 !important;
 }
-
-h1, h2, h3, h4 {
+h1 {
 margin: 2em 0 1em;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   font-weight: 400;
   text-align: left;
   opacity:0.9;
   line-height:1.1;
+  padding-left: 0.75rem;
+  padding-right: 1.25rem;
+}
+h2, h3, h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    margin-top: 1.8rem;
+    border-left: 4px solid #333;
+    padding-left: 0.75rem;
 }
 
 h1 a, h2 a, h3 a, h4 a {
   text-decoration: none !important;
   font-weight: 400 !important;
-}
-
-h1 {
-	margin: 1em 0 1em;
-  text-align: center;
-  font-size: 1.8em;
-  border-top: 1px solid #3E2D18;
-  border-bottom: 1px solid #3E2D18;
-  padding: 22px 1em;
 }
 
 h3 {
@@ -1139,12 +1138,6 @@ html[data-theme="light"] th {
     color: #f0f0f0;
   }
 
-  h1 {
-    border-top: 1px solid #888;
-    border-bottom: 1px solid #888;
-  }
-
-  
    .stand-out a, 
    .stand-out:visited {
      color: #e0e0e0 !important;
@@ -1298,7 +1291,7 @@ html[data-theme="light"] th {
   
   /* Override dark mode when data-theme="light" is set on <html> */
 html[data-theme="light"] body {
-    background: #f7ebdb !important;
+    background: #ffffff !important;
     color: #3E2D18 !important;
     
 }
@@ -1351,8 +1344,7 @@ html[data-theme="light"] h4 {
 }
 
 html[data-theme="light"] h1 {
-    border-top: 1px solid #3E2D18 !important;
-    border-bottom: 1px solid #3E2D18 !important;
+    
 }
 
 html[data-theme="light"] .start-here {
