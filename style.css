@@ -697,7 +697,7 @@ ol, ul {
   margin: 1.3em 0 0 8px;
   padding: 0.5em 0;
   font-size: 1.6em;
-  border: 0;
+  border: 0 !important;
 }
 
 ul.series-links li a {
