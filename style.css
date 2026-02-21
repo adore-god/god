@@ -100,12 +100,12 @@ header img {
   border: 0 !important;
 }
 h1 {
-margin: 2em 0 1em;
-  //text-transform: uppercase;
+margin: 2em 0 1em 1em;
   font-weight: 400;
   text-align: left;
   opacity:0.9;
   line-height:1.1;
+  border-left: 4px solid #333;
   padding-left: 0.75rem;
   padding-right: 1.25rem;
 }
@@ -641,7 +641,7 @@ ol, ul {
   right: -400px;
   width: 280px;
   min-height: 100vh;
-  background-color: #f7ebdb;
+  background-color: #ffffff;
   transition: right 0.3s ease;
   z-index: 2000;
   padding: 0 0 200px;
@@ -719,7 +719,7 @@ font-size: 0.85em;
 }
 
 table {
-    background: #f7ebdb !important;
+    background: #ffffff !important;
     color: #3E2D18 !important;
     border: 0px;
 }
@@ -963,7 +963,7 @@ text-transform: uppercase
   text-align: left;
   padding: 0.2em 1em;
   text-decoration: none;
-  background: #f7ebdb;
+  background: #ffffff;
   border: none;
   color: #3E2D18;
   cursor: pointer;
@@ -1353,7 +1353,7 @@ html[data-theme="light"] .start-here {
 }
 
 html[data-theme="light"] .sidebar {
-    background: #f7ebdb !important;
+    background: #ffffff !important;
     box-shadow: none !important;
     border-left:0.2px solid #3E2D18
 }
@@ -1383,7 +1383,7 @@ html[data-theme="light"] #custom-search-button {
 }
 
 html[data-theme="light"] #searchBox {
-    background: #f7ebdb !important;
+    background: #ffffff !important;
     color: #3E2D18 !important;
     border: 1px solid #3E2D18 !important;
 }
@@ -1420,7 +1420,7 @@ html[data-theme="light"] .gs-snippet,
 html[data-theme="light"] .gs-visibleUrl,
 html[data-theme="light"] .gcsc-find-more-on-google
  {
- 	background-color: #f7ebdb !important;
+ 	background-color: #ffffff !important;
  	border:0 !important;
      color: #3E2D18 !important;
  }
@@ -1435,13 +1435,13 @@ html[data-theme="light"] .gsc-cursor-chevron {
 	}
 
 html[data-theme="light"] .share-button, html[data-theme="light"] .like-btn  {
-  background: #f7ebdb;
+  background: #ffffff;
   border: 0px solid #ccc;
   color:#3E2D18;
 }
 
 html[data-theme="light"] .share-menu {
-  background: #f7ebdb;
+  background: #ffffff;
   color:#3E2D18;
   border: 0.2px solid #666;
   box-shadow: none;
@@ -1457,7 +1457,7 @@ html[data-theme="light"] .share-menu button {
 
 html[data-theme="light"] .share-menu a:hover,
 html[data-theme="light"] .share-menu button:hover {
-  background: #f7ebdb;
+  background: #ffffff;
   color: #3E2D18;
   
 }
