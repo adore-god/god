@@ -100,7 +100,7 @@ header img {
   border: 0 !important;
 }
 h1 {
-margin: 2em 0 1em 1em;
+margin: 2em 0 1em 0.5em;
   font-weight: 400;
   text-align: left;
   opacity:0.9;
