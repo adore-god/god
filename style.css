@@ -301,13 +301,13 @@ figure figcaption {
 img.lingua-divina2 {
   width:60vw;
   max-width: 60vw;
-  height: auto;    /
+  height: auto;    
   display: block;
   margin-left: 50%;
   transform: translateX(-50%);
   mix-blend-mode: normal;
 	}
-	
+  
 img.key-icon {
     width: 110px;
     height: auto;
