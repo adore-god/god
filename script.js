@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (excludeURLs.includes(currentURL)) return;
 
-  const labelLinks = document.querySelectorAll('.label-links a');
+  const labelLinks = Array.from(document.querySelectorAll('.label-links a'));
   const mainContent = document.querySelector('main.content');
   if (!mainContent) return;
 
@@ -132,26 +132,41 @@ document.addEventListener('DOMContentLoaded', () => {
   // Home
   breadcrumb.appendChild(createCrumb('https://god.thway.uk', 'Home'));
 
-  // Separator
+  // Reorder labelLinks so About The Author comes first
+  const authorIndex = labelLinks.findIndex(link => link.href.includes('about-author.html'));
+  if (authorIndex > -1) {
+    const [authorLink] = labelLinks.splice(authorIndex, 1);
+    labelLinks.unshift(authorLink); // move author link to start
+  }
+
+  // Add all label links
+  labelLinks.forEach(link => {
+    const sep = document.createElement('span');
+    sep.className = 'breadcrumb-separator';
+    sep.textContent = ' | ';
+    breadcrumb.appendChild(sep);
+
+    breadcrumb.appendChild(createCrumb(link.href, link.textContent));
+  });
+
+  // Separator before sidebar link
   const sep0 = document.createElement('span');
   sep0.className = 'breadcrumb-separator';
   sep0.textContent = ' | ';
   breadcrumb.appendChild(sep0);
 
-  // Genesis Foundational Principles — opens sidebar instead of linking
+  // Genesis Foundational Principles  opens sidebar instead of linking
   const gfp = document.createElement('span');
   gfp.textContent = 'Genesis Foundational Principles';
   gfp.classList.add('gfp');
   gfp.style.cursor = 'pointer';
-
   gfp.addEventListener('click', () => {
     const sidebarToggle = document.getElementById('sidebar-toggle');
     if (sidebarToggle) sidebarToggle.checked = true;
   });
-
   breadcrumb.appendChild(gfp);
 
-  // Separator
+  // Separator before current page
   const sep1 = document.createElement('span');
   sep1.className = 'breadcrumb-separator';
   sep1.textContent = ' | ';
@@ -159,34 +174,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Current page
   const pageTitle = document.querySelector('h1')?.textContent || document.title;
+  const currentPage = document.createElement('span');
+  currentPage.textContent = pageTitle;
+  currentPage.classList.add('breadcrumb-current', 'noTag');
+  breadcrumb.appendChild(currentPage);
 
-const currentPage = document.createElement('span');
-currentPage.textContent = pageTitle;
-
-// add the breadcrumb-current class
-currentPage.classList.add('breadcrumb-current');
-
-// keep noTag if you still need it
-currentPage.classList.add('noTag');
-
-breadcrumb.appendChild(currentPage);
-
-
-  // Labels (if any)
-  labelLinks.forEach(link => {
-    const sep = document.createElement('span');
-    sep.className = 'breadcrumb-separator';
-    sep.textContent = ' | ';
-    breadcrumb.appendChild(sep);
-
-    const crumb = createCrumb(link.href, link.textContent);
-    breadcrumb.appendChild(crumb);
-  });
-
-  // Insert breadcrumb
+  // Insert breadcrumb at top of main content
   mainContent.insertBefore(breadcrumb, mainContent.firstChild);
 });
-
  
 
 
