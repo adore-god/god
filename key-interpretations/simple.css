@@ -74,7 +74,11 @@ section:last-of-type p:last-of-type {
     margin-top: 1rem;
     font-weight: 500;
 }
-
+img.lingua-divina2 {
+        width: 40vw;
+        display:block;
+        margin: 0em auto 2em;
+}
 /* Responsive */
 @media (max-width: 600px) {
     body {
@@ -94,11 +98,7 @@ section:last-of-type p:last-of-type {
     }
 }
 
-    img.lingua-divina2 {
-        width: 60vw;
-        display:block;
-        margin: 1em auto;
-}
+    
 .footer {
   margin: 2em auto 30px;
   text-align: center;
