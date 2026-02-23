@@ -752,8 +752,8 @@ table {
 .sidebar-callout {
   margin: 1.5rem 0;
   padding: 1rem 1.25rem;
-  border-left: 4px solid #b22222; /* darker red accent */
-  background: rgba(178, 34, 34, 0.05); /* very light red tint */
+  border-left: 4px solid #999;
+  background: transparent;
   border-radius: 4px;
   font-size: 0.95rem;
 }
