@@ -26,7 +26,7 @@ body{
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  
+  font-optical-sizing: auto;
 }
 
 .container {
@@ -121,7 +121,6 @@ h2, h3, h4 {
     border-left: 4px solid #333;
     padding-left: 0.75rem;
 }
-
 h1 a, h2 a, h3 a, h4 a {
   text-decoration: none !important;
   font-weight: 500 !important;
@@ -425,6 +424,15 @@ em, i {
 .medium-bold-em {
   font-weight: 600;
 }
+.bold600 {
+  font-weight: 600;
+}
+.bold700 {
+  font-weight: 700;
+}
+.bold800 {
+  font-weight: 800;
+}
 
 .arrow {
   display: block;
@@ -499,7 +507,11 @@ blockquote.relaxed {
   text-decoration-thickness: 0.7px !important;
   font-style: normal !important;  
 }
-
+.normal-headings {
+  margin-left: 0 !important;
+  padding-left:0 !important;
+  border:0 !important 
+	}
 .code-container {
  max-height:150px;
   position: relative;
@@ -1464,68 +1476,4 @@ html[data-theme="light"] .share-menu button:hover {
   color: #3E2D18;
   
 }
-  .content-container {
-    max-width: 720px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-  .read-more-link {
-     font-weight:bold;
-     text-transform:uppercase;
-     }
-  .separator {
-    text-align: center;
-    margin: 0em 0;
-  }
-
-  .separator img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  h2.def  {
-    font-weight: 600;
-    font-size: 1.25em;
-    margin-top: 4em;
-    margin-bottom: 0.4em;
-    border-bottom: 0.5px solid #444444;
-    padding-bottom: 0.2em;
-  }
-
-  p {
-    margin-bottom: 1.25em;
-    font-size: 1.05em;
-  }
-  .bible-quote {
-    font-style: italic;
-    margin-left: 1.5em;
-    border-left: 0.5px solid #444444;
-    padding-left: 1em;
-    margin-bottom: 1em;
-  }
-
-.tiktok-follow {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* left-align everything */
-    gap: 10px; /* space between icon and text */
-    margin: 20px 0;
-  }
-
-  .tiktok-follow .tiktok-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .tiktok-follow .tiktok-text {
-    color: red;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    font-size: 1.1rem;
-  }
-
   
-  .tiktok-follow a:hover .tiktok-icon {
-    opacity: 0.8;
-  }
