@@ -1368,7 +1368,7 @@ html[data-theme="light"] body {
 }
 
 html[data-theme="light"] .code-container, 
-html[data-theme="light"] #VerseLinkBox a
+html[data-theme="light"] #VerseLinkBox a:link
 {
 	color: #ffffff !important;
 	
@@ -1410,10 +1410,6 @@ html[data-theme="light"] h3,
 html[data-theme="light"] h4 {
     border-left: 4px solid #333;
     color: #3E2D18 !important;
-}
-
-html[data-theme="light"] h1 {
-    
 }
 
 html[data-theme="light"] .start-here {
