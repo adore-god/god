@@ -1220,6 +1220,10 @@ html[data-theme="light"] th {
     text-decoration-color: rgb(245, 245, 245)
   }
   
+  #VerseLinkBox a {
+  	color: #ffffff;
+  }
+  
 .aforce {
 	text-decoration-color: rgb(245, 245, 245) !important;
 	}
