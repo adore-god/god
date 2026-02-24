@@ -1410,10 +1410,14 @@ html[data-theme="light"] header img {
 mix-blend-mode: multiply !important;
 }
 
-
 html[data-theme="light"] img {
     filter: invert(0) brightness(1) contrast(1.1) !important;
     mix-blend-mode: multiply !important; 
+}
+
+html[data-theme="light"] .key-icon {
+    filter: invert(0);!important;
+    mix-blend-mode: normal !important; 
 }
 
 html[data-theme="light"] .red {
