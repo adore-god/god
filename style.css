@@ -296,6 +296,7 @@ figure figcaption {
 	display:block;
 	}
 img.lingua-divina2 {
+  opacity: 1;
   width:60vw;
   max-width: 60vw;
   height: auto;    
@@ -310,12 +311,14 @@ img.key-icon {
     height: auto;
     flex-shrink: 0; 
     mix-blend-mode: normal;
+    opacity: 1;
 	}
 
 img.reddit {
     width: 70px;
     height: auto;
-    flex-shrink: 0;           
+    flex-shrink: 0; 
+    opacity: 1;          
 }
 
 #redditBox {
@@ -1379,6 +1382,19 @@ html[data-theme="light"] body {
     
 }
 
+html[data-theme="light"] #VerseLinkBox a,
+html[data-theme="light"] #VerseLinkBox a:link,
+html[data-theme="light"] #VerseLinkBox a:visited {
+color:#fff !important;
+	}
+	
+html[data-theme="light"] #Verse-Link-Container a,	
+html[data-theme="light"] #Verse-Link-Container a:link,
+html[data-theme="light"] #Verse-Link-Container a:visited {
+color:#fff !important;	
+	}
+	
+	
 html[data-theme="light"] .code-container
 {
 	color: #ffffff !important;
