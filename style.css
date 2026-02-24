@@ -329,11 +329,17 @@ img.reddit {
     flex: 1;                  
     min-width: 0;          
 }
+
+#VerseLinkBox a:link,
+#VerseLinkBox a:visited {
+color:#fff !important;
+	}
 	
-#Verse-Link-Container a:link {
+#Verse-Link-Container a:link,
+#Verse-Link-Container a:visited {
 text-decoration: none;
 font-weight: 800;
-color:#fff;	
+color:#fff !important;	
 	}
 #Verse-Link-Container:hover {
   transform: translateY(-3px);
@@ -1135,9 +1141,6 @@ html[data-theme="light"] th {
     margin: 0 auto;
   }
   
-  /* FIXED: Removed conflicting right/top for hamburger on large screens */
-  .hamburger {
-    /* Kept default fixed positioning from line 460 */
   }
 }
 
@@ -1219,10 +1222,20 @@ html[data-theme="light"] th {
     color: #e0e0e0;
     text-decoration-color: rgb(245, 245, 245)
   }
-  
-  #VerseLinkBox a {
-  	color: #ffffff;
-  }
+ 
+#VerseLinkBox a,
+#VerseLinkBox a:link,
+#VerseLinkBox a:visited {
+color:#fff !important;
+	}
+
+#Verse-Link-Container a,
+#Verse-Link-Container a:link,
+#Verse-Link-Container a:visited {
+text-decoration: none;
+font-weight: 800;
+color:#fff !important;	
+	}
   
 .aforce {
 	text-decoration-color: rgb(245, 245, 245) !important;
@@ -1360,19 +1373,17 @@ html[data-theme="light"] th {
   } /*Don't delete  */
   
   
-  /* Override dark mode when data-theme="light" is set on <html> */
 html[data-theme="light"] body {
     background: #ffffff !important;
     color: #3E2D18 !important;
     
 }
 
-html[data-theme="light"] .code-container, 
-html[data-theme="light"] #VerseLinkBox a:link
+html[data-theme="light"] .code-container
 {
 	color: #ffffff !important;
-	
 	}
+	
 html[data-theme="light"] .container,
 html[data-theme="light"] .content {
     color: #3E2D18 !important;
