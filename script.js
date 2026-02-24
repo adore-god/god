@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentURL = window.location.href;
 
   const excludeURLs = [
+  'https://www.thway.uk/',
     'https://god.thway.uk/',
     'https://god.thway.uk/about_13.html',
     'https://god.thway.uk/series-links.html',
