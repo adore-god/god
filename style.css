@@ -5,7 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
+ 
 * {
   margin: 0;
   padding: 0;
@@ -644,7 +644,61 @@ ol, ul {
   list-style-type: none;
 }
 
+.reddit-container-feed p {
+  display: none;
+}
 
+.reddit-container-feed h1 {
+  display: none;
+}
+  
+  .reddit-container-feed {
+    max-height: 200px;       
+    overflow-y: auto;     
+    padding: 15px;
+    border: 0px solid #ccc;
+    border-radius: 8px;
+    background: transparent;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .reddit-container-feed > div {
+    margin-bottom: 12px;
+  }
+
+  .reddit-container-feed > div:nth-child(-n+3) h3 {
+    font-size: 0.9em;
+    margin: 0 0 5px 0;
+    border:0;
+  }
+  
+  .reddit-container-feed h2,
+  .reddit-container-feed h3 {
+  border:0;
+  }
+
+  /* Remaining posts smaller */
+  .reddit-container-feed > div:nth-child(n+4) h3 {
+    font-size: 0.8em;
+    margin: 0 0 3px 0;
+    opacity: 0.8;
+  }
+
+  .reddit-container-feed a {
+    text-decoration: none;
+
+  }
+
+  .reddit-container-feed a:hover {
+    text-decoration: underline;
+  }
+
+  .reddit-container-feed p {
+    font-size: 0.8em;
+ 
+    margin: 0;
+  }
+  
 
 /* =======================
    SIDEBAR

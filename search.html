@@ -22,6 +22,8 @@ BLB.Tagger.NoSearchClassNames = 'noTag doNotTag sidebar';
 </script>
 <script src="script.js"></script>
 <script src="latest-arts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rss2json/4.0.0/rss2json.min.js"></script>
+<script src="script-rdit-feed.js"></script>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5M83Q78Z0"></script>
@@ -93,6 +95,10 @@ document.getElementById("custom-search-input").addEventListener("keypress", func
 <h4>Latest Updates</h4> 
 <div id="latest-posts"></div>
 </div> 
+
+<h2>NOW ON REDDIT:</h2>
+<div id="reddit-feed" class="reddit-container-feed">
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
