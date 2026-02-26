@@ -954,7 +954,7 @@ table {
 
 #results a {
   font-weight: 500;
-  color: #FF5964;
+  color: #1a0dab;
   text-decoration:none;
 }
 
@@ -1200,7 +1200,7 @@ html[data-theme="light"] th {
     mix-blend-mode: normal; 
 }
   .red {
-     color: #FF5964;
+     color: #1a0dab;
    }
    
   .header a {
@@ -1327,7 +1327,7 @@ color:#fff !important;
   }
 
   #results a {
-    color: #FF5964;
+    color: #1a0dab;
   }
   #theme-toggle {
     position: absolute;
@@ -1488,7 +1488,7 @@ html[data-theme="light"] #searchBox:focus {
 }
 
 html[data-theme="light"] #results a {
-    color: #FF5964 !important;
+    color: #1a0dab !important;
 }
 
 html[data-theme="light"]   #theme-toggle {
