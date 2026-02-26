@@ -954,7 +954,7 @@ table {
 
 #results a {
   font-weight: 500;
-  color: #000;
+  color: red;
 }
 
 .latest-posts a, .latest-posts a:visited {
@@ -1325,9 +1325,8 @@ color:#fff !important;
     box-shadow: 0 0 8px rgba(144, 202, 249, 0.4);
   }
 
-  #results a, 
-  .latest-posts a {
-    color: #e0e0e0;
+  #results a {
+    color: red;
   }
   #theme-toggle {
     position: absolute;
@@ -1487,9 +1486,8 @@ html[data-theme="light"] #searchBox:focus {
     box-shadow: 0 0 8px rgba(0,0,0,0.2) !important;
 }
 
-html[data-theme="light"] #results a,
-html[data-theme="light"] .latest-posts a {
-    color: #3E2D18 !important;
+html[data-theme="light"] #results a {
+    color: red !important;
 }
 
 html[data-theme="light"]   #theme-toggle {
