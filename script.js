@@ -101,11 +101,12 @@ button.addEventListener("click", (e) => {
 
 
 
+
 document.addEventListener('DOMContentLoaded', () => {
   const currentURL = window.location.href;
 
   const excludeURLs = [
-  'https://www.thway.uk/',
+    'https://www.thway.uk/',
     'https://god.thway.uk/',
     'https://god.thway.uk/about_13.html',
     'https://god.thway.uk/series-links.html',
@@ -130,33 +131,18 @@ document.addEventListener('DOMContentLoaded', () => {
     return a;
   }
 
-  // Home
-  breadcrumb.appendChild(createCrumb('https://god.thway.uk', 'Home'));
-
-  // Reorder labelLinks so About The Author comes first
-  const authorIndex = labelLinks.findIndex(link => link.href.includes('about-author.html'));
-  if (authorIndex > -1) {
-    const [authorLink] = labelLinks.splice(authorIndex, 1);
-    labelLinks.unshift(authorLink); // move author link to start
-  }
-
-  // Add all label links
-  labelLinks.forEach(link => {
+  function addSeparator() {
     const sep = document.createElement('span');
     sep.className = 'breadcrumb-separator';
     sep.textContent = ' | ';
     breadcrumb.appendChild(sep);
+  }
 
-    breadcrumb.appendChild(createCrumb(link.href, link.textContent));
-  });
+  // 1. Home
+  breadcrumb.appendChild(createCrumb('https://god.thway.uk', 'Home'));
+  addSeparator();
 
-  // Separator before sidebar link
-  const sep0 = document.createElement('span');
-  sep0.className = 'breadcrumb-separator';
-  sep0.textContent = ' | ';
-  breadcrumb.appendChild(sep0);
-
-  // Genesis Foundational Principles  opens sidebar instead of linking
+  // 2. Genesis Foundational Principles (sidebar trigger)
   const gfp = document.createElement('span');
   gfp.textContent = 'Genesis Foundational Principles';
   gfp.classList.add('gfp');
@@ -166,25 +152,40 @@ document.addEventListener('DOMContentLoaded', () => {
     if (sidebarToggle) sidebarToggle.checked = true;
   });
   breadcrumb.appendChild(gfp);
+  addSeparator();
 
-  // Separator before current page
-  const sep1 = document.createElement('span');
-  sep1.className = 'breadcrumb-separator';
-  sep1.textContent = ' | ';
-  breadcrumb.appendChild(sep1);
-
-  // Current page
+  // 3. Current Page (non-clickable)
   const pageTitle = document.querySelector('h1')?.textContent || document.title;
   const currentPage = document.createElement('span');
   currentPage.textContent = pageTitle;
   currentPage.classList.add('breadcrumb-current', 'noTag');
   breadcrumb.appendChild(currentPage);
 
+  // Separate About link from other links
+  const authorIndex = labelLinks.findIndex(link =>
+    link.href.includes('about-author.html')
+  );
+
+  let authorLink = null;
+  if (authorIndex > -1) {
+    [authorLink] = labelLinks.splice(authorIndex, 1);
+  }
+
+  // 4. Page Links (excluding About)
+  labelLinks.forEach(link => {
+    addSeparator();
+    breadcrumb.appendChild(createCrumb(link.href, link.textContent));
+  });
+
+  // 5. About The Author (always last)
+  if (authorLink) {
+    addSeparator();
+    breadcrumb.appendChild(createCrumb(authorLink.href, authorLink.textContent));
+  }
+
   // Insert breadcrumb at top of main content
   mainContent.insertBefore(breadcrumb, mainContent.firstChild);
 });
- 
-
 
 
 
