@@ -298,7 +298,7 @@ figure figcaption {
 img.lingua-divina2 {
   opacity: 1;
   width:60vw;
-  max-width: 60vw;
+  max-width: 200px;
   height: auto;    
   display: block;
   margin-left: 50%;
