@@ -315,8 +315,10 @@ blockquote.relaxed {
   width: 89%;
   letter-spacing: -0.02em;
 }
-.red {
-     color:darkred;
+.red,
+.red a,
+.red a:visited {
+     color:#b22222 !important;
    }
 .center {
   text-align: center;
