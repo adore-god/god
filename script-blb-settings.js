@@ -6,6 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     BLB.Tagger.HideTranslationAbbrev = true;
     BLB.Tagger.TargetNewWindow = true;
     BLB.Tagger.Style = 'line';
-    BLB.Tagger.NoSearchTagNames = 'h1,h2,h3,h4,pre,code';
-    BLB.Tagger.NoSearchClassNames = 'noTag doNotTag sidebar';
+    BLB.Tagger.NoSearchTagNames = 'h1,h2,h3,h4,pre,code,nav, header';
+    BLB.Tagger.NoSearchClassNames = 'noTag doNotTag sidebar start-here footer navig search label-links share-menu share-dropdown';
 });
