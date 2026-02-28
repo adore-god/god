@@ -1,103 +1,3 @@
-
-document.addEventListener("DOMContentLoaded", function () {
-    const footer = document.querySelector(".start-here");
-
-    if (footer) {
-        footer.insertAdjacentHTML(
-            "afterend",
-            '<div id="Verse-Link-Container"><img width="300" height="298" class="key-icon" alt="Bible Interpreter Key Icon" src="../images/icons/verse-link-icon.webp"><div id="VerseLinkBox"><p><a id="translator-link" href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html">NEW BIBLE PASSAGE AND VERSE TRANSLATOR</a>.</p></div></div>'
-        );
-
-        const link = document.getElementById("translator-link");
-
-        link.addEventListener("click", function (e) {
-            // Prevent immediate navigation
-            e.preventDefault();
-
-            const href = link.href;
-
-            // Fire GA4 event
-            if (typeof gtag === "function") {
-                gtag("event", "Bible_Translator_Link", {
-                    event_category: "Button",
-                    event_label: "Bible_Translator_Link",
-                });
-            }
-
-            setTimeout(function () {
-                window.location.href = href;
-            }, 150); // 150ms is usually enough
-        });
-    }
-});
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const button = document.querySelector(".share-button");
-  const menu = document.getElementById("share-menu");
-
-  if (!button || !menu) return; // Exit if the main button or menu is missing
-
-  const pageUrl = encodeURIComponent(window.location.href);
-  const pageTitle = encodeURIComponent(document.title);
-
-  // Assign share links safely
-  const twitter = document.getElementById("share-twitter");
-  if (twitter) {
-    twitter.href = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
-  }
-
-  const facebook = document.getElementById("share-facebook");
-  if (facebook) {
-    facebook.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
-  }
-
-  // Copy link safely
-  const copyButton = document.getElementById("share-copy");
-  if (copyButton) {
-    copyButton.addEventListener("click", async () => {
-      try {
-        await navigator.clipboard.writeText(window.location.href);
-        alert("Link copied to clipboard!");
-      } catch (err) {
-        console.error("Failed to copy:", err);
-      }
-      menu.style.display = "none";
-    });
-  }
-
-  // Toggle dropdown
-  button.addEventListener("click", () => {
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
-  });
-
-  // Close if clicked outside
- // Replace your current toggle logic with this:
-button.addEventListener("click", (e) => {
-  e.stopPropagation(); // Prevents the "click outside" logic from firing immediately
-  const isVisible = window.getComputedStyle(menu).display === "block";
-  menu.style.display = isVisible ? "none" : "block";
-});
-
-  
-    // Open sidebar from inline links
-  document.querySelectorAll('.open-sidebar').forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation(); // 🔑 THIS is the missing piece
-      const sidebarToggle = document.getElementById('sidebar-toggle');
-      if (sidebarToggle) sidebarToggle.checked = true;
-    });
-  });
-  
-  
-});
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
 
   let path = window.location.pathname.toLowerCase();
@@ -191,6 +91,71 @@ document.addEventListener('DOMContentLoaded', () => {
 }); 
 
  
+ 
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector(".share-button");
+  const menu = document.getElementById("share-menu");
+
+  if (!button || !menu) return; // Exit if the main button or menu is missing
+
+  const pageUrl = encodeURIComponent(window.location.href);
+  const pageTitle = encodeURIComponent(document.title);
+
+  // Assign share links safely
+  const twitter = document.getElementById("share-twitter");
+  if (twitter) {
+    twitter.href = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
+  }
+
+  const facebook = document.getElementById("share-facebook");
+  if (facebook) {
+    facebook.href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+  }
+
+  // Copy link safely
+  const copyButton = document.getElementById("share-copy");
+  if (copyButton) {
+    copyButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        alert("Link copied to clipboard!");
+      } catch (err) {
+        console.error("Failed to copy:", err);
+      }
+      menu.style.display = "none";
+    });
+  }
+
+  // Toggle dropdown
+  button.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  });
+
+  // Close if clicked outside
+ // Replace your current toggle logic with this:
+button.addEventListener("click", (e) => {
+  e.stopPropagation(); // Prevents the "click outside" logic from firing immediately
+  const isVisible = window.getComputedStyle(menu).display === "block";
+  menu.style.display = isVisible ? "none" : "block";
+});
+
+  
+    // Open sidebar from inline links
+  document.querySelectorAll('.open-sidebar').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation(); // 🔑 THIS is the missing piece
+      const sidebarToggle = document.getElementById('sidebar-toggle');
+      if (sidebarToggle) sidebarToggle.checked = true;
+    });
+  });
+  
+});
+
 
 
 
@@ -249,4 +214,39 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
   });
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const footer = document.querySelector(".start-here");
+
+    if (footer) {
+        footer.insertAdjacentHTML(
+            "afterend",
+            '<div id="Verse-Link-Container"><img width="300" height="298" class="key-icon" alt="Bible Interpreter Key Icon" src="../images/icons/verse-link-icon.webp"><div id="VerseLinkBox"><p><a id="translator-link" href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html">NEW BIBLE PASSAGE AND VERSE TRANSLATOR</a>.</p></div></div>'
+        );
+
+        const link = document.getElementById("translator-link");
+
+        link.addEventListener("click", function (e) {
+            // Prevent immediate navigation
+            e.preventDefault();
+
+            const href = link.href;
+
+            // Fire GA4 event
+            if (typeof gtag === "function") {
+                gtag("event", "Bible_Translator_Link", {
+                    event_category: "Button",
+                    event_label: "Bible_Translator_Link",
+                });
+            }
+
+            setTimeout(function () {
+                window.location.href = href;
+            }, 150); // 150ms is usually enough
+        });
+    }
 });
