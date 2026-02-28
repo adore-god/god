@@ -243,6 +243,56 @@ blockquote {
   z-index: 2000;
 }
 
+/* =======================
+   NAV + HAMBURGER
+   ======================= */
+.navig {
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 0 20px 200px 10px;
+}
+
+.hamburger {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 15px;   /* increases clickable area */
+  z-index: 2000;
+  /* optional: keep it visually centered */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.close-btn {
+  font-size: 24px;
+  cursor: pointer;
+  float: right;
+}
+
+#sidebar-toggle {
+  display: none;
+}
+
+#sidebar-toggle:checked ~ .container .sidebar {
+  right: 0;
+}
+
+#theme-toggle {
+	display: none;
+	background:transparent;
+	border:0;
+	color:#3E2D18;
+	font-size: 2em;
+	vertical-align: baseline;
+    padding: 0 0 0 10px ;
+    opacity:0.6;
+	}
+
 /* Desktop Width Constraint */
 @media (min-width: 900px) {
   body {
