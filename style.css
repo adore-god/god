@@ -8,23 +8,6 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'Inter', serif;
-  font-size: 100%;
-  line-height: 1.5;
-  color: #3E2D18;
-  width: 100%;
-  margin: 0 auto;
-  letter-spacing: 0.01em;
-  background: #ffffff;
-  font-weight: 400;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  font-optical-sizing: auto;
-}
-
 
 img {
   display: block;
