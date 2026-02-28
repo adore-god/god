@@ -1,0 +1,101 @@
+/* Critical CSS for LCP Optimization */
+:root {
+  --primary-text: #3E2D18;
+  --bg-color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text: #e0e0e0;
+    --bg-color: #000000;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', serif;
+  line-height: 1.5;
+  color: var(--primary-text);
+  background: var(--bg-color);
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Ensure the layout container is ready immediately */
+.container {
+  max-width: 800px;
+  width: 87%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Header & Logo - Critical for LCP as it's often the first visual element */
+header {
+  width: 100%;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  max-width: 100px;
+  height: auto;
+  padding-top: 30px;
+}
+
+/* Dark mode logo inversion to prevent "white flash" */
+@media (prefers-color-scheme: dark) {
+  header img {
+    filter: invert(1) brightness(1.3) contrast(1.23);
+  }
+}
+
+/* Main Title - Likely the LCP element if the logo is small */
+h1 {
+  margin: 2em 0 1em 0.5em;
+  font-weight: 600;
+  font-size: 2rem; /* Approximated based on 1.8em link size */
+  line-height: 1.1;
+  border-left: 4px solid #333;
+  padding-left: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  h1 { border-left-color: #999; }
+}
+
+/* Article Intro Styles */
+.content article p:first-of-type {
+  margin: 1.2em 0;
+}
+
+blockquote {
+  font-size: 1.05rem;
+  margin: 1em auto;
+  padding: 10px 5%;
+  width: 82%;
+  letter-spacing: -0.02em;
+}
+
+/* Hamburger remains visible but non-functional until JS/Main CSS loads */
+.hamburger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  padding: 15px;
+  font-size: 25px;
+  z-index: 2000;
+}
+
+/* Desktop Width Constraint */
+@media (min-width: 900px) {
+  body {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
