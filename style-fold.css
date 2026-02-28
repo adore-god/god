@@ -50,6 +50,23 @@ header img {
   padding: 30px 5px 0 0;
 }
 
+a.redA {
+  text-decoration-color: red;
+	}
+	
+a, a b {
+  color: #3E2D18;
+  font-weight: 500;
+  text-decoration: underline solid;
+  text-decoration-color: rgba(0, 0, 0, 1.7);
+  text-decoration-thickness: 0.6px;
+  font-style: normal !important;
+}
+
+a:hover {
+  text-decoration-style: solid;
+}
+
 .breadcrumb {
   font-size: 0.75em;
   margin-bottom: 2em;
