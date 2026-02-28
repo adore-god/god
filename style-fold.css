@@ -82,6 +82,11 @@ a:hover {
   min-height:50px;
 }
 
+p {
+  margin: 1.2em 0;
+  text-indent: 0;
+}
+
 .BLBST_a {
   white-space: normal !important; 
   display: inline !important; 
