@@ -126,26 +126,6 @@ figure figcaption {
     flex-wrap: wrap;          
 }
 
-#Verse-Link-Container {
-    font-size: 0.9em;
-    display: flex;         
-    align-items: center;      
-    gap: 10px;    
-    flex-wrap: wrap;
-   margin: 1em auto;
-  padding: 0.5em 0.5em;
-  max-width: 250px;
-  text-align: center;
-  line-height: 1;
-  text-transform: uppercase;
-  font-size: 1em;
-  color: #ffffff;
-  background: linear-gradient(135deg, #0B2B45, #1C5991);
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;          
-}
-
 .lingua-divina {
 	width: 100%;
 	display:block;
