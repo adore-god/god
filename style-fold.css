@@ -186,7 +186,19 @@ blockquote a[href*="blueletterbible.org"] {
   }
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  max-width: 200px;
+  height: auto;
+  opacity: 0.8;
+  padding: 0;
+  mix-blend-mode: multiply;
+  overflow: hidden;
 
+}
 
 @media (prefers-color-scheme: dark) {
   h1 { border-left-color: #999; }

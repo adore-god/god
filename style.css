@@ -8,18 +8,7 @@
   box-sizing: border-box;
 }
 
-img {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  width: 80%;
-  max-width: 200px;
-  height: auto;
-  opacity: 0.8;
-  padding: 0;
-  mix-blend-mode: multiply;
-  overflow: hidden;
-}
+
 
 /* =======================
    INDEX
