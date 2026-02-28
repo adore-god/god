@@ -25,19 +25,6 @@ body{
   font-optical-sizing: auto;
 }
 
-.container {
-  max-width: 800px;
-  width: 87%;
-  margin: 0 auto;
-  text-align: left;
-  display: block;
-  min-height:100vh;
-}
-
-.content {
-  flex: 3;
-  margin-right: 10px;
-}
 
 img {
   display: block;
@@ -58,17 +45,6 @@ img {
    ======================= */
 
 /* AMENDED: This rule now mirrors the general 'img' rule */
-header img {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  width: 40%;
-  max-width: 100px;
-  opacity: 0.9;
-  mix-blend-mode: multiply;
-  height: auto;
-  padding: 30px 5px 0 0;
-}
 
 .header a {
   text-decoration: none;
@@ -207,11 +183,7 @@ text-decoration: underline solid;
   font-weight: 600 ! important;
   font-style: normal !important;
 	}
-.breadcrumb {
-  font-size: 0.75em;
-  margin-bottom: 2em;
-  min-height:50px;
-}
+
 
 .breadcrumb a {
   text-decoration: underline solid;

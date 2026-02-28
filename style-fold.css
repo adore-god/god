@@ -41,10 +41,19 @@ header {
 header img {
   display: block;
   margin: 0 auto;
+  text-align: center;
   width: 40%;
   max-width: 100px;
+  opacity: 0.9;
+  mix-blend-mode: multiply;
   height: auto;
-  padding-top: 30px;
+  padding: 30px 5px 0 0;
+}
+
+.breadcrumb {
+  font-size: 0.75em;
+  margin-bottom: 2em;
+  min-height:50px;
 }
 
 .BLBST_a {
