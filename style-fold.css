@@ -212,13 +212,15 @@ img {
   margin: 0 auto;
   text-align: center;
   width: 80%;
+  //min-width: 200px;
   max-width: 200px;
   height: auto;
+  min-height:auto;
+  max-height:auto;
   opacity: 0.8;
   padding: 0;
   mix-blend-mode: multiply;
   overflow: hidden;
-
 }
 
 @media (prefers-color-scheme: dark) {
