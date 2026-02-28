@@ -42,6 +42,87 @@ body{
   display: block;
 }
 
+
+/* =======================
+   HEADER
+   ======================= */
+
+/* AMENDED: This rule now mirrors the general 'img' rule */
+
+.header a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+.header h1 {
+	margin-left: 2px;
+	}
+	
+/* =======================
+   HEADINGS
+   ======================= */
+.seo-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+h1 {
+  margin: 2em 0 1em 0.5em;
+  font-weight: 600;
+  text-align: left;
+  opacity:0.9;
+  line-height:1.1;
+  border-left: 4px solid #333;
+  padding-left: 0.75rem;
+  padding-right: 1.25rem;
+}
+
+h2 {
+	margin: 2em 0 1em 0em;
+	}
+	
+h2, h3, h4 {
+	font-weight:400;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    border-left: 4px solid #333;
+    padding-left: 0.75rem;
+}
+h1 a, h2 a, h3 a, h4 a {
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+
+h3 {
+  text-align: left;
+  font-size: 1.4em;
+  margin: 45px 0 5px;
+  border-left: 4px solid #333;
+}
+h3 strong {
+   font-style: normal
+}
+
+h3.teach {
+	font-style: italic;
+	font-size: 1em;
+	margin:0
+	}
+	
+h4 {
+   font-style: normal;
+   font-weight:400;
+   font-size: 1.3em;
+   margin: 50px 0 10px 0;
+   border-left: 4px solid #333;
+}
 /* Header & Logo - Critical for LCP as it's often the first visual element */
 header {
   width: 100%;
@@ -105,15 +186,7 @@ blockquote a[href*="blueletterbible.org"] {
   }
 }
 
-/* Main Title - Likely the LCP element if the logo is small */
-h1 {
-  margin: 2em 0 1em 0.5em;
-  font-weight: 600;
-  font-size: 2rem; /* Approximated based on 1.8em link size */
-  line-height: 1.1;
-  border-left: 4px solid #333;
-  padding-left: 0.75rem;
-}
+
 
 @media (prefers-color-scheme: dark) {
   h1 { border-left-color: #999; }
