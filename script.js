@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (footer) {
         footer.insertAdjacentHTML(
             "afterend",
-            '<div id="Verse-Link-Container"><img class="key-icon" alt="Bible Interpreter Key Icon" src="../images/icons/verse-link-icon.webp"><div id="VerseLinkBox"><p><a id="translator-link" href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html">NEW BIBLE PASSAGE AND VERSE TRANSLATOR</a>.</p></div></div>'
+            '<div id="Verse-Link-Container"><img width="300" height="298" class="key-icon" alt="Bible Interpreter Key Icon" src="../images/icons/verse-link-icon.webp"><div id="VerseLinkBox"><p><a id="translator-link" href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html">NEW BIBLE PASSAGE AND VERSE TRANSLATOR</a>.</p></div></div>'
         );
 
         const link = document.getElementById("translator-link");
