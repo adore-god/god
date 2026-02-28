@@ -99,21 +99,28 @@ button.addEventListener("click", (e) => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const currentURL = window.location.href;
 
-  const excludeURLs = [
-    'https://www.thway.uk',
-    'https://god.thway.uk',
-    'https://god.thway.uk/about_13.html',
-    'https://god.thway.uk/series-links.html',
-    'https://god.thway.uk/search.html',
+  let path = window.location.pathname.toLowerCase();
+
+  // Normalise index page
+  if (path === '/' || path === '/index.html' || path === '/index.htm') {
+    return;
+  }
+
+  const excludePaths = [
+    '/about_13.html',
+    '/series-links.html',
+    '/search.html'
   ];
 
-  if (excludeURLs.includes(currentURL)) return;
+  if (excludePaths.includes(path)) return;
 
   const labelLinks = Array.from(document.querySelectorAll('.label-links a'));
   const mainContent = document.querySelector('main.content');
   if (!mainContent) return;
+
+  // Prevent duplicate breadcrumb
+  if (document.querySelector('.breadcrumb')) return;
 
   const breadcrumb = document.createElement('nav');
   breadcrumb.className = 'breadcrumb';
@@ -135,10 +142,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 1. Home
-  breadcrumb.appendChild(createCrumb('https://god.thway.uk', 'Home'));
+  breadcrumb.appendChild(createCrumb('https://god.thway.uk/', 'Home'));
   addSeparator();
 
-  // 2. Genesis Foundational Principles (sidebar trigger)
+  // 2. Genesis Foundational Principles
   const gfp = document.createElement('span');
   gfp.textContent = 'Genesis Foundational Principles';
   gfp.classList.add('gfp');
@@ -150,14 +157,14 @@ document.addEventListener('DOMContentLoaded', () => {
   breadcrumb.appendChild(gfp);
   addSeparator();
 
-  // 3. Current Page (non-clickable)
+  // 3. Current Page
   const pageTitle = document.querySelector('h1')?.textContent || document.title;
   const currentPage = document.createElement('span');
   currentPage.textContent = pageTitle;
   currentPage.classList.add('breadcrumb-current', 'noTag');
   breadcrumb.appendChild(currentPage);
 
-  // Separate About link from other links
+  // Separate About link
   const authorIndex = labelLinks.findIndex(link =>
     link.href.includes('about-author.html')
   );
@@ -167,22 +174,23 @@ document.addEventListener('DOMContentLoaded', () => {
     [authorLink] = labelLinks.splice(authorIndex, 1);
   }
 
-  // 4. Page Links (excluding About)
+  // 4. Page Links
   labelLinks.forEach(link => {
     addSeparator();
     breadcrumb.appendChild(createCrumb(link.href, link.textContent));
   });
 
-  // 5. About The Author (always last)
+  // 5. About The Author
   if (authorLink) {
     addSeparator();
     breadcrumb.appendChild(createCrumb(authorLink.href, authorLink.textContent));
   }
 
-  // Insert breadcrumb at top of main content
   mainContent.insertBefore(breadcrumb, mainContent.firstChild);
-});
 
+}); 
+
+ 
 
 
 
