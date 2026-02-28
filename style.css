@@ -238,12 +238,7 @@ font-weight: 600;
 /* =======================
    TEXT ELEMENTS
    ======================= */
-.BLBST_a {
-  white-space: normal !important; 
-  display: inline !important;  font-size: 0.6em !important;
-  text-decoration: none;
-  line-height: 1.8
-}
+
 
 .intro a {
   text-decoration: none;
@@ -405,15 +400,7 @@ a:hover {
 
 
 /* External links */
-blockquote a[href*="blueletterbible.org"] {
-  font-size: 0.6em !important;
-  text-decoration: none;
-  line-height: 1.8
-}
 
-blockquote a[href*="blueletterbible.org"]:hover {
-  color: #000 !important;
-}
 
 em, i {
   font-style: normal;
