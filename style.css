@@ -318,7 +318,7 @@ blockquote.relaxed {
 .red,
 .red a,
 .red a:visited {
-     color:#b22222 !important;
+     color:red !important;
    }
 .center {
   text-align: center;
