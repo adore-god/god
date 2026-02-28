@@ -636,14 +636,14 @@ table {
 
 .sidebar-callout strong {
   font-weight: 600;
-  color: #b22222; /* subtle matching red for emphasis */
+  color: red;
 }
 
 .sidebar-callout a {
   margin-left: 0.4em;
   font-weight: 600;
   text-decoration: underline;
-  color: #b22222; /* link stands out in same red */
+  color: red;
 }
 
 .sidebar-callout a:hover {
