@@ -9,6 +9,10 @@
     --primary-text: #e0e0e0;
     --bg-color: #000000;
   }
+  body {
+    background: #000000;
+    color: #e0e0e0;
+  }
 }
 
 * {
