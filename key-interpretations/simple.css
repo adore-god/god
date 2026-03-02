@@ -16,13 +16,13 @@ body {
 
 @media (prefers-color-scheme: dark) {
 
-  body {
-    background: #000000;
-    color: #e0e0e0;
+  body, article, p{
+    background: #000000 !important;
+    color: #fff;
   }
   }
   
-body, article {
+body {
     background: #000000;
     color: #e0e0e0;
   }
