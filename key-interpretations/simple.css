@@ -16,13 +16,13 @@ body {
 
 @media (prefers-color-scheme: dark) {
 
-  body, article, p, header {
+  body, article, p, header, header p {
     background: #000000 !important;
-    color: #fff;
+    color: #e0e0e0 !important;
   }
   
   a, a:link, a:visited {
-  	color: #fff;
+  	color: #e0e0e0;
   }
   }
   
