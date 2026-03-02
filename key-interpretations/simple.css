@@ -14,6 +14,19 @@ body {
     padding: 2rem;
 }
 
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background: #000000;
+    color: #e0e0e0;
+  }
+  }
+  
+body, article {
+    background: #000000;
+    color: #e0e0e0;
+  }
+
 /* Article Container */
 article {
     max-width: 800px;
