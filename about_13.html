@@ -181,24 +181,42 @@ Everything on this site is rooted in the text itself. <a href="el/yhvh-ehyeh-lin
 <script>
 (function() {
     var d = document;
+    var disqusLoaded = false;
 
-    // Load Disqus embed
-    if (!d.getElementById('dsq-embed')) {
+    // Function to load Disqus scripts
+    function loadDisqus() {
+        if (disqusLoaded) return;
+        disqusLoaded = true;
+
+        // Embed script
         var s = d.createElement('script');
         s.src = 'https://the-way-7.disqus.com/embed.js';
         s.id = 'dsq-embed';
         s.setAttribute('data-timestamp', +new Date());
         s.async = true;
         (d.head || d.body).appendChild(s);
-    }
 
-    // Load comment counts
-    if (!d.getElementById('dsq-count-scr')) {
+        // Count script
         var c = d.createElement('script');
         c.src = 'https://the-way-7.disqus.com/count.js';
         c.id = 'dsq-count-scr';
         c.async = true;
         d.body.appendChild(c);
+    }
+
+    // Use IntersectionObserver if supported
+    if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+            if (entries[0].isIntersecting) {
+                loadDisqus();
+                observer.disconnect();
+            }
+        }, { rootMargin: '200px' }); // triggers slightly before user scrolls to it
+
+        observer.observe(d.getElementById('disqus_thread'));
+    } else {
+        // Fallback: load after 3 seconds if IntersectionObserver is not supported
+        setTimeout(loadDisqus, 3000);
     }
 })();
 </script>
@@ -207,6 +225,7 @@ Everything on this site is rooted in the text itself. <a href="el/yhvh-ehyeh-lin
   Please enable JavaScript to view the 
   <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 </noscript>
+
 </article></main>
 <aside class="sidebar">
 <div class="navig">
