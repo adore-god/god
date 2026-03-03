@@ -177,12 +177,14 @@ Everything on this site is rooted in the text itself. <a href="el/yhvh-ehyeh-lin
 </div>
 <p>To get in touch, please leave a comment below.</p>
 <div id="disqus_thread"></div>
-<button id="load-comments">Show Comments</button>
 
 <script>
-document.getElementById('load-comments').addEventListener('click', function() {
-    if (!document.getElementById('dsq-embed')) {
-        var d = document, s = d.createElement('script');
+(function() {
+    var d = document;
+
+    // Load Disqus embed
+    if (!d.getElementById('dsq-embed')) {
+        var s = d.createElement('script');
         s.src = 'https://the-way-7.disqus.com/embed.js';
         s.id = 'dsq-embed';
         s.setAttribute('data-timestamp', +new Date());
@@ -190,16 +192,15 @@ document.getElementById('load-comments').addEventListener('click', function() {
         (d.head || d.body).appendChild(s);
     }
 
-    if (!document.getElementById('dsq-count-scr')) {
-        var c = document.createElement('script');
-        c.src = "//the-way-7.disqus.com/count.js";
-        c.id = "dsq-count-scr";
+    // Load comment counts
+    if (!d.getElementById('dsq-count-scr')) {
+        var c = d.createElement('script');
+        c.src = 'https://the-way-7.disqus.com/count.js';
+        c.id = 'dsq-count-scr';
         c.async = true;
-        document.body.appendChild(c);
+        d.body.appendChild(c);
     }
-
-    this.style.display = 'none';
-});
+})();
 </script>
 
 <noscript>
