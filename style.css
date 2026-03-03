@@ -1043,13 +1043,29 @@ color:#fff !important;
 .gsc-control-cse-en,
 .gsc-control-wrapper-cse,
 .gsc-control-wrapper-cse b,
-.gsc-webResult gsc-result,
+.gsc-webResult .gsc-result,
 .gs-snippet,
 .gs-visibleUrl,
 .gcsc-find-more-on-google {
  	background-color: #000000 !important;
  	border:0 !important;
      color: #e0e0e0 !important;
+ }
+ 
+ #custom-search-results,
+#custom-search-results a,
+.gs-title img,
+.gsc-webResult img,
+.gsc-result img,
+.gs-webResult img,
+.gs-result img,
+.gsc-control-cse img,
+.gsc-control-cse-en img,
+.gsc-control-wrapper-cse img,
+.gsc-webResult .gsc-result img,
+.gs-snippet img {
+ 	filter: invert(0);
+    mix-blend-mode: normal;
  }
  
 .gsc-cursor {
