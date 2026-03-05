@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const bookBLBMap = {
     "Genesis":"Gen","Gen":"Gen","Exodus":"Exo","Ex":"Exo","Leviticus":"Lev","Lev":"Lev","Numbers":"Num","Num":"Num","Deuteronomy":"Deu","Deut":"Deu",
     "Joshua":"Jos","Jos":"Jos","Judges":"Jdg","Jdg":"Jdg","Ruth":"Rth","Rut":"Rth","1 Samuel":"1Sa","1 Sam":"1Sa","2 Samuel":"2Sa","2 Sam":"2Sa",
-    "1 Kings":"1Ki","1 Kgs":"1Ki","2 Kings":"2Ki","2 Kgs":"2Ki","1 Chronicles":"1Ch","1 Chr":"1Ch","2 Chronicles":"2Ch","2 Chr":"2Ch",
+    "1 Kings":"1Ki","1 Kgs":"1Ki","2 Kings":"2Ki","2 Kgs":"2Ki","1 Chronicles":"1Ch","1Chr":"1Ch","2 Chronicles":"2Ch","2 Chr":"2Ch",
     "Ezra":"Ezr","Ezr":"Ezr","Nehemiah":"Neh","Neh":"Neh","Esther":"Est","Est":"Est","Job":"Job","Psalms":"Psa","Psa":"Psa","Proverbs":"Pro","Pro":"Pro",
     "Ecclesiastes":"Ecc","Ecc":"Ecc","Song of Solomon":"Sng","Sng":"Sng","Isaiah":"Isa","Isa":"Isa","Jeremiah":"Jer","Jer":"Jer",
     "Lamentations":"Lam","Lam":"Lam","Ezekiel":"Eze","Ezk":"Eze","Daniel":"Dan","Dan":"Dan", "Hosea":"Hos","Hos":"Hos","Joel":"Joe","Joe":"Joe",
@@ -41,12 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function wrapBibleReferences(node) {
     if (node.nodeType === Node.TEXT_NODE) {
-      // REVISED REGEX:
-      // 1. (books)
-      // 2. \s+ (space)
-      // 3. (\d+) (Chapter)
-      // 4. (?::(\d+)(?:-(\d+))?)? (Optional colon + verse + optional range)
-      const pattern = new RegExp("\\b(" + books.join("|") + ")\\s+(\\d+)(?::(\\d+)(?:-(\\d+))?)?\\b", "gi");
+      // UPDATED REGEX: Now includes optional translation codes like (KJV) or ESV
+      const pattern = new RegExp("\\b(" + books.join("|") + ")\\s+(\\d+)(?::(\\d+)(?:-(\\d+))?)?(?:\\s*(?:\\([^)]+\\)|[A-Z]{2,4}))?", "gi");
       
       const content = node.textContent;
       if (!pattern.test(content)) return;
@@ -66,16 +62,15 @@ document.addEventListener("DOMContentLoaded", function () {
         span.dataset.book = match[1];
         span.dataset.chapter = match[2];
         
-        // If match[3] exists, we have a verse. If not, it's a whole chapter.
         if (match[3]) {
           span.dataset.verse = match[4] ? `${match[3]}-${match[4]}` : match[3];
-          span.dataset.startVerse = match[3]; // For BLB link
+          span.dataset.startVerse = match[3];
         } else {
           span.dataset.verse = ""; 
-          span.dataset.startVerse = "1"; // Default for BLB link
+          span.dataset.startVerse = "1";
         }
         
-        span.textContent = match[0];
+        span.textContent = match[0]; // This now includes the translation suffix
         frag.appendChild(span);
         lastIndex = pattern.lastIndex;
       }
@@ -100,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     position: "absolute", background: "#fff", color: "#333", border: "1px solid #ccc",
     padding: "12px", fontSize: "14px", display: "none", zIndex: "10000",
     boxShadow: "0 4px 12px rgba(0,0,0,0.15)", borderRadius: "4px",
-    pointerEvents: "auto" // Added to make link clickable
+    pointerEvents: "auto"
   });
   document.body.appendChild(tooltip);
 
@@ -115,7 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
     tooltip.innerHTML = "Loading...";
 
     const { book, chapter, verse, startVerse } = ref.dataset;
-    // Build query: "John 2" or "John 2:1-5"
     const query = verse ? `${book} ${chapter}:${verse}` : `${book} ${chapter}`;
     const apiURL = `https://bible-api.com/${encodeURIComponent(query)}?translation=bbe`;
 
@@ -123,7 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const response = await fetch(apiURL);
       const data = await response.json();
       
-      // Generate the correct BLB link (No spaces, correct book code)
       const blbCode = bookBLBMap[book] || book.replace(/\s+/g, '');
       const blbLink = `https://www.blueletterbible.org/bbe/${blbCode}/${chapter}/${startVerse}/`;
 
@@ -135,7 +128,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Updated mouseout to prevent tooltip disappearing when hovering over the link
   mainEl.addEventListener("mouseout", (e) => {
     if (e.relatedTarget && (e.relatedTarget === tooltip || tooltip.contains(e.relatedTarget))) return;
     tooltip.style.display = "none";
