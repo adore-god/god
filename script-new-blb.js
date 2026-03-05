@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-
   const mainEl = document.querySelector("main");
-  if (!mainEl) return; // just in case
+  if (!mainEl) return;
 
   const books = [
     "Genesis","Exodus","Leviticus","Numbers","Deuteronomy",
@@ -35,100 +34,109 @@ document.addEventListener("DOMContentLoaded", function () {
     "1 John": "1-jn", "2 John": "2-jn", "3 John": "3-jn", "Jude": "jude", "Revelation": "rev"
   };
 
-  // function to wrap references safely within <main>
   function wrapBibleReferences(node) {
     if (node.nodeType === Node.TEXT_NODE) {
+      // Regex updated to handle book names with numbers correctly
       const pattern = new RegExp("\\b(" + books.join("|") + ")\\s(\\d+):(\\d+)\\b", "g");
+      const content = node.textContent;
+      if (!pattern.test(content)) return;
+
+      pattern.lastIndex = 0; // reset regex state
       const frag = document.createDocumentFragment();
       let lastIndex = 0;
       let match;
 
-      while ((match = pattern.exec(node.textContent)) !== null) {
-        if (match.index > lastIndex) {
-          frag.appendChild(document.createTextNode(node.textContent.slice(lastIndex, match.index)));
-        }
+      while ((match = pattern.exec(content)) !== null) {
+        // Append text before the match
+        frag.appendChild(document.createTextNode(content.slice(lastIndex, match.index)));
 
         const span = document.createElement("cite");
         span.className = "bibleref";
+        span.style.cursor = "help";
+        span.style.borderBottom = "1px dotted #888";
         span.dataset.book = match[1];
         span.dataset.chapter = match[2];
         span.dataset.verse = match[3];
         span.textContent = match[0];
 
         frag.appendChild(span);
-        lastIndex = match.index + match[0].length;
+        lastIndex = pattern.lastIndex;
       }
 
-      if (lastIndex < node.textContent.length) {
-        frag.appendChild(document.createTextNode(node.textContent.slice(lastIndex)));
-      }
-
+      frag.appendChild(document.createTextNode(content.slice(lastIndex)));
       node.replaceWith(frag);
 
-    } else if (node.nodeType === Node.ELEMENT_NODE) {
-      node.childNodes.forEach(child => wrapBibleReferences(child));
+    } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName !== "SCRIPT" && node.tagName !== "STYLE" && node.tagName !== "CITE") {
+      // Convert childNodes to a static array so the loop isn't broken by DOM changes
+      Array.from(node.childNodes).forEach(child => wrapBibleReferences(child));
     }
   }
 
+  // 1. Run the wrapper
   wrapBibleReferences(mainEl);
 
-  // Tooltip code (same as before)
+  // 2. Setup Tooltip
   const tooltip = document.createElement("div");
-  tooltip.style.position = "absolute";
-  tooltip.style.background = "#f7f7f7";
-  tooltip.style.color = "#000";
-  tooltip.style.border = "1px solid #000";
-  tooltip.style.padding = "8px";
-  tooltip.style.fontSize = "14px";
-  tooltip.style.maxWidth = "600px";
-  tooltip.style.display = "none";
-  tooltip.style.zIndex = "9999";
-  tooltip.style.fontFamily = "Inter, serif";
+  Object.assign(tooltip.style, {
+    position: "absolute",
+    background: "#f7f7f7",
+    color: "#000",
+    border: "1px solid #000",
+    padding: "12px",
+    fontSize: "14px",
+    maxWidth: "300px",
+    display: "none",
+    zIndex: "9999",
+    boxShadow: "2px 2px 10px rgba(0,0,0,0.2)",
+    fontFamily: "sans-serif"
+  });
   document.body.appendChild(tooltip);
 
   let hideTimeout;
 
-  document.querySelectorAll(".bibleref").forEach(ref => {
-    ref.addEventListener("mouseenter", async function(e){
-      clearTimeout(hideTimeout);
+  // 3. Use Event Delegation (Better for dynamic elements)
+  mainEl.addEventListener("mouseover", async function(e) {
+    const ref = e.target.closest(".bibleref");
+    if (!ref) return;
 
-      tooltip.style.left = (e.pageX + 10) + "px";
-      tooltip.style.top = (e.pageY + 10) + "px";
-      tooltip.style.display = "block";
-      tooltip.innerHTML = "Loading verse...";
+    clearTimeout(hideTimeout);
+    
+    // Positioning
+    const rect = ref.getBoundingClientRect();
+    tooltip.style.left = (window.scrollX + rect.left) + "px";
+    tooltip.style.top = (window.scrollY + rect.bottom + 5) + "px";
+    tooltip.style.display = "block";
+    tooltip.innerHTML = "<em>Loading verse...</em>";
 
-      const book = this.dataset.book;
-      const chapter = this.dataset.chapter;
-      const verse = this.dataset.verse;
-      const apiURL = `https://bible-api.com/${book}+${chapter}:${verse}?translation=bbe`;
-      const siteURL = `https://www.blueletterbible.org/kjv/${bookBLBMap[book]}/${chapter}/${verse}/`;
+    const { book, chapter, verse } = ref.dataset;
+    const apiURL = `https://bible-api.com/${book}+${chapter}:${verse}?translation=bbe`;
+    const blbBook = bookBLBMap[book] || book.toLowerCase().replace(/\s/g, '-');
+    const siteURL = `https://www.blueletterbible.org/kjv/${blbBook}/${chapter}/${verse}/`;
 
-      try {
-        const response = await fetch(apiURL);
-        const data = await response.json();
-        tooltip.innerHTML = `<strong>${data.reference} (BBE)</strong><br>${data.text}`;
-      } catch {
-        tooltip.innerHTML = "Verse preview unavailable.";
-      }
+    try {
+      const response = await fetch(apiURL);
+      const data = await response.json();
+      tooltip.innerHTML = `<strong>${data.reference} (BBE)</strong><p style="margin:5px 0">${data.text}</p>`;
+    } catch {
+      tooltip.innerHTML = "Verse preview unavailable.";
+    }
 
-      const link = document.createElement("a");
-      link.href = siteURL;
-      link.target = "_blank";
-      link.textContent = "Open on Blue Letter Bible";
-      link.style.display = "block";
-      link.style.marginTop = "6px";
-      link.style.color = "#555";
-      tooltip.appendChild(link);
-    });
+    const link = document.createElement("a");
+    link.href = siteURL;
+    link.target = "_blank";
+    link.textContent = "View on Blue Letter Bible →";
+    link.style.cssText = "display:block; font-size:11px; color:#0066cc; text-decoration:none; margin-top:8px; border-top:1px solid #ddd; padding-top:5px;";
+    tooltip.appendChild(link);
+  });
 
-    ref.addEventListener("mouseleave", function(){
+  mainEl.addEventListener("mouseout", function(e) {
+    if (e.target.closest(".bibleref")) {
       hideTimeout = setTimeout(() => {
         if (!tooltip.matches(":hover")) tooltip.style.display = "none";
-      }, 200);
-    });
+      }, 300);
+    }
   });
 
   tooltip.addEventListener("mouseenter", () => clearTimeout(hideTimeout));
   tooltip.addEventListener("mouseleave", () => tooltip.style.display = "none");
-
 });
