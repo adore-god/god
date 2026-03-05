@@ -36,27 +36,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function wrapBibleReferences(node) {
     if (node.nodeType === Node.TEXT_NODE) {
-      // Regex updated to handle book names with numbers correctly
-      const pattern = new RegExp("\\b(" + books.join("|") + ")\\s(\\d+):(\\d+)\\b", "g");
+      // Updated Regex: Added (?:-(\\d+))? to catch optional end verse (e.g. -7)
+      const pattern = new RegExp("\\b(" + books.join("|") + ")\\s(\\d+):(\\d+)(?:-(\\d+))?\\b", "g");
       const content = node.textContent;
       if (!pattern.test(content)) return;
 
-      pattern.lastIndex = 0; // reset regex state
+      pattern.lastIndex = 0; 
       const frag = document.createDocumentFragment();
       let lastIndex = 0;
       let match;
 
       while ((match = pattern.exec(content)) !== null) {
-        // Append text before the match
         frag.appendChild(document.createTextNode(content.slice(lastIndex, match.index)));
 
         const span = document.createElement("cite");
         span.className = "bibleref";
         span.style.cursor = "help";
         span.style.borderBottom = "1px dotted #888";
+        
         span.dataset.book = match[1];
         span.dataset.chapter = match[2];
-        span.dataset.verse = match[3];
+        // If there's a range (match[4]), we store "6-7", otherwise just "6"
+        span.dataset.verse = match[4] ? `${match[3]}-${match[4]}` : match[3];
+        
         span.textContent = match[0];
 
         frag.appendChild(span);
@@ -66,70 +68,76 @@ document.addEventListener("DOMContentLoaded", function () {
       frag.appendChild(document.createTextNode(content.slice(lastIndex)));
       node.replaceWith(frag);
 
-    } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName !== "SCRIPT" && node.tagName !== "STYLE" && node.tagName !== "CITE") {
-      // Convert childNodes to a static array so the loop isn't broken by DOM changes
+    } else if (node.nodeType === Node.ELEMENT_NODE && !["SCRIPT", "STYLE", "CITE", "A"].includes(node.tagName)) {
       Array.from(node.childNodes).forEach(child => wrapBibleReferences(child));
     }
   }
 
-  // 1. Run the wrapper
   wrapBibleReferences(mainEl);
 
-  // 2. Setup Tooltip
+  // Tooltip Logic
   const tooltip = document.createElement("div");
   Object.assign(tooltip.style, {
     position: "absolute",
-    background: "#f7f7f7",
-    color: "#000",
-    border: "1px solid #000",
+    background: "#fff",
+    color: "#333",
+    border: "1px solid #ccc",
     padding: "12px",
     fontSize: "14px",
-    maxWidth: "300px",
+    lineHeight: "1.5",
+    maxWidth: "350px",
     display: "none",
-    zIndex: "9999",
-    boxShadow: "2px 2px 10px rgba(0,0,0,0.2)",
+    zIndex: "10000",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+    borderRadius: "4px",
     fontFamily: "sans-serif"
   });
   document.body.appendChild(tooltip);
 
   let hideTimeout;
 
-  // 3. Use Event Delegation (Better for dynamic elements)
   mainEl.addEventListener("mouseover", async function(e) {
     const ref = e.target.closest(".bibleref");
     if (!ref) return;
 
     clearTimeout(hideTimeout);
     
-    // Positioning
     const rect = ref.getBoundingClientRect();
     tooltip.style.left = (window.scrollX + rect.left) + "px";
-    tooltip.style.top = (window.scrollY + rect.bottom + 5) + "px";
+    tooltip.style.top = (window.scrollY + rect.bottom + 8) + "px";
     tooltip.style.display = "block";
-    tooltip.innerHTML = "<em>Loading verse...</em>";
+    tooltip.innerHTML = "<em>Loading...</em>";
 
     const { book, chapter, verse } = ref.dataset;
-    const apiURL = `https://bible-api.com/${book}+${chapter}:${verse}?translation=bbe`;
-    const blbBook = bookBLBMap[book] || book.toLowerCase().replace(/\s/g, '-');
+    // bible-api.com handles ranges like 2:6-7 perfectly
+    const apiURL = `https://bible-api.com/${encodeURIComponent(book)}+${chapter}:${verse}?translation=bbe`;
+    const blbBook = bookBLBMap[book] || "gen";
+    // Blue Letter Bible also supports ranges in the URL (e.g., /2/6-7/)
     const siteURL = `https://www.blueletterbible.org/kjv/${blbBook}/${chapter}/${verse}/`;
 
     try {
       const response = await fetch(apiURL);
       const data = await response.json();
-      tooltip.innerHTML = `<strong>${data.reference} (BBE)</strong><p style="margin:5px 0">${data.text}</p>`;
+      
+      if (data.text) {
+          tooltip.innerHTML = `<strong style="display:block;margin-bottom:5px;">${data.reference} (BBE)</strong>` +
+                              `<div style="max-height:200px; overflow-y:auto;">${data.text}</div>`;
+      } else {
+          tooltip.innerHTML = "Reference not found.";
+      }
     } catch {
-      tooltip.innerHTML = "Verse preview unavailable.";
+      tooltip.innerHTML = "Unable to load preview.";
     }
 
     const link = document.createElement("a");
     link.href = siteURL;
     link.target = "_blank";
-    link.textContent = "View on Blue Letter Bible →";
-    link.style.cssText = "display:block; font-size:11px; color:#0066cc; text-decoration:none; margin-top:8px; border-top:1px solid #ddd; padding-top:5px;";
+    link.textContent = "Study on Blue Letter Bible →";
+    link.style.cssText = "display:block; font-size:11px; color:#0066cc; margin-top:10px; border-top:1px solid #eee; padding-top:8px;";
     tooltip.appendChild(link);
   });
 
-  mainEl.addEventListener("mouseout", function(e) {
+  mainEl.addEventListener("mouseout", (e) => {
     if (e.target.closest(".bibleref")) {
       hideTimeout = setTimeout(() => {
         if (!tooltip.matches(":hover")) tooltip.style.display = "none";
