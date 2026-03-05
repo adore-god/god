@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const data = await response.json();
       
       if (data.text) {
-          tooltip.innerHTML = `<strong style="display:block;margin-bottom:5px;">${data.reference} (BBE)</strong>` +
+          tooltip.innerHTML = `<strong style="display:block;margin-bottom:5px;">${data.reference} BBE</strong>` +
                               `<div style="max-height:200px; overflow-y:auto;">${data.text}</div>`;
       } else {
           tooltip.innerHTML = "Reference not found.";
