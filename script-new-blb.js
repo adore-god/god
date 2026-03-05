@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
           frag.appendChild(document.createTextNode(node.textContent.slice(lastIndex, match.index)));
         }
 
-        const span = document.createElement("span");
+        const span = document.createElement("cite");
         span.className = "bibleref";
         span.dataset.book = match[1];
         span.dataset.chapter = match[2];

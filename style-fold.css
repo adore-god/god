@@ -174,15 +174,15 @@ p {
   text-indent: 0;
 }
 
-.BLBST_a {
-  white-space: normal !important; 
-  display: inline !important; 
-}
-
-blockquote a[href*="blueletterbible.org"] {
-  font-size: 0.6em !important;
+blockquote cite.bibleref {
+	font-size: 0.6em !important;
   text-decoration: none;
-  line-height: 1.8
+  line-height: 1.8;
+  font-style: normal 
+	}
+	
+cite.bibleref {
+  
 }
 
 img {
