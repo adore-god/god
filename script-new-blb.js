@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const apiURL = `https://bible-api.com/${encodeURIComponent(book)}+${chapter}:${verse}?translation=bbe`;
     const blbBook = bookBLBMap[book] || "gen";
     // Blue Letter Bible also supports ranges in the URL (e.g., /2/6-7/)
-    const siteURL = `https://www.blueletterbible.org/kjv/${blbBook}/${chapter}/${verse}/`;
+    const siteURL = `https://www.blueletterbible.org/bbe/${blbBook}/${chapter}/${verse}/`;
 
     try {
       const response = await fetch(apiURL);
