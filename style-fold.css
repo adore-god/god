@@ -174,14 +174,15 @@ p {
   text-indent: 0;
 }
 
-blockquote cite.bibleref {
-	font-size: 0.6em !important;
+blockquote .bibleref
+ {
+font-size: 0.6em;
   text-decoration: none;
   line-height: 1.8;
   font-style: normal 
 	}
 	
-cite.bibleref {
+.bibleref {
   
 }
 
