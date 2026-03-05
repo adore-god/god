@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function wrapBibleReferences(node) {
     if (node.nodeType === Node.TEXT_NODE) {
-      // Updated Regex: Added (?:-(\\d+))? to catch optional end verse (e.g. -7)
       const pattern = new RegExp("\\b(" + books.join("|") + ")\\s(\\d+):(\\d+)(?:-(\\d+))?\\b", "g");
       const content = node.textContent;
       if (!pattern.test(content)) return;
@@ -56,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
         
         span.dataset.book = match[1];
         span.dataset.chapter = match[2];
-        // If there's a range (match[4]), we store "6-7", otherwise just "6"
         span.dataset.verse = match[4] ? `${match[3]}-${match[4]}` : match[3];
         
         span.textContent = match[0];
@@ -68,7 +66,12 @@ document.addEventListener("DOMContentLoaded", function () {
       frag.appendChild(document.createTextNode(content.slice(lastIndex)));
       node.replaceWith(frag);
 
-    } else if (node.nodeType === Node.ELEMENT_NODE && !["SCRIPT", "STYLE", "CITE", "A"].includes(node.tagName)) {
+    } else if (
+      node.nodeType === Node.ELEMENT_NODE && 
+      // Added "PRE" to the excluded tags list below:
+      !["SCRIPT", "STYLE", "CITE", "A", "PRE"].includes(node.tagName) &&
+      !node.classList.contains("noTag")
+    ) {
       Array.from(node.childNodes).forEach(child => wrapBibleReferences(child));
     }
   }
@@ -109,10 +112,8 @@ document.addEventListener("DOMContentLoaded", function () {
     tooltip.innerHTML = "<em>Loading...</em>";
 
     const { book, chapter, verse } = ref.dataset;
-    // bible-api.com handles ranges like 2:6-7 perfectly
     const apiURL = `https://bible-api.com/${encodeURIComponent(book)}+${chapter}:${verse}?translation=bbe`;
     const blbBook = bookBLBMap[book] || "gen";
-    // Blue Letter Bible also supports ranges in the URL (e.g., /2/6-7/)
     const siteURL = `https://www.blueletterbible.org/bbe/${blbBook}/${chapter}/${verse}/`;
 
     try {
