@@ -97,6 +97,7 @@ img.lingua-divina2 {
     width: 40vw;
     display: block;
     margin: 0em auto 2em;
+    max-width: 200px;
 }
 
 /* Responsive */
