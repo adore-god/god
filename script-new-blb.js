@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
     "Ecclesiastes","Ecc","Song of Solomon","Sng","Isaiah","Isa","Jeremiah","Jer",
     "Lamentations","Lam","Ezekiel","Ezk","Daniel","Dan","Hosea","Hos","Joel","Joe",
     "Amos","Amo","Obadiah","Oba","Jonah","Jon","Micah","Mic","Nahum","Nah","Habakkuk","Hab",
-    "Zephaniah","Zep","Haggai","Hag","Zechariah","Zec","Malachi","Mal","Matthew","Mat",
+    "Zephaniah","Zep","Haggai","Hag","Zechariah","Zec","Malachi","Mal","Matthew","Mat", "Mt",
     "Mark","Mrk","Luke","Luk","John","Jhn","Jn","Acts","Act",
     "Romans","Rom","1 Corinthians","1 Cor","2 Corinthians","2 Cor","Galatians","Gal",
-    "Ephesians","Eph","Philippians","Php","Colossians","Col","1 Thessalonians","1 Ths",
+    "Ephesians","Eph","Philippians","Php","Phil","Colossians","Col","1 Thessalonians","1 Ths",
     "2 Thessalonians","2 Ths","1 Timothy","1 Tim","2 Timothy","2 Tim","Titus","Tit",
     "Philemon","Phm","Hebrews","Heb","James","Jas","1 Peter","1 Pe","2 Peter","2 Pe",
     "1 John","1 Jn","2 John","2 Jn","3 John","3 Jn","Jude","Revelation","Rev"
