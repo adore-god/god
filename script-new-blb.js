@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "1 John","1 Jn","2 John","2 Jn","3 John","3 Jn","Jude","Revelation","Rev"
   ];
 
-  // Full map for Blue Letter Bible URL codes (Required for correct links)
+  // Full map for Blue Letter Bible URL codes
   const bookBLBMap = {
     "Genesis":"Gen","Gen":"Gen","Exodus":"Exo","Ex":"Exo","Leviticus":"Lev","Lev":"Lev","Numbers":"Num","Num":"Num","Deuteronomy":"Deu","Deut":"Deu",
     "Joshua":"Jos","Jos":"Jos","Judges":"Jdg","Jdg":"Jdg","Ruth":"Rth","Rut":"Rth","1 Samuel":"1Sa","1 Sam":"1Sa","2 Samuel":"2Sa","2 Sam":"2Sa",
@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function wrapBibleReferences(node) {
     if (node.nodeType === Node.TEXT_NODE) {
-      // UPDATED REGEX: Now includes optional translation codes like (KJV) or ESV
-      const pattern = new RegExp("\\b(" + books.join("|") + ")\\s+(\\d+)(?::(\\d+)(?:-(\\d+))?)?(?:\\s*(?:\\([^)]+\\)|[A-Z]{2,4}))?", "gi");
+      // REGEX UPDATED: Now captures trailing translation abbreviations inside the match
+      const pattern = new RegExp("\\b(" + books.join("|") + ")\\s+(\\d+)(?::(\\d+)(?:-(\\d+))?)?(?:\\s*(?:\\([A-Z]{2,4}\\)|[A-Z]{2,4}))?", "gi");
       
       const content = node.textContent;
       if (!pattern.test(content)) return;
@@ -70,7 +70,8 @@ document.addEventListener("DOMContentLoaded", function () {
           span.dataset.startVerse = "1";
         }
         
-        span.textContent = match[0]; // This now includes the translation suffix
+        // This match[0] now includes the detected translation suffix
+        span.textContent = match[0]; 
         frag.appendChild(span);
         lastIndex = pattern.lastIndex;
       }
@@ -121,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const blbLink = `https://www.blueletterbible.org/bbe/${blbCode}/${chapter}/${startVerse}/`;
 
       tooltip.innerHTML = data.text 
-        ? `<span class"bold700">${data.reference}</span><br>${data.text}<br><div style="border:0;border-top:1px solid #000;margin:8px 0;"></div><a href="${blbLink}" target="_blank" style="color:#0056b3;text-decoration:none;font-weight:bold;">View on Blue Letter Bible →</a>` 
+        ? `<span class="bold700" style="font-weight:bold;">${data.reference}</span><br>${data.text}<br><div style="border:0;border-top:1px solid #000;margin:8px 0;"></div><a href="${blbLink}" target="_blank" style="color:#0056b3;text-decoration:none;font-weight:bold;">View on Blue Letter Bible →</a>` 
         : "Not found";
     } catch {
       tooltip.innerHTML = "Error loading preview.";
