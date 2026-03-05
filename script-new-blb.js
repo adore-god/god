@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const mainEl = document.querySelector("main");
   if (!mainEl) return;
 
-  // Added common abbreviations to the books array
+  // Added common abbreviations to the books array including Phil and Mt
   const books = [
     "Genesis","Gen","Ex", "Exodus","Leviticus","Lev","Numbers","Num","Deuteronomy","Deut",
     "Joshua","Jos","Judges","Jdg","Ruth","Rut","1 Samuel","1 Sam","2 Samuel","2 Sam",
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "Ecclesiastes","Ecc","Song of Solomon","Sng","Isaiah","Isa","Jeremiah","Jer",
     "Lamentations","Lam","Ezekiel","Ezk","Daniel","Dan","Hosea","Hos","Joel","Joe",
     "Amos","Amo","Obadiah","Oba","Jonah","Jon","Micah","Mic","Nahum","Nah","Habakkuk","Hab",
-    "Zephaniah","Zep","Haggai","Hag","Zechariah","Zec","Malachi","Mal","Matthew","Mat", "Mt",
+    "Zephaniah","Zep","Haggai","Hag","Zechariah","Zec","Malachi","Mal","Matthew","Mat","Mt",
     "Mark","Mrk","Luke","Luk","John","Jhn","Jn","Acts","Act",
     "Romans","Rom","1 Corinthians","1 Cor","2 Corinthians","2 Cor","Galatians","Gal",
     "Ephesians","Eph","Philippians","Php","Phil","Colossians","Col","1 Thessalonians","1 Ths",
@@ -20,9 +20,23 @@ document.addEventListener("DOMContentLoaded", function () {
     "1 John","1 Jn","2 John","2 Jn","3 John","3 Jn","Jude","Revelation","Rev"
   ];
 
+  // Full map for Blue Letter Bible URL codes (Required for correct links)
   const bookBLBMap = {
-    "Genesis": "gen", "Gen": "gen", "Exodus": "exo", "Ex": "exo", "John": "jhn", "Jn": "jhn", "Jhn": "jhn" 
-    /* ... you can expand this map as needed for BLB links ... */
+    "Genesis":"Gen","Gen":"Gen","Exodus":"Exo","Ex":"Exo","Leviticus":"Lev","Lev":"Lev","Numbers":"Num","Num":"Num","Deuteronomy":"Deu","Deut":"Deu",
+    "Joshua":"Jos","Jos":"Jos","Judges":"Jdg","Jdg":"Jdg","Ruth":"Rth","Rut":"Rth","1 Samuel":"1Sa","1 Sam":"1Sa","2 Samuel":"2Sa","2 Sam":"2Sa",
+    "1 Kings":"1Ki","1 Kgs":"1Ki","2 Kings":"2Ki","2 Kgs":"2Ki","1 Chronicles":"1Ch","1 Chr":"1Ch","2 Chronicles":"2Ch","2 Chr":"2Ch",
+    "Ezra":"Ezr","Ezr":"Ezr","Nehemiah":"Neh","Neh":"Neh","Esther":"Est","Est":"Est","Job":"Job","Psalms":"Psa","Psa":"Psa","Proverbs":"Pro","Pro":"Pro",
+    "Ecclesiastes":"Ecc","Ecc":"Ecc","Song of Solomon":"Sng","Sng":"Sng","Isaiah":"Isa","Isa":"Isa","Jeremiah":"Jer","Jer":"Jer",
+    "Lamentations":"Lam","Lam":"Lam","Ezekiel":"Eze","Ezk":"Eze","Daniel":"Dan","Dan":"Dan", "Hosea":"Hos","Hos":"Hos","Joel":"Joe","Joe":"Joe",
+    "Amos":"Amo","Amo":"Amo","Obadiah":"Oba","Oba":"Oba","Jonah":"Jon","Jon":"Jon","Micah":"Mic","Mic":"Mic","Nahum":"Nam","Nah":"Nam","Habakkuk":"Hab","Hab":"Hab",
+    "Zephaniah":"Zep","Zep":"Zep","Haggai":"Hag","Hag":"Hag","Zechariah":"Zec","Zec":"Zec","Malachi":"Mal","Mal":"Mal",
+    "Matthew":"Mat","Mat":"Mat","Mt":"Mat","Mark":"Mar","Mrk":"Mar","Luke":"Luk","Luk":"Luk","John":"Jhn","Jhn":"Jhn","Jn":"Jhn","Acts":"Act","Act":"Act",
+    "Romans":"Rom","Rom":"Rom","1 Corinthians":"1Co","1 Cor":"1Co","2 Corinthians":"2Co","2 Cor":"2Co","Galatians":"Gal","Gal":"Gal",
+    "Ephesians":"Eph","Eph":"Eph","Philippians":"Phl","Php":"Phl","Phil":"Phl","Colossians":"Col","Col":"Col",
+    "1 Thessalonians":"1Th","1 Ths":"1Th","2 Thessalonians":"2Th","2 Ths":"2Th","1 Timothy":"1Ti","1 Tim":"1Ti","2 Timothy":"2Ti","2 Tim":"2Ti",
+    "Titus":"Tit","Tit":"Tit","Philemon":"Phm","Phm":"Phm","Hebrews":"Heb","Heb":"Heb","James":"Jas","Jas":"Jas",
+    "1 Peter":"1Pe","1 Pe":"1Pe","2 Peter":"2Pe","2 Pe":"2Pe","1 John":"1Jo","1 Jn":"1Jo","2 John":"2Jo","2 Jn":"2Jo","3 John":"3Jo","3 Jn":"3Jo",
+    "Jude":"Jud","Revelation":"Rev","Rev":"Rev"
   };
 
   function wrapBibleReferences(node) {
@@ -55,8 +69,10 @@ document.addEventListener("DOMContentLoaded", function () {
         // If match[3] exists, we have a verse. If not, it's a whole chapter.
         if (match[3]) {
           span.dataset.verse = match[4] ? `${match[3]}-${match[4]}` : match[3];
+          span.dataset.startVerse = match[3]; // For BLB link
         } else {
           span.dataset.verse = ""; 
+          span.dataset.startVerse = "1"; // Default for BLB link
         }
         
         span.textContent = match[0];
@@ -83,7 +99,8 @@ document.addEventListener("DOMContentLoaded", function () {
   Object.assign(tooltip.style, {
     position: "absolute", background: "#fff", color: "#333", border: "1px solid #ccc",
     padding: "12px", fontSize: "14px", display: "none", zIndex: "10000",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.15)", borderRadius: "4px"
+    boxShadow: "0 4px 12px rgba(0,0,0,0.15)", borderRadius: "4px",
+    pointerEvents: "auto" // Added to make link clickable
   });
   document.body.appendChild(tooltip);
 
@@ -97,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tooltip.style.display = "block";
     tooltip.innerHTML = "Loading...";
 
-    const { book, chapter, verse } = ref.dataset;
+    const { book, chapter, verse, startVerse } = ref.dataset;
     // Build query: "John 2" or "John 2:1-5"
     const query = verse ? `${book} ${chapter}:${verse}` : `${book} ${chapter}`;
     const apiURL = `https://bible-api.com/${encodeURIComponent(query)}?translation=bbe`;
@@ -105,11 +122,26 @@ document.addEventListener("DOMContentLoaded", function () {
     try {
       const response = await fetch(apiURL);
       const data = await response.json();
-      tooltip.innerHTML = data.text ? `<strong>${data.reference}</strong><br>${data.text}` : "Not found";
+      
+      // Generate the correct BLB link (No spaces, correct book code)
+      const blbCode = bookBLBMap[book] || book.replace(/\s+/g, '');
+      const blbLink = `https://www.blueletterbible.org/bbe/${blbCode}/${chapter}/${startVerse}/`;
+
+      tooltip.innerHTML = data.text 
+        ? `<strong>${data.reference}</strong><br>${data.text}<br><hr style="border:0;border-top:1px solid #eee;margin:8px 0;"><a href="${blbLink}" target="_blank" style="color:#0056b3;text-decoration:none;font-weight:bold;">View on Blue Letter Bible →</a>` 
+        : "Not found";
     } catch {
       tooltip.innerHTML = "Error loading preview.";
     }
   });
 
-  mainEl.addEventListener("mouseout", () => { tooltip.style.display = "none"; });
+  // Updated mouseout to prevent tooltip disappearing when hovering over the link
+  mainEl.addEventListener("mouseout", (e) => {
+    if (e.relatedTarget && (e.relatedTarget === tooltip || tooltip.contains(e.relatedTarget))) return;
+    tooltip.style.display = "none";
+  });
+  
+  tooltip.addEventListener("mouseleave", () => {
+    tooltip.style.display = "none";
+  });
 });
