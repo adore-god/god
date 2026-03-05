@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   const mainEl = document.querySelector("main");
-  if (!mainEl) return; // just in case
+  if (!mainEl) return;
 
-  const books = [
-    "Genesis","Exodus","Leviticus","Numbers","Deuteronomy",
+  const books = [ "Genesis","Exodus","Leviticus","Numbers","Deuteronomy",
     "Joshua","Judges","Ruth","1 Samuel","2 Samuel","1 Kings","2 Kings",
     "1 Chronicles","2 Chronicles","Ezra","Nehemiah","Esther","Job",
     "Psalms","Proverbs","Ecclesiastes","Song of Solomon","Isaiah",
@@ -18,24 +17,23 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const bookBLBMap = {
-    "Genesis": "gen", "Exodus": "exo", "Leviticus": "lev", "Numbers": "num",
-    "Deuteronomy": "deut", "Joshua": "jos", "Judges": "jdg", "Ruth": "rut",
-    "1 Samuel": "1-sam", "2 Samuel": "2-sam", "1 Kings": "1-kgs", "2 Kings": "2-kgs",
-    "1 Chronicles": "1-chr", "2 Chronicles": "2-chr", "Ezra": "ezr", "Nehemiah": "neh",
-    "Esther": "est", "Job": "job", "Psalms": "psa", "Proverbs": "pro", "Ecclesiastes": "ecc",
-    "Song of Solomon": "sng", "Isaiah": "isa", "Jeremiah": "jer", "Lamentations": "lam",
-    "Ezekiel": "ezk", "Daniel": "dan", "Hosea": "hos", "Joel": "joe", "Amos": "amo",
-    "Obadiah": "oba", "Jonah": "jon", "Micah": "mic", "Nahum": "nah", "Habakkuk": "hab",
-    "Zephaniah": "zep", "Haggai": "hag", "Zechariah": "zec", "Malachi": "mal",
-    "Matthew": "mat", "Mark": "mrk", "Luke": "luk", "John": "jhn", "Acts": "act",
-    "Romans": "rom", "1 Corinthians": "1-cor", "2 Corinthians": "2-cor", "Galatians": "gal",
-    "Ephesians": "eph", "Philippians": "php", "Colossians": "col", "1 Thessalonians": "1-ths",
-    "2 Thessalonians": "2-ths", "1 Timothy": "1-tim", "2 Timothy": "2-tim", "Titus": "tit",
-    "Philemon": "phm", "Hebrews": "heb", "James": "jas", "1 Peter": "1-pe", "2 Peter": "2-pe",
-    "1 John": "1-jn", "2 John": "2-jn", "3 John": "3-jn", "Jude": "jude", "Revelation": "rev"
+    "Genesis": "gen","Exodus": "exo","Leviticus": "lev","Numbers": "num",
+    "Deuteronomy": "deut","Joshua": "jos","Judges": "jdg","Ruth": "rut",
+    "1 Samuel": "1-sam","2 Samuel": "2-sam","1 Kings": "1-kgs","2 Kings": "2-kgs",
+    "1 Chronicles": "1-chr","2 Chronicles": "2-chr","Ezra": "ezr","Nehemiah": "neh",
+    "Esther": "est","Job": "job","Psalms": "psa","Proverbs": "pro","Ecclesiastes": "ecc",
+    "Song of Solomon": "sng","Isaiah": "isa","Jeremiah": "jer","Lamentations": "lam",
+    "Ezekiel": "ezk","Daniel": "dan","Hosea": "hos","Joel": "joe","Amos": "amo",
+    "Obadiah": "oba","Jonah": "jon","Micah": "mic","Nahum": "nah","Habakkuk": "hab",
+    "Zephaniah": "zep","Haggai": "hag","Zechariah": "zec","Malachi": "mal",
+    "Matthew": "mat","Mark": "mrk","Luke": "luk","John": "jhn","Acts": "act",
+    "Romans": "rom","1 Corinthians": "1-cor","2 Corinthians": "2-cor","Galatians": "gal",
+    "Ephesians": "eph","Philippians": "php","Colossians": "col","1 Thessalonians": "1-ths",
+    "2 Thessalonians": "2-ths","1 Timothy": "1-tim","2 Timothy": "2-tim","Titus": "tit",
+    "Philemon": "phm","Hebrews": "heb","James": "jas","1 Peter": "1-pe","2 Peter": "2-pe",
+    "1 John": "1-jn","2 John": "2-jn","3 John": "3-jn","Jude": "jude","Revelation": "rev"
   };
 
-  // function to wrap references safely within <main>
   function wrapBibleReferences(node) {
     if (node.nodeType === Node.TEXT_NODE) {
       const pattern = new RegExp("\\b(" + books.join("|") + ")\\s(\\d+):(\\d+)\\b", "g");
@@ -72,18 +70,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   wrapBibleReferences(mainEl);
 
-  // Tooltip code (same as before)
+  // Tooltip element
   const tooltip = document.createElement("div");
-  tooltip.style.position = "absolute";
-  tooltip.style.background = "#f7f7f7";
-  tooltip.style.color = "#000";
-  tooltip.style.border = "1px solid #000";
-  tooltip.style.padding = "8px";
-  tooltip.style.fontSize = "14px";
-  tooltip.style.maxWidth = "300px";
-  tooltip.style.display = "none";
-  tooltip.style.zIndex = "9999";
-  tooltip.style.fontFamily = "Arial, sans-serif";
+  tooltip.className = "tooltip"; // CSS handles styling
   document.body.appendChild(tooltip);
 
   let hideTimeout;
@@ -115,9 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
       link.href = siteURL;
       link.target = "_blank";
       link.textContent = "Open on Blue Letter Bible";
-      link.style.display = "block";
-      link.style.marginTop = "6px";
-      link.style.color = "#555";
       tooltip.appendChild(link);
     });
 
