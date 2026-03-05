@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const data = await response.json();
       
       const blbCode = bookBLBMap[book] || book.replace(/\s+/g, '');
-      const blbLink = `https://www.blueletterbible.org/bbe/${blbCode}/${chapter}/${startVerse}/`;
+      const blbLink = `https://www.blueletterbible.org/esv/${blbCode}/${chapter}/${startVerse}/`;
 
       tooltip.innerHTML = data.text 
         ? `<span style="font-weight:bold;">${data.reference}</span><br>${data.text}<br><div style="border:0;border-top:1px solid #000;margin:8px 0;"></div><a href="${blbLink}" target="_blank" style="color:#0056b3;text-decoration:none;font-weight:bold;">View on Blue Letter Bible →</a>` 
