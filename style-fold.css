@@ -174,7 +174,7 @@ p {
   text-indent: 0;
 }
 
-blockquote .bibleref
+blockquote cite
  {
 font-size: 0.6em;
   text-decoration: none;
