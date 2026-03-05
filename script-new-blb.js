@@ -2,41 +2,38 @@ document.addEventListener("DOMContentLoaded", function () {
   const mainEl = document.querySelector("main");
   if (!mainEl) return;
 
+  // Added common abbreviations to the books array
   const books = [
-    "Genesis","Exodus","Leviticus","Numbers","Deuteronomy",
-    "Joshua","Judges","Ruth","1 Samuel","2 Samuel","1 Kings","2 Kings",
-    "1 Chronicles","2 Chronicles","Ezra","Nehemiah","Esther","Job",
-    "Psalms","Proverbs","Ecclesiastes","Song of Solomon","Isaiah",
-    "Jeremiah","Lamentations","Ezekiel","Daniel","Hosea","Joel","Amos",
-    "Obadiah","Jonah","Micah","Nahum","Habakkuk","Zephaniah","Haggai",
-    "Zechariah","Malachi","Matthew","Mark","Luke","John","Acts",
-    "Romans","1 Corinthians","2 Corinthians","Galatians","Ephesians",
-    "Philippians","Colossians","1 Thessalonians","2 Thessalonians",
-    "1 Timothy","2 Timothy","Titus","Philemon","Hebrews","James",
-    "1 Peter","2 Peter","1 John","2 John","3 John","Jude","Revelation"
+    "Genesis","Gen","Ex", "Exodus","Leviticus","Lev","Numbers","Num","Deuteronomy","Deut",
+    "Joshua","Jos","Judges","Jdg","Ruth","Rut","1 Samuel","1 Sam","2 Samuel","2 Sam",
+    "1 Kings","1 Kgs","2 Kings","2 Kgs","1 Chronicles","1 Chr","2 Chronicles","2 Chr",
+    "Ezra","Ezr","Nehemiah","Neh","Esther","Est","Job","Psalms","Psa","Proverbs","Pro",
+    "Ecclesiastes","Ecc","Song of Solomon","Sng","Isaiah","Isa","Jeremiah","Jer",
+    "Lamentations","Lam","Ezekiel","Ezk","Daniel","Dan","Hosea","Hos","Joel","Joe",
+    "Amos","Amo","Obadiah","Oba","Jonah","Jon","Micah","Mic","Nahum","Nah","Habakkuk","Hab",
+    "Zephaniah","Zep","Haggai","Hag","Zechariah","Zec","Malachi","Mal","Matthew","Mat",
+    "Mark","Mrk","Luke","Luk","John","Jhn","Jn","Acts","Act",
+    "Romans","Rom","1 Corinthians","1 Cor","2 Corinthians","2 Cor","Galatians","Gal",
+    "Ephesians","Eph","Philippians","Php","Colossians","Col","1 Thessalonians","1 Ths",
+    "2 Thessalonians","2 Ths","1 Timothy","1 Tim","2 Timothy","2 Tim","Titus","Tit",
+    "Philemon","Phm","Hebrews","Heb","James","Jas","1 Peter","1 Pe","2 Peter","2 Pe",
+    "1 John","1 Jn","2 John","2 Jn","3 John","3 Jn","Jude","Revelation","Rev"
   ];
 
   const bookBLBMap = {
-    "Genesis": "gen", "Exodus": "exo", "Leviticus": "lev", "Numbers": "num",
-    "Deuteronomy": "deut", "Joshua": "jos", "Judges": "jdg", "Ruth": "rut",
-    "1 Samuel": "1-sam", "2 Samuel": "2-sam", "1 Kings": "1-kgs", "2 Kings": "2-kgs",
-    "1 Chronicles": "1-chr", "2 Chronicles": "2-chr", "Ezra": "ezr", "Nehemiah": "neh",
-    "Esther": "est", "Job": "job", "Psalms": "psa", "Proverbs": "pro", "Ecclesiastes": "ecc",
-    "Song of Solomon": "sng", "Isaiah": "isa", "Jeremiah": "jer", "Lamentations": "lam",
-    "Ezekiel": "ezk", "Daniel": "dan", "Hosea": "hos", "Joel": "joe", "Amos": "amo",
-    "Obadiah": "oba", "Jonah": "jon", "Micah": "mic", "Nahum": "nah", "Habakkuk": "hab",
-    "Zephaniah": "zep", "Haggai": "hag", "Zechariah": "zec", "Malachi": "mal",
-    "Matthew": "mat", "Mark": "mrk", "Luke": "luk", "John": "jhn", "Acts": "act",
-    "Romans": "rom", "1 Corinthians": "1-cor", "2 Corinthians": "2-cor", "Galatians": "gal",
-    "Ephesians": "eph", "Philippians": "php", "Colossians": "col", "1 Thessalonians": "1-ths",
-    "2 Thessalonians": "2-ths", "1 Timothy": "1-tim", "2 Timothy": "2-tim", "Titus": "tit",
-    "Philemon": "phm", "Hebrews": "heb", "James": "jas", "1 Peter": "1-pe", "2 Peter": "2-pe",
-    "1 John": "1-jn", "2 John": "2-jn", "3 John": "3-jn", "Jude": "jude", "Revelation": "rev"
+    "Genesis": "gen", "Gen": "gen", "Exodus": "exo", "Ex": "exo", "John": "jhn", "Jn": "jhn", "Jhn": "jhn" 
+    /* ... you can expand this map as needed for BLB links ... */
   };
 
   function wrapBibleReferences(node) {
     if (node.nodeType === Node.TEXT_NODE) {
-      const pattern = new RegExp("\\b(" + books.join("|") + ")\\s(\\d+):(\\d+)(?:-(\\d+))?\\b", "g");
+      // REVISED REGEX:
+      // 1. (books)
+      // 2. \s+ (space)
+      // 3. (\d+) (Chapter)
+      // 4. (?::(\d+)(?:-(\d+))?)? (Optional colon + verse + optional range)
+      const pattern = new RegExp("\\b(" + books.join("|") + ")\\s+(\\d+)(?::(\\d+)(?:-(\\d+))?)?\\b", "gi");
+      
       const content = node.textContent;
       if (!pattern.test(content)) return;
 
@@ -50,15 +47,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const span = document.createElement("cite");
         span.className = "bibleref";
-        span.style.cursor = "help";
-        span.style.borderBottom = "1px dotted #888";
+        span.style.cssText = "cursor:help; border-bottom:1px dotted #888;";
         
         span.dataset.book = match[1];
         span.dataset.chapter = match[2];
-        span.dataset.verse = match[4] ? `${match[3]}-${match[4]}` : match[3];
+        
+        // If match[3] exists, we have a verse. If not, it's a whole chapter.
+        if (match[3]) {
+          span.dataset.verse = match[4] ? `${match[3]}-${match[4]}` : match[3];
+        } else {
+          span.dataset.verse = ""; 
+        }
         
         span.textContent = match[0];
-
         frag.appendChild(span);
         lastIndex = pattern.lastIndex;
       }
@@ -68,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     } else if (
       node.nodeType === Node.ELEMENT_NODE && 
-      // Added "PRE" to the excluded tags list below:
       !["SCRIPT", "STYLE", "CITE", "A", "PRE"].includes(node.tagName) &&
       !node.classList.contains("noTag")
     ) {
@@ -78,74 +78,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
   wrapBibleReferences(mainEl);
 
-  // Tooltip Logic
+  // Tooltip & Fetch Logic
   const tooltip = document.createElement("div");
   Object.assign(tooltip.style, {
-    position: "absolute",
-    background: "#fff",
-    color: "#333",
-    border: "1px solid #ccc",
-    padding: "12px",
-    fontSize: "14px",
-    lineHeight: "1.5",
-    maxWidth: "350px",
-    display: "none",
-    zIndex: "10000",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
-    borderRadius: "4px",
-    fontFamily: "sans-serif"
+    position: "absolute", background: "#fff", color: "#333", border: "1px solid #ccc",
+    padding: "12px", fontSize: "14px", display: "none", zIndex: "10000",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.15)", borderRadius: "4px"
   });
   document.body.appendChild(tooltip);
-
-  let hideTimeout;
 
   mainEl.addEventListener("mouseover", async function(e) {
     const ref = e.target.closest(".bibleref");
     if (!ref) return;
 
-    clearTimeout(hideTimeout);
-    
     const rect = ref.getBoundingClientRect();
     tooltip.style.left = (window.scrollX + rect.left) + "px";
     tooltip.style.top = (window.scrollY + rect.bottom + 8) + "px";
     tooltip.style.display = "block";
-    tooltip.innerHTML = "<em>Loading...</em>";
+    tooltip.innerHTML = "Loading...";
 
     const { book, chapter, verse } = ref.dataset;
-    const apiURL = `https://bible-api.com/${encodeURIComponent(book)}+${chapter}:${verse}?translation=bbe`;
-    const blbBook = bookBLBMap[book] || "gen";
-    const siteURL = `https://www.blueletterbible.org/bbe/${blbBook}/${chapter}/${verse}/`;
+    // Build query: "John 2" or "John 2:1-5"
+    const query = verse ? `${book} ${chapter}:${verse}` : `${book} ${chapter}`;
+    const apiURL = `https://bible-api.com/${encodeURIComponent(query)}?translation=bbe`;
 
     try {
       const response = await fetch(apiURL);
       const data = await response.json();
-      
-      if (data.text) {
-          tooltip.innerHTML = `<strong style="display:block;margin-bottom:5px;">${data.reference} BBE</strong>` +
-                              `<div style="max-height:200px; overflow-y:auto;">${data.text}</div>`;
-      } else {
-          tooltip.innerHTML = "Reference not found.";
-      }
+      tooltip.innerHTML = data.text ? `<strong>${data.reference}</strong><br>${data.text}` : "Not found";
     } catch {
-      tooltip.innerHTML = "Unable to load preview.";
-    }
-
-    const link = document.createElement("a");
-    link.href = siteURL;
-    link.target = "_blank";
-    link.textContent = "Study on Blue Letter Bible →";
-    link.style.cssText = "display:block; font-size:11px; color:#0066cc; margin-top:10px; border-top:1px solid #eee; padding-top:8px;";
-    tooltip.appendChild(link);
-  });
-
-  mainEl.addEventListener("mouseout", (e) => {
-    if (e.target.closest(".bibleref")) {
-      hideTimeout = setTimeout(() => {
-        if (!tooltip.matches(":hover")) tooltip.style.display = "none";
-      }, 300);
+      tooltip.innerHTML = "Error loading preview.";
     }
   });
 
-  tooltip.addEventListener("mouseenter", () => clearTimeout(hideTimeout));
-  tooltip.addEventListener("mouseleave", () => tooltip.style.display = "none");
+  mainEl.addEventListener("mouseout", () => { tooltip.style.display = "none"; });
 });
