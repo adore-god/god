@@ -87,14 +87,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
   wrapBibleReferences(mainEl);
 
+
   const tooltip = document.createElement("div");
+  // Set fixed styles
   Object.assign(tooltip.style, {
-    position: "absolute", background: "#fff", color: "#333", border: "1px solid #ccc",
-    padding: "14px", fontSize: "15px", display: "none", zIndex: "10000",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.15)", borderRadius: "4px",
-    pointerEvents: "auto"
+    position: "absolute", display: "none", zIndex: "10000",
+    padding: "14px", fontSize: "15px", boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+    borderRadius: "4px", pointerEvents: "auto"
   });
+
+  
+  const themes = {
+    light: { background: "#fff", color: "#333", border: "1px solid #ccc" },
+    dark: { background: "#333", color: "#eee", border: "1px solid #555" }
+  };
+
+
+  function applyTheme(isDark) {
+    Object.assign(tooltip.style, isDark ? themes.dark : themes.light);
+  }
+
+  const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+ 
+  applyTheme(darkModeMediaQuery.matches);
+
+  // Listen for changes (if the user toggles OS dark mode while the page is open)
+  darkModeMediaQuery.addEventListener("change", (e) => applyTheme(e.matches));
+
   document.body.appendChild(tooltip);
+
+
 
   mainEl.addEventListener("mouseover", async function(e) {
     const ref = e.target.closest(".bibleref");
