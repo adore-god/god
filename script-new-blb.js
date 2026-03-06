@@ -98,8 +98,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   const themes = {
-    light: { background: "#fff", color: "#333", border: "1px solid #ccc" },
-    dark: { background: "#333", color: "#eee", border: "1px solid #555" }
+    light: { background: "#fff", color: "#000", border: "1px solid #ccc" },
+    dark: { background: "#111", color: "#eee", border: "1px solid #555" }
   };
 
 
