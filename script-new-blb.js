@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
  
   applyTheme(darkModeMediaQuery.matches);
 
-  // Listen for changes (if the user toggles OS dark mode while the page is open)
+ 
   darkModeMediaQuery.addEventListener("change", (e) => applyTheme(e.matches));
 
   document.body.appendChild(tooltip);
