@@ -1,61 +1,62 @@
 
 
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
     // --- SETTINGS ---
-    const targetSelector = 'main'; 
-    const position = 'beforebegin'; 
+    // Change this to your class name (e.g., '.my-content-class')
+    const targetSelector = '.label-links'; 
+    const position = 'beforeend'; // Options: 'beforebegin', 'afterbegin', 'beforeend', 'afterend'
     // ----------------
 
-    const labelContainer = document.querySelector('.label-links');
-    const targetElement = document.querySelector(targetSelector);
-    
-    // Debugging: useful if it still fails
-    if (!labelContainer) console.warn("Could not find .label-links");
-    if (!targetElement) console.warn("Could not find " + targetSelector);
+    function injectList() {
+        const labelContainer = document.querySelector('.label-links');
+        const targetElement = document.querySelector(targetSelector);
+        
+        // Don't run if already injected or if elements are missing
+        if (!labelContainer || !targetElement || document.getElementById('injected-series-list')) return;
 
-    if (!labelContainer || !targetElement) return;
+        const exclude = ["about-author.html", "god.thway.uk/", "genesis-foundational-principles.html"];
+        const map = window.labelMap;
+        const container = document.createElement('div');
+        container.id = 'injected-series-list';
+        
+        targetElement.insertAdjacentElement(position, container);
 
-    const exclude = [
-        "about-author.html",
-        "god.thway.uk/",
-        "genesis-foundational-principles.html"
-    ];
+        const allLinks = labelContainer.querySelectorAll('a');
+        allLinks.forEach(link => {
+            if (exclude.some(ex => link.href.includes(ex))) return;
 
-    const map = window.labelMap;
-    const container = document.createElement('div');
-    container.id = 'injected-series-list';
-    
-    targetElement.insertAdjacentElement(position, container);
-
-    const allLinks = labelContainer.querySelectorAll('a');
-    
-    allLinks.forEach(link => {
-        if (exclude.some(ex => link.href.includes(ex))) return;
-
-        let matches = [];
-        for (let path in map) {
-            if (map[path].series && link.href.endsWith(map[path].series.split('/').pop())) {
-                matches.push({ path: path, title: map[path].title });
+            let matches = [];
+            for (let path in map) {
+                if (map[path].series && link.href.endsWith(map[path].series.split('/').pop())) {
+                    matches.push({ path: path, title: map[path].title });
+                }
             }
-        }
 
-        if (matches.length > 0) {
-            const section = document.createElement('div');
-            section.innerHTML = '<h3>More in ' + link.textContent + '</h3><ul></ul>';
-            const ul = section.querySelector('ul');
-            
-            matches.forEach(item => {
-                const li = document.createElement('li');
-                const a = document.createElement('a');
-                a.href = item.path;
-                a.textContent = item.title;
-                li.appendChild(a);
-                ul.appendChild(li);
-            });
-            container.appendChild(section);
-        }
-    });
-});
+            if (matches.length > 0) {
+                const section = document.createElement('div');
+                section.innerHTML = '<h3>More in ' + link.textContent + '</h3><ul></ul>';
+                const ul = section.querySelector('ul');
+                matches.forEach(item => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = item.path;
+                    a.textContent = item.title;
+                    li.appendChild(a);
+                    ul.appendChild(li);
+                });
+                container.appendChild(section);
+            }
+        });
+    }
+
+    // 1. Try running immediately
+    injectList();
+
+    // 2. Observer: Watch for dynamic content changes in case it loads late
+    const observer = new MutationObserver(injectList);
+    observer.observe(document.body, { childList: true, subtree: true });
+})();
+
 
  
 
