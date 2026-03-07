@@ -28,6 +28,7 @@
     // target.after(container);
 
     const allLinks = labelContainer.querySelectorAll("a");
+    const currentPage = window.location.href;
 
     allLinks.forEach(link => {
 
@@ -35,7 +36,8 @@
 
             if (
                 map[path].series &&
-                link.href.endsWith(map[path].series.split("/").pop())
+                link.href.endsWith(map[path].series.split("/").pop()) &&
+                path !== currentPage // Skip the link if it's the current page
             ) {
 
                 const a = document.createElement("a");
