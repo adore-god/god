@@ -1,72 +1,44 @@
-(function() {
+(function waitForLabels(){
 
     const labelContainer = document.querySelector('.label-links');
     const map = window.labelMap;
 
-    if (!labelContainer || !map) return;
+    if (!labelContainer || !map) {
+        setTimeout(waitForLabels, 100);
+        return;
+    }
 
-    const exclude = [
-        "about-author.html",
-        "god.thway.uk/",
-        "genesis-foundational-principles.html"
-    ];
-
-    const container = document.createElement('div');
-    container.id = 'series-links-wrapper';
-
+    const container = document.createElement("div");
+    container.id = "series-links-wrapper";
     document.body.appendChild(container);
 
-    const allLinks = labelContainer.querySelectorAll('a');
+    const allLinks = labelContainer.querySelectorAll("a");
 
     allLinks.forEach(link => {
 
-        if (exclude.some(ex => link.href.includes(ex))) return;
-
-        let matches = [];
-
         for (let path in map) {
+
             if (
                 map[path].series &&
-                link.href.endsWith(map[path].series.split('/').pop())
+                link.href.endsWith(map[path].series.split("/").pop())
             ) {
-                matches.push({
-                    path: path,
-                    title: map[path].title
-                });
+
+                const a = document.createElement("a");
+                a.href = path;
+                a.textContent = map[path].title;
+
+                const div = document.createElement("div");
+                div.appendChild(a);
+
+                container.appendChild(div);
+
             }
+
         }
 
-        if (matches.length > 0) {
-
-            const section = document.createElement('div');
-            section.className = 'series-group';
-
-            const heading = document.createElement('h3');
-            heading.textContent = 'More in ' + link.textContent;
-
-            const ul = document.createElement('ul');
-
-            matches.forEach(item => {
-
-                const li = document.createElement('li');
-                const a = document.createElement('a');
-
-                a.href = item.path;
-                a.textContent = item.title;
-
-                li.appendChild(a);
-                ul.appendChild(li);
-
-            });
-
-            section.appendChild(heading);
-            section.appendChild(ul);
-
-            container.appendChild(section);
-        }
     });
 
-})(); 
+})();
 
 
 
