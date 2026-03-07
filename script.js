@@ -1,49 +1,58 @@
 (function() {
-    // A temporary container to show us what's happening
-    const debugLog = document.createElement('div');
-    debugLog.style.cssText = 'background:black; color:lime; padding:10px; position:fixed; bottom:0; width:100%; z-index:9999; font-size:12px;';
-    document.body.appendChild(debugLog);
-    
-    function log(msg) { debugLog.innerHTML += msg + '<br>'; }
-
-    log("Script starting...");
+    // --- SETTINGS ---
+    // Where in the page do you want the list to appear?
+    const targetSelector = 'main'; 
+    // Do you want it 'beforebegin', 'afterbegin', 'beforeend', or 'afterend'?
+    const position = 'beforeend'; 
+    // ----------------
 
     const labelContainer = document.querySelector('.label-links');
-    if (!labelContainer) { log("ERROR: No .label-links found"); return; }
-    log("Found label-links");
+    const targetElement = document.querySelector(targetSelector);
+    
+    if (!labelContainer || !targetElement) return;
 
-    if (typeof window.labelMap === 'undefined') {
-        log("ERROR: labelMap is not loaded!");
-        return;
-    }
-    log("labelMap found with " + Object.keys(window.labelMap).length + " entries");
+    const exclude = [
+        "about-author.html",
+        "god.thway.uk/",
+        "genesis-foundational-principles.html"
+    ];
 
-    // --- Processing ---
-    const targetElement = document.querySelector('article') || document.body;
+    const map = window.labelMap;
     const container = document.createElement('div');
     container.id = 'injected-series-list';
-    targetElement.appendChild(container);
+    
+    // Inject the container into your chosen position
+    targetElement.insertAdjacentElement(position, container);
 
     const allLinks = labelContainer.querySelectorAll('a');
+    
     allLinks.forEach(link => {
-        log("Checking link: " + link.textContent);
-        
+        if (exclude.some(ex => link.href.includes(ex))) return;
+
         let matches = [];
-        for (let path in window.labelMap) {
-            let seriesUrl = window.labelMap[path].series;
-            // Does the URL match?
-            if (link.href.endsWith(seriesUrl.split('/').pop())) {
-                matches.push({ path: path, title: window.labelMap[path].title });
+        for (let path in map) {
+            if (map[path].series && link.href.endsWith(map[path].series.split('/').pop())) {
+                matches.push({ path: path, title: map[path].title });
             }
         }
-        
+
         if (matches.length > 0) {
-            log("Found " + matches.length + " matches for " + link.textContent);
-            // ... (rest of your list building code)
+            const section = document.createElement('div');
+            section.innerHTML = '<h3>More in ' + link.textContent + '</h3><ul></ul>';
+            const ul = section.querySelector('ul');
+            
+            matches.forEach(item => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = item.path;
+                a.textContent = item.title;
+                li.appendChild(a);
+                ul.appendChild(li);
+            });
+            container.appendChild(section);
         }
     });
 })();
-
 
 document.addEventListener('DOMContentLoaded', () => {
 
