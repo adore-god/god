@@ -1,58 +1,4 @@
-(function() {
-    // --- SETTINGS ---
-    // Where in the page do you want the list to appear?
-    const targetSelector = 'main'; 
-    // Do you want it 'beforebegin', 'afterbegin', 'beforeend', or 'afterend'?
-    const position = 'beforebegin'; 
-    // ----------------
 
-    const labelContainer = document.querySelector('.label-links');
-    const targetElement = document.querySelector(targetSelector);
-    
-    if (!labelContainer || !targetElement) return;
-
-    const exclude = [
-        "about-author.html",
-        "god.thway.uk/",
-        "genesis-foundational-principles.html"
-    ];
-
-    const map = window.labelMap;
-    const container = document.createElement('div');
-    container.id = 'injected-series-list';
-    
-    // Inject the container into your chosen position
-    targetElement.insertAdjacentElement(position, container);
-
-    const allLinks = labelContainer.querySelectorAll('a');
-    
-    allLinks.forEach(link => {
-        if (exclude.some(ex => link.href.includes(ex))) return;
-
-        let matches = [];
-        for (let path in map) {
-            if (map[path].series && link.href.endsWith(map[path].series.split('/').pop())) {
-                matches.push({ path: path, title: map[path].title });
-            }
-        }
-
-        if (matches.length > 0) {
-            const section = document.createElement('div');
-            section.innerHTML = '<h3>More in ' + link.textContent + '</h3><ul></ul>';
-            const ul = section.querySelector('ul');
-            
-            matches.forEach(item => {
-                const li = document.createElement('li');
-                const a = document.createElement('a');
-                a.href = item.path;
-                a.textContent = item.title;
-                li.appendChild(a);
-                ul.appendChild(li);
-            });
-            container.appendChild(section);
-        }
-    });
-})();
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -306,3 +252,61 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+
+(function() {
+    // --- SETTINGS ---
+    // Where in the page do you want the list to appear?
+    const targetSelector = 'main'; 
+    // Do you want it 'beforebegin', 'afterbegin', 'beforeend', or 'afterend'?
+    const position = 'beforebegin'; 
+    // ----------------
+
+    const labelContainer = document.querySelector('.label-links');
+    const targetElement = document.querySelector(targetSelector);
+    
+    if (!labelContainer || !targetElement) return;
+
+    const exclude = [
+        "about-author.html",
+        "god.thway.uk/",
+        "genesis-foundational-principles.html"
+    ];
+
+    const map = window.labelMap;
+    const container = document.createElement('div');
+    container.id = 'injected-series-list';
+    
+    // Inject the container into your chosen position
+    targetElement.insertAdjacentElement(position, container);
+
+    const allLinks = labelContainer.querySelectorAll('a');
+    
+    allLinks.forEach(link => {
+        if (exclude.some(ex => link.href.includes(ex))) return;
+
+        let matches = [];
+        for (let path in map) {
+            if (map[path].series && link.href.endsWith(map[path].series.split('/').pop())) {
+                matches.push({ path: path, title: map[path].title });
+            }
+        }
+
+        if (matches.length > 0) {
+            const section = document.createElement('div');
+            section.innerHTML = '<h3>More in ' + link.textContent + '</h3><ul></ul>';
+            const ul = section.querySelector('ul');
+            
+            matches.forEach(item => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = item.path;
+                a.textContent = item.title;
+                li.appendChild(a);
+                ul.appendChild(li);
+            });
+            container.appendChild(section);
+        }
+    });
+})();
