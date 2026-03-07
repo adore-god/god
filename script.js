@@ -1,15 +1,11 @@
-(function() {
-    // --- SETTINGS ---
-    // Where in the page do you want the list to appear?
+document.addEventListener('DOMContentLoaded', () => {
     const targetSelector = 'article'; 
-    // Do you want it 'beforebegin', 'afterbegin', 'beforeend', or 'afterend'?
     const position = 'beforebegin'; 
-    // ----------------
 
     const labelContainer = document.querySelector('.label-links');
     const targetElement = document.querySelector(targetSelector);
     
-    if (!labelContainer || !targetElement) return;
+    if (!labelContainer || !targetElement || !window.labelMap) return;
 
     const exclude = [
         "about-author.html",
@@ -21,7 +17,6 @@
     const container = document.createElement('div');
     container.id = 'injected-series-list';
     
-    // Inject the container into your chosen position
     targetElement.insertAdjacentElement(position, container);
 
     const allLinks = labelContainer.querySelectorAll('a');
@@ -52,7 +47,12 @@
             container.appendChild(section);
         }
     });
-})();
+});
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
