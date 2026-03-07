@@ -161,7 +161,23 @@ a:hover {
   text-decoration-style: solid;
 }
 
+.page-nav{
+display:flex;
+justify-content:space-between;
+margin:40px 0;
+font-size:16px;
+}
 
+.page-nav a{
+padding:10px 18px;
+border:1px solid #ccc;
+text-decoration:none;
+border-radius:4px;
+}
+
+.page-nav a:hover{
+background:#f3f3f3;
+}
 
 .breadcrumb {
   font-size: 0.75em;

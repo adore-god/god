@@ -1,3 +1,49 @@
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (document.querySelector(".page-nav")) return;
+
+  const navLinks = document.querySelectorAll(".nav a");
+  const currentPage = window.location.pathname.split("/").pop();
+
+  const target = document.querySelector("h1");
+  if (!target) return;
+
+  let index = -1;
+
+  navLinks.forEach((link, i) => {
+    if (link.getAttribute("href") === currentPage) {
+      index = i;
+    }
+  });
+
+  if (index === -1) return;
+
+  const container = document.createElement("div");
+  container.className = "page-nav";
+
+  if (index > 0) {
+    const prev = document.createElement("a");
+    prev.href = navLinks[index - 1].href;
+    prev.className = "prev";
+    prev.textContent = " Previous";
+    container.appendChild(prev);
+  }
+
+  if (index < navLinks.length - 1) {
+    const next = document.createElement("a");
+    next.href = navLinks[index + 1].href;
+    next.className = "next";
+    next.textContent = "Next ";
+    container.appendChild(next);
+  }
+
+  target.insertAdjacentElement("afterend", container);
+
+});
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
   let path = window.location.pathname.toLowerCase();
