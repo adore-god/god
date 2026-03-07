@@ -301,7 +301,7 @@ blockquote {
 }
 
 #VerseLinkBox {
-    font-size: 0.9em;
+    font-size: 1em;
     flex: 1;                  
     min-width: 0;          
 }

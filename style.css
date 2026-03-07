@@ -1134,13 +1134,13 @@ html[data-theme="light"] body {
 html[data-theme="light"] #VerseLinkBox a,
 html[data-theme="light"] #VerseLinkBox a:link,
 html[data-theme="light"] #VerseLinkBox a:visited {
-color:#fff !important;
+color:#F2D479 !important;
 	}
 	
 html[data-theme="light"] #Verse-Link-Container a,	
 html[data-theme="light"] #Verse-Link-Container a:link,
 html[data-theme="light"] #Verse-Link-Container a:visited {
-color:#fff !important;	
+color:#F2D479 !important;	
 	}
 	
 	
