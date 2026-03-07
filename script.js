@@ -1,37 +1,67 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  if (document.querySelector(".page-nav")) return;
+  if (document.querySelector(".page-nav")) return; // already added
 
-  const navLinks = document.querySelectorAll(".nav a");
-  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = Array.from(document.querySelectorAll(".nav a"));
+  const currentPage = window.location.pathname.split("/").pop(); // current page filename
 
   const target = document.querySelector("main");
   if (!target) return;
 
-  let index = -1;
+  // Helper: normalize paths (remove ../ and leading slashes)
+  const normalize = (path) => path.replace(/^(\.\.\/)+/, "").replace(/^\/+/, "");
 
-  navLinks.forEach((link, i) => {
-    if (link.getAttribute("href") === currentPage) {
-      index = i;
+  // --- Try Main Nav first ---
+  let index = navLinks.findIndex(link => normalize(link.getAttribute("href")) === currentPage);
+
+  let pageLinks = [];
+
+  if (index !== -1) {
+    // main nav page: use navLinks
+    pageLinks = navLinks.map(link => normalize(link.getAttribute("href")));
+  } else {
+    // --- Otherwise, check label-links and use labelMap ---
+    const labelLinks = Array.from(document.querySelectorAll(".label-links a")).map(a => normalize(a.getAttribute("href")));
+
+    // find the first label-link that exists in labelMap
+    let groupTarget = null;
+    for (const link of labelLinks) {
+      if (labelMap[link]) {
+        groupTarget = labelMap[link]; // target group URL
+        break;
+      }
     }
-  });
 
-  if (index === -1) return;
+    if (groupTarget) {
+      // collect all keys in labelMap that belong to this group
+      pageLinks = Object.entries(labelMap)
+        .filter(([key, value]) => value === groupTarget)
+        .map(([key]) => normalize(key));
+    }
+  }
 
+  // If no links found, stop
+  if (!pageLinks.length) return;
+
+  // find current page index
+  const currentIndex = pageLinks.indexOf(currentPage);
+  if (currentIndex === -1) return;
+
+  // --- Create pager ---
   const container = document.createElement("div");
   container.className = "page-nav";
 
-  if (index > 0) {
+  if (currentIndex > 0) {
     const prev = document.createElement("a");
-    prev.href = navLinks[index - 1].href;
+    prev.href = pageLinks[currentIndex - 1];
     prev.className = "prev";
     prev.textContent = " Previous";
     container.appendChild(prev);
   }
 
-  if (index < navLinks.length - 1) {
+  if (currentIndex < pageLinks.length - 1) {
     const next = document.createElement("a");
-    next.href = navLinks[index + 1].href;
+    next.href = pageLinks[currentIndex + 1];
     next.className = "next";
     next.textContent = "Next ";
     container.appendChild(next);
@@ -40,8 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
   target.prepend(container);
 
 });
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
 
