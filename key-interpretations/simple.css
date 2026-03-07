@@ -30,7 +30,28 @@ article {
     max-width: 800px;
     margin: 0 auto;
     background: #ffffff;
-    padding: 2.5rem 1rem; 
+    padding: 2.5rem 1.5rem; 
+}
+
+.article-nav {
+  margin: 20px 0;
+  padding: 0;
+  background: transparent;
+  line-height: 1;
+}
+
+.article-nav a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.article-nav a:hover {
+  text-decoration: underline;
+}
+
+.article-nav .sep {
+  color: #888;
+  margin: 0 10px;
 }
 
 /* Header */
