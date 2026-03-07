@@ -3,7 +3,7 @@
     // Where in the page do you want the list to appear?
     const targetSelector = 'main'; 
     // Do you want it 'beforebegin', 'afterbegin', 'beforeend', or 'afterend'?
-    const position = 'beforeend'; 
+    const position = 'beforebegin'; 
     // ----------------
 
     const labelContainer = document.querySelector('.label-links');
