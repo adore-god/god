@@ -94,6 +94,10 @@ blockquote {
 }
 
 /* Paragraphs */
+
+dfn {
+	font-style:normal;
+	}
 p {
     margin-bottom: 1rem;
 }

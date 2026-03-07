@@ -173,6 +173,9 @@ p {
   margin: 1.2em 0;
   text-indent: 0;
 }
+dfn {
+	font-style:normal;
+	}
 
 blockquote cite
  {
