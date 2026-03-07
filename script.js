@@ -1,4 +1,153 @@
+(function() {
+    // --- SETTINGS ---
+    // Where in the page do you want the list to appear?
+    const targetSelector = 'article'; 
+    // Do you want it 'beforebegin', 'afterbegin', 'beforeend', or 'afterend'?
+    const position = 'beforebegin'; 
+    // ----------------
 
+    const labelContainer = document.querySelector('.label-links');
+    const targetElement = document.querySelector(targetSelector);
+    
+    if (!labelContainer || !targetElement) return;
+
+    const exclude = [
+        "about-author.html",
+        "god.thway.uk/",
+        "genesis-foundational-principles.html"
+    ];
+
+    const map = window.labelMap;
+    const container = document.createElement('div');
+    container.id = 'injected-series-list';
+    
+    // Inject the container into your chosen position
+    targetElement.insertAdjacentElement(position, container);
+
+    const allLinks = labelContainer.querySelectorAll('a');
+    
+    allLinks.forEach(link => {
+        if (exclude.some(ex => link.href.includes(ex))) return;
+
+        let matches = [];
+        for (let path in map) {
+            if (map[path].series && link.href.endsWith(map[path].series.split('/').pop())) {
+                matches.push({ path: path, title: map[path].title });
+            }
+        }
+
+        if (matches.length > 0) {
+            const section = document.createElement('div');
+            section.innerHTML = '<h3>More in ' + link.textContent + '</h3><ul></ul>';
+            const ul = section.querySelector('ul');
+            
+            matches.forEach(item => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = item.path;
+                a.textContent = item.title;
+                li.appendChild(a);
+                ul.appendChild(li);
+            });
+            container.appendChild(section);
+        }
+    });
+})();
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  let path = window.location.pathname.toLowerCase();
+
+  // Normalise index page
+  if (path === '/' || path === '/index.html' || path === '/index.htm') {
+    return;
+  }
+
+  const excludePaths = [
+    '/about_13.html',
+    '/series-links.html',
+    '/search.html'
+  ];
+
+  if (excludePaths.includes(path)) return;
+
+  const labelLinks = Array.from(document.querySelectorAll('.label-links a'));
+  const mainContent = document.querySelector('main.content');
+  if (!mainContent) return;
+
+  // Prevent duplicate breadcrumb
+  if (document.querySelector('.breadcrumb')) return;
+
+  const breadcrumb = document.createElement('nav');
+  breadcrumb.className = 'breadcrumb';
+  breadcrumb.setAttribute('aria-label', 'Breadcrumb');
+
+  function createCrumb(href, text) {
+    const a = document.createElement('a');
+    a.href = href;
+    a.textContent = text;
+    a.classList.add('noTag');
+    return a;
+  }
+
+  function addSeparator() {
+    const sep = document.createElement('span');
+    sep.className = 'breadcrumb-separator';
+    sep.textContent = ' | ';
+    breadcrumb.appendChild(sep);
+  }
+
+  // 1. Home
+  breadcrumb.appendChild(createCrumb('https://god.thway.uk/', 'Home'));
+  addSeparator();
+
+  // 2. Genesis Foundational Principles
+  const gfp = document.createElement('span');
+  gfp.textContent = 'Genesis Foundational Principles';
+  gfp.classList.add('gfp');
+  gfp.style.cursor = 'pointer';
+  gfp.addEventListener('click', () => {
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    if (sidebarToggle) sidebarToggle.checked = true;
+  });
+  breadcrumb.appendChild(gfp);
+  addSeparator();
+
+  // 3. Current Page
+  const pageTitle = document.querySelector('h1')?.textContent || document.title;
+  const currentPage = document.createElement('span');
+  currentPage.textContent = pageTitle;
+  currentPage.classList.add('breadcrumb-current', 'noTag');
+  breadcrumb.appendChild(currentPage);
+
+  // Separate About link
+  const authorIndex = labelLinks.findIndex(link =>
+    link.href.includes('about-author.html')
+  );
+
+  let authorLink = null;
+  if (authorIndex > -1) {
+    [authorLink] = labelLinks.splice(authorIndex, 1);
+  }
+
+  // 4. Page Links
+  labelLinks.forEach(link => {
+    addSeparator();
+    breadcrumb.appendChild(createCrumb(link.href, link.textContent));
+  });
+
+  // 5. About The Author
+  if (authorLink) {
+    addSeparator();
+    breadcrumb.appendChild(createCrumb(authorLink.href, authorLink.textContent));
+  }
+
+  mainContent.insertBefore(breadcrumb, mainContent.firstChild);
+
+}); 
+
+ 
+ 
 
 
 
@@ -157,86 +306,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    // --- SETTINGS ---
-    // Change this to the class name you want to target, e.g., '.my-container'
-    const targetSelector = '.footer'; 
-    const position = 'afterbegin'; // or 'beforeend', 'beforebegin', 'afterend'
-    // ----------------
-
-    function injectList() {
-        const targetElement = document.querySelector(targetSelector);
-        if (!targetElement) return;
-
-        // Prevent duplicates if this runs multiple times
-        if (document.getElementById('injected-series-list')) return;
-
-        const labelContainer = document.querySelector('.label-links');
-        if (!labelContainer) return;
-
-        const exclude = ["about-author.html", "god.thway.uk/", "genesis-foundational-principles.html"];
-        const map = window.labelMap;
-        
-        const container = document.createElement('div');
-        container.id = 'injected-series-list';
-        targetElement.insertAdjacentElement(position, container);
-
-        const allLinks = labelContainer.querySelectorAll('a');
-        
-        allLinks.forEach(link => {
-            if (exclude.some(ex => link.href.includes(ex))) return;
-
-            let matches = [];
-            for (let path in map) {
-                if (map[path].series && link.href.endsWith(map[path].series.split('/').pop())) {
-                    matches.push({ path: path, title: map[path].title });
-                }
-            }
-
-            if (matches.length > 0) {
-                // Wrapper for each series block
-                const listWrapper = document.createElement('div');
-                listWrapper.className = 'series-block';
-                
-                const header = document.createElement('h3');
-                header.textContent = 'More in ' + link.textContent;
-                listWrapper.appendChild(header);
-                
-                // Div wrapping the UL specifically
-                const ulContainer = document.createElement('div');
-                ulContainer.className = 'ul-wrapper';
-                
-                const ul = document.createElement('ul');
-                matches.forEach(item => {
-                    const li = document.createElement('li');
-                    const a = document.createElement('a');
-                    a.href = item.path;
-                    a.textContent = item.title;
-                    li.appendChild(a);
-                    ul.appendChild(li);
-                });
-                
-                ulContainer.appendChild(ul);
-                listWrapper.appendChild(ulContainer);
-                container.appendChild(listWrapper);
-            }
-        });
-    }
-
-    // Try once immediately
-    injectList();
-
-    // Watch for dynamic DOM changes (in case the class is injected late)
-    const observer = new MutationObserver(() => {
-        if (document.querySelector(targetSelector) && !document.getElementById('injected-series-list')) {
-            injectList();
-        }
-    });
-    observer.observe(document.body, { childList: true, subtree: true });
-});
-
-  
-
