@@ -1,75 +1,59 @@
-document.addEventListener("DOMContentLoaded", function () {
+(function() {
+    // --- SETTINGS ---
+    // Where in the page do you want the list to appear?
+    const targetSelector = 'article'; 
+    // Do you want it 'beforebegin', 'afterbegin', 'beforeend', or 'afterend'?
+    const position = 'beforeend'; 
+    // ----------------
 
-  if (document.querySelector(".page-nav")) return; // already added
+    const labelContainer = document.querySelector('.label-links');
+    const targetElement = document.querySelector(targetSelector);
+    
+    if (!labelContainer || !targetElement) return;
 
-  const navLinks = Array.from(document.querySelectorAll(".nav a"));
-  const currentPage = window.location.pathname.split("/").pop(); // current page filename
+    const exclude = [
+        "about-author.html",
+        "god.thway.uk/",
+        "genesis-foundational-principles.html"
+    ];
 
-  const target = document.querySelector("main");
-  if (!target) return;
+    const map = window.labelMap;
+    const container = document.createElement('div');
+    container.id = 'injected-series-list';
+    
+    // Inject the container into your chosen position
+    targetElement.insertAdjacentElement(position, container);
 
-  // Helper: normalize paths (remove ../ and leading slashes)
-  const normalize = (path) => path.replace(/^(\.\.\/)+/, "").replace(/^\/+/, "");
+    const allLinks = labelContainer.querySelectorAll('a');
+    
+    allLinks.forEach(link => {
+        if (exclude.some(ex => link.href.includes(ex))) return;
 
-  // --- Try Main Nav first ---
-  let index = navLinks.findIndex(link => normalize(link.getAttribute("href")) === currentPage);
+        let matches = [];
+        for (let path in map) {
+            if (map[path].series && link.href.endsWith(map[path].series.split('/').pop())) {
+                matches.push({ path: path, title: map[path].title });
+            }
+        }
 
-  let pageLinks = [];
-
-  if (index !== -1) {
-    // main nav page: use navLinks
-    pageLinks = navLinks.map(link => normalize(link.getAttribute("href")));
-  } else {
-    // --- Otherwise, check label-links and use labelMap ---
-    const labelLinks = Array.from(document.querySelectorAll(".label-links a")).map(a => normalize(a.getAttribute("href")));
-
-    // find the first label-link that exists in labelMap
-    let groupTarget = null;
-    for (const link of labelLinks) {
-      if (labelMap[link]) {
-        groupTarget = labelMap[link]; // target group URL
-        break;
-      }
-    }
-
-    if (groupTarget) {
-      // collect all keys in labelMap that belong to this group
-      pageLinks = Object.entries(labelMap)
-        .filter(([key, value]) => value === groupTarget)
-        .map(([key]) => normalize(key));
-    }
-  }
-
-  // If no links found, stop
-  if (!pageLinks.length) return;
-
-  // find current page index
-  const currentIndex = pageLinks.indexOf(currentPage);
-  if (currentIndex === -1) return;
-
-  // --- Create pager ---
-  const container = document.createElement("div");
-  container.className = "page-nav";
-
-  if (currentIndex > 0) {
-    const prev = document.createElement("a");
-    prev.href = pageLinks[currentIndex - 1];
-    prev.className = "prev";
-    prev.textContent = " Previous";
-    container.appendChild(prev);
-  }
-
-  if (currentIndex < pageLinks.length - 1) {
-    const next = document.createElement("a");
-    next.href = pageLinks[currentIndex + 1];
-    next.className = "next";
-    next.textContent = "Next ";
-    container.appendChild(next);
-  }
-
-  target.prepend(container);
-
-});
+        if (matches.length > 0) {
+            const section = document.createElement('div');
+            section.innerHTML = '<h3>More in ' + link.textContent + '</h3><ul></ul>';
+            const ul = section.querySelector('ul');
+            
+            matches.forEach(item => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = item.path;
+                a.textContent = item.title;
+                li.appendChild(a);
+                ul.appendChild(li);
+            });
+            container.appendChild(section);
+        }
+    });
+})();
+ 
 
 document.addEventListener('DOMContentLoaded', () => {
 
