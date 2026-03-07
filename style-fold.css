@@ -301,21 +301,21 @@ blockquote {
 }
 
 #VerseLinkBox {
-    font-size: 1.1em;
+    font-size: 0.9em;
     flex: 1;                  
     min-width: 0;          
 }
 
 #VerseLinkBox a:link,
 #VerseLinkBox a:visited {
-color:#fff !important;
+color:#F2D479 !important;
 	}
 	
 #Verse-Link-Container a:link,
 #Verse-Link-Container a:visited {
 text-decoration: none;
-font-weight: 800;
-color:#fff !important;	
+font-weight: 600;
+color:#F2D479 !important;	
 	}
 #Verse-Link-Container:hover {
   transform: translateY(-3px);

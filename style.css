@@ -130,16 +130,7 @@ figure figcaption {
 	width: 100%;
 	display:block;
 	}
-img.lingua-divina2 {
-  opacity: 1;
-  width:60vw;
-  max-width: 200px;
-  height: auto;    
-  display: block;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  mix-blend-mode: normal;
-	}
+
   
 img.key-icon {
     width: 110px;
@@ -972,15 +963,15 @@ html[data-theme="light"] th {
 #VerseLinkBox a,
 #VerseLinkBox a:link,
 #VerseLinkBox a:visited {
-color:#fff !important;
+color:#F2D479 !important;
 	}
 
 #Verse-Link-Container a,
 #Verse-Link-Container a:link,
 #Verse-Link-Container a:visited {
 text-decoration: none;
-font-weight: 800;
-color:#fff !important;	
+font-weight: 600;
+color:#F2D479 !important;	
 	}
   
 .aforce {
