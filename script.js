@@ -1,27 +1,31 @@
 
 
-(function() {
+document.addEventListener('DOMContentLoaded', function() {
     // --- SETTINGS ---
-    // Change this to your class name (e.g., '.my-content-class')
-    const targetSelector = '.label-links'; 
-    const position = 'beforeend'; // Options: 'beforebegin', 'afterbegin', 'beforeend', 'afterend'
+    // Change this to the class name you want to target, e.g., '.my-container'
+    const targetSelector = '.footer'; 
+    const position = 'afterbegin'; // or 'beforeend', 'beforebegin', 'afterend'
     // ----------------
 
     function injectList() {
-        const labelContainer = document.querySelector('.label-links');
         const targetElement = document.querySelector(targetSelector);
-        
-        // Don't run if already injected or if elements are missing
-        if (!labelContainer || !targetElement || document.getElementById('injected-series-list')) return;
+        if (!targetElement) return;
+
+        // Prevent duplicates if this runs multiple times
+        if (document.getElementById('injected-series-list')) return;
+
+        const labelContainer = document.querySelector('.label-links');
+        if (!labelContainer) return;
 
         const exclude = ["about-author.html", "god.thway.uk/", "genesis-foundational-principles.html"];
         const map = window.labelMap;
+        
         const container = document.createElement('div');
         container.id = 'injected-series-list';
-        
         targetElement.insertAdjacentElement(position, container);
 
         const allLinks = labelContainer.querySelectorAll('a');
+        
         allLinks.forEach(link => {
             if (exclude.some(ex => link.href.includes(ex))) return;
 
@@ -33,9 +37,19 @@
             }
 
             if (matches.length > 0) {
-                const section = document.createElement('div');
-                section.innerHTML = '<h3>More in ' + link.textContent + '</h3><ul></ul>';
-                const ul = section.querySelector('ul');
+                // Wrapper for each series block
+                const listWrapper = document.createElement('div');
+                listWrapper.className = 'series-block';
+                
+                const header = document.createElement('h3');
+                header.textContent = 'More in ' + link.textContent;
+                listWrapper.appendChild(header);
+                
+                // Div wrapping the UL specifically
+                const ulContainer = document.createElement('div');
+                ulContainer.className = 'ul-wrapper';
+                
+                const ul = document.createElement('ul');
                 matches.forEach(item => {
                     const li = document.createElement('li');
                     const a = document.createElement('a');
@@ -44,21 +58,27 @@
                     li.appendChild(a);
                     ul.appendChild(li);
                 });
-                container.appendChild(section);
+                
+                ulContainer.appendChild(ul);
+                listWrapper.appendChild(ulContainer);
+                container.appendChild(listWrapper);
             }
         });
     }
 
-    // 1. Try running immediately
+    // Try once immediately
     injectList();
 
-    // 2. Observer: Watch for dynamic content changes in case it loads late
-    const observer = new MutationObserver(injectList);
+    // Watch for dynamic DOM changes (in case the class is injected late)
+    const observer = new MutationObserver(() => {
+        if (document.querySelector(targetSelector) && !document.getElementById('injected-series-list')) {
+            injectList();
+        }
+    });
     observer.observe(document.body, { childList: true, subtree: true });
-})();
+});
 
-
- 
+  
 
 
 
