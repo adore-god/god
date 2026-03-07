@@ -2,13 +2,20 @@
 
     const labelContainer = document.querySelector('.label-links');
     const map = window.labelMap;
-    const target = document.querySelector('.share-dropdown'); // class to append into
+    const target = document.querySelector('.share-dropdown');
 
     if (!labelContainer || !map || !target) {
         setTimeout(waitForLabels, 100);
         return;
     }
 
+    // Create title outside the wrapper
+    const title = document.createElement("div");
+    title.className = "series-links-title";
+    title.textContent = "More Reading";
+    target.appendChild(title);
+
+    // Create scrollable wrapper for links
     const container = document.createElement("div");
     container.id = "series-links-wrapper";
     target.appendChild(container);
