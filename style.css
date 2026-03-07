@@ -300,6 +300,10 @@ blockquote.relaxed {
 .center {
   text-align: center;
 }
+.center, .center-marg-auto {
+  text-align: center !important;
+  margin:0 auto
+}
 .aforce {
   text-decoration: underline dotted !important;
   text-decoration-color: rgba(0, 0, 0, 1) !important;
