@@ -147,6 +147,7 @@ img.key-icon {
     flex-shrink: 0; 
     mix-blend-mode: normal;
     opacity: 1;
+    border-radius:20px;
 	}
 
 img.reddit {

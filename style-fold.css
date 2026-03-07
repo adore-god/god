@@ -294,7 +294,7 @@ blockquote {
   text-transform: uppercase;
   font-size: 1em;
   color: #ffffff;
-  background: linear-gradient(135deg, #0B2B45, #1C5991);
+  background: #000;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;     
