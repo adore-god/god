@@ -1,85 +1,5 @@
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    // --- SETTINGS ---
-    // Change this to the class name you want to target, e.g., '.my-container'
-    const targetSelector = '.footer'; 
-    const position = 'afterbegin'; // or 'beforeend', 'beforebegin', 'afterend'
-    // ----------------
-
-    function injectList() {
-        const targetElement = document.querySelector(targetSelector);
-        if (!targetElement) return;
-
-        // Prevent duplicates if this runs multiple times
-        if (document.getElementById('injected-series-list')) return;
-
-        const labelContainer = document.querySelector('.label-links');
-        if (!labelContainer) return;
-
-        const exclude = ["about-author.html", "god.thway.uk/", "genesis-foundational-principles.html"];
-        const map = window.labelMap;
-        
-        const container = document.createElement('div');
-        container.id = 'injected-series-list';
-        targetElement.insertAdjacentElement(position, container);
-
-        const allLinks = labelContainer.querySelectorAll('a');
-        
-        allLinks.forEach(link => {
-            if (exclude.some(ex => link.href.includes(ex))) return;
-
-            let matches = [];
-            for (let path in map) {
-                if (map[path].series && link.href.endsWith(map[path].series.split('/').pop())) {
-                    matches.push({ path: path, title: map[path].title });
-                }
-            }
-
-            if (matches.length > 0) {
-                // Wrapper for each series block
-                const listWrapper = document.createElement('div');
-                listWrapper.className = 'series-block';
-                
-                const header = document.createElement('h3');
-                header.textContent = 'More in ' + link.textContent;
-                listWrapper.appendChild(header);
-                
-                // Div wrapping the UL specifically
-                const ulContainer = document.createElement('div');
-                ulContainer.className = 'ul-wrapper';
-                
-                const ul = document.createElement('ul');
-                matches.forEach(item => {
-                    const li = document.createElement('li');
-                    const a = document.createElement('a');
-                    a.href = item.path;
-                    a.textContent = item.title;
-                    li.appendChild(a);
-                    ul.appendChild(li);
-                });
-                
-                ulContainer.appendChild(ul);
-                listWrapper.appendChild(ulContainer);
-                container.appendChild(listWrapper);
-            }
-        });
-    }
-
-    // Try once immediately
-    injectList();
-
-    // Watch for dynamic DOM changes (in case the class is injected late)
-    const observer = new MutationObserver(() => {
-        if (document.querySelector(targetSelector) && !document.getElementById('injected-series-list')) {
-            injectList();
-        }
-    });
-    observer.observe(document.body, { childList: true, subtree: true });
-});
-
-  
-
 
 
 
@@ -237,3 +157,86 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // --- SETTINGS ---
+    // Change this to the class name you want to target, e.g., '.my-container'
+    const targetSelector = '.footer'; 
+    const position = 'afterbegin'; // or 'beforeend', 'beforebegin', 'afterend'
+    // ----------------
+
+    function injectList() {
+        const targetElement = document.querySelector(targetSelector);
+        if (!targetElement) return;
+
+        // Prevent duplicates if this runs multiple times
+        if (document.getElementById('injected-series-list')) return;
+
+        const labelContainer = document.querySelector('.label-links');
+        if (!labelContainer) return;
+
+        const exclude = ["about-author.html", "god.thway.uk/", "genesis-foundational-principles.html"];
+        const map = window.labelMap;
+        
+        const container = document.createElement('div');
+        container.id = 'injected-series-list';
+        targetElement.insertAdjacentElement(position, container);
+
+        const allLinks = labelContainer.querySelectorAll('a');
+        
+        allLinks.forEach(link => {
+            if (exclude.some(ex => link.href.includes(ex))) return;
+
+            let matches = [];
+            for (let path in map) {
+                if (map[path].series && link.href.endsWith(map[path].series.split('/').pop())) {
+                    matches.push({ path: path, title: map[path].title });
+                }
+            }
+
+            if (matches.length > 0) {
+                // Wrapper for each series block
+                const listWrapper = document.createElement('div');
+                listWrapper.className = 'series-block';
+                
+                const header = document.createElement('h3');
+                header.textContent = 'More in ' + link.textContent;
+                listWrapper.appendChild(header);
+                
+                // Div wrapping the UL specifically
+                const ulContainer = document.createElement('div');
+                ulContainer.className = 'ul-wrapper';
+                
+                const ul = document.createElement('ul');
+                matches.forEach(item => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = item.path;
+                    a.textContent = item.title;
+                    li.appendChild(a);
+                    ul.appendChild(li);
+                });
+                
+                ulContainer.appendChild(ul);
+                listWrapper.appendChild(ulContainer);
+                container.appendChild(listWrapper);
+            }
+        });
+    }
+
+    // Try once immediately
+    injectList();
+
+    // Watch for dynamic DOM changes (in case the class is injected late)
+    const observer = new MutationObserver(() => {
+        if (document.querySelector(targetSelector) && !document.getElementById('injected-series-list')) {
+            injectList();
+        }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+});
+
+  
+
