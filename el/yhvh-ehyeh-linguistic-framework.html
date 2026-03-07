@@ -8,60 +8,81 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+
     {
       "@type": "Organization",
+      "@id": "https://god.thway.uk/#organization",
       "name": "God - The Way",
       "url": "https://god.thway.uk/",
       "logo": {
         "@type": "ImageObject",
         "url": "https://god.thway.uk/images/wp/god-theway-uk.webp"
       },
-      "description": "Biblical teaching dedicated to explaining the meaning of every passage of Scripture through psychological and symbolic interpretation.",
       "sameAs": [
-          "https://www.reddit.com/user/GoldStudio2653/",
-          "https://www.tiktok.com/@god.thway.uk",
-          "https://hnnh.studio/"
-        ]
+        "https://www.reddit.com/user/GoldStudio2653/",
+        "https://www.tiktok.com/@god.thway.uk",
+        "https://hnnh.studio/"
+      ],
+      "description": "Biblical teaching dedicated to explaining the meaning of every passage of Scripture through psychological and symbolic interpretation."
     },
+
+    {
+      "@type": "Person",
+      "@id": "https://god.thway.uk/key-interpretations/about-author.html#author",
+      "name": "HNNH",
+      "url": "https://god.thway.uk/key-interpretations/about-author.html",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://god.thway.uk/images/icons/hnnh-logo-trans.png"
+      },
+      "worksFor": {
+        "@id": "https://god.thway.uk/#organization"
+      }
+    },
+
     {
       "@type": "WebSite",
+      "@id": "https://god.thway.uk/#website",
       "url": "https://god.thway.uk/",
+      "publisher": {
+        "@id": "https://god.thway.uk/#organization"
+      },
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://www.google.com/search?q=site:god.thway.uk+{search_term_string}",
         "query-input": "required name=search_term_string"
       }
     },
+
     {
-  "@type": "WebApplication",
-  "name": "Bible Linguistic Key 'Lingua Divina'",
-  "url": "https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html",
-  "softwareVersion": "1.5", 
-  "dateModified": "2026-02-26T04:58:05Z",
-  "description": "An interactive tool to interpret any Bible passage or verse as psychological and symbolic meaning within the narrative, not as a literal translation.",
+      "@type": "WebApplication",
+      "@id": "https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html#app",
+      "name": "Bible Linguistic Key 'Lingua Divina'",
+      "url": "https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html",
+      "softwareVersion": "1.5",
+      "dateModified": "2026-02-26T04:58:05Z",
       "applicationCategory": "Education",
+      "operatingSystem": "Web",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://god.thway.uk/images/icons/bible-key-lingua-divina-logo.webp"
+      },
+      "description": "An interactive tool to interpret any Bible passage or verse as psychological and symbolic meaning within the narrative, not as a literal translation.",
       "author": {
-        "@type": "Person",
-        "name": "HNNH",
-        "url": "https://god.thway.uk/key-interpretations/about-author.html"
+        "@id": "https://god.thway.uk/key-interpretations/about-author.html#author"
       },
       "publisher": {
-        "@type": "Organization",
-        "name": "God - The Way",
-        "url": "https://god.thway.uk/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://god.thway.uk/images/wp/god-theway-uk.webp"
-        }
+        "@id": "https://god.thway.uk/#organization"
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html"
-      },
-      "operatingSystem": "Web"
+      }
     },
+
     {
       "@type": "BreadcrumbList",
+      "@id": "https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html#breadcrumbs",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -89,6 +110,7 @@
         }
       ]
     }
+
   ]
 }
 </script>
