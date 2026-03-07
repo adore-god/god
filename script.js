@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav a");
   const currentPage = window.location.pathname.split("/").pop();
 
-  const target = document.querySelector("h1");
+  const target = document.querySelector("main");
   if (!target) return;
 
   let index = -1;
@@ -37,10 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
     container.appendChild(next);
   }
 
-  target.insertAdjacentElement("afterend", container);
+  target.prepend(container);
 
 });
-
 
 
 
