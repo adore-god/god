@@ -539,10 +539,6 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html",
     "title": "Construction of the Tabernacle: Exodus 35"
   },
-  "../the-ego-and-true-i-am.html": {
-    "series": "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html",
-    "title": "The Ego and the True \u201cI AM\u201d"
-  },
   "../everyones-god-worlds-assumptions-vs.html": {
     "series": "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html",
     "title": "Everyone\u2019s God: The World\u2019s Assumptions vs. the Truth of \u201cI AM\u201d"
@@ -766,10 +762,6 @@ window.labelMap = {
   "../key-interpretations/understanding-the-sequence-of-lord-and-lord-god-in-isaiah-52.html": {
     "series": "https://god.thway.uk/scrolls/label-bible-engine-key-interpretations.html",
     "title": "Understanding the Sequence of Lord and Lord God in Isaiah 52"
-  },
-  "../el/adam-leaves-animals-eve.html": {
-    "series": "https://god.thway.uk/scrolls/label-genesis-1-series.html",
-    "title": "Adam Leaves the Animals \u2014 The Birth of Eve and Imagination"
   },
   "../noah-jesus-and-bird-of-peace-descent-of.html": {
     "series": "https://god.thway.uk/scrolls/label-genesis-1-series.html",
@@ -1814,10 +1806,6 @@ window.labelMap = {
   "../genesis-33-reconciliation-of-inner-and.html": {
     "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
     "title": "Esau and Jacob: Reconciliation"
-  },
-  "../evolution-of-manifestation-in-bible-key.html": {
-    "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
-    "title": "Evolution of Self-Perception"
   },
   "../genesis-126-man.html": {
     "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
@@ -3063,10 +3051,6 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-guides.html",
     "title": "Neville Goddard Terminology Guide with Biblical References"
   },
-  "../summary-of-neville-goddards.html": {
-    "series": "https://god.thway.uk/scrolls/label-guides.html",
-    "title": "Summary of Neville Goddard's Interpretation of the Bible"
-  },
   "../ezekiel-28-fall-of-unawakened.html": {
     "series": "https://god.thway.uk/scrolls/label-precious-stones.html",
     "title": "Ezekiel 28: The Fall of the Unawakened Imagination: Neville Goddard Interpretation"
@@ -3461,7 +3445,6 @@ window.scrollGroups = {
     "../the-bible-repeatedly-teaches-that-i-am.html",
     "../el/burning-bush-fire-symbolism.html",
     "../exodus-35-from-willing-hearts-to-sacred.html",
-    "../the-ego-and-true-i-am.html",
     "../everyones-god-worlds-assumptions-vs.html",
     "../the-father-son-symbolism-in-bible.html",
     "../the-glowing-face-of-moses-neville.html",
@@ -3527,7 +3510,6 @@ window.scrollGroups = {
     "../key-interpretations/understanding-the-sequence-of-lord-and-lord-god-in-isaiah-52.html"
   ],
   "https://god.thway.uk/scrolls/label-genesis-1-series.html": [
-    "../el/adam-leaves-animals-eve.html",
     "../noah-jesus-and-bird-of-peace-descent-of.html",
     "../from-darkness-to-light-symbolism-of.html",
     "../the-last-shall-be-first-unlocking-power.html",
@@ -3899,7 +3881,6 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-genesis-2-23-series.html": [
     "../abraham-choosing-rebekahrebekah.html",
-    "../el/adam-leaves-animals-eve.html",
     "../behold-thy-son-deep-love-of-jesus-for.html",
     "../camels-in-bible-symbol-of-faith-and-law.html",
     "../concubines-in-bible-symbolism-of.html",
@@ -3978,7 +3959,6 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-animals-series.html": [
     "../the-smoking-firepot-and-blazing-torch.html",
-    "../el/adam-leaves-animals-eve.html",
     "../balaams-donkey-unlocking-spiritual.html",
     "../noah-jesus-and-bird-of-peace-descent-of.html",
     "../camels-in-bible-symbol-of-faith-and-law.html",
@@ -4014,7 +3994,6 @@ window.scrollGroups = {
     "../elohim-god.html",
     "../esau-and-jacob-isaacs-blessing.html",
     "../genesis-33-reconciliation-of-inner-and.html",
-    "../evolution-of-manifestation-in-bible-key.html",
     "../genesis-126-man.html",
     "../genesis-127-male-and-female-he-created.html",
     "../genesis-foundational-principles.html",
@@ -5104,7 +5083,6 @@ window.scrollGroups = {
     "../ezekiel-city-self-lord-there-goddard.html",
     "../exodus-35-from-willing-hearts-to-sacred.html",
     "../from-doorposts-to-pillars-thresholds-of.html",
-    "../the-ego-and-true-i-am.html",
     "../everyones-god-worlds-assumptions-vs.html",
     "../the-symbolism-and-references-to-i-am-in.html",
     "../the-father-son-symbolism-in-bible.html",
@@ -5194,7 +5172,6 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-humourous.html": [],
   "https://god.thway.uk/scrolls/label-the-law--timeline.html": [
-    "../evolution-of-manifestation-in-bible-key.html",
     "../the-law-timeline.html"
   ],
   "https://god.thway.uk/scrolls/label-guides.html": [
@@ -5211,7 +5188,6 @@ window.scrollGroups = {
     "../el/house-head-bible-symbolism.html",
     "../the-law-timeline.html",
     "../neville-goddard-terminology-guide-with.html",
-    "../summary-of-neville-goddards.html",
     "../el/head-tree-body-imagery.html",
     "../el/bible-kingdom-structure.html",
     "../el/what-the-bible-teaches-you.html"
