@@ -480,6 +480,19 @@ ol, ul {
     margin: 0;
   }
   
+  
+  #series-links-wrapper {
+  max-height: 160px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px;
+  border: 0px solid #ddd;
+  margin: 1.2em auto;
+  background: transparent;
+  font-size: 0.9rem;
+}
+
+
 
 /* =======================
    SIDEBAR
