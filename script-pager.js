@@ -2,15 +2,16 @@
 
     const labelContainer = document.querySelector('.label-links');
     const map = window.labelMap;
+    const target = document.querySelector('.share-dropdown'); // class to append into
 
-    if (!labelContainer || !map) {
+    if (!labelContainer || !map || !target) {
         setTimeout(waitForLabels, 100);
         return;
     }
 
     const container = document.createElement("div");
     container.id = "series-links-wrapper";
-    document.body.appendChild(container);
+    target.appendChild(container);
 
     const allLinks = labelContainer.querySelectorAll("a");
 
@@ -39,5 +40,3 @@
     });
 
 })();
-
-
