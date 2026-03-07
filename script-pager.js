@@ -9,16 +9,23 @@
         return;
     }
 
-    // Create title outside the wrapper
+    // Create title
     const title = document.createElement("div");
     title.className = "series-links-title";
     title.textContent = "More Reading";
-    target.appendChild(title);
 
-    // Create scrollable wrapper for links
+    // Create scrollable wrapper
     const container = document.createElement("div");
     container.id = "series-links-wrapper";
-    target.appendChild(container);
+
+    // Insert BEFORE or AFTER the share-dropdown
+    // To place ABOVE:
+    target.before(title);
+    target.before(container);
+
+    // To place BELOW, comment the above two lines and use:
+    // target.after(title);
+    // target.after(container);
 
     const allLinks = labelContainer.querySelectorAll("a");
 

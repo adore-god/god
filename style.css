@@ -483,6 +483,7 @@ ol, ul {
   .series-links-title {
   text-transform: uppercase;
   margin-top:1em; 
+  font-weight:600;
   }
   
   #series-links-wrapper {
