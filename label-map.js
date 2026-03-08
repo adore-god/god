@@ -1255,13 +1255,13 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
     "title": "Joseph's: Coat Of Many Colours"
   },
-  "../el/joseph-rise-egypt-overview.html": {
-    "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
-    "title": "Joseph's Rise in Egypt Overview"
-  },
   "../the-cup-of-destiny-josephs-divination.html": {
     "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
     "title": "Joseph: Readiness To Receive Abundance"
+  },
+  "../el/joseph-rise-egypt-overview.html": {
+    "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
+    "title": "Joseph's Rise in Egypt Overview"
   },
   "../from-josephs-coffin-to-exodus-journey.html": {
     "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
@@ -3722,8 +3722,8 @@ window.scrollGroups = {
     "../joseph-dreamer-when-imagination-is.html",
     "../joseph-dreamers-ascent-awakening-power.html",
     "../josephs-coat-of-many-colours.html",
-    "../el/joseph-rise-egypt-overview.html",
     "../the-cup-of-destiny-josephs-divination.html",
+    "../el/joseph-rise-egypt-overview.html",
     "../from-josephs-coffin-to-exodus-journey.html",
     "../the-hatred-of-brothers-imagining.html",
     "../the-inner-birth-of-jesus-matthew-11825.html",
