@@ -1261,7 +1261,7 @@ window.labelMap = {
   },
   "../the-cup-of-destiny-josephs-divination.html": {
     "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
-    "title": "Joseph's Silver Cup: Divination"
+    "title": "Joseph: Readiness To Receive Abundance"
   },
   "../from-josephs-coffin-to-exodus-journey.html": {
     "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
@@ -2242,10 +2242,6 @@ window.labelMap = {
   "../luke-71835-neville-goddard.html": {
     "series": "https://god.thway.uk/scrolls/label-luke-series.html",
     "title": "Luke 7:18\u201335 \u2014 A Neville Goddard Interpretation"
-  },
-  "../feeling-good-isnt-proof-of-doctrineits.html": {
-    "series": "https://god.thway.uk/scrolls/label-feeling-is-the-secret.html",
-    "title": "Feeling Good Isn\u2019t the Proof of the Doctrine\u2014It\u2019s the Proof of the Assumption"
   },
   "../feeling-is-secret-what-exactly-is-this.html": {
     "series": "https://god.thway.uk/scrolls/label-feeling-is-the-secret.html",
@@ -4242,7 +4238,6 @@ window.scrollGroups = {
   "https://god.thway.uk/scrolls/label-feeling-is-the-secret.html": [
     "../ask-believe-receive-catalyst-for-love.html",
     "../esau-and-jacob-isaacs-blessing.html",
-    "../feeling-good-isnt-proof-of-doctrineits.html",
     "../feeling-is-secret-unlocking-bliss.html",
     "../feeling-is-secret-what-exactly-is-this.html",
     "../music-and-dancing-in-bible-symbols-of.html",
