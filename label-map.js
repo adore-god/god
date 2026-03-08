@@ -527,10 +527,6 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html",
     "title": "The Beatitudes"
   },
-  "../the-bible-repeatedly-teaches-that-i-am.html": {
-    "series": "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html",
-    "title": "The Bible Repeatedly Teaches That \u201cI AM\u201d Saves"
-  },
   "../el/burning-bush-fire-symbolism.html": {
     "series": "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html",
     "title": "The Burning Bush \u2014 Fire Symbolism"
@@ -2271,10 +2267,6 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-abraham-series.html",
     "title": "Sodom and Gomorrah"
   },
-  "../sodom-and-gomorrah-purge-of-limiting.html": {
-    "series": "https://god.thway.uk/scrolls/label-abraham-series.html",
-    "title": "Sodom and Gomorrah: Harming LGBTQ+"
-  },
   "../tamar-and-absalom-when-imagination-is.html": {
     "series": "https://god.thway.uk/scrolls/label-spiritual-violations-series.html",
     "title": "Tamar: Forced Imagination Without Feeling and Love"
@@ -2843,6 +2835,10 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-spiritual-geography.html",
     "title": "Places as States: The Spiritual Geography of the Bible"
   },
+  "../sodom-and-gomorrah-purge-of-limiting.html": {
+    "series": "https://god.thway.uk/scrolls/label-spiritual-geography.html",
+    "title": "Sodom and Gomorrah: Harming LGBTQ+"
+  },
   "../habakkuk-11-4-frustration-of-waiting.html": {
     "series": "https://god.thway.uk/scrolls/label-habakkuk-series.html",
     "title": "Habakkuk: The Frustration of Waiting"
@@ -3098,10 +3094,6 @@ window.labelMap = {
   "../hagar-and-sarah-battle-between-outer.html": {
     "series": "https://god.thway.uk/scrolls/label-women-in-the-bible-series.html",
     "title": "Hagar and Sarah: Effort Versus Faith"
-  },
-  "../the-horror-of-literalism-and-handmaids.html": {
-    "series": "https://god.thway.uk/scrolls/label-women-in-the-bible-series.html",
-    "title": "The Horror of Literalism and The Handmaid\u2019s Tale"
   },
   "../martha-and-rushing-woman-syndrome.html": {
     "series": "https://god.thway.uk/scrolls/label-women-in-the-bible-series.html",
@@ -3442,7 +3434,6 @@ window.scrollGroups = {
     "../from-adam-to-olympas-maturation-of.html",
     "../be-still-and-know-that-i-am-god-neville.html",
     "../the-beatitudes.html",
-    "../the-bible-repeatedly-teaches-that-i-am.html",
     "../el/burning-bush-fire-symbolism.html",
     "../exodus-35-from-willing-hearts-to-sacred.html",
     "../everyones-god-worlds-assumptions-vs.html",
@@ -4291,7 +4282,6 @@ window.scrollGroups = {
     "../the-seed-of-abraham.html",
     "../say-sister-sister-spouse-bible-manifestation.html",
     "../sodom-and-gomorrah-neville-inspired.html",
-    "../sodom-and-gomorrah-purge-of-limiting.html",
     "../el/luke-19-zacchaeus-symbolism.html"
   ],
   "https://god.thway.uk/scrolls/label-spiritual-violations-series.html": [
@@ -5077,7 +5067,6 @@ window.scrollGroups = {
     "../the-ark-of-covenant-symbol-of.html",
     "../bath-abbeys-jacobs-ladder.html",
     "../the-beatitudes.html",
-    "../the-bible-repeatedly-teaches-that-i-am.html",
     "../the-symbolism-of-cherubim-and-winged.html",
     "../city-metaphor-biblical-symbolism.html",
     "../ezekiel-city-self-lord-there-goddard.html",
@@ -5233,7 +5222,6 @@ window.scrollGroups = {
     "../understanding-foolishness-and-folly.html",
     "../bone-of-my-bones-neville-goddard-on.html",
     "../hagar-and-sarah-battle-between-outer.html",
-    "../the-horror-of-literalism-and-handmaids.html",
     "../leah-rachel-and-mandrakes-manifestation.html",
     "../martha-and-rushing-woman-syndrome.html",
     "../mary-according-to-neville-goddard.html",
@@ -5450,7 +5438,6 @@ window.scrollGroups = {
     "../el/david-solomon-jesus.html",
     "../jesus-only-matthew-17813-interpreted.html",
     "../behold-thy-son-deep-love-of-jesus-for.html",
-    "../the-bible-repeatedly-teaches-that-i-am.html",
     "../the-bitter-cup-what-was-refused-at-cross.html",
     "../the-assumption-of-jesus-rich-in.html",
     "../childlike-faith-becoming-like-little.html",
