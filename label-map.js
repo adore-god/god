@@ -79,10 +79,6 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-crucifixion-series.html",
     "title": "The Bitter Cup: What Was Refused at the Cross"
   },
-  "../the-crucifixion-symbol-of-maintaining.html": {
-    "series": "https://god.thway.uk/scrolls/label-crucifixion-series.html",
-    "title": "The Crucifixion: A Symbol of Maintaining the Assumption Despite Opposition"
-  },
   "../crucifixion-cross-or-tree-symbolic.html": {
     "series": "https://god.thway.uk/scrolls/label-crucifixion-series.html",
     "title": "Crucifixion: Cross or Tree?"
@@ -2443,10 +2439,6 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-water-symbolism.html",
     "title": "The Symbolism of Famine and Rain in the Bible"
   },
-  "../the-symbolism-of-water-in-bible.html": {
-    "series": "https://god.thway.uk/scrolls/label-water-symbolism.html",
-    "title": "The Symbolism of Water in the Bible: Unlocking the Power of Imagination"
-  },
   "../water-symbolism.html": {
     "series": "https://god.thway.uk/scrolls/label-water-symbolism.html",
     "title": "Water Symbolism"
@@ -3294,7 +3286,6 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-crucifixion-series.html": [
     "../the-bitter-cup-what-was-refused-at-cross.html",
-    "../the-crucifixion-symbol-of-maintaining.html",
     "../crucifixion-cross-or-tree-symbolic.html",
     "../the-inner-war-of-manifestation-why.html",
     "../the-symbolism-of-jesuss-crucifixion.html",
@@ -4466,7 +4457,6 @@ window.scrollGroups = {
     "../the-parallel-between-noahs-flood-and.html",
     "../the-river-that-flows-through-scripture.html",
     "../the-symbolism-of-famine-and-rain-in.html",
-    "../the-symbolism-of-water-in-bible.html",
     "../el/water-and-blood-symbolism.html",
     "../water-symbolism.html",
     "../zebulunthe-sea-honour-and-dwelling.html"
@@ -5442,7 +5432,6 @@ window.scrollGroups = {
     "../the-assumption-of-jesus-rich-in.html",
     "../childlike-faith-becoming-like-little.html",
     "../the-last-shall-be-first-unlocking-power.html",
-    "../the-crucifixion-symbol-of-maintaining.html",
     "../the-symbolism-of-jesuss-crucifixion.html",
     "../david-and-jesus-what-they-symbolise-in.html",
     "../the-dust-of-world-why-jesus-washed-feet.html",
