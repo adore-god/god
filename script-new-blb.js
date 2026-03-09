@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "Joshua","Jos","Judges","Jdg","Ruth","Rut","1 Samuel","1 Sam","2 Samuel","2 Sam",
     "1 Kings","1 Kgs","2 Kings","2 Kgs","1 Chronicles","1 Chr","2 Chronicles","2 Chr",
     "Ezra","Ezr","Nehemiah","Neh","Esther","Est","Job","Psalms","Psalm","Psa","Proverbs","Pro",
-    "Ecclesiastes","Ecc","Song of Solomon","Sng","Isaiah","Isa","Jeremiah","Jer",
+    "Ecclesiastes","Ecc","Song of Solomon","Sng", "Song","Isaiah","Isa","Jeremiah","Jer",
     "Lamentations","Lam","Ezekiel","Ezk","Daniel","Dan","Hosea","Hos","Joel","Joe",
     "Amos","Amo","Obadiah","Oba","Jonah","Jon","Micah","Mic","Nahum","Nah","Habakkuk","Hab",
     "Zephaniah","Zep","Haggai","Hag","Zechariah","Zec","Malachi","Mal","Matthew","Mat","Mt",
