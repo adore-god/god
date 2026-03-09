@@ -2007,6 +2007,10 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html",
     "title": "Why There Are Four Gospels: The Witnesses"
   },
+  "../the-symbolism-of-chariots-and-wheels-in.html": {
+    "series": "https://god.thway.uk/scrolls/label-ezekiel-series.html",
+    "title": "Chariots and Wheels in the Bible"
+  },
   "../the-symbolism-of-crowns-in-bible-divine.html": {
     "series": "https://god.thway.uk/scrolls/label-ezekiel-series.html",
     "title": "Crowns in the Bible"
@@ -2651,10 +2655,6 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-elohim--god-series.html",
     "title": "The Apostles' Creed Translated Psychologically"
   },
-  "../the-symbolism-of-chariots-and-wheels-in.html": {
-    "series": "https://god.thway.uk/scrolls/label-elohim--god-series.html",
-    "title": "Chariots and Wheels in the Bible"
-  },
   "../beholding-with-inner-eye-bibles.html": {
     "series": "https://god.thway.uk/scrolls/label-elohim--god-series.html",
     "title": "Eyes of God: Single Eye"
@@ -2670,10 +2670,6 @@ window.labelMap = {
   "../who-are-gentiles-neville-goddard.html": {
     "series": "https://god.thway.uk/scrolls/label-elohim--god-series.html",
     "title": "The Jews and Gentiles According to Neville Goddard"
-  },
-  "../the-kingdom-of-god-entering-through.html": {
-    "series": "https://god.thway.uk/scrolls/label-elohim--god-series.html",
-    "title": "The Kingdom of God: Entering Through Assumption"
   },
   "../the-living-god-what-bible-really-means.html": {
     "series": "https://god.thway.uk/scrolls/label-elohim--god-series.html",
@@ -2822,10 +2818,6 @@ window.labelMap = {
   "../watchtower-of-faith-in-hebrews-and.html": {
     "series": "https://god.thway.uk/scrolls/label-habakkuk-series.html",
     "title": "Watchtower of Faith in Hebrews and Habakkuk"
-  },
-  "../el/god-became-man.html": {
-    "series": "https://god.thway.uk/scrolls/label-neville-goddard-series.html",
-    "title": "God Became Man So That Man Could Become God"
   },
   "../the-forgotten-origin-imagination-in.html": {
     "series": "https://god.thway.uk/scrolls/label-neville-goddard-series.html",
@@ -4057,8 +4049,9 @@ window.scrollGroups = {
     "../why-there-are-four-gospels-witnesses.html"
   ],
   "https://god.thway.uk/scrolls/label-ezekiel-series.html": [
-    "../the-beast-and-lion-symbolic-journey-of.html",
+    "../the-symbolism-of-chariots-and-wheels-in.html",
     "../the-symbolism-of-crowns-in-bible-divine.html",
+    "../the-beast-and-lion-symbolic-journey-of.html",
     "../ezekiel-and-song-of-solomon-beloved-and.html",
     "../ezekiel-16115-forgotten-bride-of.html",
     "../unraveling-riddle-of-ezekiel-17.html",
@@ -4700,7 +4693,6 @@ window.scrollGroups = {
     "../el/james-lords-brother.html",
     "../who-are-gentiles-neville-goddard.html",
     "../judgement-and-righteousness-neville.html",
-    "../the-kingdom-of-god-entering-through.html",
     "../the-law-timeline.html",
     "../the-living-god-what-bible-really-means.html",
     "../psalm-23-through-teachings-of-neville.html",
@@ -4790,7 +4782,6 @@ window.scrollGroups = {
     "../israels-wandering-mind.html",
     "../jerusalem-according-to-neville-goddard.html",
     "../the-journey-through-canaan-zion-and.html",
-    "../the-kingdom-of-god-entering-through.html",
     "../the-meaning-of-timnah-in-bible-and-its.html",
     "../entering-land-flowing-with-milk-and.html",
     "../moab-and-israel-divided-offspring-of.html",
@@ -4830,7 +4821,6 @@ window.scrollGroups = {
     "../the-spiritual-significance-of-passover.html"
   ],
   "https://god.thway.uk/scrolls/label-neville-goddard-series.html": [
-    "../el/god-became-man.html",
     "../the-forgotten-origin-imagination-in.html",
     "../neville-goddard-vs-william-blake.html",
     "../only-neville-interpreted-bible-as-whole.html",
@@ -5127,7 +5117,6 @@ window.scrollGroups = {
     "../am-i-david-or-jesus.html",
     "../free-neville-goddard-bible-course.html",
     "../genesis-foundational-principles.html",
-    "../el/god-became-man.html",
     "../the-mathers-table-unlocking-mystical.html",
     "../el/house-head-bible-symbolism.html",
     "../the-law-timeline.html",
@@ -5404,7 +5393,6 @@ window.scrollGroups = {
     "../the-father-son-symbolism-in-bible.html",
     "../fish-and-imagination-jesus-miracles.html",
     "../galilee-foundation-of-jesus-teachings.html",
-    "../el/god-became-man.html",
     "../golgotha-place-of-skull.html",
     "../grace-mercy-and-peace-emotional.html",
     "../his-name-shall-be-called-wonderful.html",
