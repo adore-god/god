@@ -98,9 +98,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   const themes = {
-    light: { background: "#fff", color: "#000", border: "1px solid #ccc" },
-    dark: { background: "#111", color: "#eee", border: "1px solid #555" }
-  };
+  light: { 
+    background: "#fff", 
+    color: "#000", 
+    border: "1px solid #ccc",
+    linkColor: "#82adff"  // Your light mode red-pink
+  },
+  dark: { 
+    background: "#111", 
+    color: "#eee", 
+    border: "1px solid #555",
+    linkColor: "#82adff"  // Changed to a lighter blue for readability
+  }
+};
+
 
 
   function applyTheme(isDark) {
@@ -140,11 +151,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const blbLink = `https://www.blueletterbible.org/esv/${blbCode}/${chapter}/${startVerse}/`;
 
       tooltip.innerHTML = data.text 
-        ? `<span style="font-weight:bold;">${data.reference}</span><br>${data.text}<br><div style="border:0;border-top:1px solid #000;margin:8px 0;"></div><a href="${blbLink}" target="_blank" style="color:#0056b3;text-decoration:none;font-weight:bold;">View on Blue Letter Bible →</a>` 
+        ? `<span style="font-weight:bold;">${data.reference}</span><br>${data.text}<br><div style="border:0;border-top:1px solid #000;margin:8px 0;"></div><a href="${blbLink}" target="_blank" style="color:#82adff;text-decoration:none;font-weight:bold;">View on Blue Letter Bible →</a>` 
         : "Not found";
     } catch {
       tooltip.innerHTML = "Error loading preview.";
-    }
+    } 
   });
 
   mainEl.addEventListener("mouseout", (e) => {
