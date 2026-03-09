@@ -669,7 +669,7 @@ window.labelMap = {
   },
   "../moses-and-rock-struggle-between.html": {
     "series": "https://god.thway.uk/scrolls/label-rock-series.html",
-    "title": "Moses and the Rock: Rooted in the First Seven Days"
+    "title": "Moses And The River From the Rock: Streaming the River of Genesis"
   },
   "../moses-parting-red-sea-return-to-dry-land.html": {
     "series": "https://god.thway.uk/scrolls/label-rock-series.html",
@@ -1451,10 +1451,6 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-paul-series.html",
     "title": "The Foolishness of God"
   },
-  "../the-law-of-assumption-god-became-man-so.html": {
-    "series": "https://god.thway.uk/scrolls/label-paul-series.html",
-    "title": "God Became Man So That Man Might Become God"
-  },
   "../paul-and-acts-ascension-of-christ-within.html": {
     "series": "https://god.thway.uk/scrolls/label-paul-series.html",
     "title": "Paul and Acts: The Ascension of Christ Within"
@@ -1727,10 +1723,6 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-animals-series.html",
     "title": "Daniel in the Lion's Den"
   },
-  "../debunking-myths-of-bible-part-2-serpent.html": {
-    "series": "https://god.thway.uk/scrolls/label-animals-series.html",
-    "title": "Debunking Myths of the Bible \u2014 Part 2: The Serpent Was Never Evil \u2014 It Was Power Misunderstood"
-  },
   "../unraveling-riddle-of-ezekiel-17.html": {
     "series": "https://god.thway.uk/scrolls/label-animals-series.html",
     "title": "Ezekiel 17: The Eagle and The Vine"
@@ -1802,6 +1794,10 @@ window.labelMap = {
   "../genesis-126-man.html": {
     "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
     "title": "Genesis 1:26: MAN"
+  },
+  "../the-law-of-assumption-god-became-man-so.html": {
+    "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
+    "title": "God Became Man So That Man Might Become God"
   },
   "../el/isaiah-ask-receive-believe.html": {
     "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
@@ -2267,14 +2263,6 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-numbers--seven.html",
     "title": "Solomon: The Peace of Fulfilled Desire"
   },
-  "../debunking-myths-of-bible-part-1-garden.html": {
-    "series": "https://god.thway.uk/scrolls/label-debunking-bible-myths-series.html",
-    "title": "Debunking Myths of the Bible \u2014 Part 1: The Garden of Eden Isn\u2019t Lost"
-  },
-  "../debunking-myths-of-bible-part-3-myth-of.html": {
-    "series": "https://god.thway.uk/scrolls/label-debunking-bible-myths-series.html",
-    "title": "Debunking Myths of the Bible \u2014 Part 3: The Myth of Sacrifice \u2014 What Jesus Really Meant"
-  },
   "../the-symbolism-of-144000-in-revelation.html": {
     "series": "https://god.thway.uk/scrolls/label-numbers-series.html",
     "title": "144,000 in Revelation: The Sealing of States"
@@ -2659,6 +2647,10 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-social-and-cultural-commentary.html",
     "title": "Where Did Manifestation Come From?"
   },
+  "../philippians-46-power-of-thought-and.html": {
+    "series": "https://god.thway.uk/scrolls/label-paul-s-letters--philippians.html",
+    "title": "Philippians: The Power of Thought and Prayer"
+  },
   "../the-apostles-creed-translated-through.html": {
     "series": "https://god.thway.uk/scrolls/label-elohim--god-series.html",
     "title": "The Apostles' Creed Translated Psychologically"
@@ -2690,10 +2682,6 @@ window.labelMap = {
   "../the-living-god-what-bible-really-means.html": {
     "series": "https://god.thway.uk/scrolls/label-elohim--god-series.html",
     "title": "The Living God: What the Bible Really Means"
-  },
-  "../ye-make-yourself-god-bibles-defence-of.html": {
-    "series": "https://god.thway.uk/scrolls/label-elohim--god-series.html",
-    "title": "Misunderstanding God: External Vs Internal"
   },
   "../new-testament-doxologies.html": {
     "series": "https://god.thway.uk/scrolls/label-elohim--god-series.html",
@@ -2750,6 +2738,10 @@ window.labelMap = {
   "../there-is-no-god-inner-error-that-blocks.html": {
     "series": "https://god.thway.uk/scrolls/label-psalms-series.html",
     "title": "The Fool Says There Is No God"
+  },
+  "../it-is-recorded-of-me-inner-meaning-of.html": {
+    "series": "https://god.thway.uk/scrolls/label-psalms-series.html",
+    "title": "\"It Is Recorded of Me\": The Inner Meaning of Psalm 40:7\u20138"
   },
   "../looking-at-psalm-178.html": {
     "series": "https://god.thway.uk/scrolls/label-psalms-series.html",
@@ -3099,10 +3091,6 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
     "title": "\"A Jealous God\": What It Really Means for Manifestation"
   },
-  "../it-is-recorded-of-me-inner-meaning-of.html": {
-    "series": "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
-    "title": "\"It Is Recorded of Me\": The Inner Meaning of Psalm 40:7\u20138"
-  },
   "../33-bible-statements-for-manifestation.html": {
     "series": "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
     "title": "33 Bible Statements For Manifestation: Through the Voice of Neville Goddard"
@@ -3162,10 +3150,6 @@ window.labelMap = {
   "../spirit-1-peter-1-according-to-neville.html": {
     "series": "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
     "title": "Peter: Trials in Faith"
-  },
-  "../philippians-46-power-of-thought-and.html": {
-    "series": "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
-    "title": "Philippians: The Power of Thought and Prayer"
   },
   "../interpreting-2-chronicles-121416.html": {
     "series": "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
@@ -3806,7 +3790,6 @@ window.scrollGroups = {
     "../ephesians-5-neville-goddards-spiritual.html",
     "../when-faith-falls-asleep-in-window-fall.html",
     "../the-foolishness-of-god-neville-goddard.html",
-    "../the-law-of-assumption-god-became-man-so.html",
     "../paul-and-acts-ascension-of-christ-within.html",
     "../pauls-discourse-onabrahams-faith.html",
     "../spiritual-union-and-imagination-new_9.html",
@@ -3943,7 +3926,6 @@ window.scrollGroups = {
     "../cloven-hooves-fins-and-wings-animals.html",
     "../daniel-in-lions-den-symbol-of-spiritual.html",
     "../daniel-8-symbolic-journey-through.html",
-    "../debunking-myths-of-bible-part-2-serpent.html",
     "../the-dove-in-rock-paul-jesus-and-cephas.html",
     "../unraveling-riddle-of-ezekiel-17.html",
     "../formed-from-dust-serpent-and-potters.html",
@@ -4297,11 +4279,6 @@ window.scrollGroups = {
     "../what-does-seventy-times-seven-really.html",
     "../solomon-peace-of-fulfilled-desire.html",
     "../the-urim-and-thummim-divine-guidance.html"
-  ],
-  "https://god.thway.uk/scrolls/label-debunking-bible-myths-series.html": [
-    "../debunking-myths-of-bible-part-1-garden.html",
-    "../debunking-myths-of-bible-part-2-serpent.html",
-    "../debunking-myths-of-bible-part-3-myth-of.html"
   ],
   "https://god.thway.uk/scrolls/label-numbers-series.html": [
     "../the-symbolism-of-144000-in-revelation.html",
@@ -4701,7 +4678,7 @@ window.scrollGroups = {
     "../where-did-manifestation-come-from.html"
   ],
   "https://god.thway.uk/scrolls/label-paul-s-letters--philippians.html": [
-    "../the-law-of-assumption-god-became-man-so.html"
+    "../philippians-46-power-of-thought-and.html"
   ],
   "https://god.thway.uk/scrolls/label-elohim--god-series.html": [
     "../the-symbolism-of-144000-in-revelation.html",
@@ -4736,7 +4713,6 @@ window.scrollGroups = {
     "../the-living-god-what-bible-really-means.html",
     "../psalm-23-through-teachings-of-neville.html",
     "../the-lords-prayer-according-to-neville.html",
-    "../ye-make-yourself-god-bibles-defence-of.html",
     "../new-testament-doxologies.html",
     "../the-parable-of-eye-of-needle-letting-go.html",
     "../paul-one-body-with-many-members.html",
@@ -4790,6 +4766,7 @@ window.scrollGroups = {
     "../deep-calls-to-deep-passage-analysis.html",
     "../there-is-no-god-inner-error-that-blocks.html",
     "../the-god-of-gods-interpreting-elohim.html",
+    "../it-is-recorded-of-me-inner-meaning-of.html",
     "../looking-at-psalm-178.html",
     "../psalm-23-through-teachings-of-neville.html",
     "../psalm-8-majesty-of-man-neville-goddard.html",
