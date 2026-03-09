@@ -1555,6 +1555,10 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-bread-series.html",
     "title": "Last Supper: Feeding the Assumption"
   },
+  "../el/adam-sleep-rib-identity.html": {
+    "series": "https://god.thway.uk/scrolls/label-genesis-2-23-series.html",
+    "title": "Adam\u2019s Sleep and the Rib \u2014 Identity Structure in Genesis"
+  },
   "../camels-in-bible-symbol-of-faith-and-law.html": {
     "series": "https://god.thway.uk/scrolls/label-genesis-2-23-series.html",
     "title": "Camels in the Bible"
@@ -1746,10 +1750,6 @@ window.labelMap = {
   "../1-john-3-perspective-through-law-of.html": {
     "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
     "title": "1 John 3: Perspective through the Law of Assumption"
-  },
-  "../el/adam-sleep-rib-identity.html": {
-    "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
-    "title": "Adam\u2019s Sleep and the Rib \u2014 Identity Structure in Genesis<"
   },
   "../explaining-names-changes-in-bible.html": {
     "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
@@ -3838,6 +3838,7 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-genesis-2-23-series.html": [
     "../abraham-choosing-rebekahrebekah.html",
+    "../el/adam-sleep-rib-identity.html",
     "../behold-thy-son-deep-love-of-jesus-for.html",
     "../camels-in-bible-symbol-of-faith-and-law.html",
     "../concubines-in-bible-symbolism-of.html",
