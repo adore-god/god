@@ -286,7 +286,7 @@ blockquote.relaxed {
 .red,
 .red a,
 .red a:visited {
-     color:red !important;
+     color:#fa7878 !important;
    }
 .center {
   text-align: center;
@@ -710,7 +710,7 @@ table {
 
 #results a {
   font-weight: 500;
-  color: #1a0dab;
+  color: #fa7878;
   text-decoration:none;
 }
 
@@ -944,7 +944,7 @@ html[data-theme="light"] th {
     mix-blend-mode: normal; 
 }
   .red {
-     color: #1a0dab;
+     color: #fa7878;
    }
    
   .header a {
@@ -1248,7 +1248,7 @@ html[data-theme="light"] #searchBox:focus {
 }
 
 html[data-theme="light"] #results a {
-    color: #1a0dab !important;
+    color: #fa7878 !important;
 }
 
 html[data-theme="light"]   #theme-toggle {
