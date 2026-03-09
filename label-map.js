@@ -1747,6 +1747,10 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
     "title": "1 John 3: Perspective through the Law of Assumption"
   },
+  "../el/adam-sleep-rib-identity.html": {
+    "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
+    "title": "Adam\u2019s Sleep and the Rib \u2014 Identity Structure in Genesis<"
+  },
   "../explaining-names-changes-in-bible.html": {
     "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
     "title": "Changing Names: The Significance"
@@ -1830,6 +1834,10 @@ window.labelMap = {
   "../the-parallels-between-adam-and-christ.html": {
     "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
     "title": "The Parallels Between Adam and Christ in Neville Goddard\u2019s Teachings"
+  },
+  "../the-power-of-hair-in-bible-samson.html": {
+    "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
+    "title": "The Power of Hair in the Bible: Samson, Absalom, and the Symbolism of Thought"
   },
   "../psalm-8-power-of-imagination-and.html": {
     "series": "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
@@ -3927,6 +3935,7 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-genesis-1-26-series.html": [
     "../1-john-3-perspective-through-law-of.html",
+    "../el/adam-sleep-rib-identity.html",
     "../explaining-names-changes-in-bible.html",
     "../daniel-chapter-4-verses-1-18-symbolism.html",
     "../eyes-of-fire-waist-of-gold-daniels.html",
@@ -3962,6 +3971,7 @@ window.scrollGroups = {
     "../noah-seedtime-and-harvest.html",
     "../the-parallels-between-adam-and-christ.html",
     "../peter-i-do-not-know-man-when-self.html",
+    "../the-power-of-hair-in-bible-samson.html",
     "../forgiveness-letting-go-of-past-to-free.html",
     "../psalm-8-power-of-imagination-and.html",
     "../putting-on-new-man-bibles-secret-law.html",
