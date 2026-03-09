@@ -1699,14 +1699,6 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-genesis-2-23-series.html",
     "title": "Women in the Bible: Listening and Taking to Heart"
   },
-  "../manifestation-isnt-just-trend-its.html": {
-    "series": "https://god.thway.uk/scrolls/label-introductory-series.html",
-    "title": "Manifestation Isn\u2019t Just a Trend \u2014 It\u2019s the Bible\u2019s Greatest Secret (And No One Told You)"
-  },
-  "../why-bible-seems-weirduntil-you-read-it.html": {
-    "series": "https://god.thway.uk/scrolls/label-introductory-series.html",
-    "title": "Why the Bible Seems Weird\u2014Until You Read It Psychologically"
-  },
   "../micah-and-judges-17-misplaced-power-and.html": {
     "series": "https://god.thway.uk/scrolls/label-micah-series.html",
     "title": "Micah, His Mother and His Shrine: Judges 17"
@@ -3902,11 +3894,6 @@ window.scrollGroups = {
     "../women-of-bible-as-echoes-of-beloved-in.html",
     "../el/biblical-women-listeners.html",
     "../zechariah-5-symbolic-purification-for.html"
-  ],
-  "https://god.thway.uk/scrolls/label-introductory-series.html": [
-    "../the-bibles-golden-thread-union-with-new.html",
-    "../manifestation-isnt-just-trend-its.html",
-    "../why-bible-seems-weirduntil-you-read-it.html"
   ],
   "https://god.thway.uk/scrolls/label-micah-series.html": [
     "../jeremiah-36-scroll-fire-and-power-of.html",
