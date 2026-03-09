@@ -2251,6 +2251,10 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-feeling-is-the-secret.html",
     "title": "Water and Blood \u2014 Inner Symbolism in John"
   },
+  "../circumcision-symbolism-cutting-away-of.html": {
+    "series": "https://god.thway.uk/scrolls/label-abraham-series.html",
+    "title": "Circumcision: Cyclical Return To Purity Of The Heart"
+  },
   "../sodom-and-gomorrah-neville-inspired.html": {
     "series": "https://god.thway.uk/scrolls/label-abraham-series.html",
     "title": "Sodom and Gomorrah"
@@ -4239,6 +4243,7 @@ window.scrollGroups = {
     "../abraham-surrender-of-attachments.html",
     "../abraham-promise-and-covenant.html",
     "../the-symbolism-of-abraham-and-isaac.html",
+    "../circumcision-symbolism-cutting-away-of.html",
     "../ezekiels-living-creatures-prophetic.html",
     "../teachers-fathers-of-law-assumption.html",
     "../hebrews-7-unveiling-power-of.html",
