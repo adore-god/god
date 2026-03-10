@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
   Object.assign(tooltip.style, {
     position: "absolute", display: "none", zIndex: "10000",
     padding: "14px", fontSize: "15px", boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
-    borderRadius: "4px", pointerEvents: "auto"
+    borderRadius: "4px", pointerEvents: "auto",
   });
 
   
