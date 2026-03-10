@@ -583,6 +583,10 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html",
     "title": "John: Jesus\u2019 Appeal to the Father"
   },
+  "../judgement-and-righteousness-neville.html": {
+    "series": "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html",
+    "title": "Judgement and Righteousness in the Law"
+  },
   "../micah-and-michael-journey-from-seeking.html": {
     "series": "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html",
     "title": "Micah and Michael: Who is Like God? I AM!"
@@ -1114,10 +1118,6 @@ window.labelMap = {
   "../el/john-call-philip-nathanael-fig-tree.html": {
     "series": "https://god.thway.uk/scrolls/label-tree-of-life-series.html",
     "title": "John \u2014 The Call of Philip and Nathanael"
-  },
-  "../judgement-and-righteousness-neville.html": {
-    "series": "https://god.thway.uk/scrolls/label-tree-of-life-series.html",
-    "title": "Judgement and Righteousness in the Law"
   },
   "../redeemed-from-curse-of-law-neville.html": {
     "series": "https://god.thway.uk/scrolls/label-tree-of-life-series.html",
@@ -3417,6 +3417,7 @@ window.scrollGroups = {
     "../the-power-of-abiding-love-manifesting.html",
     "../i-am-true-vine-john-15117-interpreted.html",
     "../the-psychology-of-jesus-appeal-to.html",
+    "../judgement-and-righteousness-neville.html",
     "../micah-and-michael-journey-from-seeking.html",
     "../michael-archangel-every-appearance-in.html",
     "../moses-and-burning-bush.html",
