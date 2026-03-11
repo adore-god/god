@@ -9,50 +9,38 @@
         return;
     }
 
-    // Create title
     const title = document.createElement("div");
     title.className = "series-links-title";
     title.textContent = "More Reading";
 
-    // Create scrollable wrapper
     const container = document.createElement("div");
     container.id = "series-links-wrapper";
 
-    // Insert BEFORE or AFTER the share-dropdown
-    // To place ABOVE:
     target.before(title);
     target.before(container);
 
-    // To place BELOW, comment the above two lines and use:
-    // target.after(title);
-    // target.after(container);
-
-    const allLinks = labelContainer.querySelectorAll("a");
     const currentPage = window.location.href;
 
-    allLinks.forEach(link => {
+    // Find the current page's entry in the map
+    const entry = map[currentPage];
+    if (!entry || !entry.groups) return;
 
-        for (let path in map) {
+    // Loop through each group (1 or 2 scroll lists)
+    entry.groups.forEach(group => {
+        group.links.forEach(link => {
+            // Skip if this link is the current page
+            const fullHref = new URL(link.href, window.location.href).href;
+            if (fullHref === currentPage) return;
 
-            if (
-                map[path].series &&
-                link.href.endsWith(map[path].series.split("/").pop()) &&
-                path !== currentPage // Skip the link if it's the current page
-            ) {
+            const a = document.createElement("a");
+            a.href = link.href;
+            a.textContent = link.title;
 
-                const a = document.createElement("a");
-                a.href = path;
-                a.textContent = map[path].title;
+            const div = document.createElement("div");
+            div.appendChild(a);
 
-                const div = document.createElement("div");
-                div.appendChild(a);
-
-                container.appendChild(div);
-
-            }
-
-        }
-
+            container.appendChild(div);
+        });
     });
 
 })();
