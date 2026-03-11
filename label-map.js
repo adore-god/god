@@ -1251,6 +1251,14 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
     "title": "Joseph's: Coat Of Many Colours"
   },
+  "https://god.thway.uk/why-josephs-dreams-appear-in-matthew.html": {
+    "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
+    "title": "Joseph in the New Testament: Visions in Matthew"
+  },
+  "https://god.thway.uk/joseph-of-new-testament-witness-to.html": {
+    "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
+    "title": "Joseph of the New Testament: Accepting and Protecting a New Assumption"
+  },
   "https://god.thway.uk/the-cup-of-destiny-josephs-divination.html": {
     "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
     "title": "Joseph: Readiness To Receive Abundance"
@@ -1265,7 +1273,7 @@ window.labelMap = {
   },
   "https://god.thway.uk/the-hatred-of-brothers-imagining.html": {
     "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
-    "title": "Hatred of the Brothers: Imagining Against the Current"
+    "title": "Joseph's Dream and the Brothers Who Hated It: The Imagination Declaring Its Ruling I AM"
   },
   "https://god.thway.uk/teachers-fathers-of-law-assumption.html": {
     "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
@@ -1274,14 +1282,6 @@ window.labelMap = {
   "https://god.thway.uk/el/hebrews-hall-role-call.html": {
     "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
     "title": "Paul on Faith: Roll Call and Things Not Seen"
-  },
-  "https://god.thway.uk/why-josephs-dreams-appear-in-matthew.html": {
-    "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
-    "title": "Joseph in the New Testament: Visions in Matthew"
-  },
-  "https://god.thway.uk/joseph-of-new-testament-witness-to.html": {
-    "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
-    "title": "Joseph of the New Testament: Accepting and Protecting a New Assumption"
   },
   "https://god.thway.uk/tossed-by-wind-symbolism.html": {
     "series": "https://god.thway.uk/scrolls/label-breath-series.html",
@@ -2277,7 +2277,7 @@ window.labelMap = {
   },
   "https://god.thway.uk/twelve-tribes-and-twelve-disciple.html": {
     "series": "https://god.thway.uk/scrolls/label-numbers-series.html",
-    "title": "Twelve Sons, Tribes and Disciples: Brothers of the Mind"
+    "title": "The Twelve Tribes and Twelve Disciples: One Inner Government, Two Stages of Consciousness"
   },
   "https://god.thway.uk/el/lake-fire-symbolism-bible.html": {
     "series": "https://god.thway.uk/scrolls/label-revelation-series.html",
@@ -4430,15 +4430,15 @@ window.scrollGroups = {
     "https://god.thway.uk/joseph-dreamer-when-imagination-is.html",
     "https://god.thway.uk/joseph-dreamers-ascent-awakening-power.html",
     "https://god.thway.uk/josephs-coat-of-many-colours.html",
+    "https://god.thway.uk/why-josephs-dreams-appear-in-matthew.html",
+    "https://god.thway.uk/joseph-of-new-testament-witness-to.html",
     "https://god.thway.uk/the-cup-of-destiny-josephs-divination.html",
     "https://god.thway.uk/el/joseph-rise-egypt-overview.html",
     "https://god.thway.uk/from-josephs-coffin-to-exodus-journey.html",
     "https://god.thway.uk/the-hatred-of-brothers-imagining.html",
     "https://god.thway.uk/the-inner-birth-of-jesus-matthew-11825.html",
     "https://god.thway.uk/teachers-fathers-of-law-assumption.html",
-    "https://god.thway.uk/el/hebrews-hall-role-call.html",
-    "https://god.thway.uk/why-josephs-dreams-appear-in-matthew.html",
-    "https://god.thway.uk/joseph-of-new-testament-witness-to.html"
+    "https://god.thway.uk/el/hebrews-hall-role-call.html"
   ],
   "https://god.thway.uk/scrolls/label-joshua-series.html": [
     "https://god.thway.uk/when-time-stands-still-joshua-and-power.html"
