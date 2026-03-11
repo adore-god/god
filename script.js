@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const excludePaths = [
     '/about_13.html',
     '/series-links.html',
-    '/search.html'
+    '/search.html',
+    '/el/terms-of-use.html'
   ];
 
   if (excludePaths.includes(path)) return;
