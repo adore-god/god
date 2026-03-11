@@ -2435,10 +2435,6 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-hitting-or-missing-the-mark--aim--series.html",
     "title": "Psalm 21:12: Neville Style"
   },
-  "../ites-symbolic-meaning-of-tribes-in.html": {
-    "series": "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html",
-    "title": "'-Ites': Tribe Symbology"
-  },
   "../unraveling-family-tree-within-symbolic.html": {
     "series": "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html",
     "title": "The Family Tree: Named States of Awareness"
@@ -2810,6 +2806,10 @@ window.labelMap = {
   "../sodom-and-gomorrah-purge-of-limiting.html": {
     "series": "https://god.thway.uk/scrolls/label-spiritual-geography.html",
     "title": "Sodom and Gomorrah: Harming LGBTQ+"
+  },
+  "../ites-symbolic-meaning-of-tribes-in.html": {
+    "series": "https://god.thway.uk/scrolls/label-spiritual-geography.html",
+    "title": "'What Does the \"-ite\" Suffix Reveal?"
   },
   "../habakkuk-11-4-frustration-of-waiting.html": {
     "series": "https://god.thway.uk/scrolls/label-habakkuk-series.html",
@@ -3210,10 +3210,6 @@ window.labelMap = {
   "../el/morning-star-bethlehem.html": {
     "series": "https://god.thway.uk/scrolls/label-jesus-christ--salvation.html",
     "title": "The Morning Star"
-  },
-  "../el/sayings-of-jesus-joy-assumption.html": {
-    "series": "https://god.thway.uk/scrolls/label-jesus-christ--salvation.html",
-    "title": "Sayings of Jesus: Joy of Assumption"
   },
   "../son-of-man-vs-son-of-god-what-do-these.html": {
     "series": "https://god.thway.uk/scrolls/label-jesus-christ--salvation.html",
@@ -4441,7 +4437,6 @@ window.scrollGroups = {
     "../the-cross-arrow-and-mark-symbols-of.html"
   ],
   "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html": [
-    "../ites-symbolic-meaning-of-tribes-in.html",
     "../the-divine-breath-understanding-h-in.html",
     "../from-adam-to-olympas-maturation-of.html",
     "../the-books-of-old-testament-with-their.html",
@@ -4532,7 +4527,6 @@ window.scrollGroups = {
     "../women-of-bible-as-echoes-of-beloved-in.html"
   ],
   "https://god.thway.uk/scrolls/label-numbers--twelve.html": [
-    "../ites-symbolic-meaning-of-tribes-in.html",
     "../the-symbolism-of-144000-in-revelation.html",
     "../the-calling-of-twelve-gospel-story.html",
     "../ezekiel-city-self-lord-there-goddard.html",
@@ -4770,7 +4764,6 @@ window.scrollGroups = {
     "../the-psalms-and-song-of-solomon-love.html"
   ],
   "https://god.thway.uk/scrolls/label-spiritual-geography.html": [
-    "../ites-symbolic-meaning-of-tribes-in.html",
     "../abraham-lot-and-lots-daughters-neville.html",
     "../the-amorites-misplaced-love-mental.html",
     "../carmel-garden-of-king-symbol-of-soul.html",
@@ -4794,6 +4787,7 @@ window.scrollGroups = {
     "../the-garden-and-temple-understanding.html",
     "../dividing-land-how-allotments-in-joshua.html",
     "../vineyard-symbolism-in-bible-neville.html",
+    "../ites-symbolic-meaning-of-tribes-in.html",
     "../israel-symbolism-according-to-neville.html",
     "../in-wilderness-hidden-symbolism-of.html"
   ],
@@ -5429,7 +5423,6 @@ window.scrollGroups = {
     "../jesus-wept-for-easter-sunday.html",
     "../el/acts-1-11-return-jesus.html",
     "../not-after-man-jesus-expressed-through.html",
-    "../el/sayings-of-jesus-joy-assumption.html",
     "../son-of-man-vs-son-of-god-what-do-these.html",
     "../the-old-and-new-covenant-according-to.html",
     "../god-father-and-christ-jesus-our-lord.html",
