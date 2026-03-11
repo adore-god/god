@@ -2505,7 +2505,7 @@ window.labelMap = {
   },
   "https://god.thway.uk/jesus-his-disciples-psychological-drama.html": {
     "series": "https://god.thway.uk/scrolls/label-numbers--twelve.html",
-    "title": "The Disciples as States of Awareness:  List of Attributes"
+    "title": "The Twelve Disciples: Faculties of the Conscious Inner Elohim"
   },
   "https://god.thway.uk/the-symbolism-of-brothers-in-bible.html": {
     "series": "https://god.thway.uk/scrolls/label-numbers--twelve.html",
@@ -2794,10 +2794,6 @@ window.labelMap = {
   "https://god.thway.uk/el/persia-bible-symbolism.html": {
     "series": "https://god.thway.uk/scrolls/label-spiritual-geography.html",
     "title": "Persia \u2014 Biblical Symbolism and Meaning"
-  },
-  "https://god.thway.uk/places-as-states-spiritual-geography-of.html": {
-    "series": "https://god.thway.uk/scrolls/label-spiritual-geography.html",
-    "title": "Places as States: The Spiritual Geography of the Bible"
   },
   "https://god.thway.uk/ites-symbolic-meaning-of-tribes-in.html": {
     "series": "https://god.thway.uk/scrolls/label-spiritual-geography.html",
@@ -5167,7 +5163,6 @@ window.scrollGroups = {
     "https://god.thway.uk/moab-and-israel-divided-offspring-of.html",
     "https://god.thway.uk/pauls-voyages-overview.html",
     "https://god.thway.uk/el/persia-bible-symbolism.html",
-    "https://god.thway.uk/places-as-states-spiritual-geography-of.html",
     "https://god.thway.uk/sodom-and-gomorrah-neville-inspired.html",
     "https://god.thway.uk/the-garden-and-temple-understanding.html",
     "https://god.thway.uk/twelve-tribes-summary-law-of-assumption.html",
