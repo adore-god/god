@@ -1231,10 +1231,6 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
     "title": "Ephraim and Manasseh"
   },
-  "../ezekiels-living-creatures-prophetic.html": {
-    "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
-    "title": "Ezekiel\u2019s Vision: The Four Living Creatures"
-  },
   "../joseph-and-benjamin-symbolism-breakdown.html": {
     "series": "https://god.thway.uk/scrolls/label-joseph-series.html",
     "title": "Joseph and Benjamin: Symbolism Breakdown"
@@ -3692,7 +3688,6 @@ window.scrollGroups = {
   "https://god.thway.uk/scrolls/label-joseph-series.html": [
     "../butler-baker-and-can-power-of-inner.html",
     "../ephraim-and-manasseh.html",
-    "../ezekiels-living-creatures-prophetic.html",
     "../joseph-and-benjamin-symbolism-breakdown.html",
     "../joseph-and-jesus-patterns-of-fulfilment.html",
     "../joseph-and-potiphars-wife-resisting.html",
@@ -4146,7 +4141,6 @@ window.scrollGroups = {
     "../the-hebrew-secret-of-mark-tav.html",
     "../his-name-shall-be-called-wonderful.html",
     "../the-horses-and-their-colours.html",
-    "../ezekiels-living-creatures-prophetic.html",
     "../the-river-that-flows-through-scripture.html",
     "../the-meaning-of-lord-god-according-to.html",
     "../why-there-are-four-gospels-witnesses.html"
@@ -4231,7 +4225,6 @@ window.scrollGroups = {
     "../abraham-promise-and-covenant.html",
     "../the-symbolism-of-abraham-and-isaac.html",
     "../circumcision-symbolism-cutting-away-of.html",
-    "../ezekiels-living-creatures-prophetic.html",
     "../teachers-fathers-of-law-assumption.html",
     "../hebrews-7-unveiling-power-of.html",
     "../el/sacrifice-virgin-daughters-symbolism.html",
@@ -4574,7 +4567,6 @@ window.scrollGroups = {
   "https://god.thway.uk/scrolls/label-judah-series.html": [
     "../daniel-in-lions-den-symbol-of-spiritual.html",
     "../the-donkey-tied-to-vine-neville.html",
-    "../ezekiels-living-creatures-prophetic.html",
     "../feeling-is-secret-unlocking-bliss.html",
     "../teachers-fathers-of-law-assumption.html",
     "../judahs-blessing-and-song-of-solomon.html",
@@ -4930,7 +4922,6 @@ window.scrollGroups = {
     "../genesis-34-misuse-of-inner-force.html",
     "../esau-and-jacob-isaacs-blessing.html",
     "../genesis-33-reconciliation-of-inner-and.html",
-    "../ezekiels-living-creatures-prophetic.html",
     "../teachers-fathers-of-law-assumption.html",
     "../el/james-lords-brother.html",
     "../jacob-how-to-manifest-according-to-bible.html",
