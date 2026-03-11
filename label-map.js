@@ -4536,6 +4536,7 @@ window.scrollGroups = {
     "../the-symbolism-of-144000-in-revelation.html",
     "../the-calling-of-twelve-gospel-story.html",
     "../ezekiel-city-self-lord-there-goddard.html",
+    "../crossing-jordan-symbolism-of-twelve.html",
     "../jesus-his-disciples-psychological-drama.html",
     "../el/dorcas-tabitha-symbolism.html",
     "../john-1629-30-from-parables-to-plain.html",
