@@ -1,4 +1,4 @@
-(function waitForLabels(){
+(function waitForLabels() {
 
     const labelContainer = document.querySelector('.label-links');
     const map = window.labelMap;
@@ -9,50 +9,83 @@
         return;
     }
 
-    // Create title
+    const currentPage = window.location.href;
+
+    // Collect all scroll page URLs referenced by labels on this article
+    const allLinks = labelContainer.querySelectorAll("a");
+    const matchedScrollUrls = [];
+
+    allLinks.forEach(link => {
+        const linkSlug = link.href.split("/").pop();
+        for (let path in map) {
+            const seriesList = map[path].series;
+            if (Array.isArray(seriesList)) {
+                seriesList.forEach(s => {
+                    if (s.split("/").pop() === linkSlug && !matchedScrollUrls.includes(s)) {
+                        matchedScrollUrls.push(s);
+                    }
+                });
+            }
+        }
+    });
+
+    if (matchedScrollUrls.length === 0) return;
+
+    // For each scroll group, collect its articles (excluding current page)
+    // preserving group order but sorting articles within each group alphabetically
+    const groups = [];
+
+    matchedScrollUrls.forEach(scrollUrl => {
+        const groupEntries = [];
+
+        for (let articlePath in map) {
+            if (articlePath === currentPage) continue;
+            const entry = map[articlePath];
+            const seriesList = Array.isArray(entry.series) ? entry.series : [entry.series];
+            if (seriesList.includes(scrollUrl)) {
+                groupEntries.push([articlePath, entry.title]);
+            }
+        }
+
+        if (groupEntries.length === 0) return;
+
+        // Sort alphabetically by title within the group
+        groupEntries.sort((a, b) => a[1].localeCompare(b[1]));
+
+        groups.push({
+            scrollUrl,
+            entries: groupEntries
+        });
+    });
+
+    if (groups.length === 0) return;
+
+    // Build UI
     const title = document.createElement("div");
     title.className = "series-links-title";
     title.textContent = "More Reading";
 
-    // Create scrollable wrapper
     const container = document.createElement("div");
     container.id = "series-links-wrapper";
 
-    // Insert BEFORE or AFTER the share-dropdown
-    // To place ABOVE:
+    groups.forEach(group => {
+        group.entries.forEach(([path, linkTitle]) => {
+            const a = document.createElement("a");
+            a.href = path;
+            a.textContent = linkTitle;
+
+            const div = document.createElement("div");
+            div.appendChild(a);
+            container.appendChild(div);
+        });
+
+        // Optional visual divider between groups
+        const divider = document.createElement("div");
+        divider.className = "series-group-divider";
+        container.appendChild(divider);
+    });
+
     target.before(title);
     target.before(container);
-
-    // To place BELOW, comment the above two lines and use:
-    // target.after(title);
-    // target.after(container);
-
-    const allLinks = labelContainer.querySelectorAll("a");
-    const currentPage = window.location.href;
-
-    allLinks.forEach(link => {
-
-        for (let path in map) {
-
-            if (
-                map[path].series &&
-                link.href.endsWith(map[path].series.split("/").pop()) &&
-                path !== currentPage // Skip the link if it's the current page
-            ) {
-
-                const a = document.createElement("a");
-                a.href = path;
-                a.textContent = map[path].title;
-
-                const div = document.createElement("div");
-                div.appendChild(a);
-
-                container.appendChild(div);
-
-            }
-
-        }
-
-    });
 
 })();
