@@ -1987,6 +1987,10 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html",
     "title": "Abraham: Faith Living in the End"
   },
+  "../wheels-within-wheels-symbolism-of-inner.html": {
+    "series": "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html",
+    "title": "Elohim Made Visible: Cherubim, Wheels, and Biblical Identity"
+  },
   "../el/four-gospels-progressive-attempts.html": {
     "series": "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html",
     "title": "The Four Gospels \u2014 Progressive Attempts at Living from the End"
@@ -2042,10 +2046,6 @@ window.labelMap = {
   "../el/ezekiel-12-wall-of-the-mind.html": {
     "series": "https://god.thway.uk/scrolls/label-ezekiel-series.html",
     "title": "Ezekiel 12 \u2014 Clearing the Baggage of the Mind"
-  },
-  "../wheels-within-wheels-symbolism-of-inner.html": {
-    "series": "https://god.thway.uk/scrolls/label-ezekiel-series.html",
-    "title": "Ezekiel\u2019s Wheels: A Pictorial Image of God"
   },
   "../el/bible-gog-symbolism.html": {
     "series": "https://god.thway.uk/scrolls/label-ezekiel-series.html",
@@ -2382,10 +2382,6 @@ window.labelMap = {
   "../woman-in-silence-submissive-strength-of.html": {
     "series": "https://god.thway.uk/scrolls/label-paul-s-letters--timothy.html",
     "title": "Woman in Silence: The Submissive Strength of the Subconscious Mind"
-  },
-  "../the-symbolism-of-cherubim-and-winged.html": {
-    "series": "https://god.thway.uk/scrolls/label-solomon-series.html",
-    "title": "Cherubim and Winged Creatures"
   },
   "../heart-and-mercy-seat-symbolism.html": {
     "series": "https://god.thway.uk/scrolls/label-solomon-series.html",
@@ -2897,7 +2893,7 @@ window.labelMap = {
   },
   "../veil-symbolism-hidden-power-of.html": {
     "series": "https://god.thway.uk/scrolls/label-bride---bridegroom-series.html",
-    "title": "Veil Symbolism: The Hidden Power of Imagination in the Bible"
+    "title": "Veils and Identity: How the Bible Marks the Interval of Assumption"
   },
   "../exploring-symbolism-of-angels-in-bible.html": {
     "series": "https://god.thway.uk/scrolls/label-wings-symbolism.html",
@@ -4043,8 +4039,8 @@ window.scrollGroups = {
     "../scrolls/label-abraham-series.html",
     "../living-in-end-abraham-and-power-of.html",
     "../the-symbolism-of-jesuss-crucifixion.html",
+    "../wheels-within-wheels-symbolism-of-inner.html",
     "../events-recorded-in-all-four-gospels.html",
-    "../ezekiels-living-creatures-prophetic.html",
     "../teachers-fathers-of-law-assumption.html",
     "../el/four-gospels-progressive-attempts.html",
     "../scrolls/label-jacob-series.html",
@@ -4064,14 +4060,13 @@ window.scrollGroups = {
     "../the-symbolism-of-chariots-and-wheels-in.html",
     "../the-symbolism-of-crowns-in-bible-divine.html",
     "../the-beast-and-lion-symbolic-journey-of.html",
+    "../wheels-within-wheels-symbolism-of-inner.html",
     "../ezekiel-and-song-of-solomon-beloved-and.html",
     "../ezekiel-16115-forgotten-bride-of.html",
     "../unraveling-riddle-of-ezekiel-17.html",
     "../ezekiel-41-17-anxiety-and-human-dung.html",
     "../ezekiel-9-mark-on-forehead.html",
     "../el/ezekiel-12-wall-of-the-mind.html",
-    "../ezekiels-living-creatures-prophetic.html",
-    "../wheels-within-wheels-symbolism-of-inner.html",
     "../el/bible-gog-symbolism.html",
     "../in-ezekiel-who-is-prince.html",
     "../from-horses-issue-to-divine-conception.html",
@@ -4139,8 +4134,8 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-numbers--four.html": [
     "../amos-for-three-transgressions-and-for.html",
+    "../wheels-within-wheels-symbolism-of-inner.html",
     "../events-recorded-in-all-four-gospels.html",
-    "../ezekiels-living-creatures-prophetic.html",
     "../el/four-corners-mind-establishing-pattern.html",
     "../the-four-faces-mathew-mark-luke-and-john.html",
     "../el/four-gospels-progressive-attempts.html",
@@ -4382,8 +4377,8 @@ window.scrollGroups = {
     "../woman-in-silence-submissive-strength-of.html"
   ],
   "https://god.thway.uk/scrolls/label-solomon-series.html": [
-    "../the-symbolism-of-cherubim-and-winged.html",
     "../el/david-solomon-jesus.html",
+    "../wheels-within-wheels-symbolism-of-inner.html",
     "../heart-and-mercy-seat-symbolism.html",
     "../in-my-fathers-house-john-142-3.html",
     "../jachin-and-boaz-two-pillars-of-creation.html",
@@ -4688,9 +4683,10 @@ window.scrollGroups = {
     "../jesus-his-disciples-psychological-drama.html",
     "../the-egyptian-echo-in-genesis.html",
     "../elohim-god.html",
+    "../wheels-within-wheels-symbolism-of-inner.html",
     "../ephesians-5-neville-goddards-spiritual.html",
     "../beholding-with-inner-eye-bibles.html",
-    "../wheels-within-wheels-symbolism-of-inner.html",
+    "../have-faith-in-god-mark-112225-through.html",
     "../have-faith-in-god-mark-112225-through.html",
     "../the-law-of-assumption-god-became-man-so.html",
     "../let-us-make-man-beginning-of-division.html",
@@ -4923,7 +4919,7 @@ window.scrollGroups = {
   "https://god.thway.uk/scrolls/label-wings-symbolism.html": [
     "../noah-jesus-and-bird-of-peace-descent-of.html",
     "../cloven-hooves-fins-and-wings-animals.html",
-    "../ezekiels-living-creatures-prophetic.html",
+    "../wheels-within-wheels-symbolism-of-inner.html",
     "../the-cherubim-and-pomegranates-neville.html",
     "../exploring-symbolism-of-angels-in-bible.html",
     "../wings-symbolism.html",
@@ -5025,11 +5021,11 @@ window.scrollGroups = {
     "../the-ark-of-covenant-symbol-of.html",
     "../bath-abbeys-jacobs-ladder.html",
     "../the-beatitudes.html",
-    "../the-symbolism-of-cherubim-and-winged.html",
     "../city-metaphor-biblical-symbolism.html",
     "../ezekiel-city-self-lord-there-goddard.html",
     "../exodus-35-from-willing-hearts-to-sacred.html",
     "../from-doorposts-to-pillars-thresholds-of.html",
+    "../wheels-within-wheels-symbolism-of-inner.html",
     "../everyones-god-worlds-assumptions-vs.html",
     "../the-symbolism-and-references-to-i-am-in.html",
     "../the-father-son-symbolism-in-bible.html",
