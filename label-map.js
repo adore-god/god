@@ -2513,11 +2513,7 @@ window.labelMap = {
   },
   "https://god.thway.uk/twelve-tribes-summary-law-of-assumption.html": {
     "series": "https://god.thway.uk/scrolls/label-numbers--twelve.html",
-    "title": "Twelve Sons and Tribes: List of Attributes"
-  },
-  "https://god.thway.uk/dividing-land-how-allotments-in-joshua.html": {
-    "series": "https://god.thway.uk/scrolls/label-numbers--twelve.html",
-    "title": "The Twelve Tribes: Psychological Territories"
+    "title": "Twelve Tribes: Faculties of Mind"
   },
   "https://god.thway.uk/el/acts-2-awakening-inner-spirit.html": {
     "series": "https://god.thway.uk/scrolls/label-word-of-god-series.html",
@@ -4735,7 +4731,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-symbolism-of-brothers-in-bible.html",
     "https://god.thway.uk/twelve-tribes-summary-law-of-assumption.html",
     "https://god.thway.uk/twelve-tribes-and-twelve-disciple.html",
-    "https://god.thway.uk/dividing-land-how-allotments-in-joshua.html",
     "https://god.thway.uk/israel-symbolism-according-to-neville.html",
     "https://god.thway.uk/zebulunthe-sea-honour-and-dwelling.html"
   ],
@@ -5175,7 +5170,7 @@ window.scrollGroups = {
     "https://god.thway.uk/places-as-states-spiritual-geography-of.html",
     "https://god.thway.uk/sodom-and-gomorrah-neville-inspired.html",
     "https://god.thway.uk/the-garden-and-temple-understanding.html",
-    "https://god.thway.uk/dividing-land-how-allotments-in-joshua.html",
+    "https://god.thway.uk/twelve-tribes-summary-law-of-assumption.html",
     "https://god.thway.uk/vineyard-symbolism-in-bible-neville.html",
     "https://god.thway.uk/ites-symbolic-meaning-of-tribes-in.html",
     "https://god.thway.uk/israel-symbolism-according-to-neville.html",
