@@ -2503,13 +2503,13 @@ window.labelMap = {
     "series": "https://god.thway.uk/scrolls/label-song-of-solomon-series.html",
     "title": "Solomon and the Shulamite: Two Forms of the Same Peace"
   },
+  "https://god.thway.uk/the-symbolism-of-brothers-in-bible.html": {
+    "series": "https://god.thway.uk/scrolls/label-numbers--twelve.html",
+    "title": "Biblical Brothers and the Inner Elohim: From Divided Faculties to Unified Assumption"
+  },
   "https://god.thway.uk/jesus-his-disciples-psychological-drama.html": {
     "series": "https://god.thway.uk/scrolls/label-numbers--twelve.html",
     "title": "The Twelve Disciples: Faculties of the Conscious Inner Elohim"
-  },
-  "https://god.thway.uk/the-symbolism-of-brothers-in-bible.html": {
-    "series": "https://god.thway.uk/scrolls/label-numbers--twelve.html",
-    "title": "The Symbolism of Brothers in the Bible: A Reflection of Inner Conflict and Unity"
   },
   "https://god.thway.uk/twelve-tribes-summary-law-of-assumption.html": {
     "series": "https://god.thway.uk/scrolls/label-numbers--twelve.html",
@@ -3775,7 +3775,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-dwelling-of-god-2-chronicles-61820.html",
     "https://god.thway.uk/interpreting-power-of-tongues-in-bible.html",
     "https://god.thway.uk/legion-according-to-neville-goddard.html",
-    "https://god.thway.uk/the-symbolism-of-brothers-in-bible.html",
+    "https://god.thway.uk/the-symbolism-of-threshing-floor-place.html",
     "https://god.thway.uk/the-symbolism-of-threshing-floor-place.html",
     "https://god.thway.uk/the-meaning-of-lord-god-according-to.html",
     "https://god.thway.uk/to-choir-master-what-it-really-means-in.html",
@@ -4286,6 +4286,7 @@ window.scrollGroups = {
   "https://god.thway.uk/scrolls/label-jacob-s-twelve-son-s-and-tribes-series.html": [
     "https://god.thway.uk/the-symbolism-of-144000-in-revelation.html",
     "https://god.thway.uk/balaams-donkey-unlocking-spiritual.html",
+    "https://god.thway.uk/the-symbolism-of-brothers-in-bible.html",
     "https://god.thway.uk/the-donkey-tied-to-vine-neville.html",
     "https://god.thway.uk/el/dorcas-tabitha-symbolism.html",
     "https://god.thway.uk/el/jacob-moses-blessing-comparison.html",
@@ -4294,7 +4295,6 @@ window.scrollGroups = {
     "https://god.thway.uk/joseph-fruitful-bough-study-in.html",
     "https://god.thway.uk/the-lion-rules-domination-and-dominion.html",
     "https://god.thway.uk/naphtali-struggle-liberation-meaning-manifest.html",
-    "https://god.thway.uk/the-symbolism-of-brothers-in-bible.html",
     "https://god.thway.uk/twelve-tribes-and-twelve-disciple.html",
     "https://god.thway.uk/the-two-sticks-in-ezekiel-37-uniting.html",
     "https://god.thway.uk/zebulunthe-sea-honour-and-dwelling.html"
@@ -4718,13 +4718,13 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-numbers--twelve.html": [
     "https://god.thway.uk/the-symbolism-of-144000-in-revelation.html",
+    "https://god.thway.uk/the-symbolism-of-brothers-in-bible.html",
     "https://god.thway.uk/the-calling-of-twelve-gospel-story.html",
     "https://god.thway.uk/ezekiel-city-self-lord-there-goddard.html",
     "https://god.thway.uk/crossing-jordan-symbolism-of-twelve.html",
     "https://god.thway.uk/jesus-his-disciples-psychological-drama.html",
     "https://god.thway.uk/el/dorcas-tabitha-symbolism.html",
     "https://god.thway.uk/john-1629-30-from-parables-to-plain.html",
-    "https://god.thway.uk/the-symbolism-of-brothers-in-bible.html",
     "https://god.thway.uk/twelve-tribes-summary-law-of-assumption.html",
     "https://god.thway.uk/twelve-tribes-and-twelve-disciple.html",
     "https://god.thway.uk/israel-symbolism-according-to-neville.html",
