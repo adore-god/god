@@ -2513,7 +2513,7 @@ window.labelMap = {
   },
   "../the-shulamites-secret-ask-believe.html": {
     "series": "https://god.thway.uk/scrolls/label-song-of-solomon-series.html",
-    "title": "The Shulamite\u2019s Secret: Ask, Believe, Receive in the Song of Solomon"
+    "title": "Solomon and the Shulamite: Two Forms of the Same Peace"
   },
   "../jesus-his-disciples-psychological-drama.html": {
     "series": "https://god.thway.uk/scrolls/label-numbers--twelve.html",
@@ -4907,6 +4907,7 @@ window.scrollGroups = {
     "../rebekahs-beauty-at-well-flow-of-living.html",
     "../ruth-and-boaz.html",
     "../say-sister-sister-spouse-bible-manifestation.html",
+    "../the-shulamites-secret-ask-believe.html",
     "../the-symbolism-of-pairs-of-women-in.html",
     "../tamar-and-absalom-when-imagination-is.html",
     "../veil-symbolism-hidden-power-of.html",
