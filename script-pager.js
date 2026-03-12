@@ -91,7 +91,12 @@
 
     // ── Inject ItemList schema for each series this article belongs to ──
 
+    const injectedSchemas = new Set();
+
     matchedScrollUrls.forEach(scrollUrl => {
+
+        if (injectedSchemas.has(scrollUrl)) return;
+        injectedSchemas.add(scrollUrl);
 
         // Get the scroll page title from the label link text
         let seriesName = scrollUrl.split("/").pop().replace(/^label-/, "").replace(/-/g, " ");
@@ -135,3 +140,4 @@
     });
 
 })();
+ 
