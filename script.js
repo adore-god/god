@@ -1,3 +1,110 @@
+// script-schema-inject.js
+// Injects a full @graph JSON-LD block into the <head> of scrolls/label pages.
+// Matches the schema structure used on BlogPosting pages:
+//   Organization + WebSite + ItemList + BreadcrumbList
+// Requires window.labelMap to be loaded before this script runs.
+
+(function () {
+  if (!window.labelMap) return;
+
+  const currentUrl = window.location.href.split("?")[0].split("#")[0];
+
+  // Collect all posts whose series[] includes this label page URL
+  const items = [];
+  for (const [postUrl, data] of Object.entries(window.labelMap)) {
+    if (data.series && data.series.includes(currentUrl)) {
+      items.push({ url: postUrl, title: data.title });
+    }
+  }
+
+  if (items.length === 0) return;
+
+  // Label name from <h1> or page title
+  const h1 = document.querySelector("h1");
+  const listName = h1 ? h1.textContent.trim() : document.title;
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+
+      //  Site-wide identity (same on every page) 
+      {
+        "@type": "Organization",
+        "name": "God - The Way",
+        "url": "https://god.thway.uk/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://god.thway.uk/images/wp/god-theway-uk.webp"
+        },
+        "description": "Original linguistic framework  Lingua Divina  developed by HNNH, expanding foundational insights into Biblical text as symbolic consciousness mechanics. All interpretations are psychological and non-theological.",
+        "sameAs": [
+          "https://www.reddit.com/user/GoldStudio2653/",
+          "https://www.tiktok.com/@god.thway.uk",
+          "https://hnnh.studio/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://god.thway.uk/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://cse.google.com/cse?cx=62434d5e426ae403f&q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+
+      //  ItemList: the label/series page itself 
+      {
+        "@type": "ItemList",
+        "@id": currentUrl,
+        "name": listName,
+        "url": currentUrl,
+        "numberOfItems": items.length,
+        "itemListElement": items.map((item, i) => ({
+          "@type": "ListItem",
+          "position": i + 1,
+          "url": item.url,
+          "name": item.title
+        }))
+      },
+
+      //  BreadcrumbList 
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://god.thway.uk/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Series and Collections",
+            "item": "https://god.thway.uk/series-links.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": listName
+            // no "item" on the last breadcrumb  it is the current page
+          }
+        ]
+      }
+
+    ]
+  };
+
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.textContent = JSON.stringify(schema, null, 2);
+  document.head.appendChild(script);
+})();
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
