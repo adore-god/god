@@ -1,5 +1,7 @@
 (function waitForLabels() {
 
+    if (window.__seriesLinksRan) return;
+
     const labelContainer = document.querySelector('.label-links');
     const map = window.labelMap;
     const target = document.querySelector('.share-dropdown');
@@ -8,6 +10,8 @@
         setTimeout(waitForLabels, 100);
         return;
     }
+
+    window.__seriesLinksRan = true;
 
     const currentPage = window.location.href;
 
@@ -140,4 +144,3 @@
     });
 
 })();
- 
