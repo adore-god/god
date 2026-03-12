@@ -89,3 +89,54 @@
     target.before(container);
 
 })();
+
+
+
+(function waitForSeriesLinks() {
+    const container = document.getElementById('series-links-wrapper');
+
+    if (!container) {
+        setTimeout(waitForSeriesLinks, 100);
+        return;
+    }
+
+    // Collect all rendered links from the existing UI
+    const links = container.querySelectorAll('a');
+    if (links.length === 0) return;
+
+    const seenUrls = new Set();
+    const schemaItems = [];
+    let position = 1;
+
+    links.forEach(link => {
+        const url = link.href;
+        if (seenUrls.has(url)) return; // skip duplicates
+        seenUrls.add(url);
+
+        schemaItems.push({
+            "@type": "ListItem",
+            "position": position++,
+            "url": url,
+            "name": link.textContent.trim()
+        });
+    });
+
+    if (schemaItems.length === 0) return;
+
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "More Reading",
+        "url": window.location.href,
+        "numberOfItems": schemaItems.length,
+        "itemListElement": schemaItems
+    };
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.textContent = JSON.stringify(schema, null, 2);
+    document.head.appendChild(script);
+
+})();
+
+
