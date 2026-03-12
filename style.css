@@ -315,7 +315,7 @@ blockquote.relaxed {
   border-radius: 5px;
   font-family: monospace; 
   overflow: scroll;
-  margin-bottom: 5px;
+  margin: 15px 0;
   color:#ffffff;
   
 }
