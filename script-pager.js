@@ -88,4 +88,50 @@
     target.before(title);
     target.before(container);
 
+
+    // ── Inject ItemList schema for each series this article belongs to ──
+
+    matchedScrollUrls.forEach(scrollUrl => {
+
+        // Get the scroll page title from the label link text
+        let seriesName = scrollUrl.split("/").pop().replace(/^label-/, "").replace(/-/g, " ");
+        allLinks.forEach(link => {
+            if (link.href.split("/").pop() === scrollUrl.split("/").pop()) {
+                seriesName = link.textContent.trim();
+            }
+        });
+
+        // Get all posts in this series from the map
+        const seriesItems = [];
+        for (let articlePath in map) {
+            const entry = map[articlePath];
+            const seriesList = Array.isArray(entry.series) ? entry.series : [entry.series];
+            if (seriesList.includes(scrollUrl)) {
+                seriesItems.push({ url: articlePath, title: entry.title });
+            }
+        }
+
+        if (seriesItems.length === 0) return;
+
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": seriesName,
+            "url": scrollUrl,
+            "@id": scrollUrl,
+            "numberOfItems": seriesItems.length,
+            "itemListElement": seriesItems.map((item, i) => ({
+                "@type": "ListItem",
+                "position": i + 1,
+                "url": item.url,
+                "name": item.title
+            }))
+        };
+
+        const script = document.createElement("script");
+        script.type = "application/ld+json";
+        script.textContent = JSON.stringify(schema, null, 2);
+        document.head.appendChild(script);
+    });
+
 })();
