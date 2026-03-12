@@ -487,14 +487,13 @@ ol, ul {
   }
   
   #series-links-wrapper {
-  max-height: 160px;
+  max-height: 220px;
   overflow-y: auto;
   overflow-x: hidden;
   padding: 15px 8px;
   border: 0px solid #ddd;
   margin: 0em auto 1.6em;
   background: transparent;
-  //font-size: 0.9rem;
   width:90%
 }
 
