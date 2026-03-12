@@ -577,16 +577,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-hebrew-alphabet-series.html"
     ]
   },
-  "https://god.thway.uk/let-us-make-man-beginning-of-division.html": {
-    "title": "God Speaks: Let There Be Light",
-    "series": [
-      "https://god.thway.uk/scrolls/label-architecture-series.html",
-      "https://god.thway.uk/scrolls/label-elohim--god-series.html",
-      "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html",
-      "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
-      "https://god.thway.uk/scrolls/label-word-of-god-series.html"
-    ]
-  },
   "https://god.thway.uk/unlocking-power-of-doors-and-windows.html": {
     "title": "Head as the House Allegory: Doors and Windows",
     "series": [
@@ -3063,6 +3053,14 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-numbers-series.html"
     ]
   },
+  "https://god.thway.uk/the-symbolism-of-brothers-in-bible.html": {
+    "title": "Biblical Brothers and the Inner Elohim: From Divided Faculties to Unified Assumption",
+    "series": [
+      "https://god.thway.uk/scrolls/label-elohim--god-series.html",
+      "https://god.thway.uk/scrolls/label-jacob-s-twelve-son-s-and-tribes-series.html",
+      "https://god.thway.uk/scrolls/label-numbers--twelve.html"
+    ]
+  },
   "https://god.thway.uk/the-symbolism-of-chariots-and-wheels-in.html": {
     "title": "Chariots and Wheels in the Bible",
     "series": [
@@ -4616,13 +4614,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-spiritual-geography.html"
     ]
   },
-  "https://god.thway.uk/the-symbolism-of-brothers-in-bible.html": {
-    "title": "Biblical Brothers and the Inner Elohim: From Divided Faculties to Unified Assumption",
-    "series": [
-      "https://god.thway.uk/scrolls/label-jacob-s-twelve-son-s-and-tribes-series.html",
-      "https://god.thway.uk/scrolls/label-numbers--twelve.html"
-    ]
-  },
   "https://god.thway.uk/the-donkey-tied-to-vine-neville.html": {
     "title": "The Donkey Tied to the Vine: Judah\u2019s Blessing and Biblical Vine Imagery",
     "series": [
@@ -5997,7 +5988,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-father-son-symbolism-in-bible.html",
     "https://god.thway.uk/the-symbolism-of-tents-cities-and.html",
     "https://god.thway.uk/god-wind-and-window-symbolism.html",
-    "https://god.thway.uk/let-us-make-man-beginning-of-division.html",
     "https://god.thway.uk/unlocking-power-of-doors-and-windows.html",
     "https://god.thway.uk/heart-and-mercy-seat-symbolism.html",
     "https://god.thway.uk/hebrews-10814-through-neville-goddard.html",
@@ -6437,6 +6427,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-symbolism-of-144000-in-revelation.html",
     "https://god.thway.uk/cain-lamech-and-jesus-psychology-of.html",
     "https://god.thway.uk/the-apostles-creed-translated-through.html",
+    "https://god.thway.uk/the-symbolism-of-brothers-in-bible.html",
     "https://god.thway.uk/feeding-5000-gospel-comparison.html",
     "https://god.thway.uk/the-calling-of-twelve-gospel-story.html",
     "https://god.thway.uk/the-symbolism-of-chariots-and-wheels-in.html",
@@ -6449,7 +6440,6 @@ window.scrollGroups = {
     "https://god.thway.uk/beholding-with-inner-eye-bibles.html",
     "https://god.thway.uk/have-faith-in-god-mark-112225-through.html",
     "https://god.thway.uk/the-law-of-assumption-god-became-man-so.html",
-    "https://god.thway.uk/let-us-make-man-beginning-of-division.html",
     "https://god.thway.uk/love-your-neighbour-as-yourself.html",
     "https://god.thway.uk/hanging-its-symbolism-in-bible.html",
     "https://god.thway.uk/he-who-has-ears-to-hear-hearing-as.html",
@@ -6498,7 +6488,6 @@ window.scrollGroups = {
     "https://god.thway.uk/everyones-god-worlds-assumptions-vs.html",
     "https://god.thway.uk/the-father-son-symbolism-in-bible.html",
     "https://god.thway.uk/the-glowing-face-of-moses-neville.html",
-    "https://god.thway.uk/let-us-make-man-beginning-of-division.html",
     "https://god.thway.uk/hebrews-10814-through-neville-goddard.html",
     "https://god.thway.uk/unlocking-2-chronicles-71621-through.html",
     "https://god.thway.uk/is-jesus-god-or-not-discover-hidden.html",
@@ -6640,7 +6629,6 @@ window.scrollGroups = {
     "https://god.thway.uk/genesis-127-male-and-female-he-created.html",
     "https://god.thway.uk/genesis-foundational-principles.html",
     "https://god.thway.uk/the-law-of-assumption-god-became-man-so.html",
-    "https://god.thway.uk/let-us-make-man-beginning-of-division.html",
     "https://god.thway.uk/hezron-and-enclosed-garden-protected.html",
     "https://god.thway.uk/i-and-father-are-one-interpreted.html",
     "https://god.thway.uk/el/isaiah-ask-receive-believe.html",
@@ -8079,7 +8067,6 @@ window.scrollGroups = {
     "https://god.thway.uk/el/a-little-while-john-16.html",
     "https://god.thway.uk/el/acts-2-awakening-inner-spirit.html",
     "https://god.thway.uk/universal-metaphors-for-imagination-in.html",
-    "https://god.thway.uk/let-us-make-man-beginning-of-division.html",
     "https://god.thway.uk/he-who-has-ears-to-hear-hearing-as.html",
     "https://god.thway.uk/john-1629-30-from-parables-to-plain.html",
     "https://god.thway.uk/paul-prophecy-and-tongues.html",
