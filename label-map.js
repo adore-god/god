@@ -177,6 +177,7 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-bride---bridegroom-series.html",
       "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
       "https://god.thway.uk/scrolls/label-jacob-series.html",
+      "https://god.thway.uk/scrolls/label-law-of-identical-harvest.html",
       "https://god.thway.uk/scrolls/label-song-of-solomon-series.html"
     ]
   },
@@ -3663,7 +3664,8 @@ window.labelMap = {
   "https://god.thway.uk/genesis-126-man.html": {
     "title": "Genesis 1:26: MAN",
     "series": [
-      "https://god.thway.uk/scrolls/label-genesis-1-26-series.html"
+      "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
+      "https://god.thway.uk/scrolls/label-law-of-identical-harvest.html"
     ]
   },
   "https://god.thway.uk/genesis-127-male-and-female-he-created.html": {
@@ -4945,6 +4947,12 @@ window.labelMap = {
     "series": [
       "https://god.thway.uk/scrolls/label-judah-series.html",
       "https://god.thway.uk/scrolls/label-praise-series.html"
+    ]
+  },
+  "https://god.thway.uk/exodus-314-i-am.html": {
+    "title": "Exodus 3:14: \"I AM\"",
+    "series": [
+      "https://god.thway.uk/scrolls/label-law-of-identical-harvest.html"
     ]
   },
   "https://god.thway.uk/fourteen-years-symbolism-of-spiritual.html": {
@@ -7154,13 +7162,16 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-law-of-identical-harvest.html": [
     "https://god.thway.uk/the-law-of-identical-harvest-neville.html",
+    "https://god.thway.uk/exodus-314-i-am.html",
     "https://god.thway.uk/genesis-111-seed.html",
+    "https://god.thway.uk/genesis-126-man.html",
     "https://god.thway.uk/the-significance-of-god-knows-and-power.html",
     "https://god.thway.uk/the-god-of-gods-interpreting-elohim.html",
     "https://god.thway.uk/fourteen-years-symbolism-of-spiritual.html",
     "https://god.thway.uk/the-path-to-assumption-understanding-2.html",
     "https://god.thway.uk/rebekahs-beauty-at-well-flow-of-living.html",
     "https://god.thway.uk/el/acts-1-11-return-jesus.html",
+    "https://god.thway.uk/say-sister-sister-spouse-bible-manifestation.html",
     "https://god.thway.uk/the-striped-rods-of-jacob-study-in.html"
   ],
   "https://god.thway.uk/scrolls/label-leviticus-series.html": [
