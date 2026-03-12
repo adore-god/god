@@ -2293,15 +2293,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-song-of-solomon-series.html"
     ]
   },
-  "https://god.thway.uk/the-bride-and-bridegroom-sacred-union.html": {
-    "title": "The Bride and the Bridegroom:  Psychological Marriage",
-    "series": [
-      "https://god.thway.uk/scrolls/label-bride---bridegroom-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
-      "https://god.thway.uk/scrolls/label-marriage-series.html",
-      "https://god.thway.uk/scrolls/label-song-of-solomon-series.html"
-    ]
-  },
   "https://god.thway.uk/bride-at-well-parallels-between-rebekah.html": {
     "title": "Brides at the Well: Song of Solomon",
     "series": [
@@ -4084,22 +4075,6 @@ window.labelMap = {
     "series": [
       "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
       "https://god.thway.uk/scrolls/label-numbers--six.html"
-    ]
-  },
-  "https://god.thway.uk/the-bibles-golden-thread-union-with-new.html": {
-    "title": "The Bible\u2019s Golden Thread: Union with the New Assumption",
-    "series": [
-      "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
-      "https://god.thway.uk/scrolls/label-priesthood-series.html",
-      "https://god.thway.uk/scrolls/label-yhvh-series.html"
-    ]
-  },
-  "https://god.thway.uk/cain-and-abel-murder-in-imagination.html": {
-    "title": "Cain and Abel: Murder in Imagination",
-    "series": [
-      "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-4-7-series.html",
-      "https://god.thway.uk/scrolls/label-spiritual-violations-series.html"
     ]
   },
   "https://god.thway.uk/1-corinthians-7-neville-goddard-style.html": {
@@ -6267,7 +6242,6 @@ window.scrollGroups = {
   "https://god.thway.uk/scrolls/label-bride---bridegroom-series.html": [
     "https://god.thway.uk/abraham-and-his-sister.html",
     "https://god.thway.uk/ask-believe-receive-catalyst-for-love.html",
-    "https://god.thway.uk/the-bride-and-bridegroom-sacred-union.html",
     "https://god.thway.uk/bride-at-well-parallels-between-rebekah.html",
     "https://god.thway.uk/david-and-bathsheba-neville-goddard.html",
     "https://god.thway.uk/cleaving-in-garden-genesis-224-and-song.html",
@@ -6765,10 +6739,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-symbolism-of-abraham-and-isaac.html",
     "https://god.thway.uk/ask-believe-receive-catalyst-for-love.html",
     "https://god.thway.uk/behold-thy-son-deep-love-of-jesus-for.html",
-    "https://god.thway.uk/the-bibles-golden-thread-union-with-new.html",
-    "https://god.thway.uk/the-bride-and-bridegroom-sacred-union.html",
     "https://god.thway.uk/bride-at-well-parallels-between-rebekah.html",
-    "https://god.thway.uk/cain-and-abel-murder-in-imagination.html",
     "https://god.thway.uk/1-corinthians-7-neville-goddard-style.html",
     "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html",
     "https://god.thway.uk/davids-name-and-law-of-conscious.html",
@@ -6837,7 +6808,6 @@ window.scrollGroups = {
     "https://god.thway.uk/hitting-mark-archery-arrows-and.html",
     "https://god.thway.uk/the-bitter-cup-what-was-refused-at-cross.html",
     "https://god.thway.uk/cain-and-abel-cain-is-marked-beast.html",
-    "https://god.thway.uk/cain-and-abel-murder-in-imagination.html",
     "https://god.thway.uk/the-cobra-crown-authority-over.html",
     "https://god.thway.uk/the-beast-and-lion-symbolic-journey-of.html",
     "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html",
@@ -7214,7 +7184,6 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-marriage-series.html": [
     "https://god.thway.uk/ask-believe-receive-catalyst-for-love.html",
-    "https://god.thway.uk/the-bride-and-bridegroom-sacred-union.html",
     "https://god.thway.uk/bride-at-well-parallels-between-rebekah.html",
     "https://god.thway.uk/1-corinthians-7-neville-goddard-style.html",
     "https://god.thway.uk/spiritual-union-and-imagination-new.html",
@@ -7625,7 +7594,6 @@ window.scrollGroups = {
     "https://god.thway.uk/precious-stones-in-bible-imagination.html"
   ],
   "https://god.thway.uk/scrolls/label-priesthood-series.html": [
-    "https://god.thway.uk/the-bibles-golden-thread-union-with-new.html",
     "https://god.thway.uk/the-evolution-of-priesthood-from-aaron.html",
     "https://god.thway.uk/fit-for-holy-place-exodus-39-and.html",
     "https://god.thway.uk/el/hannah-favour-dedication.html",
@@ -7804,7 +7772,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-locked-garden-and-flaming-sword.html",
     "https://god.thway.uk/abital-fountain-of-wisdom-and-renewal.html",
     "https://god.thway.uk/ask-believe-receive-catalyst-for-love.html",
-    "https://god.thway.uk/the-bride-and-bridegroom-sacred-union.html",
     "https://god.thway.uk/bride-at-well-parallels-between-rebekah.html",
     "https://god.thway.uk/carmel-garden-of-king-symbol-of-soul.html",
     "https://god.thway.uk/davids-name-and-law-of-conscious.html",
@@ -7876,7 +7843,6 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-spiritual-violations-series.html": [
     "https://god.thway.uk/el/mind-war-firmness-integrity.html",
-    "https://god.thway.uk/cain-and-abel-murder-in-imagination.html",
     "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html",
     "https://god.thway.uk/david-and-bathsheba-neville-goddard.html",
     "https://god.thway.uk/el/dismembered-concubine.html",
@@ -8088,7 +8054,6 @@ window.scrollGroups = {
     "https://god.thway.uk/creating-with-scripture-word-of-god-and.html"
   ],
   "https://god.thway.uk/scrolls/label-yhvh-series.html": [
-    "https://god.thway.uk/the-bibles-golden-thread-union-with-new.html",
     "https://god.thway.uk/ezekiel-city-self-lord-there-goddard.html",
     "https://god.thway.uk/davids-name-and-law-of-conscious.html",
     "https://god.thway.uk/the-symbolism-and-references-to-i-am-in.html",
