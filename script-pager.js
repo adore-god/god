@@ -140,3 +140,40 @@
 })();
 
 
+
+(function waitForLatestPosts() {
+    const container = document.getElementById('latest-posts');
+    if (!container) return;
+
+    const links = container.querySelectorAll('li a');
+    if (links.length === 0) {
+        setTimeout(waitForLatestPosts, 100);
+        return;
+    }
+
+    const schemaItems = [];
+    let position = 1;
+
+    links.forEach(link => {
+        schemaItems.push({
+            "@type": "ListItem",
+            "position": position++,
+            "url": link.href,
+            "name": link.textContent.trim()
+        });
+    });
+
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Latest Articles",
+        "url": window.location.href,
+        "numberOfItems": schemaItems.length,
+        "itemListElement": schemaItems
+    };
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.textContent = JSON.stringify(schema, null, 2);
+    document.head.appendChild(script);
+})(); 
