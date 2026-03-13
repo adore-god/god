@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Set fixed styles
   Object.assign(tooltip.style, {
     position: "absolute", display: "none", zIndex: "10000",
-    padding: "14px", fontSize: "15px", boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
-    borderRadius: "4px", pointerEvents: "auto",
+    padding: "14px", fontSize: "16px", lineHeight: "1.3em", boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+    borderRadius: "7px", pointerEvents: "auto",
   });
 
   
