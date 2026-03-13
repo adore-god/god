@@ -3760,13 +3760,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-genesis-1-series.html"
     ]
   },
-  "https://god.thway.uk/el/peace-hope-love-bible-promised-now.html": {
-    "title": "Feel the Peace, Hope, and Love the Bible Has Always Promised\u2014Now",
-    "series": [
-      "https://god.thway.uk/scrolls/label-genesis-1-series.html",
-      "https://god.thway.uk/scrolls/label-healing-series.html"
-    ]
-  },
   "https://god.thway.uk/the-generations-of-consciousness-how.html": {
     "title": "The First Genealogy in the Bible: Heaven and Earth",
     "series": [
@@ -3844,6 +3837,13 @@ window.labelMap = {
     "series": [
       "https://god.thway.uk/scrolls/label-genesis-1-series.html",
       "https://god.thway.uk/scrolls/label-numbers--seven.html"
+    ]
+  },
+  "https://god.thway.uk/el/peace-hope-love-bible-promised-now.html": {
+    "title": "Thoughts of Peace",
+    "series": [
+      "https://god.thway.uk/scrolls/label-genesis-1-series.html",
+      "https://god.thway.uk/scrolls/label-healing-series.html"
     ]
   },
   "https://god.thway.uk/concubines-in-bible-symbolism-of.html": {
@@ -6631,7 +6631,6 @@ window.scrollGroups = {
     "https://god.thway.uk/noah-jesus-and-bird-of-peace-descent-of.html",
     "https://god.thway.uk/from-darkness-to-light-symbolism-of.html",
     "https://god.thway.uk/the-law-of-identical-harvest-neville.html",
-    "https://god.thway.uk/el/peace-hope-love-bible-promised-now.html",
     "https://god.thway.uk/the-generations-of-consciousness-how.html",
     "https://god.thway.uk/formed-from-dust-serpent-and-potters.html",
     "https://god.thway.uk/genesis-1-creation.html",
@@ -6648,6 +6647,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-seven-churches-of-revelation.html",
     "https://god.thway.uk/the-completion-of-creation-and.html",
     "https://god.thway.uk/interpreting-power-of-tongues-in-bible.html",
+    "https://god.thway.uk/el/peace-hope-love-bible-promised-now.html",
     "https://god.thway.uk/the-word-seed-and-unity-of-consciousness.html"
   ],
   "https://god.thway.uk/scrolls/label-genesis-2-23-series.html": [
@@ -6856,7 +6856,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-book-of-tobit-neville-goddard.html",
     "https://god.thway.uk/childlike-faith-becoming-like-little.html",
     "https://god.thway.uk/clean-and-unclean-biblical-symbolism-of.html",
-    "https://god.thway.uk/el/peace-hope-love-bible-promised-now.html",
     "https://god.thway.uk/fish-and-imagination-jesus-miracles.html",
     "https://god.thway.uk/healing-mind-what-miracles-of-jesus-are.html",
     "https://god.thway.uk/el/jesus-sabbath-healing-meaning.html",
@@ -6866,6 +6865,7 @@ window.scrollGroups = {
     "https://god.thway.uk/luke-52139-healing-law-of-assumption-in.html",
     "https://god.thway.uk/legion-according-to-neville-goddard.html",
     "https://god.thway.uk/the-ten-lepers-decaying-imagination.html",
+    "https://god.thway.uk/el/peace-hope-love-bible-promised-now.html",
     "https://god.thway.uk/physician-heal-thyself-rejected-by.html"
   ],
   "https://god.thway.uk/scrolls/label-hebrew-alphabet-series.html": [
