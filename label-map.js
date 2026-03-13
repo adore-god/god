@@ -4322,10 +4322,12 @@ window.labelMap = {
     "title": "Two Genealogies in Luke and Mathew",
     "series": [
       "https://god.thway.uk/scrolls/label-gospel-comparison-series.html",
+      "https://god.thway.uk/scrolls/label-law-of-identical-harvest.html",
       "https://god.thway.uk/scrolls/label-lineage-series.html",
       "https://god.thway.uk/scrolls/label-luke-series.html",
       "https://god.thway.uk/scrolls/label-matthew-series.html",
-      "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html"
+      "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html",
+      "https://god.thway.uk/scrolls/label-numbers--seven.html"
     ]
   },
   "https://god.thway.uk/el/the-books-of-old-testament-overview.html": {
@@ -4992,6 +4994,15 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html"
     ]
   },
+  "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html": {
+    "title": "Reversal: The First And The Last",
+    "series": [
+      "https://god.thway.uk/scrolls/label-lineage-series.html",
+      "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html",
+      "https://god.thway.uk/scrolls/label-numbers--four.html",
+      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
+    ]
+  },
   "https://god.thway.uk/salmon-spiritual-precursor-in-lineage.html": {
     "title": "Salmon: A Spiritual Precursor in the Lineage of Consciousness",
     "series": [
@@ -5154,14 +5165,6 @@ window.labelMap = {
     "title": "The Family Tree: Named States of Awareness",
     "series": [
       "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html"
-    ]
-  },
-  "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html": {
-    "title": "Reversal: The First And The Last",
-    "series": [
-      "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html",
-      "https://god.thway.uk/scrolls/label-numbers--four.html",
-      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
     ]
   },
   "https://god.thway.uk/these-are-generations-threshold-of.html": {
@@ -7125,7 +7128,8 @@ window.scrollGroups = {
     "https://god.thway.uk/rebekahs-beauty-at-well-flow-of-living.html",
     "https://god.thway.uk/el/acts-1-11-return-jesus.html",
     "https://god.thway.uk/say-sister-sister-spouse-bible-manifestation.html",
-    "https://god.thway.uk/the-striped-rods-of-jacob-study-in.html"
+    "https://god.thway.uk/the-striped-rods-of-jacob-study-in.html",
+    "https://god.thway.uk/luke-and-matthew-two-genealogies-two.html"
   ],
   "https://god.thway.uk/scrolls/label-leviticus-series.html": [
     "https://god.thway.uk/childbirth-purification-interpreting.html",
@@ -7150,6 +7154,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-lineage-of-christ-journey-through.html",
     "https://god.thway.uk/lukes-genealogy-lineage-to-god.html",
     "https://god.thway.uk/fourteen-years-symbolism-of-spiritual.html",
+    "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html",
     "https://god.thway.uk/salmon-spiritual-precursor-in-lineage.html",
     "https://god.thway.uk/luke-and-matthew-two-genealogies-two.html"
   ],
@@ -7344,6 +7349,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-completion-of-creation-and.html",
     "https://god.thway.uk/what-does-seventy-times-seven-really.html",
     "https://god.thway.uk/solomon-peace-of-fulfilled-desire.html",
+    "https://god.thway.uk/luke-and-matthew-two-genealogies-two.html",
     "https://god.thway.uk/the-urim-and-thummim-divine-guidance.html"
   ],
   "https://god.thway.uk/scrolls/label-numbers--six.html": [
