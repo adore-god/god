@@ -4,7 +4,7 @@ async function loadLatestPosts() {
 
     try {
         // Fetch the latest sitemap
-        const response = await fetch(' sitemap_latest.xml');
+        const response = await fetch('https://god.thway.uk/sitemap_latest.xml');
         const text = await response.text();
 
         // Parse the XML

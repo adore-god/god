@@ -177,91 +177,6 @@ This site presents a self-empowered, non-theological approach that moves beyond 
 <div id="reddit-feed" class="reddit-container-feed">
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const containerSelectors = ['#results', '#latest-posts'];
-
-  function addNoTagToElement(el) {
-    if (!el) return;
-    if (el.tagName === 'A') el.classList.add('noTag');
-    if (el.querySelectorAll) el.querySelectorAll('a').forEach(a => a.classList.add('noTag'));
-  }
-
-  containerSelectors.forEach(sel => {
-    const c = document.querySelector(sel);
-    if (c) addNoTagToElement(c);
-  });
-
-  containerSelectors.forEach(sel => {
-    const c = document.querySelector(sel);
-    if (!c) return;
-    const observer = new MutationObserver(mutations => {
-      for (const m of mutations) {
-        for (const node of m.addedNodes) {
-          if (node.nodeType !== Node.ELEMENT_NODE) continue;
-          addNoTagToElement(node);
-        }
-      }
-    });
-    observer.observe(c, { childList: true, subtree: true });
-  });
-
-  async function loadIndex() {
-    try {
-      const response = await fetch('searchIndex.json');
-      if (!response.ok) throw new Error('Failed to fetch searchIndex.json: ' + response.status);
-      return await response.json();
-    } catch (e) {
-      console.error(e);
-      return [];
-    }
-  }
-
-  const searchBox = document.getElementById('searchBox');
-  const resultsList = document.getElementById('results');
-
-  if (searchBox && resultsList) {
-    let debounceTimer;
-    searchBox.addEventListener('input', async function () {
-      const query = this.value.trim().toLowerCase();
-      resultsList.innerHTML = '';
-      if (!query) return;
-
-      // Debounce GA event
-      if (typeof gtag === 'function') {
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(() => {
-          gtag('event', 'search', {
-            'search_term': query,
-            'event_category': 'Site Search',
-            'event_label': 'Local Search Box'
-          });
-        }, 700); // Wait 700ms after last keystroke
-      }
-
-      const index = await loadIndex();
-      const results = index.filter(page =>
-        page.title.toLowerCase().includes(query) ||
-        page.content.toLowerCase().includes(query)
-      );
-
-      results.forEach(page => {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = page.url;
-        a.textContent = page.title;
-        a.classList.add('noTag');
-        li.appendChild(a);
-        resultsList.appendChild(li);
-      });
-
-      addNoTagToElement(resultsList);
-    });
-  }
-});
-</script>
-
-
 
  </article></main>
 <aside class="sidebar">
@@ -296,5 +211,5 @@ document.addEventListener('DOMContentLoaded', () => {
 <div class="footer">
   © 2025 <a href="https://god.thway.uk">God - The Way</a>. All rights reserved. <a href="https://god.thway.uk/el/terms-of-use.html">See Terms of Use</a>
 </div>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5M83Q78Z0"></script><script src="script-ga.js" defer></script><script src="label-map.js" defer></script><script src="script-pager.js" defer></script></body>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5M83Q78Z0"></script><script src="script-ga.js" defer></script></body>
 </html>
