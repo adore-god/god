@@ -447,7 +447,7 @@ ol, ul {
   }
 
   .reddit-container-feed > div:nth-child(-n+3) h3 {
-    font-size: 0.9em;
+    font-size: 1em;
     margin: 0 0 5px 0;
     border:0;
   }
@@ -459,7 +459,7 @@ ol, ul {
 
   /* Remaining posts smaller */
   .reddit-container-feed > div:nth-child(n+4) h3 {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin: 0 0 3px 0;
     opacity: 0.8;
   }
