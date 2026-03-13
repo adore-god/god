@@ -1132,9 +1132,10 @@ window.labelMap = {
     ]
   },
   "https://god.thway.uk/it-is-recorded-of-me-inner-meaning-of.html": {
-    "title": "\"It Is Recorded of Me\": The Inner Meaning of Psalm 40:7\u20138",
+    "title": "It Is Recorded of Me: The Meaning of Psalm 40:7\u20138",
     "series": [
       "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
+      "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html",
       "https://god.thway.uk/scrolls/label-psalms-series.html"
     ]
   },
@@ -7275,6 +7276,7 @@ window.scrollGroups = {
     "https://god.thway.uk/cloven-hooves-fins-and-wings-animals.html",
     "https://god.thway.uk/davids-mighty-men-supporting-law-of.html",
     "https://god.thway.uk/elohim-god.html",
+    "https://god.thway.uk/it-is-recorded-of-me-inner-meaning-of.html",
     "https://god.thway.uk/unraveling-family-tree-within-symbolic.html",
     "https://god.thway.uk/the-generations-of-consciousness-how.html",
     "https://god.thway.uk/gideon-also-called-jerubbaal.html",
