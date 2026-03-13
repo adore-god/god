@@ -712,7 +712,11 @@ table {
   color: #82adff;
   text-decoration:none;
 }
-
+ 
+.latest-posts h4 {
+ 	margin-top: 1em;
+ }
+ 
 .latest-posts {
 	height:400px;
 	overflow-y: auto;
