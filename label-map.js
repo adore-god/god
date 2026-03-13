@@ -3046,7 +3046,8 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-elohim--god-series.html",
       "https://god.thway.uk/scrolls/label-jacob-s-twelve-son-s-and-tribes-series.html",
       "https://god.thway.uk/scrolls/label-numbers--twelve.html",
-      "https://god.thway.uk/scrolls/label-numbers-series.html"
+      "https://god.thway.uk/scrolls/label-numbers-series.html",
+      "https://god.thway.uk/scrolls/label-revelation-series.html"
     ]
   },
   "https://god.thway.uk/the-symbolism-of-brothers-in-bible.html": {
@@ -7629,6 +7630,7 @@ window.scrollGroups = {
     "https://god.thway.uk/reubens-mistake-why-your-subconscious.html"
   ],
   "https://god.thway.uk/scrolls/label-revelation-series.html": [
+    "https://god.thway.uk/the-symbolism-of-144000-in-revelation.html",
     "https://god.thway.uk/cain-and-abel-cain-is-marked-beast.html",
     "https://god.thway.uk/el/lake-fire-symbolism-bible.html",
     "https://god.thway.uk/the-marriage-supper-of-lamb-entering.html",
