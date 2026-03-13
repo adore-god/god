@@ -13,7 +13,7 @@ async function loadLatestPosts() {
         const urls = xmlDoc.getElementsByTagName('url');
 
         // Display only the last 5 modified posts
-        const latestPosts = Array.from(urls).slice(0, 5);
+        const latestPosts = Array.from(urls).slice(0, 20);
 
         const ul = document.createElement('ul');
 

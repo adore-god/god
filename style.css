@@ -713,6 +713,12 @@ table {
   text-decoration:none;
 }
 
+.latest-posts {
+	height:400px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	}
+	
 .latest-posts a, .latest-posts a:visited {
   width: 90%;
   margin: 0 auto;
