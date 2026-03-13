@@ -340,6 +340,14 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-rock-series.html"
     ]
   },
+  "https://god.thway.uk/creation-reenacted-poetic-parallels.html": {
+    "title": "Dove Symbolism",
+    "series": [
+      "https://god.thway.uk/scrolls/label-animals-series.html",
+      "https://god.thway.uk/scrolls/label-eden-series.html",
+      "https://god.thway.uk/scrolls/label-song-of-solomon-series.html"
+    ]
+  },
   "https://god.thway.uk/unraveling-riddle-of-ezekiel-17.html": {
     "title": "Ezekiel 17: The Eagle and The Vine",
     "series": [
@@ -2857,13 +2865,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-spiritual-geography.html"
     ]
   },
-  "https://god.thway.uk/creation-reenacted-poetic-parallels.html": {
-    "title": "Dove Symbolism",
-    "series": [
-      "https://god.thway.uk/scrolls/label-eden-series.html",
-      "https://god.thway.uk/scrolls/label-song-of-solomon-series.html"
-    ]
-  },
   "https://god.thway.uk/eden-and-sarah-return-to-pleasure-in.html": {
     "title": "Eden and Sarah: The Return to Pleasure in Manifestation",
     "series": [
@@ -3513,15 +3514,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-paul-s-letters--hebrews.html"
     ]
   },
-  "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html": {
-    "title": "Creation Story: The 'Last Shall Be First'",
-    "series": [
-      "https://god.thway.uk/scrolls/label-genesis-1-11-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-1-series.html",
-      "https://god.thway.uk/scrolls/label-jesus-christ--salvation.html",
-      "https://god.thway.uk/scrolls/label-parable-series.html"
-    ]
-  },
   "https://god.thway.uk/the-law-of-identical-harvest-neville.html": {
     "title": "Double Creation: The Law of Identical Harvest",
     "series": [
@@ -3752,13 +3744,6 @@ window.labelMap = {
     "series": [
       "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
       "https://god.thway.uk/scrolls/label-revelation-series.html"
-    ]
-  },
-  "https://god.thway.uk/the-first-shall-be-last-ephraim-esau.html": {
-    "title": "Reversal of Sons: The First Shall Be Last",
-    "series": [
-      "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
-      "https://god.thway.uk/scrolls/label-lineage-series.html"
     ]
   },
   "https://god.thway.uk/samuel-david-and-saul.html": {
@@ -5171,6 +5156,14 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html"
     ]
   },
+  "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html": {
+    "title": "Reversal: The First And The Last",
+    "series": [
+      "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html",
+      "https://god.thway.uk/scrolls/label-numbers--four.html",
+      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
+    ]
+  },
   "https://god.thway.uk/these-are-generations-threshold-of.html": {
     "title": "These Are the Generations:  Generative Consciousness",
     "series": [
@@ -5934,6 +5927,7 @@ window.scrollGroups = {
     "https://god.thway.uk/daniel-in-lions-den-symbol-of-spiritual.html",
     "https://god.thway.uk/daniel-8-symbolic-journey-through.html",
     "https://god.thway.uk/the-dove-in-rock-paul-jesus-and-cephas.html",
+    "https://god.thway.uk/creation-reenacted-poetic-parallels.html",
     "https://god.thway.uk/unraveling-riddle-of-ezekiel-17.html",
     "https://god.thway.uk/formed-from-dust-serpent-and-potters.html",
     "https://god.thway.uk/the-horses-and-their-colours.html",
@@ -6552,7 +6546,6 @@ window.scrollGroups = {
     "https://god.thway.uk/absaloms-hair.html",
     "https://god.thway.uk/el/manifesting-money.html",
     "https://god.thway.uk/can-you-interpret-time.html",
-    "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html",
     "https://god.thway.uk/daniel-chapter-4-verses-1-18-symbolism.html",
     "https://god.thway.uk/defilement-and-obsession-with-ritual.html",
     "https://god.thway.uk/the-law-of-identical-harvest-neville.html",
@@ -6630,7 +6623,6 @@ window.scrollGroups = {
     "https://god.thway.uk/psalm-8-power-of-imagination-and.html",
     "https://god.thway.uk/putting-on-new-man-bibles-secret-law.html",
     "https://god.thway.uk/revelation-vision-of-divine-man.html",
-    "https://god.thway.uk/the-first-shall-be-last-ephraim-esau.html",
     "https://god.thway.uk/samuel-david-and-saul.html",
     "https://god.thway.uk/divided-by-doctrine-confusion-of.html"
   ],
@@ -6643,7 +6635,6 @@ window.scrollGroups = {
   "https://god.thway.uk/scrolls/label-genesis-1-series.html": [
     "https://god.thway.uk/noah-jesus-and-bird-of-peace-descent-of.html",
     "https://god.thway.uk/from-darkness-to-light-symbolism-of.html",
-    "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html",
     "https://god.thway.uk/the-law-of-identical-harvest-neville.html",
     "https://god.thway.uk/el/peace-hope-love-bible-promised-now.html",
     "https://god.thway.uk/the-generations-of-consciousness-how.html",
@@ -6988,7 +6979,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-bitter-cup-what-was-refused-at-cross.html",
     "https://god.thway.uk/the-assumption-of-jesus-rich-in.html",
     "https://god.thway.uk/childlike-faith-becoming-like-little.html",
-    "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html",
     "https://god.thway.uk/the-symbolism-of-jesuss-crucifixion.html",
     "https://god.thway.uk/david-and-jesus-what-they-symbolise-in.html",
     "https://god.thway.uk/the-dust-of-world-why-jesus-washed-feet.html",
@@ -7160,7 +7150,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-lineage-of-christ-journey-through.html",
     "https://god.thway.uk/lukes-genealogy-lineage-to-god.html",
     "https://god.thway.uk/fourteen-years-symbolism-of-spiritual.html",
-    "https://god.thway.uk/the-first-shall-be-last-ephraim-esau.html",
     "https://god.thway.uk/salmon-spiritual-precursor-in-lineage.html",
     "https://god.thway.uk/luke-and-matthew-two-genealogies-two.html"
   ],
@@ -7300,6 +7289,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-lineage-of-christ-journey-through.html",
     "https://god.thway.uk/lukes-genealogy-lineage-to-god.html",
     "https://god.thway.uk/the-nails-and-name-crucifixion-yhvh-and.html",
+    "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html",
     "https://god.thway.uk/salmon-spiritual-precursor-in-lineage.html",
     "https://god.thway.uk/el-vs-bal-decoding-bibles-secret.html",
     "https://god.thway.uk/these-are-generations-threshold-of.html",
@@ -7338,6 +7328,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-hebrew-secret-of-mark-tav.html",
     "https://god.thway.uk/his-name-shall-be-called-wonderful.html",
     "https://god.thway.uk/the-horses-and-their-colours.html",
+    "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html",
     "https://god.thway.uk/the-river-that-flows-through-scripture.html",
     "https://god.thway.uk/the-meaning-of-lord-god-according-to.html",
     "https://god.thway.uk/why-there-are-four-gospels-witnesses.html"
@@ -7435,7 +7426,6 @@ window.scrollGroups = {
   "https://god.thway.uk/scrolls/label-parable-series.html": [
     "https://god.thway.uk/el/a-little-while-john-16.html",
     "https://god.thway.uk/can-you-interpret-time.html",
-    "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html",
     "https://god.thway.uk/from-figures-of-speech-to-divine.html",
     "https://god.thway.uk/love-your-neighbour-as-yourself.html",
     "https://god.thway.uk/john-1629-30-from-parables-to-plain.html",
@@ -7886,6 +7876,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-lion-rules-domination-and-dominion.html",
     "https://god.thway.uk/el/hebrews-hall-role-call.html",
     "https://god.thway.uk/crowned-from-within-defining-your-i-am.html",
+    "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html",
     "https://god.thway.uk/tamah-judah-and-perez.html",
     "https://god.thway.uk/why-there-are-four-gospels-witnesses.html"
   ],
