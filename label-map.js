@@ -379,10 +379,12 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-jacob-s-twelve-son-s-and-tribes-series.html"
     ]
   },
-  "https://god.thway.uk/el/jonah-fish-mind.html": {
-    "title": "Jonah and the Fish",
+  "https://god.thway.uk/el/jonah-dove.html": {
+    "title": "Jonah's Attitude",
     "series": [
       "https://god.thway.uk/scrolls/label-animals-series.html",
+      "https://god.thway.uk/scrolls/label-genesis-1-11-series.html",
+      "https://god.thway.uk/scrolls/label-genesis-4-7-series.html",
       "https://god.thway.uk/scrolls/label-jonah-series.html"
     ]
   },
@@ -3560,14 +3562,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-genesis-1-11-series.html"
     ]
   },
-  "https://god.thway.uk/el/jonah-dove.html": {
-    "title": "Jonah's Attitude",
-    "series": [
-      "https://god.thway.uk/scrolls/label-genesis-1-11-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-4-7-series.html",
-      "https://god.thway.uk/scrolls/label-jonah-series.html"
-    ]
-  },
   "https://god.thway.uk/joseph-dreamer-when-imagination-is.html": {
     "title": "Joseph the Dreamer: Sheaves and Cows",
     "series": [
@@ -5945,7 +5939,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-horses-and-their-colours.html",
     "https://god.thway.uk/judahs-blessing-and-song-of-solomon.html",
     "https://god.thway.uk/el/jesus-riding-donkey.html",
-    "https://god.thway.uk/el/jonah-fish-mind.html",
+    "https://god.thway.uk/el/jonah-dove.html",
     "https://god.thway.uk/the-lion-rules-domination-and-dominion.html",
     "https://god.thway.uk/el/leviticus-9-meaning-sacrifice.html",
     "https://god.thway.uk/eyes-like-fire-eyes-like-doves-two.html",
@@ -7082,7 +7076,6 @@ window.scrollGroups = {
     "https://god.thway.uk/creating-with-scripture-word-of-god-and.html"
   ],
   "https://god.thway.uk/scrolls/label-jonah-series.html": [
-    "https://god.thway.uk/el/jonah-fish-mind.html",
     "https://god.thway.uk/el/jonah-dove.html",
     "https://god.thway.uk/el/sign-jonah-jesus.html"
   ],
