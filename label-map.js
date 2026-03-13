@@ -3096,13 +3096,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-elohim--god-series.html"
     ]
   },
-  "https://god.thway.uk/the-law-of-assumption-god-became-man-so.html": {
-    "title": "God Became Man So That Man Might Become God",
-    "series": [
-      "https://god.thway.uk/scrolls/label-elohim--god-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-1-26-series.html"
-    ]
-  },
   "https://god.thway.uk/love-your-neighbour-as-yourself.html": {
     "title": "God: Loving Neighbouring Aspects of Mind",
     "series": [
@@ -6412,7 +6405,6 @@ window.scrollGroups = {
     "https://god.thway.uk/ephesians-5-neville-goddards-spiritual.html",
     "https://god.thway.uk/beholding-with-inner-eye-bibles.html",
     "https://god.thway.uk/have-faith-in-god-mark-112225-through.html",
-    "https://god.thway.uk/the-law-of-assumption-god-became-man-so.html",
     "https://god.thway.uk/love-your-neighbour-as-yourself.html",
     "https://god.thway.uk/hanging-its-symbolism-in-bible.html",
     "https://god.thway.uk/he-who-has-ears-to-hear-hearing-as.html",
@@ -6600,7 +6592,6 @@ window.scrollGroups = {
     "https://god.thway.uk/genesis-126-man.html",
     "https://god.thway.uk/genesis-127-male-and-female-he-created.html",
     "https://god.thway.uk/genesis-foundational-principles.html",
-    "https://god.thway.uk/the-law-of-assumption-god-became-man-so.html",
     "https://god.thway.uk/hezron-and-enclosed-garden-protected.html",
     "https://god.thway.uk/i-and-father-are-one-interpreted.html",
     "https://god.thway.uk/el/isaiah-ask-receive-believe.html",
