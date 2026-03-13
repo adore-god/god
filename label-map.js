@@ -3839,13 +3839,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-numbers--seven.html"
     ]
   },
-  "https://god.thway.uk/el/peace-hope-love-bible-promised-now.html": {
-    "title": "Thoughts of Peace",
-    "series": [
-      "https://god.thway.uk/scrolls/label-genesis-1-series.html",
-      "https://god.thway.uk/scrolls/label-healing-series.html"
-    ]
-  },
   "https://god.thway.uk/concubines-in-bible-symbolism-of.html": {
     "title": "Concubines in the Bible",
     "series": [
@@ -4469,6 +4462,12 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-numbers--ten.html",
       "https://god.thway.uk/scrolls/label-parable-series.html",
       "https://god.thway.uk/scrolls/label-praise-series.html"
+    ]
+  },
+  "https://god.thway.uk/el/peace-hope-love-bible-promised-now.html": {
+    "title": "Thoughts of Peace",
+    "series": [
+      "https://god.thway.uk/scrolls/label-healing-series.html"
     ]
   },
   "https://god.thway.uk/number-four-neville-goddard-style.html": {
@@ -6647,7 +6646,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-seven-churches-of-revelation.html",
     "https://god.thway.uk/the-completion-of-creation-and.html",
     "https://god.thway.uk/interpreting-power-of-tongues-in-bible.html",
-    "https://god.thway.uk/el/peace-hope-love-bible-promised-now.html",
     "https://god.thway.uk/the-word-seed-and-unity-of-consciousness.html"
   ],
   "https://god.thway.uk/scrolls/label-genesis-2-23-series.html": [
