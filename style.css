@@ -439,7 +439,6 @@ ol, ul {
     border: 0px solid #ccc;
     border-radius: 8px;
     background: transparent;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   } 
 
   .reddit-container-feed > div {
