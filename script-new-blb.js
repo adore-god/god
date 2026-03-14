@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const blbLink = `https://www.blueletterbible.org/esv/${blbCode}/${chapter}/${startVerse}/`;
 
       tooltip.innerHTML = data.text 
-         ? `<span style="font-weight:bold;">${data.reference}</span><br>${data.text.replace(/\n/g, "<br>")}<br><div style="border:0;border-top:1px solid #000;margin:8px 0;"></div><a href="${blbLink}" target="_blank" rel="noopener noreferrer" style="color:#82adff !important;text-decoration:none;font-weight:bold;">View on Blue Letter Bible →</a>` 
+         ? `<span style="font-weight:bold;text-decoration:none;">${data.reference}</span><br>${data.text.replace(/\n/g, "<br>")}<br><div style="border:0;border-top:1px solid #000;margin:8px 0;"></div><a href="${blbLink}" target="_blank" rel="noopener noreferrer" style="color:#82adff !important;text-decoration:none;font-weight:bold;">View on Blue Letter Bible →</a>` 
         : "Not found";
     } catch {
       tooltip.innerHTML = "Error loading preview.";
