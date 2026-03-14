@@ -5822,12 +5822,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-women-in-the-bible-series.html"
     ]
   },
-  "https://god.thway.uk/mary-according-to-neville-goddard.html": {
-    "title": "Mary According to Neville Goddard",
-    "series": [
-      "https://god.thway.uk/scrolls/label-women-in-the-bible-series.html"
-    ]
-  },
   "https://god.thway.uk/el/acts-2-awakening-inner-spirit.html": {
     "title": "Acts 2: Tongues and Native Language",
     "series": [
@@ -7967,7 +7961,6 @@ window.scrollGroups = {
     "https://god.thway.uk/hagar-and-sarah-battle-between-outer.html",
     "https://god.thway.uk/leah-rachel-and-mandrakes-manifestation.html",
     "https://god.thway.uk/martha-and-rushing-woman-syndrome.html",
-    "https://god.thway.uk/mary-according-to-neville-goddard.html",
     "https://god.thway.uk/the-seven-devils-cast-out-of-mary.html",
     "https://god.thway.uk/all-marys-who-was-mary-magdalene.html",
     "https://god.thway.uk/why-are-there-so-many-marys-in-new.html",
