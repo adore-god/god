@@ -736,16 +736,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html"
     ]
   },
-  "https://god.thway.uk/the-river-that-flows-through-scripture.html": {
-    "title": "The River That Flows Through Scripture: From Eden to Revelation",
-    "series": [
-      "https://god.thway.uk/scrolls/label-architecture-series.html",
-      "https://god.thway.uk/scrolls/label-eden-series.html",
-      "https://god.thway.uk/scrolls/label-numbers--four.html",
-      "https://god.thway.uk/scrolls/label-river-series.html",
-      "https://god.thway.uk/scrolls/label-water-symbolism.html"
-    ]
-  },
   "https://god.thway.uk/the-cherubim-and-pomegranates-neville.html": {
     "title": "The Sacred Architecture of Solomon\u2019s Temple: Cherubim and Pomegranates in Neville Goddard\u2019s Teaching",
     "series": [
@@ -5936,7 +5926,6 @@ window.scrollGroups = {
     "https://god.thway.uk/el/nehemiah-gates-symbolism.html",
     "https://god.thway.uk/noah-ark.html",
     "https://god.thway.uk/the-power-of-i-am-imagination-as.html",
-    "https://god.thway.uk/the-river-that-flows-through-scripture.html",
     "https://god.thway.uk/the-cherubim-and-pomegranates-neville.html",
     "https://god.thway.uk/lifting-up-serpent-raising-assumptions.html",
     "https://god.thway.uk/the-dwelling-of-god-2-chronicles-61820.html",
@@ -6323,7 +6312,6 @@ window.scrollGroups = {
     "https://god.thway.uk/hezron-and-enclosed-garden-protected.html",
     "https://god.thway.uk/jesus-gardener-cultivating-souls-return.html",
     "https://god.thway.uk/entering-land-flowing-with-milk-and.html",
-    "https://god.thway.uk/the-river-that-flows-through-scripture.html",
     "https://god.thway.uk/el-roi-and-eye-of-desert-hagar-vision.html",
     "https://god.thway.uk/tamah-judah-and-perez.html",
     "https://god.thway.uk/the-symbolism-of-pairs-of-women-in.html",
@@ -7275,7 +7263,6 @@ window.scrollGroups = {
     "https://god.thway.uk/his-name-shall-be-called-wonderful.html",
     "https://god.thway.uk/the-horses-and-their-colours.html",
     "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html",
-    "https://god.thway.uk/the-river-that-flows-through-scripture.html",
     "https://god.thway.uk/the-meaning-of-lord-god-according-to.html",
     "https://god.thway.uk/why-there-are-four-gospels-witnesses.html"
   ],
@@ -7598,7 +7585,6 @@ window.scrollGroups = {
   "https://god.thway.uk/scrolls/label-river-series.html": [
     "https://god.thway.uk/the-four-rivers-of-eden-flowing-delight.html",
     "https://god.thway.uk/the-garden-within-trees-rivers-and-flow.html",
-    "https://god.thway.uk/the-river-that-flows-through-scripture.html",
     "https://god.thway.uk/who-has-wrapped-up-waters-riddle-and.html"
   ],
   "https://god.thway.uk/scrolls/label-rock-series.html": [
@@ -7905,7 +7891,6 @@ window.scrollGroups = {
     "https://god.thway.uk/moses-and-rock-struggle-between.html",
     "https://god.thway.uk/moses-parting-red-sea-return-to-dry-land.html",
     "https://god.thway.uk/the-parallel-between-noahs-flood-and.html",
-    "https://god.thway.uk/the-river-that-flows-through-scripture.html",
     "https://god.thway.uk/the-symbolism-of-famine-and-rain-in.html",
     "https://god.thway.uk/el/water-and-blood-symbolism.html",
     "https://god.thway.uk/water-symbolism.html",
