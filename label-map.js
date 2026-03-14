@@ -3787,6 +3787,7 @@ window.labelMap = {
     "series": [
       "https://god.thway.uk/scrolls/label-genesis-1-series.html",
       "https://god.thway.uk/scrolls/label-moses-series.html",
+      "https://god.thway.uk/scrolls/label-river-series.html",
       "https://god.thway.uk/scrolls/label-rock-series.html",
       "https://god.thway.uk/scrolls/label-water-symbolism.html"
     ]
@@ -3797,6 +3798,7 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-genesis-1-series.html",
       "https://god.thway.uk/scrolls/label-moses--rock-series.html",
       "https://god.thway.uk/scrolls/label-moses-series.html",
+      "https://god.thway.uk/scrolls/label-river-series.html",
       "https://god.thway.uk/scrolls/label-rock-series.html",
       "https://god.thway.uk/scrolls/label-water-symbolism.html"
     ]
@@ -7585,6 +7587,8 @@ window.scrollGroups = {
   "https://god.thway.uk/scrolls/label-river-series.html": [
     "https://god.thway.uk/the-four-rivers-of-eden-flowing-delight.html",
     "https://god.thway.uk/the-garden-within-trees-rivers-and-flow.html",
+    "https://god.thway.uk/comparative-interpretation-peter-rock.html",
+    "https://god.thway.uk/moses-and-rock-struggle-between.html",
     "https://god.thway.uk/who-has-wrapped-up-waters-riddle-and.html"
   ],
   "https://god.thway.uk/scrolls/label-rock-series.html": [
