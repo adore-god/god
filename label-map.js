@@ -2346,18 +2346,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-praise-series.html"
     ]
   },
-  "https://god.thway.uk/the-four-rivers-of-eden-flowing-delight.html": {
-    "title": "Four Rivers of Eden: Living Waters",
-    "series": [
-      "https://god.thway.uk/scrolls/label-bride---bridegroom-series.html",
-      "https://god.thway.uk/scrolls/label-eden-series.html",
-      "https://god.thway.uk/scrolls/label-numbers--four.html",
-      "https://god.thway.uk/scrolls/label-numbers-series.html",
-      "https://god.thway.uk/scrolls/label-river-series.html",
-      "https://god.thway.uk/scrolls/label-song-of-solomon-series.html",
-      "https://god.thway.uk/scrolls/label-water-symbolism.html"
-    ]
-  },
   "https://god.thway.uk/genesis-224-love.html": {
     "title": "Genesis 2:24: LOVE",
     "series": [
@@ -2884,6 +2872,17 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-genesis-1-11-series.html",
       "https://god.thway.uk/scrolls/label-song-of-solomon-series.html",
       "https://god.thway.uk/scrolls/label-tree-of-life-series.html"
+    ]
+  },
+  "https://god.thway.uk/the-four-rivers-of-eden-flowing-delight.html": {
+    "title": "Four Rivers of Eden: Living Waters",
+    "series": [
+      "https://god.thway.uk/scrolls/label-eden-series.html",
+      "https://god.thway.uk/scrolls/label-numbers--four.html",
+      "https://god.thway.uk/scrolls/label-numbers-series.html",
+      "https://god.thway.uk/scrolls/label-river-series.html",
+      "https://god.thway.uk/scrolls/label-song-of-solomon-series.html",
+      "https://god.thway.uk/scrolls/label-water-symbolism.html"
     ]
   },
   "https://god.thway.uk/the-garden-within-trees-rivers-and-flow.html": {
@@ -6201,7 +6200,6 @@ window.scrollGroups = {
     "https://god.thway.uk/cleaving-in-garden-genesis-224-and-song.html",
     "https://god.thway.uk/seven-parallels-between-song-of-songs.html",
     "https://god.thway.uk/feeling-is-secret-unlocking-bliss.html",
-    "https://god.thway.uk/the-four-rivers-of-eden-flowing-delight.html",
     "https://god.thway.uk/bone-of-my-bones-neville-goddard-on.html",
     "https://god.thway.uk/genesis-224-love.html",
     "https://god.thway.uk/the-hidden-honey-how-bible-encodes-law.html",
