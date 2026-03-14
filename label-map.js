@@ -630,16 +630,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-solomon-series.html"
     ]
   },
-  "https://god.thway.uk/is-jesus-god-or-not-discover-hidden.html": {
-    "title": "Is Jesus God or Not? Discover the Hidden Biblical Truth from Genesis",
-    "series": [
-      "https://god.thway.uk/scrolls/label-architecture-series.html",
-      "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html",
-      "https://god.thway.uk/scrolls/label-genesis-1-11-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-2-23-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-2-24-series.html"
-    ]
-  },
   "https://god.thway.uk/isaiah-and-neville-goddard-standout.html": {
     "title": "Isaiah Standout Passages: I AM the Lord",
     "series": [
@@ -3299,6 +3289,15 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-moses-series.html"
     ]
   },
+  "https://god.thway.uk/is-jesus-god-or-not-discover-hidden.html": {
+    "title": "Is Jesus God? Discover the Hidden Biblical Truth from Genesis",
+    "series": [
+      "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html",
+      "https://god.thway.uk/scrolls/label-genesis-1-11-series.html",
+      "https://god.thway.uk/scrolls/label-genesis-2-23-series.html",
+      "https://god.thway.uk/scrolls/label-genesis-2-24-series.html"
+    ]
+  },
   "https://god.thway.uk/the-psychology-of-jesus-appeal-to.html": {
     "title": "John: Jesus\u2019 Appeal to the Father",
     "series": [
@@ -5932,7 +5931,6 @@ window.scrollGroups = {
     "https://god.thway.uk/hebrews-10814-through-neville-goddard.html",
     "https://god.thway.uk/unlocking-2-chronicles-71621-through.html",
     "https://god.thway.uk/in-my-fathers-house-john-142-3.html",
-    "https://god.thway.uk/is-jesus-god-or-not-discover-hidden.html",
     "https://god.thway.uk/isaiah-and-neville-goddard-standout.html",
     "https://god.thway.uk/jachin-and-boaz-two-pillars-of-creation.html",
     "https://god.thway.uk/who-do-you-say-that-i-am-neville.html",
