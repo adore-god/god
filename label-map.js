@@ -2882,6 +2882,7 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-numbers-series.html",
       "https://god.thway.uk/scrolls/label-river-series.html",
       "https://god.thway.uk/scrolls/label-song-of-solomon-series.html",
+      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html",
       "https://god.thway.uk/scrolls/label-water-symbolism.html"
     ]
   },
@@ -7825,6 +7826,7 @@ window.scrollGroups = {
     "https://god.thway.uk/events-recorded-in-all-four-gospels.html",
     "https://god.thway.uk/teachers-fathers-of-law-assumption.html",
     "https://god.thway.uk/el/four-gospels-progressive-attempts.html",
+    "https://god.thway.uk/the-four-rivers-of-eden-flowing-delight.html",
     "https://god.thway.uk/scrolls/label-jacob-series.html",
     "https://god.thway.uk/jacob-how-to-manifest-according-to-bible.html",
     "https://god.thway.uk/el/john-and-jesus-symbolism.html",
