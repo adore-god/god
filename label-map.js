@@ -5036,14 +5036,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-spiritual-geography.html"
     ]
   },
-  "https://god.thway.uk/water-from-rock-awakening-flow-of-life.html": {
-    "title": "Moses: Water from the Rock",
-    "series": [
-      "https://god.thway.uk/scrolls/label-moses--rock-series.html",
-      "https://god.thway.uk/scrolls/label-moses-series.html",
-      "https://god.thway.uk/scrolls/label-rock-series.html"
-    ]
-  },
   "https://god.thway.uk/scrolls/label-moses--red-sea-series.html": {
     "title": "MOSES: RED SEA SERIES",
     "series": [
@@ -7178,7 +7170,6 @@ window.scrollGroups = {
     "https://god.thway.uk/gilead-heap-of-witness.html",
     "https://god.thway.uk/moses-and-rock-struggle-between.html",
     "https://god.thway.uk/moses-parting-red-sea-return-to-dry-land.html",
-    "https://god.thway.uk/water-from-rock-awakening-flow-of-life.html",
     "https://god.thway.uk/breaking-through-stones-rolled-away-in.html"
   ],
   "https://god.thway.uk/scrolls/label-moses-series.html": [
@@ -7202,7 +7193,6 @@ window.scrollGroups = {
     "https://god.thway.uk/through-waters-crossing-red-sea-as.html",
     "https://god.thway.uk/the-ten-commandments-interpreted-symbol.html",
     "https://god.thway.uk/holy-war-or-human-error-reassessing.html",
-    "https://god.thway.uk/water-from-rock-awakening-flow-of-life.html",
     "https://god.thway.uk/el/hebrews-hall-role-call.html",
     "https://god.thway.uk/pharaoh-in-bible-understanding-his.html",
     "https://god.thway.uk/moses-on-mountain-inner-rhythm-of.html",
@@ -7622,7 +7612,6 @@ window.scrollGroups = {
     "https://god.thway.uk/moses-and-rock-struggle-between.html",
     "https://god.thway.uk/moses-parting-red-sea-return-to-dry-land.html",
     "https://god.thway.uk/hidden-in-rock-neville-goddard-on-moses.html",
-    "https://god.thway.uk/water-from-rock-awakening-flow-of-life.html",
     "https://god.thway.uk/peter-i-do-not-know-man-when-self.html",
     "https://god.thway.uk/breaking-through-stones-rolled-away-in.html",
     "https://god.thway.uk/the-hidden-place-what-bible-really.html",
