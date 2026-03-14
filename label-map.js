@@ -868,7 +868,7 @@ window.labelMap = {
     ]
   },
   "https://god.thway.uk/the-presence-in-bible-neville-goddards.html": {
-    "title": "\u201cThe Presence\u201d in the Bible: Neville Goddard\u2019s Mystical Interpretation",
+    "title": "The Meaning of the The Presence in the Bible",
     "series": [
       "https://god.thway.uk/scrolls/label-architecture-series.html",
       "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html"
