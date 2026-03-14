@@ -400,7 +400,6 @@ window.labelMap = {
     "title": "Judah: Lion and Sceptre",
     "series": [
       "https://god.thway.uk/scrolls/label-animals-series.html",
-      "https://god.thway.uk/scrolls/label-bride---bridegroom-series.html",
       "https://god.thway.uk/scrolls/label-jacob-s-twelve-son-s-and-tribes-series.html",
       "https://god.thway.uk/scrolls/label-judah-series.html",
       "https://god.thway.uk/scrolls/label-praise-series.html",
@@ -6204,7 +6203,6 @@ window.scrollGroups = {
     "https://god.thway.uk/bone-of-my-bones-neville-goddard-on.html",
     "https://god.thway.uk/genesis-224-love.html",
     "https://god.thway.uk/the-hidden-honey-how-bible-encodes-law.html",
-    "https://god.thway.uk/the-lion-rules-domination-and-dominion.html",
     "https://god.thway.uk/the-marriage-supper-of-lamb-entering.html",
     "https://god.thway.uk/entering-land-flowing-with-milk-and.html",
     "https://god.thway.uk/rebekahs-beauty-at-well-flow-of-living.html",
