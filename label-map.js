@@ -1234,14 +1234,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-paul-series.html"
     ]
   },
-  "https://god.thway.uk/eyes-of-fire-waist-of-gold-daniels.html": {
-    "title": "Daniel: Visions of a Man",
-    "series": [
-      "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
-      "https://god.thway.uk/scrolls/label-daniel-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-1-26-series.html"
-    ]
-  },
   "https://god.thway.uk/david-speaks-to-his-maker-psalm-1391718.html": {
     "title": "David Speaks to His Maker: Psalm 139:17\u201318 as the Voice of Fulfilled Desire",
     "series": [
@@ -6013,7 +6005,6 @@ window.scrollGroups = {
     "https://god.thway.uk/1-thessalonians-413-18-passage-analysis.html",
     "https://god.thway.uk/spiritual-union-and-imagination-new.html",
     "https://god.thway.uk/daniel-8-symbolic-journey-through.html",
-    "https://god.thway.uk/eyes-of-fire-waist-of-gold-daniels.html",
     "https://god.thway.uk/david-speaks-to-his-maker-psalm-1391718.html",
     "https://god.thway.uk/deep-calls-to-deep-passage-analysis.html",
     "https://god.thway.uk/defilement-and-obsession-with-ritual.html",
@@ -6250,7 +6241,6 @@ window.scrollGroups = {
     "https://god.thway.uk/daniel-and-power-of-staying-true-to.html",
     "https://god.thway.uk/daniel-8-symbolic-journey-through.html",
     "https://god.thway.uk/the-beast-and-lion-symbolic-journey-of.html",
-    "https://god.thway.uk/eyes-of-fire-waist-of-gold-daniels.html",
     "https://god.thway.uk/eyes-like-fire-eyes-like-doves-two.html",
     "https://god.thway.uk/the-time-of-end-assumption-awakening.html"
   ],
@@ -6532,7 +6522,6 @@ window.scrollGroups = {
     "https://god.thway.uk/el/adam-sleep-rib-identity.html",
     "https://god.thway.uk/explaining-names-changes-in-bible.html",
     "https://god.thway.uk/daniel-chapter-4-verses-1-18-symbolism.html",
-    "https://god.thway.uk/eyes-of-fire-waist-of-gold-daniels.html",
     "https://god.thway.uk/david-and-saul-inner-battle-of-old-and.html",
     "https://god.thway.uk/davids-mighty-men-supporting-law-of.html",
     "https://god.thway.uk/dreams-visions-and-prophecy-as.html",
