@@ -3941,18 +3941,8 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-women-in-the-bible-series.html"
     ]
   },
-  "https://god.thway.uk/from-rebellion-to-redemption-miriam-and.html": {
-    "title": "Miriam and Mary Magdalene: Rebellion to Redemption",
-    "series": [
-      "https://god.thway.uk/scrolls/label-genesis-2-23-series.html",
-      "https://god.thway.uk/scrolls/label-mary-series.html",
-      "https://god.thway.uk/scrolls/label-miriam-series.html",
-      "https://god.thway.uk/scrolls/label-moses-series.html",
-      "https://god.thway.uk/scrolls/label-women-in-the-bible-series.html"
-    ]
-  },
   "https://god.thway.uk/miriam-mary-as-rebellious-woman.html": {
-    "title": "Miriam: A Rebellious Woman",
+    "title": "Miriam, Martha, and Mary Magdalene: Rebellion, Resistance, and Redemption",
     "series": [
       "https://god.thway.uk/scrolls/label-genesis-2-23-series.html",
       "https://god.thway.uk/scrolls/label-mary-series.html",
@@ -5087,12 +5077,6 @@ window.labelMap = {
     "series": [
       "https://god.thway.uk/scrolls/label-moses-series.html",
       "https://god.thway.uk/scrolls/label-priesthood-series.html"
-    ]
-  },
-  "https://god.thway.uk/miriam-and-martha-rebellion-resistance.html": {
-    "title": "Miriam and Martha: Rebellion, Resistance, and the Bitter Path of Manifestation",
-    "series": [
-      "https://god.thway.uk/scrolls/label-moses-series.html"
     ]
   },
   "https://god.thway.uk/aaron-in-neville-goddards-teachings.html": {
@@ -6675,7 +6659,6 @@ window.scrollGroups = {
     "https://god.thway.uk/all-marys-who-was-mary-magdalene.html",
     "https://god.thway.uk/why-are-there-so-many-marys-in-new.html",
     "https://god.thway.uk/the-master-is-here.html",
-    "https://god.thway.uk/from-rebellion-to-redemption-miriam-and.html",
     "https://god.thway.uk/miriam-mary-as-rebellious-woman.html",
     "https://god.thway.uk/genesis-316-and-birth-of-negative_20.html",
     "https://god.thway.uk/what-head-coverings-mean-1-corinthians.html",
@@ -7176,7 +7159,6 @@ window.scrollGroups = {
     "https://god.thway.uk/mem-hebrew-letter-meanint-water-and.html",
     "https://god.thway.uk/the-transformative-relationship-between.html",
     "https://god.thway.uk/why-are-there-so-many-marys-in-new.html",
-    "https://god.thway.uk/from-rebellion-to-redemption-miriam-and.html",
     "https://god.thway.uk/miriam-mary-as-rebellious-woman.html"
   ],
   "https://god.thway.uk/scrolls/label-matthew-series.html": [
@@ -7191,7 +7173,6 @@ window.scrollGroups = {
     "https://god.thway.uk/micah-and-michael-journey-from-seeking.html"
   ],
   "https://god.thway.uk/scrolls/label-miriam-series.html": [
-    "https://god.thway.uk/from-rebellion-to-redemption-miriam-and.html",
     "https://god.thway.uk/miriam-mary-as-rebellious-woman.html"
   ],
   "https://god.thway.uk/scrolls/label-miscellaneous.html": [
@@ -7222,15 +7203,12 @@ window.scrollGroups = {
     "https://god.thway.uk/how-grumbling-dries-water-restoring.html",
     "https://god.thway.uk/levi-inner-priesthood-and-spiritual.html",
     "https://god.thway.uk/el/leviticus-9-meaning-sacrifice.html",
-    "https://god.thway.uk/miriam-and-martha-rebellion-resistance.html",
-    "https://god.thway.uk/from-rebellion-to-redemption-miriam-and.html",
     "https://god.thway.uk/miriam-mary-as-rebellious-woman.html",
     "https://god.thway.uk/aaron-in-neville-goddards-teachings.html",
     "https://god.thway.uk/comparative-interpretation-peter-rock.html",
     "https://god.thway.uk/moses-and-burning-bush.html",
     "https://god.thway.uk/moses-and-rock-struggle-between.html",
     "https://god.thway.uk/moses-parting-red-sea-return-to-dry-land.html",
-    "https://god.thway.uk/a-kingdom-of-priests-interpreting.html",
     "https://god.thway.uk/hidden-in-rock-neville-goddard-on-moses.html",
     "https://god.thway.uk/through-waters-crossing-red-sea-as.html",
     "https://god.thway.uk/the-ten-commandments-interpreted-symbol.html",
@@ -7240,6 +7218,7 @@ window.scrollGroups = {
     "https://god.thway.uk/pharaoh-in-bible-understanding-his.html",
     "https://god.thway.uk/moses-on-mountain-inner-rhythm-of.html",
     "https://god.thway.uk/the-rod-and-staff-of-assumption-tools.html",
+    "https://god.thway.uk/a-kingdom-of-priests-interpreting.html",
     "https://god.thway.uk/was-it-jesus-or-moses-rethinking-egypt.html",
     "https://god.thway.uk/in-wilderness-hidden-symbolism-of.html"
   ],
@@ -7578,9 +7557,9 @@ window.scrollGroups = {
     "https://god.thway.uk/the-breaking-of-bread-melchizedek-last.html",
     "https://god.thway.uk/key-interpretations/meaning-melchizedek-bible.html",
     "https://god.thway.uk/aaron-in-neville-goddards-teachings.html",
-    "https://god.thway.uk/a-kingdom-of-priests-interpreting.html",
     "https://god.thway.uk/el/jesus-high-priest-new-covenant.html",
     "https://god.thway.uk/the-rod-and-staff-of-assumption-tools.html",
+    "https://god.thway.uk/a-kingdom-of-priests-interpreting.html",
     "https://god.thway.uk/the-urim-and-thummim-divine-guidance.html"
   ],
   "https://god.thway.uk/scrolls/label-proverbs-series.html": [
@@ -7993,7 +7972,6 @@ window.scrollGroups = {
     "https://god.thway.uk/all-marys-who-was-mary-magdalene.html",
     "https://god.thway.uk/why-are-there-so-many-marys-in-new.html",
     "https://god.thway.uk/the-master-is-here.html",
-    "https://god.thway.uk/from-rebellion-to-redemption-miriam-and.html",
     "https://god.thway.uk/miriam-mary-as-rebellious-woman.html",
     "https://god.thway.uk/ruths-loyalty-and-naomis-rebirth.html",
     "https://god.thway.uk/proverbs-71015-strange-woman-as-state.html",
