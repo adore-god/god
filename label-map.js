@@ -4102,13 +4102,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-true-priest-melchizedek.html"
     ]
   },
-  "https://god.thway.uk/levi-joined-one-union-crucifixion-and.html": {
-    "title": "Levi: The Joined One \u2014 Union, Crucifixion, and the Law of Assumption",
-    "series": [
-      "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
-      "https://god.thway.uk/scrolls/label-marriage-series.html"
-    ]
-  },
   "https://god.thway.uk/love-straightforward-guide-from-bible.html": {
     "title": "Love: A Straightforward Guide from the Bible and Neville Goddard",
     "series": [
@@ -6747,7 +6740,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-law-timeline.html",
     "https://god.thway.uk/el/sacrifice-virgin-daughters-symbolism.html",
     "https://god.thway.uk/levi-levites-aaron-and-jesus-symbolism.html",
-    "https://god.thway.uk/levi-joined-one-union-crucifixion-and.html",
     "https://god.thway.uk/el/love-seal-fire-god.html",
     "https://god.thway.uk/love-lord-your-god-neville-inspired.html",
     "https://god.thway.uk/love-straightforward-guide-from-bible.html",
@@ -7171,7 +7163,6 @@ window.scrollGroups = {
     "https://god.thway.uk/bone-of-my-bones-neville-goddard-on.html",
     "https://god.thway.uk/genesis-224-love.html",
     "https://god.thway.uk/joseph-of-new-testament-witness-to.html",
-    "https://god.thway.uk/levi-joined-one-union-crucifixion-and.html",
     "https://god.thway.uk/the-marriage-supper-of-lamb-entering.html",
     "https://god.thway.uk/marriage-husband-wife-and-divorce.html",
     "https://god.thway.uk/ruths-loyalty-and-naomis-rebirth.html",
