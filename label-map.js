@@ -3676,13 +3676,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-genesis-2-23-series.html"
     ]
   },
-  "https://god.thway.uk/inner-imagery-is-external-distraction.html": {
-    "title": "Man in His Image: Streaming the Self",
-    "series": [
-      "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
-      "https://god.thway.uk/scrolls/label-social-and-cultural-commentary.html"
-    ]
-  },
   "https://god.thway.uk/the-manna-of-imagination-sustaining.html": {
     "title": "The Manna of Imagination: Sustaining Creation through Assumption",
     "series": [
@@ -6545,7 +6538,6 @@ window.scrollGroups = {
     "https://god.thway.uk/lazurus-and-rich-man-neville-goddard.html",
     "https://god.thway.uk/el/male-female-slaves-servants-bible.html",
     "https://god.thway.uk/eyes-like-fire-eyes-like-doves-two.html",
-    "https://god.thway.uk/inner-imagery-is-external-distraction.html",
     "https://god.thway.uk/the-manna-of-imagination-sustaining.html",
     "https://god.thway.uk/michael-archangel-every-appearance-in.html",
     "https://god.thway.uk/the-mystery-secret-bible-revealed.html",
@@ -7653,7 +7645,6 @@ window.scrollGroups = {
     "https://god.thway.uk/if-women-had-been-allowed-to-read-wed.html",
     "https://god.thway.uk/in-bible-what-happens-when-you-die.html",
     "https://god.thway.uk/the-male-god-narrative-patriarchal.html",
-    "https://god.thway.uk/inner-imagery-is-external-distraction.html",
     "https://god.thway.uk/ricky-gervais-and-misinterpretation-of.html",
     "https://god.thway.uk/the-rise-of-content-creators-and.html",
     "https://god.thway.uk/the-rising-tide-of-stress-and-trauma.html",
