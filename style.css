@@ -507,7 +507,7 @@ ol, ul {
   right: -400px;
   width: 280px;
   min-height: 100vh;
-  background-color: #F8F8FF;
+  background-color: var(--bg-color);
   transition: right 0.3s ease;
   z-index: 2000;
   padding: 0 0 200px;
@@ -992,7 +992,7 @@ color:#F2D479 !important;
   }
 
   .sidebar {
-    background: linear-gradient(90deg, #000000, #111111);
+    background: var(--bg-color);
     border-left:0.2px solid #111
   }
 

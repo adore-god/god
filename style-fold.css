@@ -77,14 +77,18 @@ body{
 	margin:3em auto 1em;
 	width:90%;
 	text-align:center;
-	padding-right:17px
+	padding-right:17px;
+	
 	}
 .site-title a {
 	font-weight:800;
 	font-size:1.2em;
+	border-left: 2px solid var(--text);
+	padding-left:10px
 	}
 .site-title-span {
 	font-weight:200;
+	text-transform:none;
 	}
 
 /* =======================
