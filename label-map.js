@@ -2178,7 +2178,9 @@ window.labelMap = {
     "title": "Bread and Fishes: Jesus and The Feeding of the Multitude",
     "series": [
       "https://god.thway.uk/scrolls/label-bread-series.html",
-      "https://god.thway.uk/scrolls/label-elohim--god-series.html"
+      "https://god.thway.uk/scrolls/label-elohim--god-series.html",
+      "https://god.thway.uk/scrolls/label-numbers--four.html",
+      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
     ]
   },
   "https://god.thway.uk/bread-upon-waters.html": {
@@ -7200,6 +7202,7 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-numbers--four.html": [
     "https://god.thway.uk/amos-for-three-transgressions-and-for.html",
+    "https://god.thway.uk/feeding-5000-gospel-comparison.html",
     "https://god.thway.uk/wheels-within-wheels-symbolism-of-inner.html",
     "https://god.thway.uk/events-recorded-in-all-four-gospels.html",
     "https://god.thway.uk/el/four-corners-mind-establishing-pattern.html",
@@ -7744,6 +7747,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-birth-of-faith-abraham-as.html",
     "https://god.thway.uk/scrolls/label-abraham-series.html",
     "https://god.thway.uk/living-in-end-abraham-and-power-of.html",
+    "https://god.thway.uk/feeding-5000-gospel-comparison.html",
     "https://god.thway.uk/the-symbolism-of-jesuss-crucifixion.html",
     "https://god.thway.uk/wheels-within-wheels-symbolism-of-inner.html",
     "https://god.thway.uk/events-recorded-in-all-four-gospels.html",
