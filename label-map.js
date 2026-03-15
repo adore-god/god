@@ -4772,12 +4772,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-joseph-series.html"
     ]
   },
-  "https://god.thway.uk/josephs-coat-of-many-colours.html": {
-    "title": "Joseph's: Coat Of Many Colours",
-    "series": [
-      "https://god.thway.uk/scrolls/label-joseph-series.html"
-    ]
-  },
   "https://god.thway.uk/why-josephs-dreams-appear-in-matthew.html": {
     "title": "Joseph in the New Testament: Visions in Matthew",
     "series": [
@@ -6986,7 +6980,6 @@ window.scrollGroups = {
     "https://god.thway.uk/joseph-dreamer-when-imagination-is.html",
     "https://god.thway.uk/joseph-and-jesus-patterns-of-fulfilment.html",
     "https://god.thway.uk/joseph-and-potiphars-wife-resisting.html",
-    "https://god.thway.uk/josephs-coat-of-many-colours.html",
     "https://god.thway.uk/why-josephs-dreams-appear-in-matthew.html",
     "https://god.thway.uk/joseph-of-new-testament-witness-to.html",
     "https://god.thway.uk/the-cup-of-destiny-josephs-divination.html",
