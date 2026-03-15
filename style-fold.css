@@ -416,7 +416,10 @@ color:#F2D479 !important;
   cursor: pointer;
 }
 
-
+.share-button a, .like-btn a {
+color: var(--text);	
+	}
+	
 #custom-search-results,
 #custom-search-results a,
 .gs-title a,

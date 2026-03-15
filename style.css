@@ -1029,7 +1029,7 @@ color:#F2D479 !important;
 .gs-snippet,
 .gs-visibleUrl,
 .gcsc-find-more-on-google {
- 	background-color: #000000 !important;
+ 	background-color: var(--bg);
  	border:0 !important;
  }
  
@@ -1059,7 +1059,7 @@ color:#F2D479 !important;
 	
  #custom-search-input {
     border: 0.7px solid #888;
-    background: #1e1e1e;
+    background: var(--bg);
 }
 
 #custom-search-input:focus {
@@ -1097,8 +1097,8 @@ color:#F2D479 !important;
 color: var(--text);
 	}
 .share-button, .like-btn  {
-  background: none;
-  color:#e0e0e0;
+  background: var(--bg-color);
+  color: var(--text);
   border: none
 }
 
