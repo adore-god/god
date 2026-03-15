@@ -897,6 +897,10 @@ table, td, th {
   }
 }
 
+.footer-img {
+	margin: 2em auto;
+	max-width:300px;
+	}
 /* =======================
    DARK MODE (AUTO SWITCH)
    ======================= */
