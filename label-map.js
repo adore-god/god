@@ -2188,18 +2188,19 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-water-symbolism.html"
     ]
   },
+  "https://god.thway.uk/joseph-dreamer-when-imagination-is.html": {
+    "title": "Joseph: Dreams, Bread and the Road from Pit to Palace",
+    "series": [
+      "https://god.thway.uk/scrolls/label-bread-series.html",
+      "https://god.thway.uk/scrolls/label-genesis-1-11-series.html",
+      "https://god.thway.uk/scrolls/label-joseph-series.html"
+    ]
+  },
   "https://god.thway.uk/joseph-and-jesus-patterns-of-fulfilment.html": {
     "title": "Joseph and Jesus: Theme Similarities",
     "series": [
       "https://god.thway.uk/scrolls/label-bread-series.html",
       "https://god.thway.uk/scrolls/label-jesus-christ--salvation.html",
-      "https://god.thway.uk/scrolls/label-joseph-series.html"
-    ]
-  },
-  "https://god.thway.uk/butler-baker-and-can-power-of-inner.html": {
-    "title": "Joseph: Butler and Baker",
-    "series": [
-      "https://god.thway.uk/scrolls/label-bread-series.html",
       "https://god.thway.uk/scrolls/label-joseph-series.html"
     ]
   },
@@ -3531,13 +3532,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-genesis-1-11-series.html"
     ]
   },
-  "https://god.thway.uk/joseph-dreamer-when-imagination-is.html": {
-    "title": "Joseph the Dreamer: Sheaves and Cows",
-    "series": [
-      "https://god.thway.uk/scrolls/label-genesis-1-11-series.html",
-      "https://god.thway.uk/scrolls/label-joseph-series.html"
-    ]
-  },
   "https://god.thway.uk/the-speck-log-and-manifestation-how.html": {
     "title": "Judgement: A Plank in the Eye",
     "series": [
@@ -4776,13 +4770,6 @@ window.labelMap = {
     "title": "Joseph and Potiphar\u2019s Wife: Resisting The Temptation and Pull of Sensual Reality",
     "series": [
       "https://god.thway.uk/scrolls/label-joseph-series.html"
-    ]
-  },
-  "https://god.thway.uk/joseph-dreamers-ascent-awakening-power.html": {
-    "title": "Joseph: The Dreamer",
-    "series": [
-      "https://god.thway.uk/scrolls/label-joseph-series.html",
-      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
     ]
   },
   "https://god.thway.uk/josephs-coat-of-many-colours.html": {
@@ -6141,8 +6128,8 @@ window.scrollGroups = {
     "https://god.thway.uk/feeding-5000-gospel-comparison.html",
     "https://god.thway.uk/bread-upon-waters.html",
     "https://god.thway.uk/gideon-also-called-jerubbaal.html",
+    "https://god.thway.uk/joseph-dreamer-when-imagination-is.html",
     "https://god.thway.uk/joseph-and-jesus-patterns-of-fulfilment.html",
-    "https://god.thway.uk/butler-baker-and-can-power-of-inner.html",
     "https://god.thway.uk/the-last-supper-neville-goddards.html",
     "https://god.thway.uk/the-lords-prayer-according-to-neville.html",
     "https://god.thway.uk/the-breaking-of-bread-melchizedek-last.html"
@@ -6994,13 +6981,11 @@ window.scrollGroups = {
     "https://god.thway.uk/el/sign-jonah-jesus.html"
   ],
   "https://god.thway.uk/scrolls/label-joseph-series.html": [
-    "https://god.thway.uk/butler-baker-and-can-power-of-inner.html",
     "https://god.thway.uk/ephraim-and-manasseh.html",
     "https://god.thway.uk/joseph-and-benjamin-symbolism-breakdown.html",
+    "https://god.thway.uk/joseph-dreamer-when-imagination-is.html",
     "https://god.thway.uk/joseph-and-jesus-patterns-of-fulfilment.html",
     "https://god.thway.uk/joseph-and-potiphars-wife-resisting.html",
-    "https://god.thway.uk/joseph-dreamer-when-imagination-is.html",
-    "https://god.thway.uk/joseph-dreamers-ascent-awakening-power.html",
     "https://god.thway.uk/josephs-coat-of-many-colours.html",
     "https://god.thway.uk/why-josephs-dreams-appear-in-matthew.html",
     "https://god.thway.uk/joseph-of-new-testament-witness-to.html",
@@ -7793,7 +7778,6 @@ window.scrollGroups = {
     "https://god.thway.uk/el/john-and-jesus-symbolism.html",
     "https://god.thway.uk/john-overview-praise-and-assumption.html",
     "https://god.thway.uk/scrolls/label-joseph-series.html",
-    "https://god.thway.uk/joseph-dreamers-ascent-awakening-power.html",
     "https://god.thway.uk/scrolls/label-judah-series.html",
     "https://god.thway.uk/the-lion-rules-domination-and-dominion.html",
     "https://god.thway.uk/el/hebrews-hall-role-call.html",
