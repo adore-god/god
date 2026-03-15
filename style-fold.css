@@ -135,7 +135,7 @@ header img {
   display: block;
   margin: 1em auto 0;
   text-align: center;
-  width: 100%;
+  width: 90%;
   max-width: 250px;
   opacity: 0.9;
   mix-blend-mode: multiply;
@@ -143,13 +143,14 @@ header img {
   padding: 30px 5px 0 0;
 }
 .hero-description {
-    font-size: 0.62rem;
     font-weight: 500;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: rgba(0,0,0,0.35);
-    margin: 3em auto 0em;
-    width: 80vw
+    margin: 2em auto 0em;
+    width: 90%;
+    padding-left: 1em;
+    font-size: 0.9em;
   }
  
 .btn-wrap {
