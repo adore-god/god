@@ -1160,9 +1160,12 @@ color:#F2D479 !important;
 html[data-theme="light"] body {
     background: #ffffff !important;
     color: #3E2D18 !important;
-    
 }
 
+html[data-theme="light"] .hero-description {
+    color: #333;
+  }
+  
 html[data-theme="light"] .btn-dark,
 html[data-theme="light"] .btn-dark,
 html[data-theme="light"] .btn-dark a:link,
