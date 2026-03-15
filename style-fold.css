@@ -416,6 +416,29 @@ color:#F2D479 !important;
   cursor: pointer;
 }
 
+
+#custom-search-results,
+#custom-search-results a,
+.gs-title a,
+.gsc-webResult,
+.gsc-result,
+.gs-webResult,
+.gs-result,
+.gsc-control-cse,
+.gsc-control-cse-en,
+.gsc-control-wrapper-cse,
+.gsc-control-wrapper-cse b,
+.gsc-webResult gsc-result,
+.gs-snippet,
+.gs-visibleUrl,
+.gcsc-find-more-on-google,
+#searchBox,
+#custom-search-input {
+	background: var(--bg-color) !important;
+	
+	}
+
+
 /* Desktop Width Constraint */
 @media (min-width: 900px) {
   body {
