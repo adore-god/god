@@ -1,7 +1,7 @@
 /* Critical CSS for LCP Optimization */
 :root {
   --primary-text: #3E2D18;
-  --bg-color: #ffffff;
+  --bg-color: #F8F8FFfff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,7 +29,7 @@ body{
   width: 100%;
   margin: 0 auto;
   letter-spacing: 0.01em;
-  background: #ffffff;
+  background: #F8F8FFfff;
   font-weight: 400;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -343,7 +343,7 @@ blockquote {
   line-height: 1;
   text-transform: uppercase;
   font-size: 1em;
-  color: #ffffff;
+  color: #F8F8FFfff;
   background: #000;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;     
