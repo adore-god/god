@@ -75,7 +75,7 @@ body{
 	}
 .site-title {
 	display:block;
-	margin:3em auto 1em;
+	margin:3.5em auto 1em;
 	width:90%;
 	text-align:center;
 	padding-right:17px;
@@ -83,7 +83,7 @@ body{
 	}
 .site-title a {
 	font-weight:800;
-	font-size:1.2em;
+	font-size:1.4em;
 	border-left: 2px solid var(--text);
 	padding-left:10px
 	}
