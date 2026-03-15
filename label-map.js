@@ -2811,7 +2811,7 @@ window.labelMap = {
     ]
   },
   "https://god.thway.uk/the-locked-garden-and-flaming-sword.html": {
-    "title": "A Garden Locked and Shut Up",
+    "title": "Flaming Swords And A Locked Garden",
     "series": [
       "https://god.thway.uk/scrolls/label-eden-series.html",
       "https://god.thway.uk/scrolls/label-genesis-1-series.html",
