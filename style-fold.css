@@ -145,14 +145,13 @@ header img {
 .hero-description {
     font-size: 0.62rem;
     font-weight: 500;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: rgba(0,0,0,0.35);
     margin: 3em auto 0em;
     width: 80vw
   }
-  
-
+ 
 .btn-wrap {
   margin: 1em auto 1em;
   text-align:center
