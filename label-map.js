@@ -5133,20 +5133,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-numbers-series.html"
     ]
   },
-  "https://god.thway.uk/el/four-gospels-progressive-attempts.html": {
-    "title": "The Four Gospels \u2014 Progressive Attempts at Living from the End",
-    "series": [
-      "https://god.thway.uk/scrolls/label-numbers--four.html",
-      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
-    ]
-  },
-  "https://god.thway.uk/why-there-are-four-gospels-witnesses.html": {
-    "title": "Why There Are Four Gospels: The Witnesses",
-    "series": [
-      "https://god.thway.uk/scrolls/label-numbers--four.html",
-      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
-    ]
-  },
   "https://god.thway.uk/solomon-peace-of-fulfilled-desire.html": {
     "title": "Solomon: The Peace of Fulfilled Desire",
     "series": [
@@ -7218,7 +7204,6 @@ window.scrollGroups = {
     "https://god.thway.uk/events-recorded-in-all-four-gospels.html",
     "https://god.thway.uk/el/four-corners-mind-establishing-pattern.html",
     "https://god.thway.uk/the-four-faces-mathew-mark-luke-and-john.html",
-    "https://god.thway.uk/el/four-gospels-progressive-attempts.html",
     "https://god.thway.uk/the-four-rivers-of-eden-flowing-delight.html",
     "https://god.thway.uk/teachers-fathers-of-law-assumption.html",
     "https://god.thway.uk/number-four-neville-goddard-style.html",
@@ -7227,8 +7212,7 @@ window.scrollGroups = {
     "https://god.thway.uk/his-name-shall-be-called-wonderful.html",
     "https://god.thway.uk/the-horses-and-their-colours.html",
     "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html",
-    "https://god.thway.uk/the-meaning-of-lord-god-according-to.html",
-    "https://god.thway.uk/why-there-are-four-gospels-witnesses.html"
+    "https://god.thway.uk/the-meaning-of-lord-god-according-to.html"
   ],
   "https://god.thway.uk/scrolls/label-numbers--seven.html": [
     "https://god.thway.uk/cain-lamech-and-jesus-psychology-of.html",
@@ -7764,7 +7748,6 @@ window.scrollGroups = {
     "https://god.thway.uk/wheels-within-wheels-symbolism-of-inner.html",
     "https://god.thway.uk/events-recorded-in-all-four-gospels.html",
     "https://god.thway.uk/teachers-fathers-of-law-assumption.html",
-    "https://god.thway.uk/el/four-gospels-progressive-attempts.html",
     "https://god.thway.uk/the-four-rivers-of-eden-flowing-delight.html",
     "https://god.thway.uk/scrolls/label-jacob-series.html",
     "https://god.thway.uk/jacob-how-to-manifest-according-to-bible.html",
@@ -7776,8 +7759,7 @@ window.scrollGroups = {
     "https://god.thway.uk/el/hebrews-hall-role-call.html",
     "https://god.thway.uk/crowned-from-within-defining-your-i-am.html",
     "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html",
-    "https://god.thway.uk/tamah-judah-and-perez.html",
-    "https://god.thway.uk/why-there-are-four-gospels-witnesses.html"
+    "https://god.thway.uk/tamah-judah-and-perez.html"
   ],
   "https://god.thway.uk/scrolls/label-the-law--timeline.html": [
     "https://god.thway.uk/the-law-timeline.html"
