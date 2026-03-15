@@ -960,7 +960,7 @@ html[data-theme="light"] th {
 
   h1, h2, h3, h4 {
     color: #f0f0f0;
-    border-left: 4px solid #999;
+    border-left-color: #999;
   }
 
    .stand-out a, 
@@ -1206,18 +1206,18 @@ html[data-theme="light"] h1,
 html[data-theme="light"] h2,
 html[data-theme="light"] h3,
 html[data-theme="light"] h4 {
-    border-left: 4px solid #333;
+    border-left-color: #333;
     color: #3E2D18 !important;
 }
 
 html[data-theme="light"] .start-here {
-    border-left: 4px solid #333 !important;
+    border-left-color: #333 !important;
 }
 
 html[data-theme="light"] .sidebar {
     background: #ffffff !important;
     box-shadow: none !important;
-    border-left:0.2px solid #3E2D18
+    border-left-color: #3E2D18
 }
 
 html[data-theme="light"] .sidebar a,
