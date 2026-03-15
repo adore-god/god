@@ -135,14 +135,22 @@ header img {
   display: block;
   margin: 0 auto;
   text-align: center;
-  width: 40%;
-  max-width: 100px;
+  width: 100%;
+  max-width: 200px;
   opacity: 0.9;
   mix-blend-mode: multiply;
   height: auto;
   padding: 30px 5px 0 0;
 }
-
+.hero-description {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.35);
+    margin: 1em auto;
+    width: 80vw
+  }
 a.redA {
   text-decoration-color: #f25757 !important;
 	}
