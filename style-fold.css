@@ -1,7 +1,7 @@
 /* Critical CSS for LCP Optimization */
 :root {
   --text: #222222;
-  --bg-color: #ffffff;
+  --bg-color: #FFFDF7;
   --link: #222222;
   --accent-color: #999;
   --button: #666;
@@ -15,7 +15,7 @@
 }
 
 :root.light {
-  --bg-color: #ffffff;
+  --bg-color: #FFFDF7;
   --text: #222222;
   --link: #222222;
   --accent-color: #999;
