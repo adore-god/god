@@ -3,6 +3,7 @@
   --text: #111;
   --bg-color: #ffffff;
   --link: #111;
+  --accent-color: #999;
   --verse-color: #000000;
   
   --img-filter: invert(0) brightness(1) contrast(1.1);
@@ -16,7 +17,7 @@
   --bg-color: #ffffff;
   --text: #111;
   --link: #111;
-  --accent-color: #f25757;
+  --accent-color: #999;
   --verse-color: #000000;
   
   --img-filter: invert(0) brightness(1) contrast(1.1);
@@ -183,7 +184,7 @@ header img {
     width: 90%;
     padding-left: 0.7em;
     font-size: 0.9em;
-    color: var(--text);
+    color: var(--accent-color);
   }
  
 .btn-wrap {
