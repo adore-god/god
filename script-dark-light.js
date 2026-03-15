@@ -1,4 +1,4 @@
-// Cookie helpers
+// --- Cookie helpers ---
 function setCookie(name, value, days) {
     const d = new Date();
     d.setTime(d.getTime() + (days*24*60*60*1000));
@@ -13,26 +13,32 @@ function getCookie(name) {
         ?.split("=")[1] || null;
 }
 
-// Apply saved preference immediately (NO waiting)
-if (getCookie("darkModeDisabled") === "true") {
-    document.documentElement.setAttribute("data-theme", "light");
-}
+// --- Apply saved preference immediately ---
+(function() {
+    const html = document.documentElement;
+    const darkDisabled = getCookie("darkModeDisabled");
+    if (darkDisabled === "true") {
+        html.classList.add("light");
+    } else {
+        html.classList.remove("light");
+    }
+})();
 
-// Toggle dark mode
+// --- Toggle function ---
 function toggleDarkMode() {
     const html = document.documentElement;
-    const isLight = html.getAttribute("data-theme") === "light";
+    const isLight = html.classList.contains("light");
 
     if (isLight) {
-        html.removeAttribute("data-theme");
+        html.classList.remove("light");
         setCookie("darkModeDisabled", "false", 30);
     } else {
-        html.setAttribute("data-theme", "light");
+        html.classList.add("light");
         setCookie("darkModeDisabled", "true", 30);
     }
 }
 
-// Wait only for button
+// --- Button event ---
 document.addEventListener("DOMContentLoaded", function() {
     const btn = document.getElementById("theme-toggle");
     if (btn) btn.addEventListener("click", toggleDarkMode);

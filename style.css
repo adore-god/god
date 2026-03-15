@@ -8,8 +8,6 @@
   box-sizing: border-box;
 }
 
-
-
 /* =======================
    INDEX
    ======================= */
@@ -315,7 +313,6 @@ blockquote.relaxed {
   font-family: monospace; 
   overflow: scroll;
   margin: 15px 0;
-  color:#F8F8FF;
   
 }
 
@@ -398,7 +395,6 @@ margin: 12px 0;
 .stand-out:visited {
 font-weight: bold; 
 font-size: 1em; 
-color: #3E2D18;
 	}
 
 .separator {
@@ -590,7 +586,6 @@ font-size: 0.85em;
 
 table {
     background: #F8F8FF !important;
-    color: #3E2D18 !important;
     border: 0px;
 }
 
@@ -668,7 +663,6 @@ table {
 #custom-search-button {
   padding: 10px 16px;
   background-color: transparent;
-  color: #3E2D18;
   border: 0.7px solid #3E2D18;
   border-radius: 4px;
   cursor: pointer;
@@ -876,16 +870,6 @@ table, td, th {
     mix-blend-mode: normal !important;
   }
 }
-
-html[data-theme="light"] table,
-html[data-theme="light"] td,
-html[data-theme="light"] th {
-    background-color: transparent !important;
-    color: #3E2D18 !important;
-    filter: none !important;
-    mix-blend-mode: normal !important;
-}
-
 		
 /* =======================
    RESPONSIVE
@@ -917,22 +901,23 @@ html[data-theme="light"] th {
    DARK MODE (AUTO SWITCH)
    ======================= */
 @media (prefers-color-scheme: dark) {
+	:root {
+    --bg-color: #000000;
+    --text: #E6BE8A;
+    --link: #E6BE8A;
+    
+    --img-filter: invert(1) brightness(1.3) contrast(1.23);
+  --img-blend: normal;
+
+  --key-icon-filter: invert(0);
+  --key-icon-blend: normal;
+  }
 
   body {
-    background: #000000;
-    color: #e0e0e0;
+    background: var(--bg-color);
+    color: var(--text);
   }
 
-   .container, 
-   .content,
-   .code-container{
-    color: #e0e0e0;
-  }
-  
-  .hero-description {
-    color: #999;
-  }
-  
   .btn-outline {
 border: 1px solid #e0e0e0;
 }
@@ -945,20 +930,20 @@ border: 1px solid #e0e0e0;
 }
   
  header img {
-    filter: invert(1) brightness(1.3) contrast(1.23);
-    mix-blend-mode: normal;
+    filter: var(--img-filter);
+    mix-blend-mode: var(--img-blend);
   }
   
   img {
-    filter: invert(1) brightness(1.3) contrast(1.2);
-    mix-blend-mode: normal;
+    filter: var(--img-filter);
+    mix-blend-mode: var(--img-blend);
   }
   
   img.reddit,
   .key-icon,
   .lingua-divina2  {
-    filter: invert(0);
-    mix-blend-mode: normal;
+    filter: var(--key-icon-filter);
+    mix-blend-mode: var(--key-icon-blend);
 	}
 
   figure img {
@@ -968,34 +953,23 @@ border: 1px solid #e0e0e0;
      color: #fa7878;
    }
    
-  .header a {
-    color: #e0e0e0;
-  }
-
   h1, h2, h3, h4 {
-    color: #f0f0f0;
     border-left-color: #999;
   }
-
-   .stand-out a, 
-   .stand-out:visited {
-     color: #e0e0e0 !important;
-	}
-	
 	.stand-out img {
     filter: invert(0) brightness(1.1) contrast(1.1);
     mix-blend-mode: normal;
   }
 	
   a, a b {
-    color: #e0e0e0;
-    text-decoration-color: rgb(245, 245, 245)
+    text-decoration-color: var(--link);
+    color: var(--link);
   }
  
 #VerseLinkBox a,
 #VerseLinkBox a:link,
 #VerseLinkBox a:visited {
-color:#F2D479 !important;
+
 	}
 
 #Verse-Link-Container a,
@@ -1011,7 +985,7 @@ color:#F2D479 !important;
 	}
 	
 .spec-undline {
-  text-decoration-color: rgb(245, 245, 245) !important;
+  text-decoration-color: var(--link) !important;
 }
   a:hover {
     text-decoration-style: solid;
@@ -1022,14 +996,9 @@ color:#F2D479 !important;
     border-left:0.2px solid #111
   }
 
-  .sidebar a,
-  ul li a {
-    color: #e0e0e0;
-  }
-
   .sidebar .nav li:nth-of-type(n+0):nth-of-type(-n+2),
   .sidebar .nav li:nth-child(16) {
-    color: #e0e0e0;
+
   }
 
   .flourish {
@@ -1053,7 +1022,6 @@ color:#F2D479 !important;
 .gcsc-find-more-on-google {
  	background-color: #000000 !important;
  	border:0 !important;
-     color: #e0e0e0 !important;
  }
  
  #custom-search-results,
@@ -1083,7 +1051,6 @@ color:#F2D479 !important;
  #custom-search-input {
     border: 0.7px solid #888;
     background: #1e1e1e;
-    color: #e0e0e0;
 }
 
 #custom-search-input:focus {
@@ -1112,14 +1079,14 @@ color:#F2D479 !important;
   }
   #theme-toggle {
     position: absolute;
-    top:5px; 
+    top: -15px; 
     left: 3px;
     display: inline;
 	background:transparent;
 	border:0;
-	color:#e0e0e0;
+	padding:20px;
+color: var(--text);
 	}
-
 .share-button, .like-btn  {
   background: none;
   color:#e0e0e0;
@@ -1156,196 +1123,4 @@ color:#F2D479 !important;
 	
   } /*Don't delete  */
   
-  
-html[data-theme="light"] body {
-    background: #F8F8FF !important;
-    color: #3E2D18 !important;
-}
-
-html[data-theme="light"] .hero-description {
-    color: #333;
-  }
-  
-html[data-theme="light"] .btn-dark,
-html[data-theme="light"] .btn-dark,
-html[data-theme="light"] .btn-dark a:link,
-html[data-theme="light"] .btn-dark a:visited 
-{
-  background: #111 !important;
-  color:#F8F8FF !important;
-}
-
-html[data-theme="light"] #VerseLinkBox a,
-html[data-theme="light"] #VerseLinkBox a:link,
-html[data-theme="light"] #VerseLinkBox a:visited  {
-color:#F2D479 !important;
-	}
-	
-html[data-theme="light"] #Verse-Link-Container a,	
-html[data-theme="light"] #Verse-Link-Container a:link,
-html[data-theme="light"] #Verse-Link-Container a:visited {
-color:#F2D479 !important;	
-	}
-	
-	
-html[data-theme="light"] .code-container
-{
-	color: #F8F8FF !important;
-	}
-	
-html[data-theme="light"] .container,
-html[data-theme="light"] .content {
-    color: #3E2D18 !important;
-}
-
-html[data-theme="light"] header img {
-    filter: invert(0) brightness(1) contrast(1.1) !important;
-mix-blend-mode: multiply !important;
-}
-
-html[data-theme="light"] img {
-    filter: invert(0) brightness(1) contrast(1.1) !important;
-    mix-blend-mode: multiply !important; 
-}
-
-html[data-theme="light"] .key-icon {
-    filter: invert(0);!important;
-    mix-blend-mode: normal !important; 
-}
-
-html[data-theme="light"] .red {
-    color: red !important;
-}
-
-html[data-theme="light"] .aforce {
-	text-decoration-color: #3E2D18 !important;
-	}
-	
-html[data-theme="light"] .header a,
-html[data-theme="light"] a,
-html[data-theme="light"] a b {
-    color: #3E2D18;
-    text-decoration-color: #3E2D18;
-}
-
-html[data-theme="light"] h1,
-html[data-theme="light"] h2,
-html[data-theme="light"] h3,
-html[data-theme="light"] h4 {
-    border-left-color: #333;
-    color: #3E2D18 !important;
-}
-
-html[data-theme="light"] .start-here {
-    border-left-color: #333 !important;
-}
-
-html[data-theme="light"] .sidebar {
-    background: #F8F8FF !important;
-    box-shadow: none !important;
-    border-left-color: #3E2D18
-}
-
-html[data-theme="light"] .sidebar a,
-html[data-theme="light"] ul li a {
-    color: #3E2D18 !important;
-}
-
-html[data-theme="light"] .flourish {
-    background: linear-gradient(to right, #ccc, #F8F8FF, #ccc) !important;
-}
-
-html[data-theme="light"] #custom-search-input {
-    border: 1px solid #3E2D18 !important;
-    background: transparent !important;
-    color: #3E2D18 !important;
-}
-
-html[data-theme="light"] #custom-search-input:focus {
-    box-shadow: 0 0 8px rgba(0,0,0,0.2) !important;
-}
-
-html[data-theme="light"] #custom-search-button {
-  color: #3E2D18 !important;
-  border: 1px solid #3E2D18 !important;
-}
-
-html[data-theme="light"] #searchBox {
-    background: #F8F8FF !important;
-    color: #3E2D18 !important;
-    border: 1px solid #3E2D18 !important;
-}
-
-html[data-theme="light"] #searchBox:focus {
-    box-shadow: 0 0 8px rgba(0,0,0,0.2) !important;
-}
-
-html[data-theme="light"] #results a {
-    color: #fa7878 !important;
-}
-
-html[data-theme="light"]   #theme-toggle {
-	display: inline;
-	background:transparent;
-	border:0;
-	color:#3E2D1D;
-	}
-  
-html[data-theme="light"] #custom-search-results,
-html[data-theme="light"] #custom-search-results a,
-html[data-theme="light"] .gs-title a,
-html[data-theme="light"] .gsc-webResult,
-html[data-theme="light"] .gsc-result,
-html[data-theme="light"] .gs-webResult,
-html[data-theme="light"] .gs-result,
-html[data-theme="light"] .gsc-control-cse,
-html[data-theme="light"] .gsc-control-cse-en,
-html[data-theme="light"] .gsc-control-wrapper-cse,
-html[data-theme="light"] .gsc-control-wrapper-cse b,
-html[data-theme="light"] .gsc-webResult gsc-result,
-html[data-theme="light"] .gs-snippet,
-html[data-theme="light"] .gs-visibleUrl,
-html[data-theme="light"] .gcsc-find-more-on-google
- {
- 	background-color: #F8F8FF !important;
- 	border:0 !important;
-     color: #3E2D18 !important;
- }
-  
-  
-html[data-theme="light"] .gsc-cursor {
-     color: #3E2D18 !important;
-	}
-
-html[data-theme="light"] .gsc-cursor-chevron {
-	filter: none !important;
-	}
-
-html[data-theme="light"] .share-button, html[data-theme="light"] .like-btn  {
-  background: #F8F8FF;
-  border: 0px solid #ccc;
-  color:#3E2D18;
-}
-
-html[data-theme="light"] .share-menu {
-  background: #F8F8FF;
-  color:#3E2D18;
-  border: 0.2px solid #666;
-  box-shadow: none;
-}
-
-html[data-theme="light"] .share-menu a,
-html[data-theme="light"] .share-menu button {
-  text-decoration: none;
-  background: transparent;
-  color: #3E2D18;
-  font-size: 1rem;
-}
-
-html[data-theme="light"] .share-menu a:hover,
-html[data-theme="light"] .share-menu button:hover {
-  background: #F8F8FF;
-  color: #3E2D18;
-  
-}
   

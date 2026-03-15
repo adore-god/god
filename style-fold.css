@@ -1,18 +1,29 @@
 /* Critical CSS for LCP Optimization */
 :root {
-  --primary-text: #3E2D18;
-  --bg-color: #F8F8FFfff;
+  --text: #111;
+  --bg-color: #ffffff;
+  --link: #111;
+  --verse-color: #000000;
+  
+  --img-filter: invert(0) brightness(1) contrast(1.1);
+  --img-blend: multiply;
+
+  --key-icon-filter: invert(0);
+  --key-icon-blend: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-text: ##FAFAFA;
-    --bg-color: #000000;
-  }
-  body {
-    background: #000000;
-    color: ##FAFAFA;
-  }
+:root.light {
+  --bg-color: #ffffff;
+  --text: #111;
+  --link: #111;
+  --accent-color: #f25757;
+  --verse-color: #000000;
+  
+  --img-filter: invert(0) brightness(1) contrast(1.1);
+  --img-blend: multiply;
+
+  --key-icon-filter: invert(0);
+  --key-icon-blend: normal;
 }
 
 * {
@@ -25,11 +36,11 @@ body{
   font-family: 'Inter', sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #3E2D18;
+  color: var(--text);
   width: 100%;
   margin: 0 auto;
   letter-spacing: 0.01em;
-  background: #F8F8FFfff;
+  background: var(--bg-color);
   font-weight: 400;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -37,13 +48,12 @@ body{
   text-size-adjust: 100%;
   font-optical-sizing: auto;
 }
-
-/* Ensure the layout container is ready immediately */
 .container {
   max-width: 800px;
   width: 87%;
   margin: 0 auto;
   display: block;
+  color: var(--text);
 }
 
 
@@ -62,7 +72,21 @@ body{
 .header h1 {
 	margin-left: 2px;
 	}
-	
+.site-title {
+	display:block;
+	margin:3em auto 1em;
+	width:90%;
+	text-align:center;
+	padding-right:17px
+	}
+.site-title a {
+	font-weight:800;
+	font-size:1.2em;
+	}
+.site-title-span {
+	font-weight:200;
+	}
+
 /* =======================
    HEADINGS
    ======================= */
@@ -78,6 +102,7 @@ body{
   border: 0 !important;
 }
 h1 {
+  color: var(--text);
   margin: 1.5em 0 1em 0.7em;
   font-weight: 600;
   text-align: left;
@@ -93,6 +118,7 @@ h2 {
 	}
 	
 h2, h3, h4 {
+	color: var(--text);
 	font-weight:400;
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
@@ -101,6 +127,7 @@ h2, h3, h4 {
 }
 h1 a, h2 a, h3 a, h4 a {
   font-weight: 500 !important;
+  color: var(--text);
 }
 
 h3 {
@@ -141,16 +168,18 @@ header img {
   mix-blend-mode: multiply;
   height: auto;
   padding: 30px 5px 0 0;
+  //filter: hue-rotate(180deg);
+  mix-blend-mode: multiply;
 }
 .hero-description {
     font-weight: 500;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #333;
     margin: 2em auto 1.5em;
     width: 90%;
     padding-left: 0.7em;
     font-size: 0.9em;
+    color: var(--text);
   }
  
 .btn-wrap {
@@ -169,7 +198,7 @@ header img {
   border-radius:3px
 }
 
-.btn-dark,
+.btn-dark
 background:#111 !important;
 }
 
@@ -184,12 +213,13 @@ a.redA {
 	}
 	
 a, a b {
-  color: #3E2D18;
+  color: var(--text);
   font-weight: 500;
   text-decoration: underline solid;
   text-decoration-color: rgba(0, 0, 0, 1.7);
   text-decoration-thickness: 0.6px;
   font-style: normal !important;
+  
 }
 
 a:hover {
@@ -343,8 +373,8 @@ blockquote {
   line-height: 1;
   text-transform: uppercase;
   font-size: 1em;
-  color: #F8F8FFfff;
-  background: #000;
+  color: #F8F8FF;
+  background: var(--verse-color);
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;     
 }
