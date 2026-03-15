@@ -1,8 +1,8 @@
 /* Critical CSS for LCP Optimization */
 :root {
-  --text: #111;
+  --text: #222222;
   --bg-color: #ffffff;
-  --link: #111;
+  --link: #222222;
   --accent-color: #999;
   --verse-color: #000000;
   
@@ -15,8 +15,8 @@
 
 :root.light {
   --bg-color: #ffffff;
-  --text: #111;
-  --link: #111;
+  --text: #222222;
+  --link: #222222;
   --accent-color: #999;
   --verse-color: #000000;
   
@@ -178,7 +178,7 @@ header img {
 }
 .hero-description {
     font-weight: 500;
-    letter-spacing: 0.05em;
+    letter-spacing: 0em;
     text-transform: uppercase;
     margin: 2em auto 1.5em;
     width: 90%;
@@ -208,8 +208,8 @@ background:#111 !important;
 }
 
 .btn-outline {
-  border: 1px solid #333;
-  color: #0d0d0d;
+  border: 1px solid var(--text);
+  color: var(--text);
 }
 
 
