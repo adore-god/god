@@ -133,10 +133,10 @@ header {
 
 header img {
   display: block;
-  margin: 0 auto;
+  margin: 1em auto 0;
   text-align: center;
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
   opacity: 0.9;
   mix-blend-mode: multiply;
   height: auto;
@@ -148,13 +148,13 @@ header img {
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: rgba(0,0,0,0.35);
-    margin: 2em auto 0;
+    margin: 3em auto 0em;
     width: 80vw
   }
   
 
 .btn-wrap {
-  margin: 1em auto;
+  margin: 1em auto 1em;
   text-align:center
   }
   
