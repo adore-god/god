@@ -2810,15 +2810,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-paul-series.html"
     ]
   },
-  "https://god.thway.uk/the-locked-garden-and-flaming-sword.html": {
-    "title": "Flaming Swords And A Locked Garden",
-    "series": [
-      "https://god.thway.uk/scrolls/label-eden-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-1-series.html",
-      "https://god.thway.uk/scrolls/label-river-series.html",
-      "https://god.thway.uk/scrolls/label-song-of-solomon-series.html"
-    ]
-  },
   "https://god.thway.uk/carmel-garden-of-king-symbol-of-soul.html": {
     "title": "Carmel: Garden of the King, Symbol of the Soul",
     "series": [
@@ -2855,6 +2846,15 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-genesis-1-11-series.html",
       "https://god.thway.uk/scrolls/label-song-of-solomon-series.html",
       "https://god.thway.uk/scrolls/label-tree-of-life-series.html"
+    ]
+  },
+  "https://god.thway.uk/the-locked-garden-and-flaming-sword.html": {
+    "title": "Flaming Swords And A Locked Garden",
+    "series": [
+      "https://god.thway.uk/scrolls/label-eden-series.html",
+      "https://god.thway.uk/scrolls/label-genesis-1-series.html",
+      "https://god.thway.uk/scrolls/label-river-series.html",
+      "https://god.thway.uk/scrolls/label-song-of-solomon-series.html"
     ]
   },
   "https://god.thway.uk/the-four-rivers-of-eden-flowing-delight.html": {
@@ -6281,7 +6281,6 @@ window.scrollGroups = {
     "https://god.thway.uk/eternity-in-heart-ecclesiastes-311.html"
   ],
   "https://god.thway.uk/scrolls/label-eden-series.html": [
-    "https://god.thway.uk/the-locked-garden-and-flaming-sword.html",
     "https://god.thway.uk/abital-fountain-of-wisdom-and-renewal.html",
     "https://god.thway.uk/bride-at-well-parallels-between-rebekah.html",
     "https://god.thway.uk/carmel-garden-of-king-symbol-of-soul.html",
@@ -6291,6 +6290,7 @@ window.scrollGroups = {
     "https://god.thway.uk/eden-and-pleasure-sacred-delight-at.html",
     "https://god.thway.uk/seven-parallels-between-song-of-songs.html",
     "https://god.thway.uk/fig-trees-and-false-appearances-eden.html",
+    "https://god.thway.uk/the-locked-garden-and-flaming-sword.html",
     "https://god.thway.uk/the-four-rivers-of-eden-flowing-delight.html",
     "https://god.thway.uk/the-garden-within-trees-rivers-and-flow.html",
     "https://god.thway.uk/from-eden-to-garden-tomb-symbolic.html",
@@ -7569,9 +7569,9 @@ window.scrollGroups = {
     "https://god.thway.uk/worthy-is-lamb-power-of-assumed-identity.html"
   ],
   "https://god.thway.uk/scrolls/label-river-series.html": [
+    "https://god.thway.uk/the-locked-garden-and-flaming-sword.html",
     "https://god.thway.uk/the-four-rivers-of-eden-flowing-delight.html",
     "https://god.thway.uk/the-garden-within-trees-rivers-and-flow.html",
-    "https://god.thway.uk/the-locked-garden-and-flaming-sword.html",
     "https://god.thway.uk/comparative-interpretation-peter-rock.html",
     "https://god.thway.uk/moses-and-rock-struggle-between.html",
     "https://god.thway.uk/who-has-wrapped-up-waters-riddle-and.html"
@@ -7673,7 +7673,6 @@ window.scrollGroups = {
     "https://god.thway.uk/what-did-solomon-really-build.html"
   ],
   "https://god.thway.uk/scrolls/label-song-of-solomon-series.html": [
-    "https://god.thway.uk/the-locked-garden-and-flaming-sword.html",
     "https://god.thway.uk/abital-fountain-of-wisdom-and-renewal.html",
     "https://god.thway.uk/ask-believe-receive-catalyst-for-love.html",
     "https://god.thway.uk/bride-at-well-parallels-between-rebekah.html",
@@ -7688,6 +7687,7 @@ window.scrollGroups = {
     "https://god.thway.uk/ezekiel-and-song-of-solomon-beloved-and.html",
     "https://god.thway.uk/feeling-is-secret-what-exactly-is-this.html",
     "https://god.thway.uk/fig-trees-and-false-appearances-eden.html",
+    "https://god.thway.uk/the-locked-garden-and-flaming-sword.html",
     "https://god.thway.uk/the-four-rivers-of-eden-flowing-delight.html",
     "https://god.thway.uk/genesis-224-love.html",
     "https://god.thway.uk/peace-and-rest-in-song-of-solomon.html",
