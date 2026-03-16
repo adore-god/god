@@ -73,8 +73,18 @@ body{
   text-transform: uppercase;
 }
 .header h1 {
-	margin-left: 2px;
+	display:block;
+	margin:3.5em auto 1em;
+	width:90%;
+	text-align:center;
+	padding-right:17px;
+	font-size:1.4em;
 	}
+	
+h1.index-h1	{
+	font-size:1em !important;
+	}
+	
 .site-title {
 	display:block;
 	margin:3.5em auto 1em;
