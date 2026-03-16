@@ -3034,6 +3034,13 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-numbers--twelve.html"
     ]
   },
+  "https://god.thway.uk/el/bible-number-system.html": {
+    "title": "The Bible's Own Number System \u2014 A Complete Map",
+    "series": [
+      "https://god.thway.uk/scrolls/label-elohim--god-series.html",
+      "https://god.thway.uk/scrolls/label-numbers-series.html"
+    ]
+  },
   "https://god.thway.uk/the-symbolism-of-chariots-and-wheels-in.html": {
     "title": "Chariots and Wheels in the Bible",
     "series": [
@@ -5162,12 +5169,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-object-symbolism.html"
     ]
   },
-  "https://god.thway.uk/el/bible-number-system.html": {
-    "title": "The Bible's Own Number System \u2014 A Complete Map",
-    "series": [
-      "https://god.thway.uk/scrolls/label-numbers-series.html"
-    ]
-  },
   "https://god.thway.uk/evidence-bible-is-psychological.html": {
     "title": "Evidence the Bible is Self-Contained Embedded Psychology",
     "series": [
@@ -6303,6 +6304,7 @@ window.scrollGroups = {
     "https://god.thway.uk/cain-lamech-and-jesus-psychology-of.html",
     "https://god.thway.uk/the-apostles-creed-translated-through.html",
     "https://god.thway.uk/the-symbolism-of-brothers-in-bible.html",
+    "https://god.thway.uk/el/bible-number-system.html",
     "https://god.thway.uk/feeding-5000-gospel-comparison.html",
     "https://god.thway.uk/the-calling-of-twelve-gospel-story.html",
     "https://god.thway.uk/the-symbolism-of-chariots-and-wheels-in.html",

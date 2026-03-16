@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!mainEl) return;
 
   const books = [
-    "Genesis","Gen","Exodus","Ex","Leviticus","Lev","Numbers","Num","Deuteronomy","Deut",
+    "Genesis","Gen","Exodus","Ex","Leviticus","Lev","Numbers","Num","Deuteronomy","Deut","Deu",
     "Joshua","Jos","Judges","Jdg","Ruth","Rut","1 Samuel","1 Sam","2 Samuel","2 Sam",
     "1 Kings","1 Kgs","2 Kings","2 Kgs","1 Chronicles","1 Chr","2 Chronicles","2 Chr",
     "Ezra","Ezr","Nehemiah","Neh","Esther","Est","Job","Psalms","Psalm","Psa","Proverbs","Pro",
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "Lamentations","Lam","Ezekiel","Ezk","Daniel","Dan","Hosea","Hos","Joel","Joe",
     "Amos","Amo","Obadiah","Oba","Jonah","Jon","Micah","Mic","Nahum","Nah","Habakkuk","Hab",
     "Zephaniah","Zep","Haggai","Hag","Zechariah","Zec","Malachi","Mal","Matthew","Mat","Mt",
-    "Mark","Mrk","Luke","Luk","John","Jhn","Jn","Acts","Act",
+    "Mark","Mrk","Luke","Luk","John","Jhn","Jn","Joh","Acts","Act",
     "Romans","Rom","1 Corinthians","1 Cor","2 Corinthians","2 Cor","Galatians","Gal",
     "Ephesians","Eph","Philippians","Php","Phil","Colossians","Col","1 Thessalonians","1 Ths",
     "2 Thessalonians","2 Ths","1 Timothy","1 Tim","2 Timothy","2 Tim","Titus","Tit",
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const bookBLBMap = {
     "Genesis":"Gen","Gen":"Gen","Exodus":"Exo","Ex":"Exo","Leviticus":"Lev","Lev":"Lev",
-    "Numbers":"Num","Num":"Num","Deuteronomy":"Deu","Deut":"Deu",
+    "Numbers":"Num","Num":"Num","Deuteronomy":"Deu","Deut":"Deu","Deu":"Deu",
     "Joshua":"Jos","Jos":"Jos","Judges":"Jdg","Jdg":"Jdg","Ruth":"Rth","Rut":"Rth",
     "1 Samuel":"1Sa","1 Sam":"1Sa","2 Samuel":"2Sa","2 Sam":"2Sa",
     "1 Kings":"1Ki","1 Kgs":"1Ki","2 Kings":"2Ki","2 Kgs":"2Ki",
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "Zephaniah":"Zep","Zep":"Zep","Haggai":"Hag","Hag":"Hag",
     "Zechariah":"Zec","Zec":"Zec","Malachi":"Mal","Mal":"Mal",
     "Matthew":"Mat","Mat":"Mat","Mt":"Mat","Mark":"Mar","Mrk":"Mar",
-    "Luke":"Luk","Luk":"Luk","John":"Jhn","Jhn":"Jhn","Jn":"Jhn",
+    "Luke":"Luk","Luk":"Luk","John":"Jhn","Jhn":"Jhn","Jn":"Jhn","Joh":"Jhn",
     "Acts":"Act","Act":"Act","Romans":"Rom","Rom":"Rom",
     "1 Corinthians":"1Co","1 Cor":"1Co","2 Corinthians":"2Co","2 Cor":"2Co",
     "Galatians":"Gal","Gal":"Gal","Ephesians":"Eph","Eph":"Eph",
