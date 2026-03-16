@@ -4038,6 +4038,16 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-genesis-2-24-series.html"
     ]
   },
+  "https://god.thway.uk/el/four-women-redeemed-states.html": {
+    "title": "The Four Women: Redeemed States of Being",
+    "series": [
+      "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
+      "https://god.thway.uk/scrolls/label-lineage-series.html",
+      "https://god.thway.uk/scrolls/label-numbers--four.html",
+      "https://god.thway.uk/scrolls/label-ruth-series.html",
+      "https://god.thway.uk/scrolls/label-tamar-series.html"
+    ]
+  },
   "https://god.thway.uk/interpreting-song-of-solomon-through.html": {
     "title": "Interpreting the Song of Solomon through the Teachings of Neville Goddard",
     "series": [
@@ -7522,6 +7532,7 @@ window.scrollGroups = {
     "https://god.thway.uk/feeling-is-secret-unlocking-bliss.html",
     "https://god.thway.uk/el/flaming-heart-law-of-assumption.html",
     "https://god.thway.uk/flowers-and-rhodas-story.html",
+    "https://god.thway.uk/el/four-women-redeemed-states.html",
     "https://god.thway.uk/genesis-224-love.html",
     "https://god.thway.uk/genesis-foundational-principles.html",
     "https://god.thway.uk/i-and-father-are-one-interpreted.html",
@@ -8073,6 +8084,7 @@ window.scrollGroups = {
     "https://god.thway.uk/scrolls/label-priesthood-series.html"
   ],
   "https://god.thway.uk/scrolls/label-lineage-series.html": [
+    "https://god.thway.uk/el/four-women-redeemed-states.html",
     "https://god.thway.uk/the-hebrew-name-meanings-of-names.html",
     "https://god.thway.uk/hezron-and-enclosed-garden-protected.html",
     "https://god.thway.uk/the-lineage-of-christ-journey-through.html",
@@ -8249,6 +8261,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-four-rivers-of-eden-flowing-delight.html",
     "https://god.thway.uk/teachers-fathers-of-law-assumption.html",
     "https://god.thway.uk/number-four-neville-goddard-style.html",
+    "https://god.thway.uk/el/four-women-redeemed-states.html",
     "https://god.thway.uk/genesis-1-creation.html",
     "https://god.thway.uk/the-hebrew-secret-of-mark-tav.html",
     "https://god.thway.uk/his-name-shall-be-called-wonderful.html",
@@ -8601,6 +8614,7 @@ window.scrollGroups = {
     "https://god.thway.uk/el/head-tree-body-imagery.html"
   ],
   "https://god.thway.uk/scrolls/label-ruth-series.html": [
+    "https://god.thway.uk/el/four-women-redeemed-states.html",
     "https://god.thway.uk/gleaning-for-better-thoughts-ruth-and.html",
     "https://god.thway.uk/jachin-and-boaz-two-pillars-of-creation.html",
     "https://god.thway.uk/ruths-loyalty-and-naomis-rebirth.html",
@@ -8765,6 +8779,7 @@ window.scrollGroups = {
     "https://god.thway.uk/tamar-and-absalom-when-imagination-is.html"
   ],
   "https://god.thway.uk/scrolls/label-tamar-series.html": [
+    "https://god.thway.uk/el/four-women-redeemed-states.html",
     "https://god.thway.uk/tamah-judah-and-perez.html",
     "https://god.thway.uk/tamar-and-absalom-when-imagination-is.html",
     "https://god.thway.uk/the-hidden-power-of-tamar-how-palm.html"
