@@ -2694,7 +2694,6 @@ window.labelMap = {
     "title": "David the Beloved: Love Personified",
     "series": [
       "https://god.thway.uk/scrolls/label-david-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
       "https://god.thway.uk/scrolls/label-hebrew-alphabet-series.html",
       "https://god.thway.uk/scrolls/label-numbers--six.html",
       "https://god.thway.uk/scrolls/label-song-of-solomon-series.html",
@@ -4184,15 +4183,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-genesis-4-7-series.html",
       "https://god.thway.uk/scrolls/label-hitting-or-missing-the-mark--aim--series.html",
       "https://god.thway.uk/scrolls/label-revelation-series.html"
-    ]
-  },
-  "https://god.thway.uk/the-door-shepherd-and-beloved-exploring.html": {
-    "title": "David: The Formed Son in the House of God",
-    "series": [
-      "https://god.thway.uk/scrolls/label-genesis-4-7-series.html",
-      "https://god.thway.uk/scrolls/label-hebrew-alphabet-series.html",
-      "https://god.thway.uk/scrolls/label-shepherd-and-lamb-series.html",
-      "https://god.thway.uk/scrolls/label-song-of-solomon-series.html"
     ]
   },
   "https://god.thway.uk/genesis-417-26-escalation-of-violence.html": {
@@ -7504,7 +7494,6 @@ window.scrollGroups = {
     "https://god.thway.uk/bride-at-well-parallels-between-rebekah.html",
     "https://god.thway.uk/1-corinthians-7-neville-goddard-style.html",
     "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html",
-    "https://god.thway.uk/davids-name-and-law-of-conscious.html",
     "https://god.thway.uk/david-jonathan-and-saul-neville-goddard.html",
     "https://god.thway.uk/cleaving-in-garden-genesis-224-and-song.html",
     "https://god.thway.uk/eden-and-pleasure-sacred-delight-at.html",
@@ -7572,7 +7561,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-cobra-crown-authority-over.html",
     "https://god.thway.uk/the-beast-and-lion-symbolic-journey-of.html",
     "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html",
-    "https://god.thway.uk/the-door-shepherd-and-beloved-exploring.html",
     "https://god.thway.uk/eden-and-pleasure-sacred-delight-at.html",
     "https://god.thway.uk/genesis-417-26-escalation-of-violence.html",
     "https://god.thway.uk/understanding-foolishness-and-folly.html",
@@ -7654,7 +7642,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-divine-breath-understanding-h-in.html",
     "https://god.thway.uk/camels-in-bible-symbol-of-faith-and-law.html",
     "https://god.thway.uk/davids-name-and-law-of-conscious.html",
-    "https://god.thway.uk/the-door-shepherd-and-beloved-exploring.html",
     "https://god.thway.uk/fish-and-imagination-jesus-miracles.html",
     "https://god.thway.uk/number-four-neville-goddard-style.html",
     "https://god.thway.uk/god-wind-and-window-symbolism.html",
@@ -8621,7 +8608,6 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-shepherd-and-lamb-series.html": [
     "https://god.thway.uk/bride-at-well-parallels-between-rebekah.html",
-    "https://god.thway.uk/the-door-shepherd-and-beloved-exploring.html",
     "https://god.thway.uk/the-lamb-symbol-of-inner-sacrifice-and.html",
     "https://god.thway.uk/psalm-23-through-teachings-of-neville.html",
     "https://god.thway.uk/the-marriage-supper-of-lamb-entering.html",
@@ -8676,7 +8662,6 @@ window.scrollGroups = {
     "https://god.thway.uk/bride-at-well-parallels-between-rebekah.html",
     "https://god.thway.uk/carmel-garden-of-king-symbol-of-soul.html",
     "https://god.thway.uk/davids-name-and-law-of-conscious.html",
-    "https://god.thway.uk/the-door-shepherd-and-beloved-exploring.html",
     "https://god.thway.uk/the-donkey-tied-to-vine-neville.html",
     "https://god.thway.uk/creation-reenacted-poetic-parallels.html",
     "https://god.thway.uk/eden-and-song-of-solomon-return-to.html",
