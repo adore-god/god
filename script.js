@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '/about_13.html',
     '/series-links.html',
     '/search.html',
+    '/404.html',
     '/el/terms-of-use.html'
   ];
 
