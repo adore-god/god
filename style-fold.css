@@ -133,8 +133,11 @@ h2, h3, h4 {
     padding-left: 0.75rem;
 }
 h1 a, h2 a, h3 a, h4 a {
-  font-weight: 500 !important;
+  font-weight: 400;
   color: var(--text);
+  text-decoration-color: var(--text);
+  text-decoration: underline solid;
+  text-decoration-thickness: 0.6px;
 }
 h2.def {
 	font-weight: 700;
