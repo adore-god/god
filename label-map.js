@@ -4113,15 +4113,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-spiritual-violations-series.html"
     ]
   },
-  "https://god.thway.uk/ruths-loyalty-and-naomis-rebirth.html": {
-    "title": "Naomi and Ruth: Widowed to Cleaving",
-    "series": [
-      "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
-      "https://god.thway.uk/scrolls/label-marriage-series.html",
-      "https://god.thway.uk/scrolls/label-ruth-series.html",
-      "https://god.thway.uk/scrolls/label-women-in-the-bible-series.html"
-    ]
-  },
   "https://god.thway.uk/spiritual-union-and-imagination-new_9.html": {
     "title": "Paul's Marriage Allegory: Summary",
     "series": [
@@ -7516,7 +7507,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-spiritual-meaning-of-solomons-700.html",
     "https://god.thway.uk/moab-and-israel-divided-offspring-of.html",
     "https://god.thway.uk/the-nails-and-name-crucifixion-yhvh-and.html",
-    "https://god.thway.uk/ruths-loyalty-and-naomis-rebirth.html",
     "https://god.thway.uk/spiritual-union-and-imagination-new_9.html",
     "https://god.thway.uk/nothing-can-separate-us-romans-83739.html",
     "https://god.thway.uk/the-pearl-and-camel.html",
@@ -8079,7 +8069,6 @@ window.scrollGroups = {
     "https://god.thway.uk/joseph-of-new-testament-witness-to.html",
     "https://god.thway.uk/the-marriage-supper-of-lamb-entering.html",
     "https://god.thway.uk/marriage-husband-wife-and-divorce.html",
-    "https://god.thway.uk/ruths-loyalty-and-naomis-rebirth.html",
     "https://god.thway.uk/spiritual-union-and-imagination-new_9.html",
     "https://god.thway.uk/understanding-deuteronomy-22-practical.html",
     "https://god.thway.uk/whose-wife-will-she-be-neville-goddard.html",
@@ -8577,7 +8566,6 @@ window.scrollGroups = {
     "https://god.thway.uk/el/four-women-redeemed-states.html",
     "https://god.thway.uk/gleaning-for-better-thoughts-ruth-and.html",
     "https://god.thway.uk/jachin-and-boaz-two-pillars-of-creation.html",
-    "https://god.thway.uk/ruths-loyalty-and-naomis-rebirth.html",
     "https://god.thway.uk/restoring-heart-parallel-between-moana.html",
     "https://god.thway.uk/ruth-and-boaz.html",
     "https://god.thway.uk/the-symbolism-of-threshing-floor-place.html"
@@ -8904,7 +8892,6 @@ window.scrollGroups = {
     "https://god.thway.uk/why-are-there-so-many-marys-in-new.html",
     "https://god.thway.uk/the-master-is-here.html",
     "https://god.thway.uk/miriam-mary-as-rebellious-woman.html",
-    "https://god.thway.uk/ruths-loyalty-and-naomis-rebirth.html",
     "https://god.thway.uk/proverbs-71015-strange-woman-as-state.html",
     "https://god.thway.uk/rahab-and-spies-power-of-assumption.html",
     "https://god.thway.uk/rebekahs-beauty-at-well-flow-of-living.html",
