@@ -1,3 +1,4 @@
+
 (function waitForLabels() {
 
     const labelContainer = document.querySelector('.label-links');
@@ -11,7 +12,6 @@
 
     const currentPage = window.location.href;
 
-    // Collect all scroll page URLs referenced by labels on this article
     const allLinks = labelContainer.querySelectorAll("a");
     const matchedScrollUrls = [];
 
@@ -31,8 +31,6 @@
 
     if (matchedScrollUrls.length === 0) return;
 
-    // For each scroll group, collect its articles (excluding current page)
-    // preserving group order but sorting articles within each group alphabetically
     const groups = [];
 
     matchedScrollUrls.forEach(scrollUrl => {
@@ -49,7 +47,6 @@
 
         if (groupEntries.length === 0) return;
 
-        // Sort alphabetically by title within the group
         groupEntries.sort((a, b) => a[1].localeCompare(b[1]));
 
         groups.push({
@@ -60,7 +57,6 @@
 
     if (groups.length === 0) return;
 
-    // Build UI
     const title = document.createElement("div");
     title.className = "series-links-title";
     title.textContent = "More Reading";
@@ -79,7 +75,6 @@
             container.appendChild(div);
         });
 
-        // Optional visual divider between groups
         const divider = document.createElement("div");
         divider.className = "series-group-divider";
         container.appendChild(divider);
@@ -87,6 +82,13 @@
 
     target.before(title);
     target.before(container);
+
+    // Safety pass: fix any accidental /scrolls/scrolls/ in rendered links
+    container.querySelectorAll('a').forEach(a => {
+        if (a.href.includes('/scrolls/scrolls/')) {
+            a.href = a.href.replace(/\/scrolls\/scrolls\//g, '/scrolls/');
+        }
+    });
 
 })();
 
@@ -100,7 +102,6 @@
         return;
     }
 
-    // Collect all rendered links from the existing UI
     const links = container.querySelectorAll('a');
     if (links.length === 0) return;
 
@@ -110,7 +111,7 @@
 
     links.forEach(link => {
         const url = link.href;
-        if (seenUrls.has(url)) return; // skip duplicates
+        if (seenUrls.has(url)) return;
         seenUrls.add(url);
 
         schemaItems.push({
@@ -176,4 +177,4 @@
     script.type = "application/ld+json";
     script.textContent = JSON.stringify(schema, null, 2);
     document.head.appendChild(script);
-})(); 
+})();
