@@ -4000,13 +4000,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-genesis-2-23-series.html"
     ]
   },
-  "https://god.thway.uk/666-true-meaning-of-666-in-bible.html": {
-    "title": "666: The Mind of the Beast Marked For Love",
-    "series": [
-      "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
-      "https://god.thway.uk/scrolls/label-numbers--six.html"
-    ]
-  },
   "https://god.thway.uk/1-corinthians-7-neville-goddard-style.html": {
     "title": "Corinthians: Paul's Marriage Allegory Part One",
     "series": [
@@ -5142,6 +5135,13 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-solomon-series.html"
     ]
   },
+  "https://god.thway.uk/666-true-meaning-of-666-in-bible.html": {
+    "title": "The Number Six in the Bible \u2014 Man, the Image, and the Unoccupied I AM",
+    "series": [
+      "https://god.thway.uk/scrolls/label-numbers--six.html",
+      "https://god.thway.uk/scrolls/label-revelation-series.html"
+    ]
+  },
   "https://god.thway.uk/gold-frankincense-and-myrrh-song-of.html": {
     "title": "Gold, Frankincense, and Myrrh: The Song of Solomon and the Gifts of Assumption",
     "series": [
@@ -5160,6 +5160,12 @@ window.labelMap = {
     "series": [
       "https://god.thway.uk/scrolls/label-numbers--twelve.html",
       "https://god.thway.uk/scrolls/label-object-symbolism.html"
+    ]
+  },
+  "https://god.thway.uk/el/bible-number-system.html": {
+    "title": "The Bible's Own Number System \u2014 A Complete Map",
+    "series": [
+      "https://god.thway.uk/scrolls/label-numbers-series.html"
     ]
   },
   "https://god.thway.uk/evidence-bible-is-psychological.html": {
@@ -6610,7 +6616,6 @@ window.scrollGroups = {
     "https://god.thway.uk/zechariah-5-symbolic-purification-for.html"
   ],
   "https://god.thway.uk/scrolls/label-genesis-2-24-series.html": [
-    "https://god.thway.uk/666-true-meaning-of-666-in-bible.html",
     "https://god.thway.uk/the-birth-of-faith-abraham-as.html",
     "https://god.thway.uk/abraham-and-his-sister.html",
     "https://god.thway.uk/abraham-choosing-rebekahrebekah.html",
@@ -7232,11 +7237,11 @@ window.scrollGroups = {
     "https://god.thway.uk/the-urim-and-thummim-divine-guidance.html"
   ],
   "https://god.thway.uk/scrolls/label-numbers--six.html": [
-    "https://god.thway.uk/666-true-meaning-of-666-in-bible.html",
     "https://god.thway.uk/davids-name-and-law-of-conscious.html",
     "https://god.thway.uk/genesis-224-love.html",
     "https://god.thway.uk/the-mathers-table-unlocking-mystical.html",
     "https://god.thway.uk/the-nails-and-name-crucifixion-yhvh-and.html",
+    "https://god.thway.uk/666-true-meaning-of-666-in-bible.html",
     "https://god.thway.uk/law-of-assumption-creative-pattern.html",
     "https://god.thway.uk/zebulunthe-sea-honour-and-dwelling.html"
   ],
@@ -7269,6 +7274,7 @@ window.scrollGroups = {
   "https://god.thway.uk/scrolls/label-numbers-series.html": [
     "https://god.thway.uk/the-symbolism-of-144000-in-revelation.html",
     "https://god.thway.uk/amos-for-three-transgressions-and-for.html",
+    "https://god.thway.uk/el/bible-number-system.html",
     "https://god.thway.uk/evidence-bible-is-psychological.html",
     "https://god.thway.uk/the-four-rivers-of-eden-flowing-delight.html",
     "https://god.thway.uk/number-four-neville-goddard-style.html",
@@ -7521,6 +7527,7 @@ window.scrollGroups = {
     "https://god.thway.uk/cain-and-abel-cain-is-marked-beast.html",
     "https://god.thway.uk/el/lake-fire-symbolism-bible.html",
     "https://god.thway.uk/the-marriage-supper-of-lamb-entering.html",
+    "https://god.thway.uk/666-true-meaning-of-666-in-bible.html",
     "https://god.thway.uk/revelation-13-beast-battles-of.html",
     "https://god.thway.uk/el/revelation-overview.html",
     "https://god.thway.uk/revelation-vision-of-divine-man.html",
