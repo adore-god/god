@@ -2737,6 +2737,15 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-david-series.html"
     ]
   },
+  "https://god.thway.uk/el/matthew-luke-genealogy-nathan-solomon.html": {
+    "title": "The Two Genealogies \u2014 Solomon, Nathan, and Jonathan",
+    "series": [
+      "https://god.thway.uk/scrolls/label-david-series.html",
+      "https://god.thway.uk/scrolls/label-lineage-series.html",
+      "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html",
+      "https://god.thway.uk/scrolls/label-solomon-series.html"
+    ]
+  },
   "https://god.thway.uk/law-of-assumption-creative-pattern.html": {
     "title": "YHVH and DAVID: Patterns in the Hebrew Alphabet",
     "series": [
@@ -3264,6 +3273,14 @@ window.labelMap = {
     "title": "Why So Many Biblical Names End in \u201cEl\u201d",
     "series": [
       "https://god.thway.uk/scrolls/label-elohim--god-series.html"
+    ]
+  },
+  "https://god.thway.uk/el/bible-time-not-history.html": {
+    "title": "Why The Bible Cannot Be History \u2014 Time, Rulers, and the Structure of Elohim",
+    "series": [
+      "https://god.thway.uk/scrolls/label-elohim--god-series.html",
+      "https://god.thway.uk/scrolls/label-numbers--twelve.html",
+      "https://god.thway.uk/scrolls/label-time-series.html"
     ]
   },
   "https://god.thway.uk/el/burning-bush-fire-symbolism.html": {
@@ -7095,6 +7112,7 @@ window.scrollGroups = {
     "https://god.thway.uk/samuel-summary-neville-goddard-style.html",
     "https://god.thway.uk/saul-and-woman-of-endor.html",
     "https://god.thway.uk/shimei-self-deprecating-voice-that.html",
+    "https://god.thway.uk/el/matthew-luke-genealogy-nathan-solomon.html",
     "https://god.thway.uk/law-of-assumption-creative-pattern.html"
   ],
   "https://god.thway.uk/scrolls/label-devotional-series.html": [
@@ -7218,7 +7236,8 @@ window.scrollGroups = {
     "https://god.thway.uk/creating-with-scripture-word-of-god-and.html",
     "https://god.thway.uk/would-concept-of-god-exist-without-bible.html",
     "https://god.thway.uk/return-to-lord-of-hosts-how-imagination.html",
-    "https://god.thway.uk/why-so-many-biblical-names-end-in-el.html"
+    "https://god.thway.uk/why-so-many-biblical-names-end-in-el.html",
+    "https://god.thway.uk/el/bible-time-not-history.html"
   ],
   "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html": [
     "https://god.thway.uk/who-has-wrapped-up-waters-riddle-and.html",
@@ -8061,7 +8080,8 @@ window.scrollGroups = {
     "https://god.thway.uk/fourteen-years-symbolism-of-spiritual.html",
     "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html",
     "https://god.thway.uk/salmon-spiritual-precursor-in-lineage.html",
-    "https://god.thway.uk/luke-and-matthew-two-genealogies-two.html"
+    "https://god.thway.uk/luke-and-matthew-two-genealogies-two.html",
+    "https://god.thway.uk/el/matthew-luke-genealogy-nathan-solomon.html"
   ],
   "https://god.thway.uk/scrolls/label-living-the-story-series.html": [
     "https://god.thway.uk/judas-living-story.html"
@@ -8199,6 +8219,7 @@ window.scrollGroups = {
     "https://god.thway.uk/these-are-generations-threshold-of.html",
     "https://god.thway.uk/the-meaning-of-lord-god-according-to.html",
     "https://god.thway.uk/luke-and-matthew-two-genealogies-two.html",
+    "https://god.thway.uk/el/matthew-luke-genealogy-nathan-solomon.html",
     "https://god.thway.uk/israel-symbolism-according-to-neville.html",
     "https://god.thway.uk/el/what-the-bible-teaches-you.html",
     "https://god.thway.uk/the-signature-in-hebrew-names-how-yah.html",
@@ -8282,6 +8303,7 @@ window.scrollGroups = {
     "https://god.thway.uk/twelve-tribes-summary-law-of-assumption.html",
     "https://god.thway.uk/twelve-tribes-and-twelve-disciple.html",
     "https://god.thway.uk/israel-symbolism-according-to-neville.html",
+    "https://god.thway.uk/el/bible-time-not-history.html",
     "https://god.thway.uk/zebulunthe-sea-honour-and-dwelling.html"
   ],
   "https://god.thway.uk/scrolls/label-numbers-series.html": [
@@ -8652,6 +8674,7 @@ window.scrollGroups = {
     "https://god.thway.uk/building-with-imagination-solomon-as.html",
     "https://god.thway.uk/the-garden-and-temple-understanding.html",
     "https://god.thway.uk/el/solomon-temple-consciousness.html",
+    "https://god.thway.uk/el/matthew-luke-genealogy-nathan-solomon.html",
     "https://god.thway.uk/el/bible-kingdom-structure.html",
     "https://god.thway.uk/the-veil-of-temple-barrier-between.html",
     "https://god.thway.uk/what-did-solomon-really-build.html"
@@ -8799,6 +8822,7 @@ window.scrollGroups = {
     "https://god.thway.uk/jesus-christ-salvation.html",
     "https://god.thway.uk/the-law-timeline.html",
     "https://god.thway.uk/long-lifespans-in-genesis-long-dwelling.html",
+    "https://god.thway.uk/my-hour-has-not-yet-come-neville.html",
     "https://god.thway.uk/fourteen-years-symbolism-of-spiritual.html",
     "https://god.thway.uk/quickness-and-swiftness-biblical-theme.html",
     "https://god.thway.uk/the-symbol-of-swiftness-when.html",
@@ -8806,7 +8830,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-time-of-end-assumption-awakening.html",
     "https://god.thway.uk/when-kings-begin-to-reign-hidden.html",
     "https://god.thway.uk/when-time-stands-still-joshua-and-power.html",
-    "https://god.thway.uk/my-hour-has-not-yet-come-neville.html"
+    "https://god.thway.uk/el/bible-time-not-history.html"
   ],
   "https://god.thway.uk/scrolls/label-tower-of-babel-series.html": [
     "https://god.thway.uk/interpreting-power-of-tongues-in-bible.html",
