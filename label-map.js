@@ -4494,877 +4494,886 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-how-not-to-manifest.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-abraham-series.html": {
+  "https://god.thway.uk/scrolls/label-abraham-series.html": {
     "title": "Abraham Series",
     "series": [
-      "https://god.thway.uk/scrolls/label-index-series.html"
+      "https://god.thway.uk/scrolls/label-index-series.html",
+      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-advanced-mastery-in-manifestation-series.html": {
+  "https://god.thway.uk/scrolls/label-advanced-mastery-in-manifestation-series.html": {
     "title": "Advanced Mastery In Manifestation Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-angels.html": {
+  "https://god.thway.uk/scrolls/label-angels.html": {
     "title": "Angels",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-animals-series.html": {
+  "https://god.thway.uk/scrolls/label-animals-series.html": {
     "title": "Animals Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-architecture-series.html": {
+  "https://god.thway.uk/scrolls/label-architecture-series.html": {
     "title": "Architecture Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-author-reflection.html": {
+  "https://god.thway.uk/scrolls/label-author-reflection.html": {
     "title": "Author Reflection",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-baal-series.html": {
+  "https://god.thway.uk/scrolls/label-baal-series.html": {
     "title": "Baal Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-beast-series.html": {
+  "https://god.thway.uk/scrolls/label-beast-series.html": {
     "title": "Beast Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-benjamin-series.html": {
+  "https://god.thway.uk/scrolls/label-benjamin-series.html": {
     "title": "Benjamin Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-bible-engine-key-interpretations.html": {
+  "https://god.thway.uk/scrolls/label-bible-engine-key-interpretations.html": {
     "title": "Bible Engine Key Interpretations",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-bible-verse-analysis.html": {
+  "https://god.thway.uk/scrolls/label-bible-verse-analysis.html": {
     "title": "Bible Verse Analysis",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-bread-series.html": {
+  "https://god.thway.uk/scrolls/label-bread-series.html": {
     "title": "Bread Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-breath-series.html": {
+  "https://god.thway.uk/scrolls/label-breath-series.html": {
     "title": "Breath Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-bride---bridegroom-series.html": {
+  "https://god.thway.uk/scrolls/label-bride---bridegroom-series.html": {
     "title": "Bride \u2014 Bridegroom Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-brides-at-the-well.html": {
+  "https://god.thway.uk/scrolls/label-brides-at-the-well.html": {
     "title": "Brides At The Well",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-child-birth-series.html": {
+  "https://god.thway.uk/scrolls/label-child-birth-series.html": {
     "title": "Child Birth Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-child-like-faith.html": {
+  "https://god.thway.uk/scrolls/label-child-like-faith.html": {
     "title": "Child-Like Faith",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-christ-in-you-series.html": {
+  "https://god.thway.uk/scrolls/label-christ-in-you-series.html": {
     "title": "Christ In You Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-crucifixion-series.html": {
+  "https://god.thway.uk/scrolls/label-crucifixion-series.html": {
     "title": "Crucifixion Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-daniel-series.html": {
+  "https://god.thway.uk/scrolls/label-daniel-series.html": {
     "title": "Daniel Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-david-series.html": {
+  "https://god.thway.uk/scrolls/label-david-series.html": {
     "title": "David Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-devotional-series.html": {
+  "https://god.thway.uk/scrolls/label-devotional-series.html": {
     "title": "Devotional Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-ecclesiastes-series.html": {
+  "https://god.thway.uk/scrolls/label-ecclesiastes-series.html": {
     "title": "Ecclesiastes Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-eden-series.html": {
+  "https://god.thway.uk/scrolls/label-eden-series.html": {
     "title": "Eden Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-egypt-series.html": {
+  "https://god.thway.uk/scrolls/label-egypt-series.html": {
     "title": "Egypt Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-elijah-series.html": {
+  "https://god.thway.uk/scrolls/label-elijah-series.html": {
     "title": "Elijah Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-elohim--god-series.html": {
+  "https://god.thway.uk/scrolls/label-elohim--god-series.html": {
     "title": "Elohim: God Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-exodus-3-14--i-am.html": {
+  "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html": {
     "title": "Exodus 3:14: I AM",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-ezekiel-series.html": {
+  "https://god.thway.uk/scrolls/label-ezekiel-series.html": {
     "title": "Ezekiel Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-feeling-is-the-secret.html": {
+  "https://god.thway.uk/scrolls/label-feeling-is-the-secret.html": {
     "title": "Feeling Is The Secret",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-film-reflections.html": {
+  "https://god.thway.uk/scrolls/label-film-reflections.html": {
     "title": "Film Reflections",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-fire-series.html": {
+  "https://god.thway.uk/scrolls/label-fire-series.html": {
     "title": "Fire Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-flower-series.html": {
+  "https://god.thway.uk/scrolls/label-flower-series.html": {
     "title": "Flower Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-fool-series.html": {
+  "https://god.thway.uk/scrolls/label-fool-series.html": {
     "title": "Fool Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-genesis-1-11-series.html": {
+  "https://god.thway.uk/scrolls/label-genesis-1-11-series.html": {
     "title": "Genesis 1:11 Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-genesis-1-26-series.html": {
+  "https://god.thway.uk/scrolls/label-genesis-1-26-series.html": {
     "title": "Genesis 1:26 Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-genesis-1-27-series.html": {
+  "https://god.thway.uk/scrolls/label-genesis-1-27-series.html": {
     "title": "Genesis 1:27 Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-genesis-1-series.html": {
+  "https://god.thway.uk/scrolls/label-genesis-1-series.html": {
     "title": "Genesis 1 Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-genesis-2-23-series.html": {
+  "https://god.thway.uk/scrolls/label-genesis-2-23-series.html": {
     "title": "Genesis 2:23 Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-genesis-2-24-series.html": {
+  "https://god.thway.uk/scrolls/label-genesis-2-24-series.html": {
     "title": "Genesis 2:24 Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-genesis-4-7-series.html": {
+  "https://god.thway.uk/scrolls/label-genesis-4-7-series.html": {
     "title": "Genesis 4:7 Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-gideon-series.html": {
+  "https://god.thway.uk/scrolls/label-gideon-series.html": {
     "title": "Gideon Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-gospel-comparison-series.html": {
+  "https://god.thway.uk/scrolls/label-gospel-comparison-series.html": {
     "title": "Gospel Comparison Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-guides.html": {
+  "https://god.thway.uk/scrolls/label-guides.html": {
     "title": "Guides",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-habakkuk-series.html": {
+  "https://god.thway.uk/scrolls/label-habakkuk-series.html": {
     "title": "Habakkuk Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-haggai-series.html": {
+  "https://god.thway.uk/scrolls/label-haggai-series.html": {
     "title": "Haggai Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-healing-series.html": {
+  "https://god.thway.uk/scrolls/label-healing-series.html": {
     "title": "Healing Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-hebrew-alphabet-series.html": {
+  "https://god.thway.uk/scrolls/label-hebrew-alphabet-series.html": {
     "title": "Hebrew Alphabet Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-hitting-or-missing-the-mark--aim--series.html": {
+  "https://god.thway.uk/scrolls/label-hitting-or-missing-the-mark--aim--series.html": {
     "title": "Hitting Or Missing The Mark (Aim) Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-how-not-to-manifest.html": {
+  "https://god.thway.uk/scrolls/label-how-not-to-manifest.html": {
     "title": "How Not To Manifest",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-isaiah-series.html": {
+  "https://god.thway.uk/scrolls/label-isaiah-series.html": {
     "title": "Isaiah Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-israel-series.html": {
+  "https://god.thway.uk/scrolls/label-israel-series.html": {
     "title": "Israel Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-jacob-s-twelve-son-s-and-tribes-series.html": {
+  "https://god.thway.uk/scrolls/label-jacob-s-twelve-son-s-and-tribes-series.html": {
     "title": "Jacob's Twelve Son's And Tribes Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-jacob-series.html": {
+  "https://god.thway.uk/scrolls/label-jacob-series.html": {
     "title": "Jacob Series",
     "series": [
-      "https://god.thway.uk/scrolls/label-index-series.html"
+      "https://god.thway.uk/scrolls/label-index-series.html",
+      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-jonah-series.html": {
+  "https://god.thway.uk/scrolls/label-jonah-series.html": {
     "title": "Jonah Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-jeremiah-series.html": {
+  "https://god.thway.uk/scrolls/label-jeremiah-series.html": {
     "title": "Jeremiah Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-jesus-christ--salvation.html": {
+  "https://god.thway.uk/scrolls/label-jesus-christ--salvation.html": {
     "title": "Jesus Christ: Salvation",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-job-series.html": {
+  "https://god.thway.uk/scrolls/label-job-series.html": {
     "title": "Job Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-john-series.html": {
+  "https://god.thway.uk/scrolls/label-john-series.html": {
     "title": "John Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-joseph-series.html": {
+  "https://god.thway.uk/scrolls/label-joseph-series.html": {
     "title": "Joseph Series",
     "series": [
-      "https://god.thway.uk/scrolls/label-index-series.html"
+      "https://god.thway.uk/scrolls/label-index-series.html",
+      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-joshua-series.html": {
+  "https://god.thway.uk/scrolls/label-joshua-series.html": {
     "title": "Joshua Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-judah-s-blessing-series.html": {
+  "https://god.thway.uk/scrolls/label-judah-s-blessing-series.html": {
     "title": "Judah",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-judah-series.html": {
+  "https://god.thway.uk/scrolls/label-judah-series.html": {
     "title": "Judah Series",
     "series": [
-      "https://god.thway.uk/scrolls/label-index-series.html"
+      "https://god.thway.uk/scrolls/label-index-series.html",
+      "https://god.thway.uk/scrolls/label-judah-series.html",
+      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-law-of-identical-harvest.html": {
+  "https://god.thway.uk/scrolls/label-law-of-identical-harvest.html": {
     "title": "Law Of Identical Harvest",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-leviticus-series.html": {
+  "https://god.thway.uk/scrolls/label-leviticus-series.html": {
     "title": "Leviticus Series",
     "series": [
-      "https://god.thway.uk/scrolls/label-index-series.html"
+      "https://god.thway.uk/scrolls/label-index-series.html",
+      "https://god.thway.uk/scrolls/label-priesthood-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-lineage-series.html": {
+  "https://god.thway.uk/scrolls/label-lineage-series.html": {
     "title": "Lineage Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-living-the-story-series.html": {
+  "https://god.thway.uk/scrolls/label-living-the-story-series.html": {
     "title": "Living The Story Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-luke-series.html": {
+  "https://god.thway.uk/scrolls/label-luke-series.html": {
     "title": "Luke Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-marriage-series.html": {
+  "https://god.thway.uk/scrolls/label-marriage-series.html": {
     "title": "Marriage Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-mary-series.html": {
+  "https://god.thway.uk/scrolls/label-mary-series.html": {
     "title": "Mary Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-matthew-series.html": {
+  "https://god.thway.uk/scrolls/label-matthew-series.html": {
     "title": "Matthew Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-micah-series.html": {
+  "https://god.thway.uk/scrolls/label-micah-series.html": {
     "title": "Micah Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-miriam-series.html": {
+  "https://god.thway.uk/scrolls/label-miriam-series.html": {
     "title": "Miriam Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-miscellaneous.html": {
+  "https://god.thway.uk/scrolls/label-miscellaneous.html": {
     "title": "Miscellaneous Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-moses--red-sea-series.html": {
+  "https://god.thway.uk/scrolls/label-moses--red-sea-series.html": {
     "title": "Moses: Red Sea Series",
     "series": [
-      "https://god.thway.uk/scrolls/label-index-series.html"
+      "https://god.thway.uk/scrolls/label-index-series.html",
+      "https://god.thway.uk/scrolls/label-moses-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-moses--rock-series.html": {
+  "https://god.thway.uk/scrolls/label-moses--rock-series.html": {
     "title": "Moses: Rock Series",
     "series": [
-      "https://god.thway.uk/scrolls/label-index-series.html"
+      "https://god.thway.uk/scrolls/label-index-series.html",
+      "https://god.thway.uk/scrolls/label-moses-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-moses-series.html": {
+  "https://god.thway.uk/scrolls/label-moses-series.html": {
     "title": "Moses Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-mystery-boy-series.html": {
+  "https://god.thway.uk/scrolls/label-mystery-boy-series.html": {
     "title": "Mystery Boy Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-nabal-series.html": {
+  "https://god.thway.uk/scrolls/label-nabal-series.html": {
     "title": "Nabal Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-nahum-series.html": {
+  "https://god.thway.uk/scrolls/label-nahum-series.html": {
     "title": "Nahum Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-names-and-genealogies-series.html": {
+  "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html": {
     "title": "Names And Genealogies Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-neville-goddard-series.html": {
+  "https://god.thway.uk/scrolls/label-neville-goddard-series.html": {
     "title": "Neville Goddard Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-noah-series.html": {
+  "https://god.thway.uk/scrolls/label-noah-series.html": {
     "title": "Noah Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-numbers--four.html": {
+  "https://god.thway.uk/scrolls/label-numbers--four.html": {
     "title": "Numbers: Four",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-numbers--seven.html": {
+  "https://god.thway.uk/scrolls/label-numbers--seven.html": {
     "title": "Numbers: Seven",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-numbers--six.html": {
+  "https://god.thway.uk/scrolls/label-numbers--six.html": {
     "title": "Numbers: Six",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-numbers--ten.html": {
+  "https://god.thway.uk/scrolls/label-numbers--ten.html": {
     "title": "Numbers: Ten",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-numbers--three.html": {
+  "https://god.thway.uk/scrolls/label-numbers--three.html": {
     "title": "Numbers: Three",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-numbers--twelve.html": {
+  "https://god.thway.uk/scrolls/label-numbers--twelve.html": {
     "title": "Numbers: Twelve",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-numbers-series.html": {
+  "https://god.thway.uk/scrolls/label-numbers-series.html": {
     "title": "Numbers Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-object-symbolism.html": {
+  "https://god.thway.uk/scrolls/label-object-symbolism.html": {
     "title": "Object Symbolism",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-parable-series.html": {
+  "https://god.thway.uk/scrolls/label-parable-series.html": {
     "title": "Parable Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-passage-analysis--matthew-17.html": {
+  "https://god.thway.uk/scrolls/label-passage-analysis--matthew-17.html": {
     "title": "Passage Analysis: Matthew 17",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-passover-series.html": {
+  "https://god.thway.uk/scrolls/label-passover-series.html": {
     "title": "Passover Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--1-corinthians-1.html": {
+  "https://god.thway.uk/scrolls/label-paul-s-letters--1-corinthians-1.html": {
     "title": "Paul: 1 Corinthians 1",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--1-corinthians-7.html": {
+  "https://god.thway.uk/scrolls/label-paul-s-letters--1-corinthians-7.html": {
     "title": "Paul: 1 Corinthians 7",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--1-corinthians.html": {
+  "https://god.thway.uk/scrolls/label-paul-s-letters--1-corinthians.html": {
     "title": "Paul: 1 Corinthians",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--2-corinthians-12.html": {
+  "https://god.thway.uk/scrolls/label-paul-s-letters--2-corinthians-12.html": {
     "title": "Paul: 2 Corinthians 12",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--colossians.html": {
+  "https://god.thway.uk/scrolls/label-paul-s-letters--colossians.html": {
     "title": "Paul: Colossians",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--ephesians.html": {
+  "https://god.thway.uk/scrolls/label-paul-s-letters--ephesians.html": {
     "title": "Paul: Ephesians",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--galatians.html": {
+  "https://god.thway.uk/scrolls/label-paul-s-letters--galatians.html": {
     "title": "Paul: Galatians",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--hebrews.html": {
+  "https://god.thway.uk/scrolls/label-paul-s-letters--hebrews.html": {
     "title": "Paul: Hebrews",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--philippians.html": {
+  "https://god.thway.uk/scrolls/label-paul-s-letters--philippians.html": {
     "title": "Paul: Philippians",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--romans.html": {
+  "https://god.thway.uk/scrolls/label-paul-s-letters--romans.html": {
     "title": "Paul: Romans",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--thessalonians.html": {
+  "https://god.thway.uk/scrolls/label-paul-s-letters--thessalonians.html": {
     "title": "Paul: Thessalonians",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--timothy.html": {
+  "https://god.thway.uk/scrolls/label-paul-s-letters--timothy.html": {
     "title": "Paul: Timothy",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-paul-s-mystery-series.html": {
+  "https://god.thway.uk/scrolls/label-paul-s-mystery-series.html": {
     "title": "Paul: Mystery Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-paul-series.html": {
+  "https://god.thway.uk/scrolls/label-paul-series.html": {
     "title": "Paul Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-praise-series.html": {
+  "https://god.thway.uk/scrolls/label-praise-series.html": {
     "title": "Praise Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-precious-stones.html": {
+  "https://god.thway.uk/scrolls/label-precious-stones.html": {
     "title": "Precious Stones",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-priesthood-series.html": {
+  "https://god.thway.uk/scrolls/label-priesthood-series.html": {
     "title": "Priesthood Series",
     "series": [
-      "https://god.thway.uk/scrolls/label-index-series.html"
+      "https://god.thway.uk/scrolls/label-index-series.html",
+      "https://god.thway.uk/scrolls/label-leviticus-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-proverbs-series.html": {
+  "https://god.thway.uk/scrolls/label-proverbs-series.html": {
     "title": "Proverbs Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-psalms-series.html": {
+  "https://god.thway.uk/scrolls/label-psalms-series.html": {
     "title": "Psalms Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-rebekah-series.html": {
+  "https://god.thway.uk/scrolls/label-rebekah-series.html": {
     "title": "Rebekah Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-reuben-series.html": {
+  "https://god.thway.uk/scrolls/label-reuben-series.html": {
     "title": "Reuben Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-revelation-series.html": {
+  "https://god.thway.uk/scrolls/label-revelation-series.html": {
     "title": "Revelation Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-river-series.html": {
+  "https://god.thway.uk/scrolls/label-river-series.html": {
     "title": "River Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-rock-series.html": {
+  "https://god.thway.uk/scrolls/label-rock-series.html": {
     "title": "Rock Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-ruth-series.html": {
+  "https://god.thway.uk/scrolls/label-ruth-series.html": {
     "title": "Ruth Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-scarlet-thread.html": {
+  "https://god.thway.uk/scrolls/label-scarlet-thread.html": {
     "title": "Scarlet Thread",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-scripture-series.html": {
+  "https://god.thway.uk/scrolls/label-scripture-series.html": {
     "title": "Scripture Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-seven-brothers-series.html": {
+  "https://god.thway.uk/scrolls/label-seven-brothers-series.html": {
     "title": "Seven Brothers Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-shepherd-and-lamb-series.html": {
+  "https://god.thway.uk/scrolls/label-shepherd-and-lamb-series.html": {
     "title": "Shepherd And Lamb Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-solomon-series.html": {
+  "https://god.thway.uk/scrolls/label-solomon-series.html": {
     "title": "Solomon Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-song-of-solomon-series.html": {
+  "https://god.thway.uk/scrolls/label-song-of-solomon-series.html": {
     "title": "Song Of Solomon Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-sound-and-music.html": {
+  "https://god.thway.uk/scrolls/label-sound-and-music.html": {
     "title": "Sound And Music",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-spiritual-geography.html": {
+  "https://god.thway.uk/scrolls/label-spiritual-geography.html": {
     "title": "Spiritual Geography",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-spiritual-violations-series.html": {
+  "https://god.thway.uk/scrolls/label-spiritual-violations-series.html": {
     "title": "Spiritual Violations Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-tamar-series.html": {
+  "https://god.thway.uk/scrolls/label-tamar-series.html": {
     "title": "Tamar Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-tarot-series.html": {
+  "https://god.thway.uk/scrolls/label-tarot-series.html": {
     "title": "Tarot Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-tech-commentary.html": {
+  "https://god.thway.uk/scrolls/label-tech-commentary.html": {
     "title": "Tech Commentary",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-the-four--fathers-of-the-law.html": {
+  "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html": {
     "title": "The Four: Fathers Of The Law",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-the-law--timeline.html": {
+  "https://god.thway.uk/scrolls/label-the-law--timeline.html": {
     "title": "The Law: Timeline",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-threshing-floor.html": {
+  "https://god.thway.uk/scrolls/label-threshing-floor.html": {
     "title": "Threshing Floor",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-time-series.html": {
+  "https://god.thway.uk/scrolls/label-time-series.html": {
     "title": "Time Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-tower-of-babel-series.html": {
+  "https://god.thway.uk/scrolls/label-tower-of-babel-series.html": {
     "title": "Tower Of Babel Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-tree-of-life-series.html": {
+  "https://god.thway.uk/scrolls/label-tree-of-life-series.html": {
     "title": "Tree Of Life Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-true-priest-melchizedek.html": {
+  "https://god.thway.uk/scrolls/label-true-priest-melchizedek.html": {
     "title": "True Priest Melchizedek",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-veil-series.html": {
+  "https://god.thway.uk/scrolls/label-veil-series.html": {
     "title": "Veil Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-water-symbolism.html": {
+  "https://god.thway.uk/scrolls/label-water-symbolism.html": {
     "title": "Water Symbolism",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-who--series.html": {
+  "https://god.thway.uk/scrolls/label-who--series.html": {
     "title": "Who? Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-wings-symbolism.html": {
+  "https://god.thway.uk/scrolls/label-wings-symbolism.html": {
     "title": "Wings Symbolism",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-women-in-the-bible-series.html": {
+  "https://god.thway.uk/scrolls/label-women-in-the-bible-series.html": {
     "title": "Women In The Bible Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-word-of-god-series.html": {
+  "https://god.thway.uk/scrolls/label-word-of-god-series.html": {
     "title": "Word Of God Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-yhvh-series.html": {
+  "https://god.thway.uk/scrolls/label-yhvh-series.html": {
     "title": "YHVH Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/scrolls/label-zechariah-series.html": {
+  "https://god.thway.uk/scrolls/label-zechariah-series.html": {
     "title": "Zechariah Series",
     "series": [
       "https://god.thway.uk/scrolls/label-index-series.html"
@@ -5705,13 +5714,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-judah-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/label-judah-series.html": {
-    "title": "The Meaning of Timnah in the Bible and Its Psychological Interpretation",
-    "series": [
-      "https://god.thway.uk/scrolls/label-judah-series.html",
-      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
-    ]
-  },
   "https://god.thway.uk/union-beyond-law-tamar-reuben-and-true.html": {
     "title": "Reuben and Judah: Examples of States Attempting Assumption",
     "series": [
@@ -5803,12 +5805,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-priesthood-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/label-priesthood-series.html": {
-    "title": "Priesthood Series",
-    "series": [
-      "https://god.thway.uk/scrolls/label-leviticus-series.html"
-    ]
-  },
   "https://god.thway.uk/the-hebrew-name-meanings-of-names.html": {
     "title": "Hebrew Name Meanings in the Genealogy of Matthew",
     "series": [
@@ -5889,18 +5885,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-moses--rock-series.html",
       "https://god.thway.uk/scrolls/label-rock-series.html",
       "https://god.thway.uk/scrolls/label-spiritual-geography.html"
-    ]
-  },
-  "https://god.thway.uk/scrolls/label-moses--red-sea-series.html": {
-    "title": "MOSES: RED SEA SERIES",
-    "series": [
-      "https://god.thway.uk/scrolls/label-moses-series.html"
-    ]
-  },
-  "https://god.thway.uk/scrolls/label-moses--rock-series.html": {
-    "title": "MOSES: ROCK SERIES",
-    "series": [
-      "https://god.thway.uk/scrolls/label-moses-series.html"
     ]
   },
   "https://god.thway.uk/el/deuteronomy-30-life-choice-symbolism.html": {
@@ -6257,12 +6241,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-priesthood-series.html"
     ]
   },
-  "https://god.thway.uk/scrolls/label-leviticus-series.html": {
-    "title": "Leviticus Series",
-    "series": [
-      "https://god.thway.uk/scrolls/label-priesthood-series.html"
-    ]
-  },
   "https://god.thway.uk/the-book-of-proverbs-through-teachings.html": {
     "title": "The Book of Proverbs Through the Teachings of Neville Goddard",
     "series": [
@@ -6538,24 +6516,6 @@ window.labelMap = {
     "title": "AI Image Generation and Manifestation: A Digital Parallel to Divine Creation",
     "series": [
       "https://god.thway.uk/scrolls/label-tech-commentary.html"
-    ]
-  },
-  "https://god.thway.uk/scrolls/label-abraham-series.html": {
-    "title": "ABRAHAM SERIES",
-    "series": [
-      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
-    ]
-  },
-  "https://god.thway.uk/scrolls/label-jacob-series.html": {
-    "title": "JACOB SERIES",
-    "series": [
-      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
-    ]
-  },
-  "https://god.thway.uk/scrolls/label-joseph-series.html": {
-    "title": "JOSEPH SERIES",
-    "series": [
-      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
     ]
   },
   "https://god.thway.uk/thousand-day-one-lord-time-meaning.html": {
@@ -7708,152 +7668,152 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-humourous.html": [],
   "https://god.thway.uk/scrolls/label-index-series.html": [
-    "https://god.thway.uk/scrolls/scrolls/label-abraham-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-advanced-mastery-in-manifestation-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-angels.html",
-    "https://god.thway.uk/scrolls/scrolls/label-animals-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-architecture-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-author-reflection.html",
-    "https://god.thway.uk/scrolls/scrolls/label-baal-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-beast-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-benjamin-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-bible-engine-key-interpretations.html",
-    "https://god.thway.uk/scrolls/scrolls/label-bible-verse-analysis.html",
-    "https://god.thway.uk/scrolls/scrolls/label-bread-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-breath-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-bride---bridegroom-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-brides-at-the-well.html",
-    "https://god.thway.uk/scrolls/scrolls/label-child-birth-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-child-like-faith.html",
-    "https://god.thway.uk/scrolls/scrolls/label-christ-in-you-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-crucifixion-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-daniel-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-david-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-devotional-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-ecclesiastes-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-eden-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-egypt-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-elijah-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-elohim--god-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-exodus-3-14--i-am.html",
-    "https://god.thway.uk/scrolls/scrolls/label-ezekiel-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-feeling-is-the-secret.html",
-    "https://god.thway.uk/scrolls/scrolls/label-film-reflections.html",
-    "https://god.thway.uk/scrolls/scrolls/label-fire-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-flower-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-fool-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-genesis-1-11-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-genesis-1-26-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-genesis-1-27-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-genesis-1-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-genesis-2-23-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-genesis-2-24-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-genesis-4-7-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-gideon-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-gospel-comparison-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-guides.html",
-    "https://god.thway.uk/scrolls/scrolls/label-habakkuk-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-haggai-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-healing-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-hebrew-alphabet-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-hitting-or-missing-the-mark--aim--series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-how-not-to-manifest.html",
-    "https://god.thway.uk/scrolls/scrolls/label-isaiah-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-israel-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-jacob-s-twelve-son-s-and-tribes-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-jacob-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-jonah-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-jeremiah-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-jesus-christ--salvation.html",
-    "https://god.thway.uk/scrolls/scrolls/label-job-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-john-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-joseph-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-joshua-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-judah-s-blessing-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-judah-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-law-of-identical-harvest.html",
-    "https://god.thway.uk/scrolls/scrolls/label-leviticus-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-lineage-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-living-the-story-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-luke-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-marriage-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-mary-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-matthew-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-micah-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-miriam-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-miscellaneous.html",
-    "https://god.thway.uk/scrolls/scrolls/label-moses--red-sea-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-moses--rock-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-moses-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-mystery-boy-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-nabal-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-nahum-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-names-and-genealogies-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-neville-goddard-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-noah-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-numbers--four.html",
-    "https://god.thway.uk/scrolls/scrolls/label-numbers--seven.html",
-    "https://god.thway.uk/scrolls/scrolls/label-numbers--six.html",
-    "https://god.thway.uk/scrolls/scrolls/label-numbers--ten.html",
-    "https://god.thway.uk/scrolls/scrolls/label-numbers--three.html",
-    "https://god.thway.uk/scrolls/scrolls/label-numbers--twelve.html",
-    "https://god.thway.uk/scrolls/scrolls/label-numbers-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-object-symbolism.html",
-    "https://god.thway.uk/scrolls/scrolls/label-parable-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-passage-analysis--matthew-17.html",
-    "https://god.thway.uk/scrolls/scrolls/label-passover-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--1-corinthians-1.html",
-    "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--1-corinthians-7.html",
-    "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--1-corinthians.html",
-    "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--2-corinthians-12.html",
-    "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--colossians.html",
-    "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--ephesians.html",
-    "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--galatians.html",
-    "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--hebrews.html",
-    "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--philippians.html",
-    "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--romans.html",
-    "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--thessalonians.html",
-    "https://god.thway.uk/scrolls/scrolls/label-paul-s-letters--timothy.html",
-    "https://god.thway.uk/scrolls/scrolls/label-paul-s-mystery-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-paul-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-praise-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-precious-stones.html",
-    "https://god.thway.uk/scrolls/scrolls/label-priesthood-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-proverbs-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-psalms-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-rebekah-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-reuben-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-revelation-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-river-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-rock-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-ruth-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-scarlet-thread.html",
-    "https://god.thway.uk/scrolls/scrolls/label-scripture-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-seven-brothers-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-shepherd-and-lamb-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-solomon-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-song-of-solomon-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-sound-and-music.html",
-    "https://god.thway.uk/scrolls/scrolls/label-spiritual-geography.html",
-    "https://god.thway.uk/scrolls/scrolls/label-spiritual-violations-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-tamar-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-tarot-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-tech-commentary.html",
-    "https://god.thway.uk/scrolls/scrolls/label-the-four--fathers-of-the-law.html",
-    "https://god.thway.uk/scrolls/scrolls/label-the-law--timeline.html",
-    "https://god.thway.uk/scrolls/scrolls/label-threshing-floor.html",
-    "https://god.thway.uk/scrolls/scrolls/label-time-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-tower-of-babel-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-tree-of-life-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-true-priest-melchizedek.html",
-    "https://god.thway.uk/scrolls/scrolls/label-veil-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-water-symbolism.html",
-    "https://god.thway.uk/scrolls/scrolls/label-who--series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-wings-symbolism.html",
-    "https://god.thway.uk/scrolls/scrolls/label-women-in-the-bible-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-word-of-god-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-yhvh-series.html",
-    "https://god.thway.uk/scrolls/scrolls/label-zechariah-series.html"
+    "https://god.thway.uk/scrolls/label-abraham-series.html",
+    "https://god.thway.uk/scrolls/label-advanced-mastery-in-manifestation-series.html",
+    "https://god.thway.uk/scrolls/label-angels.html",
+    "https://god.thway.uk/scrolls/label-animals-series.html",
+    "https://god.thway.uk/scrolls/label-architecture-series.html",
+    "https://god.thway.uk/scrolls/label-author-reflection.html",
+    "https://god.thway.uk/scrolls/label-baal-series.html",
+    "https://god.thway.uk/scrolls/label-beast-series.html",
+    "https://god.thway.uk/scrolls/label-benjamin-series.html",
+    "https://god.thway.uk/scrolls/label-bible-engine-key-interpretations.html",
+    "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
+    "https://god.thway.uk/scrolls/label-bread-series.html",
+    "https://god.thway.uk/scrolls/label-breath-series.html",
+    "https://god.thway.uk/scrolls/label-bride---bridegroom-series.html",
+    "https://god.thway.uk/scrolls/label-brides-at-the-well.html",
+    "https://god.thway.uk/scrolls/label-child-birth-series.html",
+    "https://god.thway.uk/scrolls/label-child-like-faith.html",
+    "https://god.thway.uk/scrolls/label-christ-in-you-series.html",
+    "https://god.thway.uk/scrolls/label-crucifixion-series.html",
+    "https://god.thway.uk/scrolls/label-daniel-series.html",
+    "https://god.thway.uk/scrolls/label-david-series.html",
+    "https://god.thway.uk/scrolls/label-devotional-series.html",
+    "https://god.thway.uk/scrolls/label-ecclesiastes-series.html",
+    "https://god.thway.uk/scrolls/label-eden-series.html",
+    "https://god.thway.uk/scrolls/label-egypt-series.html",
+    "https://god.thway.uk/scrolls/label-elijah-series.html",
+    "https://god.thway.uk/scrolls/label-elohim--god-series.html",
+    "https://god.thway.uk/scrolls/label-exodus-3-14--i-am.html",
+    "https://god.thway.uk/scrolls/label-ezekiel-series.html",
+    "https://god.thway.uk/scrolls/label-feeling-is-the-secret.html",
+    "https://god.thway.uk/scrolls/label-film-reflections.html",
+    "https://god.thway.uk/scrolls/label-fire-series.html",
+    "https://god.thway.uk/scrolls/label-flower-series.html",
+    "https://god.thway.uk/scrolls/label-fool-series.html",
+    "https://god.thway.uk/scrolls/label-genesis-1-11-series.html",
+    "https://god.thway.uk/scrolls/label-genesis-1-26-series.html",
+    "https://god.thway.uk/scrolls/label-genesis-1-27-series.html",
+    "https://god.thway.uk/scrolls/label-genesis-1-series.html",
+    "https://god.thway.uk/scrolls/label-genesis-2-23-series.html",
+    "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
+    "https://god.thway.uk/scrolls/label-genesis-4-7-series.html",
+    "https://god.thway.uk/scrolls/label-gideon-series.html",
+    "https://god.thway.uk/scrolls/label-gospel-comparison-series.html",
+    "https://god.thway.uk/scrolls/label-guides.html",
+    "https://god.thway.uk/scrolls/label-habakkuk-series.html",
+    "https://god.thway.uk/scrolls/label-haggai-series.html",
+    "https://god.thway.uk/scrolls/label-healing-series.html",
+    "https://god.thway.uk/scrolls/label-hebrew-alphabet-series.html",
+    "https://god.thway.uk/scrolls/label-hitting-or-missing-the-mark--aim--series.html",
+    "https://god.thway.uk/scrolls/label-how-not-to-manifest.html",
+    "https://god.thway.uk/scrolls/label-isaiah-series.html",
+    "https://god.thway.uk/scrolls/label-israel-series.html",
+    "https://god.thway.uk/scrolls/label-jacob-s-twelve-son-s-and-tribes-series.html",
+    "https://god.thway.uk/scrolls/label-jacob-series.html",
+    "https://god.thway.uk/scrolls/label-jonah-series.html",
+    "https://god.thway.uk/scrolls/label-jeremiah-series.html",
+    "https://god.thway.uk/scrolls/label-jesus-christ--salvation.html",
+    "https://god.thway.uk/scrolls/label-job-series.html",
+    "https://god.thway.uk/scrolls/label-john-series.html",
+    "https://god.thway.uk/scrolls/label-joseph-series.html",
+    "https://god.thway.uk/scrolls/label-joshua-series.html",
+    "https://god.thway.uk/scrolls/label-judah-s-blessing-series.html",
+    "https://god.thway.uk/scrolls/label-judah-series.html",
+    "https://god.thway.uk/scrolls/label-law-of-identical-harvest.html",
+    "https://god.thway.uk/scrolls/label-leviticus-series.html",
+    "https://god.thway.uk/scrolls/label-lineage-series.html",
+    "https://god.thway.uk/scrolls/label-living-the-story-series.html",
+    "https://god.thway.uk/scrolls/label-luke-series.html",
+    "https://god.thway.uk/scrolls/label-marriage-series.html",
+    "https://god.thway.uk/scrolls/label-mary-series.html",
+    "https://god.thway.uk/scrolls/label-matthew-series.html",
+    "https://god.thway.uk/scrolls/label-micah-series.html",
+    "https://god.thway.uk/scrolls/label-miriam-series.html",
+    "https://god.thway.uk/scrolls/label-miscellaneous.html",
+    "https://god.thway.uk/scrolls/label-moses--red-sea-series.html",
+    "https://god.thway.uk/scrolls/label-moses--rock-series.html",
+    "https://god.thway.uk/scrolls/label-moses-series.html",
+    "https://god.thway.uk/scrolls/label-mystery-boy-series.html",
+    "https://god.thway.uk/scrolls/label-nabal-series.html",
+    "https://god.thway.uk/scrolls/label-nahum-series.html",
+    "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html",
+    "https://god.thway.uk/scrolls/label-neville-goddard-series.html",
+    "https://god.thway.uk/scrolls/label-noah-series.html",
+    "https://god.thway.uk/scrolls/label-numbers--four.html",
+    "https://god.thway.uk/scrolls/label-numbers--seven.html",
+    "https://god.thway.uk/scrolls/label-numbers--six.html",
+    "https://god.thway.uk/scrolls/label-numbers--ten.html",
+    "https://god.thway.uk/scrolls/label-numbers--three.html",
+    "https://god.thway.uk/scrolls/label-numbers--twelve.html",
+    "https://god.thway.uk/scrolls/label-numbers-series.html",
+    "https://god.thway.uk/scrolls/label-object-symbolism.html",
+    "https://god.thway.uk/scrolls/label-parable-series.html",
+    "https://god.thway.uk/scrolls/label-passage-analysis--matthew-17.html",
+    "https://god.thway.uk/scrolls/label-passover-series.html",
+    "https://god.thway.uk/scrolls/label-paul-s-letters--1-corinthians-1.html",
+    "https://god.thway.uk/scrolls/label-paul-s-letters--1-corinthians-7.html",
+    "https://god.thway.uk/scrolls/label-paul-s-letters--1-corinthians.html",
+    "https://god.thway.uk/scrolls/label-paul-s-letters--2-corinthians-12.html",
+    "https://god.thway.uk/scrolls/label-paul-s-letters--colossians.html",
+    "https://god.thway.uk/scrolls/label-paul-s-letters--ephesians.html",
+    "https://god.thway.uk/scrolls/label-paul-s-letters--galatians.html",
+    "https://god.thway.uk/scrolls/label-paul-s-letters--hebrews.html",
+    "https://god.thway.uk/scrolls/label-paul-s-letters--philippians.html",
+    "https://god.thway.uk/scrolls/label-paul-s-letters--romans.html",
+    "https://god.thway.uk/scrolls/label-paul-s-letters--thessalonians.html",
+    "https://god.thway.uk/scrolls/label-paul-s-letters--timothy.html",
+    "https://god.thway.uk/scrolls/label-paul-s-mystery-series.html",
+    "https://god.thway.uk/scrolls/label-paul-series.html",
+    "https://god.thway.uk/scrolls/label-praise-series.html",
+    "https://god.thway.uk/scrolls/label-precious-stones.html",
+    "https://god.thway.uk/scrolls/label-priesthood-series.html",
+    "https://god.thway.uk/scrolls/label-proverbs-series.html",
+    "https://god.thway.uk/scrolls/label-psalms-series.html",
+    "https://god.thway.uk/scrolls/label-rebekah-series.html",
+    "https://god.thway.uk/scrolls/label-reuben-series.html",
+    "https://god.thway.uk/scrolls/label-revelation-series.html",
+    "https://god.thway.uk/scrolls/label-river-series.html",
+    "https://god.thway.uk/scrolls/label-rock-series.html",
+    "https://god.thway.uk/scrolls/label-ruth-series.html",
+    "https://god.thway.uk/scrolls/label-scarlet-thread.html",
+    "https://god.thway.uk/scrolls/label-scripture-series.html",
+    "https://god.thway.uk/scrolls/label-seven-brothers-series.html",
+    "https://god.thway.uk/scrolls/label-shepherd-and-lamb-series.html",
+    "https://god.thway.uk/scrolls/label-solomon-series.html",
+    "https://god.thway.uk/scrolls/label-song-of-solomon-series.html",
+    "https://god.thway.uk/scrolls/label-sound-and-music.html",
+    "https://god.thway.uk/scrolls/label-spiritual-geography.html",
+    "https://god.thway.uk/scrolls/label-spiritual-violations-series.html",
+    "https://god.thway.uk/scrolls/label-tamar-series.html",
+    "https://god.thway.uk/scrolls/label-tarot-series.html",
+    "https://god.thway.uk/scrolls/label-tech-commentary.html",
+    "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html",
+    "https://god.thway.uk/scrolls/label-the-law--timeline.html",
+    "https://god.thway.uk/scrolls/label-threshing-floor.html",
+    "https://god.thway.uk/scrolls/label-time-series.html",
+    "https://god.thway.uk/scrolls/label-tower-of-babel-series.html",
+    "https://god.thway.uk/scrolls/label-tree-of-life-series.html",
+    "https://god.thway.uk/scrolls/label-true-priest-melchizedek.html",
+    "https://god.thway.uk/scrolls/label-veil-series.html",
+    "https://god.thway.uk/scrolls/label-water-symbolism.html",
+    "https://god.thway.uk/scrolls/label-who--series.html",
+    "https://god.thway.uk/scrolls/label-wings-symbolism.html",
+    "https://god.thway.uk/scrolls/label-women-in-the-bible-series.html",
+    "https://god.thway.uk/scrolls/label-word-of-god-series.html",
+    "https://god.thway.uk/scrolls/label-yhvh-series.html",
+    "https://god.thway.uk/scrolls/label-zechariah-series.html"
   ],
   "https://god.thway.uk/scrolls/label-isaiah-series.html": [
     "https://god.thway.uk/the-eternal-word-and-withering-grass.html",
