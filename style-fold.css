@@ -398,9 +398,8 @@ blockquote {
   max-width: 90%;
   text-align: center;
   line-height: 1;
-  text-transform: uppercase;
   font-size: 1em;
-  color: #F8F8FF;
+  color: #F2E5BD;
   background: var(--verse-color);
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;     
@@ -414,14 +413,14 @@ blockquote {
 
 #VerseLinkBox a:link,
 #VerseLinkBox a:visited {
-color:#F2D479 !important;
+color:#F2E5BD !important;
 	}
 	
 #Verse-Link-Container a:link,
 #Verse-Link-Container a:visited {
 text-decoration: none;
 font-weight: 600;
-color:#F2D479 !important;	
+color:#F2E5BD !important;	
 	}
 #Verse-Link-Container:hover {
   transform: translateY(-3px);
