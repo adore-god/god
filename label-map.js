@@ -2181,6 +2181,14 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-water-symbolism.html"
     ]
   },
+  "https://god.thway.uk/el/jesus-sabbath-healing-meaning.html": {
+    "title": "Jesus and the Sabbath Healings \u2014 Returning to the Assumption",
+    "series": [
+      "https://god.thway.uk/scrolls/label-bread-series.html",
+      "https://god.thway.uk/scrolls/label-healing-series.html",
+      "https://god.thway.uk/scrolls/label-jesus-christ--salvation.html"
+    ]
+  },
   "https://god.thway.uk/joseph-dreamer-when-imagination-is.html": {
     "title": "Joseph: Dreams, Bread and the Road from Pit to Palace",
     "series": [
@@ -4380,13 +4388,6 @@ window.labelMap = {
     "title": "Healing the Mind: What the Miracles of Jesus Are Really Teaching",
     "series": [
       "https://god.thway.uk/scrolls/label-healing-series.html"
-    ]
-  },
-  "https://god.thway.uk/el/jesus-sabbath-healing-meaning.html": {
-    "title": "Jesus and the Sabbath Healings \u2014 Returning to the Assumption",
-    "series": [
-      "https://god.thway.uk/scrolls/label-healing-series.html",
-      "https://god.thway.uk/scrolls/label-jesus-christ--salvation.html"
     ]
   },
   "https://god.thway.uk/jesus-christ-salvation.html": {
@@ -6957,6 +6958,7 @@ window.scrollGroups = {
     "https://god.thway.uk/feeding-5000-gospel-comparison.html",
     "https://god.thway.uk/bread-upon-waters.html",
     "https://god.thway.uk/gideon-also-called-jerubbaal.html",
+    "https://god.thway.uk/el/jesus-sabbath-healing-meaning.html",
     "https://god.thway.uk/joseph-dreamer-when-imagination-is.html",
     "https://god.thway.uk/joseph-and-jesus-patterns-of-fulfilment.html",
     "https://god.thway.uk/the-last-supper-neville-goddards.html",
