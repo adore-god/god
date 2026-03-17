@@ -3829,6 +3829,13 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-numbers--seven.html"
     ]
   },
+  "https://god.thway.uk/anna-prophetess-biblical-symbolism.html": {
+    "title": "Anna The Prophetess: Biblical Symbolism",
+    "series": [
+      "https://god.thway.uk/scrolls/label-genesis-2-23-series.html",
+      "https://god.thway.uk/scrolls/label-women-in-the-bible-series.html"
+    ]
+  },
   "https://god.thway.uk/concubines-in-bible-symbolism-of.html": {
     "title": "Concubines in the Bible",
     "series": [
@@ -7405,6 +7412,7 @@ window.scrollGroups = {
   "https://god.thway.uk/scrolls/label-genesis-2-23-series.html": [
     "https://god.thway.uk/abraham-choosing-rebekahrebekah.html",
     "https://god.thway.uk/el/adam-sleep-rib-identity.html",
+    "https://god.thway.uk/anna-prophetess-biblical-symbolism.html",
     "https://god.thway.uk/behold-thy-son-deep-love-of-jesus-for.html",
     "https://god.thway.uk/camels-in-bible-symbol-of-faith-and-law.html",
     "https://god.thway.uk/concubines-in-bible-symbolism-of.html",
@@ -8866,6 +8874,7 @@ window.scrollGroups = {
     "https://god.thway.uk/zechariah-5-symbolic-purification-for.html"
   ],
   "https://god.thway.uk/scrolls/label-women-in-the-bible-series.html": [
+    "https://god.thway.uk/anna-prophetess-biblical-symbolism.html",
     "https://god.thway.uk/a-note-to-women-reading-bible.html",
     "https://god.thway.uk/abital-fountain-of-wisdom-and-renewal.html",
     "https://god.thway.uk/anna-and-hannah-celibacy-devotion-and.html",
