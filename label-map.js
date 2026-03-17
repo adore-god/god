@@ -315,14 +315,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-wings-symbolism.html"
     ]
   },
-  "https://god.thway.uk/daniel-in-lions-den-symbol-of-spiritual.html": {
-    "title": "Daniel in the Lion's Den",
-    "series": [
-      "https://god.thway.uk/scrolls/label-animals-series.html",
-      "https://god.thway.uk/scrolls/label-daniel-series.html",
-      "https://god.thway.uk/scrolls/label-judah-series.html"
-    ]
-  },
   "https://god.thway.uk/daniel-8-symbolic-journey-through.html": {
     "title": "Daniel's Visions of a Goat and Ram",
     "series": [
@@ -6687,7 +6679,6 @@ window.scrollGroups = {
     "https://god.thway.uk/noah-jesus-and-bird-of-peace-descent-of.html",
     "https://god.thway.uk/camels-in-bible-symbol-of-faith-and-law.html",
     "https://god.thway.uk/cloven-hooves-fins-and-wings-animals.html",
-    "https://god.thway.uk/daniel-in-lions-den-symbol-of-spiritual.html",
     "https://god.thway.uk/daniel-8-symbolic-journey-through.html",
     "https://god.thway.uk/the-dove-in-rock-paul-jesus-and-cephas.html",
     "https://god.thway.uk/creation-reenacted-poetic-parallels.html",
@@ -7055,7 +7046,6 @@ window.scrollGroups = {
   "https://god.thway.uk/scrolls/label-daniel-series.html": [
     "https://god.thway.uk/the-abomination-of-desolation-in-daniel.html",
     "https://god.thway.uk/daniel-chapter-4-verses-1-18-symbolism.html",
-    "https://god.thway.uk/daniel-in-lions-den-symbol-of-spiritual.html",
     "https://god.thway.uk/daniel-and-power-of-staying-true-to.html",
     "https://god.thway.uk/daniel-8-symbolic-journey-through.html",
     "https://god.thway.uk/the-beast-and-lion-symbolic-journey-of.html",
@@ -7990,7 +7980,6 @@ window.scrollGroups = {
     "https://god.thway.uk/judahs-blessing-and-song-of-solomon.html"
   ],
   "https://god.thway.uk/scrolls/label-judah-series.html": [
-    "https://god.thway.uk/daniel-in-lions-den-symbol-of-spiritual.html",
     "https://god.thway.uk/the-donkey-tied-to-vine-neville.html",
     "https://god.thway.uk/feeling-is-secret-unlocking-bliss.html",
     "https://god.thway.uk/teachers-fathers-of-law-assumption.html",
