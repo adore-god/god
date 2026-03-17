@@ -2483,13 +2483,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-jesus-christ--salvation.html"
     ]
   },
-  "https://god.thway.uk/el/leviticus-child-sacrifice-killing.html": {
-    "title": "Child Sacrifice and the Killing of the Firstborn in the Bible",
-    "series": [
-      "https://god.thway.uk/scrolls/label-child-like-faith.html",
-      "https://god.thway.uk/scrolls/label-leviticus-series.html"
-    ]
-  },
   "https://god.thway.uk/the-silent-archetype-is-mysterious.html": {
     "title": "Young Boys and Children",
     "series": [
@@ -5796,6 +5789,12 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-priesthood-series.html"
     ]
   },
+  "https://god.thway.uk/el/leviticus-child-sacrifice-killing.html": {
+    "title": "Molech, Herod, and the Slaughter of the Innocents: The War on New Assumptions",
+    "series": [
+      "https://god.thway.uk/scrolls/label-leviticus-series.html"
+    ]
+  },
   "https://god.thway.uk/the-hebrew-name-meanings-of-names.html": {
     "title": "Hebrew Name Meanings in the Genealogy of Matthew",
     "series": [
@@ -7021,7 +7020,6 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-child-like-faith.html": [
     "https://god.thway.uk/childlike-faith-becoming-like-little.html",
-    "https://god.thway.uk/el/leviticus-child-sacrifice-killing.html",
     "https://god.thway.uk/psalm-8-majesty-of-man-neville-goddard.html",
     "https://god.thway.uk/joseph-and-benjamin-symbolism-breakdown.html",
     "https://god.thway.uk/the-silent-archetype-is-mysterious.html"
@@ -8018,7 +8016,6 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-leviticus-series.html": [
     "https://god.thway.uk/childbirth-purification-interpreting.html",
-    "https://god.thway.uk/el/leviticus-child-sacrifice-killing.html",
     "https://god.thway.uk/cloven-hooves-fins-and-wings-animals.html",
     "https://god.thway.uk/levi-levites-aaron-and-jesus-symbolism.html",
     "https://god.thway.uk/el/leviticus-disobedience-curses.html",
@@ -8030,6 +8027,7 @@ window.scrollGroups = {
     "https://god.thway.uk/el/leviticus-power-possession.html",
     "https://god.thway.uk/leviticus-rules-same-sex-union.html",
     "https://god.thway.uk/el/leviticus-symbolism-overview.html",
+    "https://god.thway.uk/el/leviticus-child-sacrifice-killing.html",
     "https://god.thway.uk/el/jesus-high-priest-new-covenant.html",
     "https://god.thway.uk/scrolls/label-priesthood-series.html"
   ],
