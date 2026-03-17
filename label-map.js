@@ -320,8 +320,7 @@ window.labelMap = {
     "series": [
       "https://god.thway.uk/scrolls/label-animals-series.html",
       "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
-      "https://god.thway.uk/scrolls/label-daniel-series.html",
-      "https://god.thway.uk/scrolls/label-tree-of-life-series.html"
+      "https://god.thway.uk/scrolls/label-daniel-series.html"
     ]
   },
   "https://god.thway.uk/the-dove-in-rock-paul-jesus-and-cephas.html": {
@@ -8800,7 +8799,6 @@ window.scrollGroups = {
     "https://god.thway.uk/universal-metaphors-for-imagination-in.html",
     "https://god.thway.uk/crucifixion-cross-or-tree-symbolic.html",
     "https://god.thway.uk/daniel-chapter-4-verses-1-18-symbolism.html",
-    "https://god.thway.uk/daniel-8-symbolic-journey-through.html",
     "https://god.thway.uk/fig-trees-and-false-appearances-eden.html",
     "https://god.thway.uk/the-garden-within-trees-rivers-and-flow.html",
     "https://god.thway.uk/genesis-111-seed.html",
