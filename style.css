@@ -116,7 +116,7 @@ figure figcaption {
   padding:0.6em 0;
 }
 #redditContainer {
-    margin: 60px 0;
+    margin: 60px 0 2em;
     display: flex;         
     align-items: center;      
     gap: 10px;                
@@ -421,6 +421,9 @@ ol, ul {
   list-style-type: none;
 }
 
+.reddit-container-feed {
+margin: 0em auto 2em;	
+	}
 .reddit-container-feed p {
   display: none;
 }
