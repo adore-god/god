@@ -8,7 +8,7 @@ window.labelMap = {
     ]
   },
   "https://god.thway.uk/abraham-lot-and-lots-daughters-neville.html": {
-    "title": "Abraham and Lot",
+    "title": "Abraham, Lot and the Destruction of Sodom and Gomorrah",
     "series": [
       "https://god.thway.uk/scrolls/label-abraham-series.html",
       "https://god.thway.uk/scrolls/label-angels.html",
@@ -214,6 +214,15 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-jacob-s-twelve-son-s-and-tribes-series.html"
     ]
   },
+  "https://god.thway.uk/daniel-8-symbolic-journey-through.html": {
+    "title": "Daniel's Visions of a Goat and Ram",
+    "series": [
+      "https://god.thway.uk/scrolls/label-angels.html",
+      "https://god.thway.uk/scrolls/label-animals-series.html",
+      "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
+      "https://god.thway.uk/scrolls/label-daniel-series.html"
+    ]
+  },
   "https://god.thway.uk/the-inner-birth-of-jesus-matthew-11825.html": {
     "title": "Joseph: The Birth of Jesus",
     "series": [
@@ -282,14 +291,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html",
       "https://god.thway.uk/scrolls/label-object-symbolism.html",
       "https://god.thway.uk/scrolls/label-wings-symbolism.html"
-    ]
-  },
-  "https://god.thway.uk/daniel-8-symbolic-journey-through.html": {
-    "title": "Daniel's Visions of a Goat and Ram",
-    "series": [
-      "https://god.thway.uk/scrolls/label-animals-series.html",
-      "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
-      "https://god.thway.uk/scrolls/label-daniel-series.html"
     ]
   },
   "https://god.thway.uk/the-dove-in-rock-paul-jesus-and-cephas.html": {
@@ -6632,6 +6633,7 @@ window.scrollGroups = {
     "https://god.thway.uk/abraham-lot-and-lots-daughters-neville.html",
     "https://god.thway.uk/el/bible-angels-symbolism.html",
     "https://god.thway.uk/balaams-donkey-unlocking-spiritual.html",
+    "https://god.thway.uk/daniel-8-symbolic-journey-through.html",
     "https://god.thway.uk/the-inner-birth-of-jesus-matthew-11825.html",
     "https://god.thway.uk/michael-archangel-every-appearance-in.html",
     "https://god.thway.uk/paul-nature-of-angels.html",
