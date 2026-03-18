@@ -1,6 +1,6 @@
 window.labelMap = {
   "https://god.thway.uk/the-birth-of-faith-abraham-as.html": {
-    "title": "Abraham and Isaac: Faith in Laughter",
+    "title": "Abraham: Identity, Seed, and the Smoking Firepot",
     "series": [
       "https://god.thway.uk/scrolls/label-abraham-series.html",
       "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
@@ -45,21 +45,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-abraham-series.html",
       "https://god.thway.uk/scrolls/label-genesis-2-23-series.html",
       "https://god.thway.uk/scrolls/label-genesis-2-24-series.html"
-    ]
-  },
-  "https://god.thway.uk/the-smoking-firepot-and-blazing-torch.html": {
-    "title": "Abraham: Faith",
-    "series": [
-      "https://god.thway.uk/scrolls/label-abraham-series.html",
-      "https://god.thway.uk/scrolls/label-animals-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-1-11-series.html"
-    ]
-  },
-  "https://god.thway.uk/living-in-end-abraham-and-power-of.html": {
-    "title": "Abraham: Faith Living in the End",
-    "series": [
-      "https://god.thway.uk/scrolls/label-abraham-series.html",
-      "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html"
     ]
   },
   "https://god.thway.uk/abraham-surrender-of-attachments.html": {
@@ -155,19 +140,19 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-women-in-the-bible-series.html"
     ]
   },
+  "https://god.thway.uk/the-seed-of-abraham.html": {
+    "title": "The Seed of Abraham",
+    "series": [
+      "https://god.thway.uk/scrolls/label-abraham-series.html",
+      "https://god.thway.uk/scrolls/label-genesis-1-11-series.html"
+    ]
+  },
   "https://god.thway.uk/marked-by-lament-how-to-know-when-youve.html": {
     "title": "The Scribe in the City",
     "series": [
       "https://god.thway.uk/scrolls/label-abraham-series.html",
       "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
       "https://god.thway.uk/scrolls/label-genesis-4-7-series.html"
-    ]
-  },
-  "https://god.thway.uk/the-seed-of-abraham.html": {
-    "title": "The Seed of Abraham",
-    "series": [
-      "https://god.thway.uk/scrolls/label-abraham-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-1-11-series.html"
     ]
   },
   "https://god.thway.uk/say-sister-sister-spouse-bible-manifestation.html": {
@@ -6637,8 +6622,6 @@ window.scrollGroups = {
     "https://god.thway.uk/abraham-and-his-sister.html",
     "https://god.thway.uk/abraham-and-doorway.html",
     "https://god.thway.uk/abraham-choosing-rebekahrebekah.html",
-    "https://god.thway.uk/the-smoking-firepot-and-blazing-torch.html",
-    "https://god.thway.uk/living-in-end-abraham-and-power-of.html",
     "https://god.thway.uk/abraham-surrender-of-attachments.html",
     "https://god.thway.uk/abraham-promise-and-covenant.html",
     "https://god.thway.uk/the-symbolism-of-abraham-and-isaac.html",
@@ -6650,8 +6633,8 @@ window.scrollGroups = {
     "https://god.thway.uk/the-importance-of-abraham-romans-41-16.html",
     "https://god.thway.uk/el/hebrews-hall-role-call.html",
     "https://god.thway.uk/sarahs-laughter-humour-of-manifestation.html",
-    "https://god.thway.uk/marked-by-lament-how-to-know-when-youve.html",
     "https://god.thway.uk/the-seed-of-abraham.html",
+    "https://god.thway.uk/marked-by-lament-how-to-know-when-youve.html",
     "https://god.thway.uk/say-sister-sister-spouse-bible-manifestation.html",
     "https://god.thway.uk/sodom-and-gomorrah-neville-inspired.html",
     "https://god.thway.uk/el/luke-19-zacchaeus-symbolism.html"
@@ -6674,7 +6657,6 @@ window.scrollGroups = {
     "https://god.thway.uk/zechariah-2-passage-analysis.html"
   ],
   "https://god.thway.uk/scrolls/label-animals-series.html": [
-    "https://god.thway.uk/the-smoking-firepot-and-blazing-torch.html",
     "https://god.thway.uk/balaams-donkey-unlocking-spiritual.html",
     "https://god.thway.uk/noah-jesus-and-bird-of-peace-descent-of.html",
     "https://god.thway.uk/camels-in-bible-symbol-of-faith-and-law.html",
@@ -7289,7 +7271,6 @@ window.scrollGroups = {
     "https://god.thway.uk/when-wisdom-becomes-folly-neville.html"
   ],
   "https://god.thway.uk/scrolls/label-genesis-1-11-series.html": [
-    "https://god.thway.uk/the-smoking-firepot-and-blazing-torch.html",
     "https://god.thway.uk/abraham-promise-and-covenant.html",
     "https://god.thway.uk/absaloms-hair.html",
     "https://god.thway.uk/el/manifesting-money.html",
@@ -8746,7 +8727,6 @@ window.scrollGroups = {
   "https://god.thway.uk/scrolls/label-the-four--fathers-of-the-law.html": [
     "https://god.thway.uk/the-birth-of-faith-abraham-as.html",
     "https://god.thway.uk/scrolls/label-abraham-series.html",
-    "https://god.thway.uk/living-in-end-abraham-and-power-of.html",
     "https://god.thway.uk/feeding-5000-gospel-comparison.html",
     "https://god.thway.uk/the-symbolism-of-jesuss-crucifixion.html",
     "https://god.thway.uk/wheels-within-wheels-symbolism-of-inner.html",
