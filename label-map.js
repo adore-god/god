@@ -1156,7 +1156,6 @@ window.labelMap = {
     "title": "Brothers: Reconciling Aspects of Mind in Matthew 5:23\u201326",
     "series": [
       "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
-      "https://god.thway.uk/scrolls/label-how-not-to-manifest.html",
       "https://god.thway.uk/scrolls/label-matthew-series.html"
     ]
   },
@@ -2267,7 +2266,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-bride---bridegroom-series.html",
       "https://god.thway.uk/scrolls/label-david-series.html",
       "https://god.thway.uk/scrolls/label-genesis-2-23-series.html",
-      "https://god.thway.uk/scrolls/label-how-not-to-manifest.html",
       "https://god.thway.uk/scrolls/label-spiritual-violations-series.html"
     ]
   },
@@ -4118,7 +4116,6 @@ window.labelMap = {
     "title": "Reuben\u2019s Mistake:  Old Habits",
     "series": [
       "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
-      "https://god.thway.uk/scrolls/label-how-not-to-manifest.html",
       "https://god.thway.uk/scrolls/label-reuben-series.html",
       "https://god.thway.uk/scrolls/label-spiritual-violations-series.html"
     ]
@@ -4433,18 +4430,6 @@ window.labelMap = {
     "title": "The Boy and the Arrows",
     "series": [
       "https://god.thway.uk/scrolls/label-hitting-or-missing-the-mark--aim--series.html"
-    ]
-  },
-  "https://god.thway.uk/the-divided-house-why-inner-conflict.html": {
-    "title": "The Divided House: Why Inner Conflict Sabotages Your Transformation",
-    "series": [
-      "https://god.thway.uk/scrolls/label-how-not-to-manifest.html"
-    ]
-  },
-  "https://god.thway.uk/when-unclean-spirit-returns-neville.html": {
-    "title": "When the Unclean Spirit Returns: A Neville Goddard Interpretation of Luke 11:24\u201326",
-    "series": [
-      "https://god.thway.uk/scrolls/label-how-not-to-manifest.html"
     ]
   },
   "https://god.thway.uk/scrolls/label-abraham-series.html": {
@@ -6374,6 +6359,12 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-social-and-cultural-commentary.html"
     ]
   },
+  "https://god.thway.uk/the-divided-house-why-inner-conflict.html": {
+    "title": "The Divided House: Why Inner Conflict Sabotages Your Transformation",
+    "series": [
+      "https://god.thway.uk/scrolls/label-solomon-series.html"
+    ]
+  },
   "https://god.thway.uk/el/solomons-portico-place-of-wisdom.html": {
     "title": "Solomon\u2019s Portico \u2014 The Place of Wisdom",
     "series": [
@@ -7609,13 +7600,6 @@ window.scrollGroups = {
     "https://god.thway.uk/psalm-2112-neville-style.html",
     "https://god.thway.uk/the-cross-arrow-and-mark-symbols-of.html"
   ],
-  "https://god.thway.uk/scrolls/label-how-not-to-manifest.html": [
-    "https://god.thway.uk/reconcile-before-you-imagine-matthew.html",
-    "https://god.thway.uk/david-and-bathsheba-neville-goddard.html",
-    "https://god.thway.uk/the-divided-house-why-inner-conflict.html",
-    "https://god.thway.uk/reubens-mistake-why-your-subconscious.html",
-    "https://god.thway.uk/when-unclean-spirit-returns-neville.html"
-  ],
   "https://god.thway.uk/scrolls/label-humourous.html": [],
   "https://god.thway.uk/scrolls/label-index-series.html": [
     "https://god.thway.uk/scrolls/label-abraham-series.html",
@@ -8580,6 +8564,7 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-solomon-series.html": [
     "https://god.thway.uk/el/david-solomon-jesus.html",
+    "https://god.thway.uk/the-divided-house-why-inner-conflict.html",
     "https://god.thway.uk/wheels-within-wheels-symbolism-of-inner.html",
     "https://god.thway.uk/heart-and-mercy-seat-symbolism.html",
     "https://god.thway.uk/in-my-fathers-house-john-142-3.html",
