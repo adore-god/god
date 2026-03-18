@@ -1,4 +1,3 @@
-
 (function waitForLabels() {
     const labelContainer = document.querySelector('.label-links');
     const map = window.labelMap;
@@ -233,26 +232,14 @@
 })();
 
 
-(function waitForLatestPosts() {
+document.addEventListener('latestPostsReady', function() {
     const container = document.getElementById('latest-posts');
-    if (!container) {
-        setTimeout(waitForLatestPosts, 100);
-        return;
-    }
-
     const links = container.querySelectorAll('li a');
-    if (links.length === 0) {
-        setTimeout(waitForLatestPosts, 100);
-        return;
-    }
+    if (links.length === 0) return;
 
     const graphScript = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
         .find(s => s.textContent.includes('"@graph"'));
-
-    if (!graphScript) {
-        setTimeout(waitForLatestPosts, 100);
-        return;
-    }
+    if (!graphScript) return;
 
     try {
         const data = JSON.parse(graphScript.textContent);
@@ -299,4 +286,4 @@
     } catch (e) {
         console.warn("Latest posts schema injection failed:", e);
     }
-})();
+});
