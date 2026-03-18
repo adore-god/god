@@ -1,3 +1,4 @@
+
 (function waitForLabels() {
 
     const labelContainer = document.querySelector('.label-links');
@@ -11,7 +12,6 @@
 
     const currentPage = window.location.href;
 
-    // Collect all scroll page URLs referenced by labels on this article
     const allLinks = labelContainer.querySelectorAll("a");
     const matchedScrollUrls = [];
 
@@ -31,8 +31,6 @@
 
     if (matchedScrollUrls.length === 0) return;
 
-    // For each scroll group, collect its articles (excluding current page)
-    // preserving group order but sorting articles within each group alphabetically
     const groups = [];
 
     matchedScrollUrls.forEach(scrollUrl => {
@@ -49,18 +47,12 @@
 
         if (groupEntries.length === 0) return;
 
-        // Sort alphabetically by title within the group
         groupEntries.sort((a, b) => a[1].localeCompare(b[1]));
-
-        groups.push({
-            scrollUrl,
-            entries: groupEntries
-        });
+        groups.push({ scrollUrl, entries: groupEntries });
     });
 
     if (groups.length === 0) return;
 
-    // Build UI
     const title = document.createElement("div");
     title.className = "series-links-title";
     title.textContent = "More Reading";
@@ -73,13 +65,11 @@
             const a = document.createElement("a");
             a.href = path;
             a.textContent = linkTitle;
-
             const div = document.createElement("div");
             div.appendChild(a);
             container.appendChild(div);
         });
 
-        // Optional visual divider between groups
         const divider = document.createElement("div");
         divider.className = "series-group-divider";
         container.appendChild(divider);
@@ -89,91 +79,3 @@
     target.before(container);
 
 })();
-
-
-
-(function waitForSeriesLinks() {
-    const container = document.getElementById('series-links-wrapper');
-
-    if (!container) {
-        setTimeout(waitForSeriesLinks, 100);
-        return;
-    }
-
-    // Collect all rendered links from the existing UI
-    const links = container.querySelectorAll('a');
-    if (links.length === 0) return;
-
-    const seenUrls = new Set();
-    const schemaItems = [];
-    let position = 1;
-
-    links.forEach(link => {
-        const url = link.href;
-        if (seenUrls.has(url)) return; // skip duplicates
-        seenUrls.add(url);
-
-        schemaItems.push({
-            "@type": "ListItem",
-            "position": position++,
-            "url": url,
-            "name": link.textContent.trim()
-        });
-    });
-
-    if (schemaItems.length === 0) return;
-
-    const schema = {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "More Reading",
-        "url": window.location.href,
-        "numberOfItems": schemaItems.length,
-        "itemListElement": schemaItems
-    };
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(schema, null, 2);
-    document.head.appendChild(script);
-
-})();
-
-
-
-(function waitForLatestPosts() {
-    const container = document.getElementById('latest-posts');
-    if (!container) return;
-
-    const links = container.querySelectorAll('li a');
-    if (links.length === 0) {
-        setTimeout(waitForLatestPosts, 100);
-        return;
-    }
-
-    const schemaItems = [];
-    let position = 1;
-
-    links.forEach(link => {
-        schemaItems.push({
-            "@type": "ListItem",
-            "position": position++,
-            "url": link.href,
-            "name": link.textContent.trim()
-        });
-    });
-
-    const schema = {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Latest Articles",
-        "url": window.location.href,
-        "numberOfItems": schemaItems.length,
-        "itemListElement": schemaItems
-    };
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(schema, null, 2);
-    document.head.appendChild(script);
-})(); 
