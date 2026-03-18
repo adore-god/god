@@ -98,7 +98,7 @@ window.addEventListener("load", function () {
     const postsContainer = document.getElementById("latest-posts");
     if (postsContainer) {
       const posts = Array.from(postsContainer.querySelectorAll("a")).map((a) => ({
-        "@type": "Article",
+        "@type": "CreativeWork",
         name: a.textContent.trim(),
         url: a.href,
       }));
