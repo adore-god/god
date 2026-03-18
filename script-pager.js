@@ -1,5 +1,5 @@
-(function waitForLabels() {
 
+(function waitForLabels() {
     const labelContainer = document.querySelector('.label-links');
     const map = window.labelMap;
     const target = document.querySelector('.share-dropdown');
@@ -85,7 +85,6 @@
 })();
 
 
-
 (function waitForSeriesLinks() {
     const container = document.getElementById('series-links-wrapper');
 
@@ -122,7 +121,10 @@
     const graphScript = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
         .find(s => s.textContent.includes('"@graph"'));
 
-    if (!graphScript) return;
+    if (!graphScript) {
+        setTimeout(waitForSeriesLinks, 100);
+        return;
+    }
 
     try {
         const data = JSON.parse(graphScript.textContent);
@@ -136,8 +138,10 @@
             "itemListElement": schemaItems
         });
 
-        const blogPost = data["@graph"].find(n => n["@type"] === "BlogPosting");
-        if (blogPost) blogPost["hasPart"] = { "@id": listId };
+        const targetNode = data["@graph"].find(n =>
+            ["BlogPosting", "WebPage", "CollectionPage", "Blog"].includes(n["@type"])
+        );
+        if (targetNode) targetNode["hasPart"] = { "@id": listId };
 
         graphScript.textContent = JSON.stringify(data, null, 2);
 
@@ -146,7 +150,6 @@
     }
 
 })();
-
 
 
 (function waitForLatestPosts() {
@@ -159,29 +162,47 @@
         return;
     }
 
-    const schemaItems = [];
-    let position = 1;
+    const graphScript = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+        .find(s => s.textContent.includes('"@graph"'));
 
-    links.forEach(link => {
-        schemaItems.push({
-            "@type": "ListItem",
-            "position": position++,
-            "url": link.href,
-            "name": link.textContent.trim()
+    if (!graphScript) {
+        setTimeout(waitForLatestPosts, 100);
+        return;
+    }
+
+    try {
+        const data = JSON.parse(graphScript.textContent);
+        const pageUrl = window.location.href;
+        const listId = pageUrl + "#latest-articles";
+
+        const schemaItems = [];
+        let position = 1;
+        links.forEach(link => {
+            schemaItems.push({
+                "@type": "ListItem",
+                "position": position++,
+                "url": link.href,
+                "name": link.textContent.trim()
+            });
         });
-    });
 
-    const schema = {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Latest Articles",
-        "url": window.location.href,
-        "numberOfItems": schemaItems.length,
-        "itemListElement": schemaItems
-    };
+        data["@graph"].push({
+            "@type": "ItemList",
+            "@id": listId,
+            "name": "Latest Articles",
+            "url": pageUrl,
+            "numberOfItems": schemaItems.length,
+            "itemListElement": schemaItems
+        });
 
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(schema, null, 2);
-    document.head.appendChild(script);
+        const targetNode = data["@graph"].find(n =>
+            ["BlogPosting", "WebPage", "CollectionPage", "Blog"].includes(n["@type"])
+        );
+        if (targetNode) targetNode["hasPart"] = { "@id": listId };
+
+        graphScript.textContent = JSON.stringify(data, null, 2);
+
+    } catch (e) {
+        console.warn("Latest posts schema injection failed:", e);
+    }
 })();
