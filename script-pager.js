@@ -1,5 +1,4 @@
 
-// ─── Shared schema utility ───────────────────────────────────────────────────
 
 function getGraphScript() {
     return Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
@@ -13,7 +12,6 @@ function injectListSchema({ listId, listName, pageUrl, schemaItems }) {
     try {
         const data = JSON.parse(graphScript.textContent);
 
-        // Avoid double-injection if called twice
         const alreadyExists = data["@graph"].some(n => n["@id"] === listId);
         if (alreadyExists) return true;
 
@@ -203,17 +201,25 @@ function injectListSchema({ listId, listName, pageUrl, schemaItems }) {
 
 // ─── 3. Latest Articles (homepage only) ──────────────────────────────────────
 
-document.addEventListener('latestPostsReady', function () {
+function injectLatestPostsSchema() {
     const container = document.getElementById('latest-posts');
+    if (!container) return;
+
     const links = container.querySelectorAll('li a');
     if (links.length === 0) return;
 
     if (!getGraphScript()) return;
 
     const pageUrl = window.location.href;
+    const listId = pageUrl + "#latest-articles";
+
+    try {
+        const data = JSON.parse(getGraphScript().textContent);
+        if (data["@graph"].some(n => n["@id"] === listId)) return;
+    } catch(e) { return; }
+
     const schemaItems = [];
     let position = 1;
-
     links.forEach(link => {
         schemaItems.push({
             "@type": "ListItem",
@@ -224,9 +230,10 @@ document.addEventListener('latestPostsReady', function () {
     });
 
     injectListSchema({
-        listId: pageUrl + "#latest-articles",
+        listId,
         listName: "Latest Articles",
         pageUrl,
         schemaItems
     });
-});
+}
+
