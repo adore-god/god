@@ -1,137 +1,3 @@
-// ─── Utility: inject one ItemList into the @graph ────────────────────────────
-
-function injectItemListSchema({ listId, listName, links }) {
-    const graphScript = Array.from(
-        document.querySelectorAll('script[type="application/ld+json"]')
-    ).find(s => s.textContent.includes('"@graph"'));
-    if (!graphScript) return false;
-
-    let data;
-    try {
-        data = JSON.parse(graphScript.textContent);
-    } catch (e) {
-        console.warn("LD+JSON parse failed:", e);
-        return false;
-    }
-
-    // Avoid double-injection
-    if (data["@graph"].some(n => n["@id"] === listId)) return true;
-
-    const seenUrls = new Set();
-    const schemaItems = [];
-    let position = 1;
-
-    links.forEach(link => {
-        const url = link.href;
-        if (!url || seenUrls.has(url)) return;
-        seenUrls.add(url);
-        schemaItems.push({
-            "@type": "ListItem",
-            "position": position++,
-            "url": url,
-            "name": link.textContent.trim()
-        });
-    });
-
-    if (schemaItems.length === 0) return false;
-
-    const pageUrl = window.location.href;
-
-    data["@graph"].push({
-        "@type": "ItemList",
-        "@id": listId,
-        "name": listName,
-        "url": pageUrl,
-        "numberOfItems": schemaItems.length,
-        "itemListElement": schemaItems
-    });
-
-    // Link from the primary page node via hasPart
-    const targetNode = data["@graph"].find(n =>
-        ["BlogPosting", "WebPage", "CollectionPage", "Blog"].includes(n["@type"])
-    );
-
-    if (targetNode) {
-        const ref = { "@id": listId };
-        const existing = targetNode["hasPart"];
-
-        if (!existing) {
-            targetNode["hasPart"] = ref;
-        } else {
-            // Normalise to array and avoid duplicate refs
-            const parts = Array.isArray(existing) ? existing : [existing];
-            if (!parts.some(p => p["@id"] === listId)) {
-                parts.push(ref);
-            }
-            targetNode["hasPart"] = parts;
-        }
-    }
-
-    graphScript.textContent = JSON.stringify(data, null, 2);
-    return true;
-}
-
-
-// ─── Helper: poll until a condition is met ────────────────────────────────────
-
-function pollUntil(fn, { interval = 200, maxAttempts = 50 } = {}) {
-    if (fn()) return;
-    let attempts = 0;
-    const id = setInterval(() => {
-        if (fn() || ++attempts >= maxAttempts) clearInterval(id);
-    }, interval);
-}
-
-
-// ─── 1. Latest Posts – fetch, render, then inject schema ─────────────────────
-
-async function loadLatestPosts() {
-    const container = document.getElementById('latest-posts');
-    if (!container) return;
-
-    try {
-        const response = await fetch('https://god.thway.uk/sitemap_latest.xml');
-        const text = await response.text();
-
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(text, "application/xml");
-        const urls = Array.from(xmlDoc.getElementsByTagName('url')).slice(0, 30);
-
-        const ul = document.createElement('ul');
-
-        urls.forEach(url => {
-            const loc = url.getElementsByTagName('loc')[0]?.textContent;
-            if (!loc) return;
-            const titleTag = url.getElementsByTagName('title')[0];
-            const title = titleTag ? titleTag.textContent : loc;
-
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = loc;
-            a.textContent = title;
-            li.appendChild(a);
-            ul.appendChild(li);
-        });
-
-        container.appendChild(ul);
-
-        // Schema injection — DOM is ready now, no polling needed
-        injectItemListSchema({
-            listId: window.location.href + "#latest-articles",
-            listName: "Latest Articles",
-            links: container.querySelectorAll('li a')
-        });
-
-    } catch (err) {
-        console.error("Error loading latest posts:", err);
-        container.textContent = "Unable to load latest posts.";
-    }
-}
-
-window.addEventListener('DOMContentLoaded', loadLatestPosts);
-
-
-// ─── 2. Article page – More Reading (series links) ───────────────────────────
 
 (function waitForLabels() {
     const labelContainer = document.querySelector('.label-links');
@@ -150,7 +16,7 @@ window.addEventListener('DOMContentLoaded', loadLatestPosts);
 
     allLinks.forEach(link => {
         const linkSlug = link.href.split("/").pop();
-        for (const path in map) {
+        for (let path in map) {
             const seriesList = map[path].series;
             if (Array.isArray(seriesList)) {
                 seriesList.forEach(s => {
@@ -168,7 +34,7 @@ window.addEventListener('DOMContentLoaded', loadLatestPosts);
     const allEntries = [];
 
     matchedScrollUrls.forEach(scrollUrl => {
-        for (const articlePath in map) {
+        for (let articlePath in map) {
             if (articlePath === currentPage) continue;
             if (seenPaths.has(articlePath)) continue;
 
@@ -186,9 +52,9 @@ window.addEventListener('DOMContentLoaded', loadLatestPosts);
 
     allEntries.sort((a, b) => a[1].localeCompare(b[1]));
 
-    const titleEl = document.createElement("div");
-    titleEl.className = "series-links-title";
-    titleEl.textContent = "More Reading";
+    const title = document.createElement("div");
+    title.className = "series-links-title";
+    title.textContent = "More Reading";
 
     const container = document.createElement("div");
     container.id = "series-links-wrapper";
@@ -197,37 +63,258 @@ window.addEventListener('DOMContentLoaded', loadLatestPosts);
         const a = document.createElement("a");
         a.href = path;
         a.textContent = linkTitle;
+
         const div = document.createElement("div");
         div.appendChild(a);
         container.appendChild(div);
     });
 
-    target.before(titleEl);
+    target.before(title);
     target.before(container);
 
-    injectItemListSchema({
-        listId: currentPage + "#more-reading",
-        listName: "More Reading",
-        links: container.querySelectorAll('a')
-    });
+    // Inject schema immediately after building the list
+    injectMoreReadingSchema();
 })();
 
 
-// ─── 3. Homepage – Series and Topics schema ───────────────────────────────────
+function injectMoreReadingSchema() {
+    const container = document.getElementById('series-links-wrapper');
+    if (!container) return false;
 
-(function initHomepageSeriesSchema() {
+    const links = container.querySelectorAll('a');
+    if (links.length === 0) return false;
+
+    // Always re-read the script fresh before writing
+    const graphScript = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+        .find(s => s.textContent.includes('"@graph"'));
+    if (!graphScript) return false;
+
+    try {
+        const data = JSON.parse(graphScript.textContent);
+        const pageUrl = window.location.href;
+        const listId = pageUrl + "#more-reading";
+
+        // Avoid double injection
+        if (data["@graph"].some(n => n["@id"] === listId)) return true;
+
+        const seenUrls = new Set();
+        const schemaItems = [];
+        let position = 1;
+
+        links.forEach(link => {
+            const url = link.href;
+            if (seenUrls.has(url)) return;
+            seenUrls.add(url);
+            schemaItems.push({
+                "@type": "ListItem",
+                "position": position++,
+                "url": url,
+                "name": link.textContent.trim()
+            });
+        });
+
+        if (schemaItems.length === 0) return false;
+
+        data["@graph"].push({
+            "@type": "ItemList",
+            "@id": listId,
+            "name": "More Reading",
+            "url": pageUrl,
+            "numberOfItems": schemaItems.length,
+            "itemListElement": schemaItems
+        });
+
+        const targetNode = data["@graph"].find(n =>
+            ["BlogPosting", "WebPage", "CollectionPage", "Blog"].includes(n["@type"])
+        );
+
+        if (targetNode) {
+            const existing = targetNode["hasPart"];
+            if (!existing) {
+                targetNode["hasPart"] = { "@id": listId };
+            } else if (Array.isArray(existing)) {
+                existing.push({ "@id": listId });
+            } else {
+                targetNode["hasPart"] = [existing, { "@id": listId }];
+            }
+        }
+
+        graphScript.textContent = JSON.stringify(data, null, 2);
+        return true;
+
+    } catch (e) {
+        console.warn("More reading schema injection failed:", e);
+        return false;
+    }
+}
+
+
+(function waitForHomepageSeriesLinks() {
     if (window.location.pathname !== "/" && window.location.pathname !== "/index.html") return;
 
-    pollUntil(() => {
-        const nav = document.querySelector('.series-links');
-        if (!nav) return false;
-        const links = nav.querySelectorAll('li a');
+    function injectHomepageSeriesSchema() {
+        const navSeriesLinks = document.querySelector('.series-links');
+        if (!navSeriesLinks) return false;
+
+        const links = navSeriesLinks.querySelectorAll('li a');
         if (links.length === 0) return false;
 
-        return injectItemListSchema({
-            listId: window.location.href + "#series-topics",
-            listName: "Series and Topics",
-            links
-        });
-    });
+        // Always re-read fresh before writing
+        const graphScript = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+            .find(s => s.textContent.includes('"@graph"'));
+        if (!graphScript) return false;
+
+        try {
+            const data = JSON.parse(graphScript.textContent);
+            const pageUrl = window.location.href;
+            const listId = pageUrl + "#series-topics";
+
+            if (data["@graph"].some(n => n["@id"] === listId)) return true;
+
+            const schemaItems = [];
+            let position = 1;
+            links.forEach(link => {
+                schemaItems.push({
+                    "@type": "ListItem",
+                    "position": position++,
+                    "url": link.href,
+                    "name": link.textContent.trim()
+                });
+            });
+
+            data["@graph"].push({
+                "@type": "ItemList",
+                "@id": listId,
+                "name": "Series and Topics",
+                "url": pageUrl,
+                "numberOfItems": schemaItems.length,
+                "itemListElement": schemaItems
+            });
+
+            const targetNode = data["@graph"].find(n =>
+                ["BlogPosting", "WebPage", "CollectionPage", "Blog"].includes(n["@type"])
+            );
+
+            if (targetNode) {
+                const existing = targetNode["hasPart"];
+                if (!existing) {
+                    targetNode["hasPart"] = { "@id": listId };
+                } else if (Array.isArray(existing)) {
+                    existing.push({ "@id": listId });
+                } else {
+                    targetNode["hasPart"] = [existing, { "@id": listId }];
+                }
+            }
+
+            graphScript.textContent = JSON.stringify(data, null, 2);
+            return true;
+
+        } catch (e) {
+            console.warn("Homepage series schema injection failed:", e);
+            return false;
+        }
+    }
+
+    if (!injectHomepageSeriesSchema()) {
+        let attempts = 0;
+        const poll = setInterval(() => {
+            if (injectHomepageSeriesSchema() || ++attempts > 50) {
+                clearInterval(poll);
+            }
+        }, 200);
+    }
+})();
+
+
+(function initLatestPostsSchema() {
+    function injectLatestPostsSchema() {
+        const container = document.getElementById('latest-posts');
+        if (!container) return false;
+
+        const links = container.querySelectorAll('li a');
+        if (links.length === 0) return false;
+
+        // Always re-read fresh before writing
+        const graphScript = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+            .find(s => s.textContent.includes('"@graph"'));
+        if (!graphScript) return false;
+
+        try {
+            const data = JSON.parse(graphScript.textContent);
+            const pageUrl = window.location.href;
+            const listId = pageUrl + "#latest-articles";
+
+            if (data["@graph"].some(n => n["@id"] === listId)) return true;
+
+            const schemaItems = [];
+            let position = 1;
+            links.forEach(link => {
+                schemaItems.push({
+                    "@type": "ListItem",
+                    "position": position++,
+                    "url": link.href,
+                    "name": link.textContent.trim()
+                });
+            });
+
+            data["@graph"].push({
+                "@type": "ItemList",
+                "@id": listId,
+                "name": "Latest Articles",
+                "url": pageUrl,
+                "numberOfItems": schemaItems.length,
+                "itemListElement": schemaItems
+            });
+
+            const targetNode = data["@graph"].find(n =>
+                ["BlogPosting", "WebPage", "CollectionPage", "Blog"].includes(n["@type"])
+            );
+
+            if (targetNode) {
+                const existing = targetNode["hasPart"];
+                if (!existing) {
+                    targetNode["hasPart"] = { "@id": listId };
+                } else if (Array.isArray(existing)) {
+                    existing.push({ "@id": listId });
+                } else {
+                    targetNode["hasPart"] = [existing, { "@id": listId }];
+                }
+            }
+
+            graphScript.textContent = JSON.stringify(data, null, 2);
+            return true;
+
+        } catch (e) {
+            console.warn("Latest posts schema injection failed:", e);
+            return false;
+        }
+    }
+
+    if (!injectLatestPostsSchema()) {
+        document.addEventListener('latestPostsReady', injectLatestPostsSchema);
+
+        let attempts = 0;
+        const poll = setInterval(() => {
+            if (injectLatestPostsSchema() || ++attempts > 50) {
+                clearInterval(poll);
+            }
+        }, 200);
+    }
+})();
+
+(function waitForHomepageMoreReading() {
+    if (window.location.pathname !== "/" && window.location.pathname !== "/index.html") return;
+
+    function tryInject() {
+        const container = document.getElementById('series-links-wrapper');
+        if (!container) return false;
+        return injectMoreReadingSchema();
+    }
+
+    if (!tryInject()) {
+        let attempts = 0;
+        const poll = setInterval(() => {
+            if (tryInject() || ++attempts > 50) clearInterval(poll);
+        }, 200);
+    }
 })();
