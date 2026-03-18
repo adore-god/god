@@ -421,9 +421,6 @@ ol, ul {
   list-style-type: none;
 }
 
-.reddit-container-feed {
-margin: 0em auto 2em;	
-	}
 .reddit-container-feed p {
   display: none;
 }
@@ -432,13 +429,14 @@ margin: 0em auto 2em;
   display: none;
 }
   
-  .reddit-container-feed {
+  .reddit-container-feed { 	margin: 0em 0 2em;
     max-height: 400px;       
     overflow-y: auto;     
     padding: 15px;
     border: 0px solid #ccc;
     border-radius: 8px;
     background: transparent;
+    width:90%;
   } 
 
   .reddit-container-feed > div {
@@ -717,6 +715,7 @@ table {
 	height:400px;
 	overflow-y: auto;
 	overflow-x: hidden;
+	width:90%
 	}
 	
 .latest-posts a, .latest-posts a:visited {
