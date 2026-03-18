@@ -81,12 +81,12 @@ window.addEventListener("load", function () {
       graph = JSON.parse(schemaScript.textContent);
     } catch (e) { return; }
 
-    // Identify the main node (BlogPosting or WebPage)
     const nodes = graph["@graph"] ? graph["@graph"] : [graph];
+    // Find the main node (BlogPosting for articles, WebPage for index)
     const mainNode = nodes.find((n) => n["@type"] === "BlogPosting" || n["@type"] === "WebPage");
     if (!mainNode) return;
 
-    // 1. Markup for LATEST UPDATED ARTICLES (Collection/ItemList)
+    // 1. MARKUP FOR LATEST POSTS (Typically on Index Page)
     const postsContainer = document.getElementById("latest-posts");
     if (postsContainer) {
       const postLinks = Array.from(postsContainer.querySelectorAll("a"));
@@ -104,17 +104,33 @@ window.addEventListener("load", function () {
       }
     }
 
-    // 2. Markup for TOPIC GROUPS / SERIES (CreativeWorkSeries)
+    // 2. MARKUP FOR SERIES/MORE READING (Adaptive Logic)
     const seriesWrapper = document.getElementById("series-links-wrapper");
     if (seriesWrapper) {
       const seriesLinks = Array.from(seriesWrapper.querySelectorAll("a"));
+      
       if (seriesLinks.length) {
-        // We use 'mentions' to link the current page to the broader topic series
-        mainNode.mentions = seriesLinks.map((a) => ({
-          "@type": "CreativeWorkSeries",
-          "name": a.textContent.trim(),
-          "url": a.href
-        }));
+        // IF ON ARTICLE PAGE: Mark as a structured list of related items
+        if (mainNode["@type"] === "BlogPosting") {
+          mainNode.hasPart = {
+            "@type": "ItemList",
+            "name": "Related Series Articles",
+            "itemListElement": seriesLinks.map((a, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "url": a.href,
+              "name": a.textContent.trim()
+            }))
+          };
+        } 
+        // IF ON INDEX PAGE: Mark as broad topic series mentions
+        else {
+          mainNode.mentions = seriesLinks.map((a) => ({
+            "@type": "CreativeWorkSeries",
+            "name": a.textContent.trim(),
+            "url": a.href
+          }));
+        }
       }
     }
 
