@@ -3,10 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let path = window.location.pathname.toLowerCase();
 
-  // Normalise index page
-  if (path === '/' || path === '/index.html' || path === '/index.htm') {
-    return;
-  }
+  const isIndex = path === '/' || path === '/index.html' || path === '/index.htm';
 
   const excludePaths = [
     '/about_13.html',
@@ -18,11 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (excludePaths.includes(path)) return;
 
-  const labelLinks = Array.from(document.querySelectorAll('.label-links a'));
   const mainContent = document.querySelector('main.content');
   if (!mainContent) return;
 
-  // Prevent duplicate breadcrumb
   if (document.querySelector('.breadcrumb')) return;
 
   const breadcrumb = document.createElement('nav');
@@ -43,6 +38,19 @@ document.addEventListener('DOMContentLoaded', () => {
     sep.textContent = ' | ';
     breadcrumb.appendChild(sep);
   }
+
+  // Homepage  just 'Home'
+  if (isIndex) {
+    const home = document.createElement('span');
+    home.textContent = 'Home';
+    home.classList.add('breadcrumb-current', 'noTag');
+    breadcrumb.appendChild(home);
+    mainContent.insertBefore(breadcrumb, mainContent.firstChild);
+    return;
+  }
+
+  // All other pages  existing logic unchanged
+  const labelLinks = Array.from(document.querySelectorAll('.label-links a'));
 
   // 1. Home
   breadcrumb.appendChild(createCrumb('https://god.thway.uk/', 'Home'));
@@ -67,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
   currentPage.classList.add('breadcrumb-current', 'noTag');
   breadcrumb.appendChild(currentPage);
 
-  // Separate About link
   const authorIndex = labelLinks.findIndex(link =>
     link.href.includes('about-author.html')
   );
@@ -91,8 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   mainContent.insertBefore(breadcrumb, mainContent.firstChild);
 
-}); 
-
+});
  
  
 
