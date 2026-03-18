@@ -11,7 +11,6 @@
 
     const currentPage = window.location.href;
 
-    // Collect all scroll page URLs referenced by labels on this article
     const allLinks = labelContainer.querySelectorAll("a");
     const matchedScrollUrls = [];
 
@@ -31,8 +30,6 @@
 
     if (matchedScrollUrls.length === 0) return;
 
-    // For each scroll group, collect its articles (excluding current page)
-    // preserving group order but sorting articles within each group alphabetically
     const groups = [];
 
     matchedScrollUrls.forEach(scrollUrl => {
@@ -49,7 +46,6 @@
 
         if (groupEntries.length === 0) return;
 
-        // Sort alphabetically by title within the group
         groupEntries.sort((a, b) => a[1].localeCompare(b[1]));
 
         groups.push({
@@ -60,7 +56,6 @@
 
     if (groups.length === 0) return;
 
-    // Build UI
     const title = document.createElement("div");
     title.className = "series-links-title";
     title.textContent = "More Reading";
@@ -79,7 +74,6 @@
             container.appendChild(div);
         });
 
-        // Optional visual divider between groups
         const divider = document.createElement("div");
         divider.className = "series-group-divider";
         container.appendChild(divider);
@@ -100,7 +94,6 @@
         return;
     }
 
-    // Collect all rendered links from the existing UI
     const links = container.querySelectorAll('a');
     if (links.length === 0) return;
 
@@ -110,7 +103,7 @@
 
     links.forEach(link => {
         const url = link.href;
-        if (seenUrls.has(url)) return; // skip duplicates
+        if (seenUrls.has(url)) return;
         seenUrls.add(url);
 
         schemaItems.push({
@@ -123,19 +116,34 @@
 
     if (schemaItems.length === 0) return;
 
-    const schema = {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "More Reading",
-        "url": window.location.href,
-        "numberOfItems": schemaItems.length,
-        "itemListElement": schemaItems
-    };
+    const pageUrl = window.location.href;
+    const listId = pageUrl + "#more-reading";
 
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(schema, null, 2);
-    document.head.appendChild(script);
+    const graphScript = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+        .find(s => s.textContent.includes('"@graph"'));
+
+    if (!graphScript) return;
+
+    try {
+        const data = JSON.parse(graphScript.textContent);
+
+        data["@graph"].push({
+            "@type": "ItemList",
+            "@id": listId,
+            "name": "More Reading",
+            "url": pageUrl,
+            "numberOfItems": schemaItems.length,
+            "itemListElement": schemaItems
+        });
+
+        const blogPost = data["@graph"].find(n => n["@type"] === "BlogPosting");
+        if (blogPost) blogPost["hasPart"] = { "@id": listId };
+
+        graphScript.textContent = JSON.stringify(data, null, 2);
+
+    } catch (e) {
+        console.warn("Schema injection failed:", e);
+    }
 
 })();
 
@@ -176,4 +184,4 @@
     script.type = "application/ld+json";
     script.textContent = JSON.stringify(schema, null, 2);
     document.head.appendChild(script);
-})(); 
+})();
