@@ -3,16 +3,13 @@ async function loadLatestPosts() {
     const container = document.getElementById('latest-posts');
 
     try {
-        // Fetch the latest sitemap
         const response = await fetch('https://god.thway.uk/sitemap_latest.xml');
         const text = await response.text();
 
-        // Parse the XML
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(text, "application/xml");
         const urls = xmlDoc.getElementsByTagName('url');
 
-        // Display only the last 5 modified posts
         const latestPosts = Array.from(urls).slice(0, 30);
 
         const ul = document.createElement('ul');
@@ -31,6 +28,7 @@ async function loadLatestPosts() {
         });
 
         container.appendChild(ul);
+        document.dispatchEvent(new Event('latestPostsReady'));
 
     } catch (err) {
         console.error("Error loading latest posts:", err);
@@ -38,5 +36,4 @@ async function loadLatestPosts() {
     }
 }
 
-// Load posts when page is ready
 window.addEventListener('DOMContentLoaded', loadLatestPosts);

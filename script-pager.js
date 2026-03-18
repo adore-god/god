@@ -302,19 +302,5 @@ function injectMoreReadingSchema() {
     }
 })();
 
-(function waitForHomepageMoreReading() {
-    if (window.location.pathname !== "/" && window.location.pathname !== "/index.html") return;
 
-    function tryInject() {
-        const container = document.getElementById('series-links-wrapper');
-        if (!container) return false;
-        return injectMoreReadingSchema();
-    }
 
-    if (!tryInject()) {
-        let attempts = 0;
-        const poll = setInterval(() => {
-            if (tryInject() || ++attempts > 50) clearInterval(poll);
-        }, 200);
-    }
-})();
