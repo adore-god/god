@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '/series-links.html',
     '/search.html',
     '/404.html',
+    '/index.html',
     '/el/terms-of-use.html'
   ];
 
