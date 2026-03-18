@@ -158,14 +158,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-song-of-solomon-series.html"
     ]
   },
-  "https://god.thway.uk/sodom-and-gomorrah-neville-inspired.html": {
-    "title": "Sodom and Gomorrah",
-    "series": [
-      "https://god.thway.uk/scrolls/label-abraham-series.html",
-      "https://god.thway.uk/scrolls/label-fire-series.html",
-      "https://god.thway.uk/scrolls/label-spiritual-geography.html"
-    ]
-  },
   "https://god.thway.uk/el/luke-19-zacchaeus-symbolism.html": {
     "title": "Zacchaeus: Climbing the Tree of Life to Meet the Saving I AM",
     "series": [
@@ -6627,7 +6619,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-seed-of-abraham.html",
     "https://god.thway.uk/marked-by-lament-how-to-know-when-youve.html",
     "https://god.thway.uk/say-sister-sister-spouse-bible-manifestation.html",
-    "https://god.thway.uk/sodom-and-gomorrah-neville-inspired.html",
     "https://god.thway.uk/el/luke-19-zacchaeus-symbolism.html"
   ],
   "https://god.thway.uk/scrolls/label-advanced-mastery-in-manifestation-series.html": [
@@ -7245,8 +7236,7 @@ window.scrollGroups = {
     "https://god.thway.uk/el/burning-bush-fire-symbolism.html",
     "https://god.thway.uk/el/lake-fire-symbolism-bible.html",
     "https://god.thway.uk/el/love-seal-fire-god.html",
-    "https://god.thway.uk/moses-and-burning-bush.html",
-    "https://god.thway.uk/sodom-and-gomorrah-neville-inspired.html"
+    "https://god.thway.uk/moses-and-burning-bush.html"
   ],
   "https://god.thway.uk/scrolls/label-flower-series.html": [
     "https://god.thway.uk/flowers-and-rhodas-story.html",
@@ -8671,7 +8661,6 @@ window.scrollGroups = {
     "https://god.thway.uk/moab-and-israel-divided-offspring-of.html",
     "https://god.thway.uk/pauls-voyages-overview.html",
     "https://god.thway.uk/el/persia-bible-symbolism.html",
-    "https://god.thway.uk/sodom-and-gomorrah-neville-inspired.html",
     "https://god.thway.uk/the-garden-and-temple-understanding.html",
     "https://god.thway.uk/twelve-tribes-summary-law-of-assumption.html",
     "https://god.thway.uk/vineyard-symbolism-in-bible-neville.html",
