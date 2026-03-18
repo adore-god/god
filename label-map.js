@@ -103,14 +103,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-genesis-2-24-series.html"
     ]
   },
-  "https://god.thway.uk/pauls-discourse-onabrahams-faith.html": {
-    "title": "Paul's Discourse on Abraham's Faith",
-    "series": [
-      "https://god.thway.uk/scrolls/label-abraham-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-1-11-series.html",
-      "https://god.thway.uk/scrolls/label-paul-series.html"
-    ]
-  },
   "https://god.thway.uk/the-importance-of-abraham-romans-41-16.html": {
     "title": "Paul: Abraham's Faith \u2014 Romans 4:1-16",
     "series": [
@@ -6629,7 +6621,6 @@ window.scrollGroups = {
     "https://god.thway.uk/teachers-fathers-of-law-assumption.html",
     "https://god.thway.uk/hebrews-7-unveiling-power-of.html",
     "https://god.thway.uk/el/sacrifice-virgin-daughters-symbolism.html",
-    "https://god.thway.uk/pauls-discourse-onabrahams-faith.html",
     "https://god.thway.uk/the-importance-of-abraham-romans-41-16.html",
     "https://god.thway.uk/el/hebrews-hall-role-call.html",
     "https://god.thway.uk/sarahs-laughter-humour-of-manifestation.html",
@@ -7296,7 +7287,6 @@ window.scrollGroups = {
     "https://god.thway.uk/moses-and-burning-bush.html",
     "https://god.thway.uk/a-reflection-on-how-film-adolescence.html",
     "https://god.thway.uk/noah-seedtime-and-harvest.html",
-    "https://god.thway.uk/pauls-discourse-onabrahams-faith.html",
     "https://god.thway.uk/el/acts-1-11-return-jesus.html",
     "https://god.thway.uk/the-rod-and-staff-of-assumption-tools.html",
     "https://god.thway.uk/the-seed-of-abraham.html",
@@ -8398,7 +8388,6 @@ window.scrollGroups = {
     "https://god.thway.uk/when-faith-falls-asleep-in-window-fall.html",
     "https://god.thway.uk/the-foolishness-of-god-neville-goddard.html",
     "https://god.thway.uk/paul-and-acts-ascension-of-christ-within.html",
-    "https://god.thway.uk/pauls-discourse-onabrahams-faith.html",
     "https://god.thway.uk/spiritual-union-and-imagination-new_9.html",
     "https://god.thway.uk/the-importance-of-abraham-romans-41-16.html",
     "https://god.thway.uk/images-and-idols-symbolic.html",
