@@ -1,3 +1,4 @@
+
 (function waitForLabels() {
     const labelContainer = document.querySelector('.label-links');
     const map = window.labelMap;
@@ -9,9 +10,10 @@
     }
 
     const currentPage = window.location.href;
-
     const allLinks = labelContainer.querySelectorAll("a");
-    const matchedScrollUrls = [];
+
+    // Collect matched series URLs (deduplicated)
+    const matchedScrollUrls = new Set();
 
     allLinks.forEach(link => {
         const linkSlug = link.href.split("/").pop();
@@ -19,41 +21,38 @@
             const seriesList = map[path].series;
             if (Array.isArray(seriesList)) {
                 seriesList.forEach(s => {
-                    if (s.split("/").pop() === linkSlug && !matchedScrollUrls.includes(s)) {
-                        matchedScrollUrls.push(s);
+                    if (s.split("/").pop() === linkSlug) {
+                        matchedScrollUrls.add(s);
                     }
                 });
             }
         }
     });
 
-    if (matchedScrollUrls.length === 0) return;
+    if (matchedScrollUrls.size === 0) return;
 
-    const groups = [];
+    // Collect all article entries across ALL matched series, deduplicated by path
+    const seenPaths = new Set();
+    const allEntries = [];
 
     matchedScrollUrls.forEach(scrollUrl => {
-        const groupEntries = [];
-
         for (let articlePath in map) {
             if (articlePath === currentPage) continue;
+            if (seenPaths.has(articlePath)) continue;
+
             const entry = map[articlePath];
             const seriesList = Array.isArray(entry.series) ? entry.series : [entry.series];
+
             if (seriesList.includes(scrollUrl)) {
-                groupEntries.push([articlePath, entry.title]);
+                seenPaths.add(articlePath);
+                allEntries.push([articlePath, entry.title]);
             }
         }
-
-        if (groupEntries.length === 0) return;
-
-        groupEntries.sort((a, b) => a[1].localeCompare(b[1]));
-
-        groups.push({
-            scrollUrl,
-            entries: groupEntries
-        });
     });
 
-    if (groups.length === 0) return;
+    if (allEntries.length === 0) return;
+
+    allEntries.sort((a, b) => a[1].localeCompare(b[1]));
 
     const title = document.createElement("div");
     title.className = "series-links-title";
@@ -62,25 +61,18 @@
     const container = document.createElement("div");
     container.id = "series-links-wrapper";
 
-    groups.forEach(group => {
-        group.entries.forEach(([path, linkTitle]) => {
-            const a = document.createElement("a");
-            a.href = path;
-            a.textContent = linkTitle;
+    allEntries.forEach(([path, linkTitle]) => {
+        const a = document.createElement("a");
+        a.href = path;
+        a.textContent = linkTitle;
 
-            const div = document.createElement("div");
-            div.appendChild(a);
-            container.appendChild(div);
-        });
-
-        const divider = document.createElement("div");
-        divider.className = "series-group-divider";
-        container.appendChild(divider);
+        const div = document.createElement("div");
+        div.appendChild(a);
+        container.appendChild(div);
     });
 
     target.before(title);
     target.before(container);
-
 })();
 
 
@@ -157,7 +149,6 @@
     } catch (e) {
         console.warn("Schema injection failed:", e);
     }
-
 })();
 
 
@@ -232,58 +223,81 @@
 })();
 
 
-document.addEventListener('latestPostsReady', function() {
-    const container = document.getElementById('latest-posts');
-    const links = container.querySelectorAll('li a');
-    if (links.length === 0) return;
+// Fix: handle both the event firing after AND before this script runs
+(function initLatestPostsSchema() {
+    function injectLatestPostsSchema() {
+        const container = document.getElementById('latest-posts');
+        if (!container) return false;
 
-    const graphScript = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
-        .find(s => s.textContent.includes('"@graph"'));
-    if (!graphScript) return;
+        const links = container.querySelectorAll('li a');
+        if (links.length === 0) return false;
 
-    try {
-        const data = JSON.parse(graphScript.textContent);
-        const pageUrl = window.location.href;
-        const listId = pageUrl + "#latest-articles";
+        const graphScript = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+            .find(s => s.textContent.includes('"@graph"'));
+        if (!graphScript) return false;
 
-        const schemaItems = [];
-        let position = 1;
-        links.forEach(link => {
-            schemaItems.push({
-                "@type": "ListItem",
-                "position": position++,
-                "url": link.href,
-                "name": link.textContent.trim()
+        try {
+            const data = JSON.parse(graphScript.textContent);
+            const pageUrl = window.location.href;
+            const listId = pageUrl + "#latest-articles";
+
+            // Avoid injecting twice if event fires multiple times
+            if (data["@graph"].some(n => n["@id"] === listId)) return true;
+
+            const schemaItems = [];
+            let position = 1;
+            links.forEach(link => {
+                schemaItems.push({
+                    "@type": "ListItem",
+                    "position": position++,
+                    "url": link.href,
+                    "name": link.textContent.trim()
+                });
             });
-        });
 
-        data["@graph"].push({
-            "@type": "ItemList",
-            "@id": listId,
-            "name": "Latest Articles",
-            "url": pageUrl,
-            "numberOfItems": schemaItems.length,
-            "itemListElement": schemaItems
-        });
+            data["@graph"].push({
+                "@type": "ItemList",
+                "@id": listId,
+                "name": "Latest Articles",
+                "url": pageUrl,
+                "numberOfItems": schemaItems.length,
+                "itemListElement": schemaItems
+            });
 
-        const targetNode = data["@graph"].find(n =>
-            ["BlogPosting", "WebPage", "CollectionPage", "Blog"].includes(n["@type"])
-        );
+            const targetNode = data["@graph"].find(n =>
+                ["BlogPosting", "WebPage", "CollectionPage", "Blog"].includes(n["@type"])
+            );
 
-        if (targetNode) {
-            const existing = targetNode["hasPart"];
-            if (!existing) {
-                targetNode["hasPart"] = { "@id": listId };
-            } else if (Array.isArray(existing)) {
-                existing.push({ "@id": listId });
-            } else {
-                targetNode["hasPart"] = [existing, { "@id": listId }];
+            if (targetNode) {
+                const existing = targetNode["hasPart"];
+                if (!existing) {
+                    targetNode["hasPart"] = { "@id": listId };
+                } else if (Array.isArray(existing)) {
+                    existing.push({ "@id": listId });
+                } else {
+                    targetNode["hasPart"] = [existing, { "@id": listId }];
+                }
             }
+
+            graphScript.textContent = JSON.stringify(data, null, 2);
+            return true;
+
+        } catch (e) {
+            console.warn("Latest posts schema injection failed:", e);
+            return false;
         }
-
-        graphScript.textContent = JSON.stringify(data, null, 2);
-
-    } catch (e) {
-        console.warn("Latest posts schema injection failed:", e);
     }
-});
+
+    // Try immediately in case latest-posts is already in the DOM
+    if (!injectLatestPostsSchema()) {
+        // Fall back to event + polling
+        document.addEventListener('latestPostsReady', injectLatestPostsSchema);
+
+        let attempts = 0;
+        const poll = setInterval(() => {
+            if (injectLatestPostsSchema() || ++attempts > 50) {
+                clearInterval(poll);
+            }
+        }, 200);
+    }
+})();
