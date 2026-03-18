@@ -1558,6 +1558,14 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-bible-verse-analysis.html"
     ]
   },
+  "https://god.thway.uk/jesus-wept-for-easter-sunday.html": {
+    "title": "Lazarus: The Buried I AM",
+    "series": [
+      "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
+      "https://god.thway.uk/scrolls/label-genesis-4-7-series.html",
+      "https://god.thway.uk/scrolls/label-jesus-christ--salvation.html"
+    ]
+  },
   "https://god.thway.uk/let-no-one-beguile-you-colossians-21823.html": {
     "title": "Let No One Beguile You: Colossians 2:18\u201323 and the Law of Assumption",
     "series": [
@@ -1887,14 +1895,6 @@ window.labelMap = {
     "title": "Render Unto Caesar: Neville Goddard\u2019s Metaphysical Interpretation",
     "series": [
       "https://god.thway.uk/scrolls/label-bible-verse-analysis.html"
-    ]
-  },
-  "https://god.thway.uk/jesus-wept-for-easter-sunday.html": {
-    "title": "The Resurrection of Lazarus: Your Forgotten Ideal Self",
-    "series": [
-      "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
-      "https://god.thway.uk/scrolls/label-genesis-4-7-series.html",
-      "https://god.thway.uk/scrolls/label-jesus-christ--salvation.html"
     ]
   },
   "https://god.thway.uk/el/acts-1-11-return-jesus.html": {
@@ -6836,6 +6836,7 @@ window.scrollGroups = {
     "https://god.thway.uk/unlocking-power-of-i-am-in-john-141531.html",
     "https://god.thway.uk/the-true-light-john-19-13-passage.html",
     "https://god.thway.uk/joshua-1-and-law-of-consumption.html",
+    "https://god.thway.uk/jesus-wept-for-easter-sunday.html",
     "https://god.thway.uk/let-no-one-beguile-you-colossians-21823.html",
     "https://god.thway.uk/living-in-end-bible-passages-that.html",
     "https://god.thway.uk/looking-at-psalm-178.html",
@@ -6881,7 +6882,6 @@ window.scrollGroups = {
     "https://god.thway.uk/psalm-8-power-of-imagination-and.html",
     "https://god.thway.uk/put-on-new-self-colossians-31-17.html",
     "https://god.thway.uk/render-unto-caesar-neville-goddards.html",
-    "https://god.thway.uk/jesus-wept-for-easter-sunday.html",
     "https://god.thway.uk/el/acts-1-11-return-jesus.html",
     "https://god.thway.uk/not-after-man-jesus-expressed-through.html",
     "https://god.thway.uk/revelation-13-beast-battles-of.html",
@@ -7510,6 +7510,7 @@ window.scrollGroups = {
     "https://god.thway.uk/jesus-writing-on-ground-and-woman.html",
     "https://god.thway.uk/el/jonah-dove.html",
     "https://god.thway.uk/the-law-timeline.html",
+    "https://god.thway.uk/jesus-wept-for-easter-sunday.html",
     "https://god.thway.uk/the-mark-of-beast-cains-mark-and-jesus.html",
     "https://god.thway.uk/unlocking-power-of-doors-neville.html",
     "https://god.thway.uk/hell-is-misinterpretation.html",
@@ -7517,7 +7518,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-plagues-of-egypt-symbolic-guide.html",
     "https://god.thway.uk/forgiveness-letting-go-of-past-to-free.html",
     "https://god.thway.uk/crowned-from-within-defining-your-i-am.html",
-    "https://god.thway.uk/jesus-wept-for-easter-sunday.html",
     "https://god.thway.uk/revelation-13-beast-battles-of.html",
     "https://god.thway.uk/repentance-from-guilt-to-imagination.html",
     "https://god.thway.uk/marked-by-lament-how-to-know-when-youve.html",
@@ -7860,6 +7860,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-psychology-of-jesus-appeal-to.html",
     "https://god.thway.uk/joseph-and-jesus-patterns-of-fulfilment.html",
     "https://god.thway.uk/the-speck-log-and-manifestation-how.html",
+    "https://god.thway.uk/jesus-wept-for-easter-sunday.html",
     "https://god.thway.uk/the-lineage-of-christ-journey-through.html",
     "https://god.thway.uk/the-transformative-relationship-between.html",
     "https://god.thway.uk/el/morning-star-bethlehem.html",
@@ -7869,7 +7870,6 @@ window.scrollGroups = {
     "https://god.thway.uk/el/jesus-high-priest-new-covenant.html",
     "https://god.thway.uk/pontius-pilate-indifferent-mirror-of.html",
     "https://god.thway.uk/el/restless-mind.html",
-    "https://god.thway.uk/jesus-wept-for-easter-sunday.html",
     "https://god.thway.uk/el/acts-1-11-return-jesus.html",
     "https://god.thway.uk/not-after-man-jesus-expressed-through.html",
     "https://god.thway.uk/son-of-man-vs-son-of-god-what-do-these.html",
