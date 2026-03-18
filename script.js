@@ -1,4 +1,5 @@
 
+
 document.addEventListener('DOMContentLoaded', () => {
 
   let path = window.location.pathname.toLowerCase();
@@ -14,6 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   if (excludePaths.includes(path)) return;
+
+  if (isIndex) return;
 
   const mainContent = document.querySelector('main.content');
   if (!mainContent) return;
@@ -37,16 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
     sep.className = 'breadcrumb-separator';
     sep.textContent = ' | ';
     breadcrumb.appendChild(sep);
-  }
-
-  // Homepage  just 'Home'
-  if (isIndex) {
-    const home = document.createElement('span');
-    home.textContent = 'Home';
-    home.classList.add('breadcrumb-current', 'noTag');
-    breadcrumb.appendChild(home);
-    mainContent.insertBefore(breadcrumb, mainContent.firstChild);
-    return;
   }
 
   // All other pages  existing logic unchanged
@@ -99,8 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
   mainContent.insertBefore(breadcrumb, mainContent.firstChild);
 
 });
- 
- 
 
 
 
