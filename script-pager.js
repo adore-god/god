@@ -79,3 +79,95 @@
     target.before(container);
 
 })();
+
+
+
+
+
+ 
+(function () {
+  "use strict";
+
+  /* ── 1. Collect latest posts ───────────────────────────────────────── */
+
+  function getLatestPosts() {
+    const container = document.getElementById("latest-posts");
+    if (!container) return [];
+
+    return Array.from(container.querySelectorAll("a")).map((a) => ({
+      "@type": "Article",
+      name: a.textContent.trim(),
+      url: a.href,
+    }));
+  }
+
+  /* ── 2. Collect series links (optional — may not exist on every page) ─ */
+
+  function getSeriesLinks() {
+    const wrapper = document.getElementById("series-links-wrapper");
+    if (!wrapper) return [];
+
+    return Array.from(wrapper.querySelectorAll("a")).map((a) => ({
+      "@type": "CreativeWorkSeries",
+      name: a.textContent.trim(),
+      url: a.href,
+    }));
+  }
+
+  /* ── 3. Locate the existing JSON-LD <script> tag ──────────────────── */
+
+  function getSchemaScript() {
+    // Find the first application/ld+json script (assumes one per page, or first is the @graph one)
+    return document.querySelector('script[type="application/ld+json"]');
+  }
+
+  /* ── 4. Inject into the BlogPosting node ─────────────────────────── */
+
+  function enrichSchema() {
+    const schemaScript = getSchemaScript();
+    if (!schemaScript) return; // No schema present — nothing to do
+
+    let graph;
+    try {
+      graph = JSON.parse(schemaScript.textContent);
+    } catch (e) {
+      console.warn("[schema-enrichment] Could not parse JSON-LD:", e);
+      return;
+    }
+
+    // Support both a bare object and an @graph array
+    const nodes = graph["@graph"] ? graph["@graph"] : [graph];
+    const blogPosting = nodes.find((n) => n["@type"] === "BlogPosting");
+
+    if (!blogPosting) {
+      console.warn("[schema-enrichment] No BlogPosting node found in schema.");
+      return;
+    }
+
+    /* hasPart → latest posts
+       Using hasPart signals these are constituent parts of the current page/article. */
+    const latestPosts = getLatestPosts();
+    if (latestPosts.length) {
+      blogPosting.hasPart = latestPosts;
+    }
+
+    /* mentions → series links (only if present on this page)
+       Using mentions signals thematic/topical relationships without implying containment. */
+    const seriesLinks = getSeriesLinks();
+    if (seriesLinks.length) {
+      blogPosting.mentions = seriesLinks;
+    }
+
+    // Write the enriched schema back to the <script> tag
+    schemaScript.textContent = JSON.stringify(graph, null, 2);
+  }
+
+  /* ── 5. Run after DOM is ready ────────────────────────────────────── */
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", enrichSchema);
+  } else {
+    // DOMContentLoaded already fired (e.g. script loaded deferred/async late)
+    enrichSchema();
+  }
+})();
