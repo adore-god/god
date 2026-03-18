@@ -45,7 +45,7 @@ function injectSchemaList({ listId, listName, pageUrl, schemaItems, retryFn }) {
 }
 
 
-// ─── Homepage: Load Latest Posts + Dispatch Event ─────────────────────────────
+// ─── Homepage: Load Latest Posts + Inject Schema ──────────────────────────────
 
 async function loadLatestPosts() {
     const container = document.getElementById('latest-posts');
@@ -76,8 +76,30 @@ async function loadLatestPosts() {
 
         container.appendChild(ul);
 
-        // Signal that posts are in the DOM — schema injection listens for this
-        document.dispatchEvent(new Event('latestPostsReady'));
+        // Schema injected here directly — no event hop needed
+        const links = ul.querySelectorAll('a');
+        if (links.length > 0) {
+            const pageUrl = window.location.href;
+            const schemaItems = [];
+            let position = 1;
+
+            links.forEach(link => {
+                schemaItems.push({
+                    "@type": "ListItem",
+                    "position": position++,
+                    "url": link.href,
+                    "name": link.textContent.trim()
+                });
+            });
+
+            injectSchemaList({
+                listId: pageUrl + "#latest-articles",
+                listName: "Latest Articles",
+                pageUrl,
+                schemaItems,
+                retryFn: null
+            });
+        }
 
     } catch (err) {
         console.error("Error loading latest posts:", err);
@@ -86,36 +108,6 @@ async function loadLatestPosts() {
 }
 
 window.addEventListener('DOMContentLoaded', loadLatestPosts);
-
-
-// ─── Homepage: Latest Articles Schema ─────────────────────────────────────────
-
-document.addEventListener('latestPostsReady', function () {
-    const container = document.getElementById('latest-posts');
-    const links = container.querySelectorAll('li a');
-    if (links.length === 0) return;
-
-    const pageUrl = window.location.href;
-    const schemaItems = [];
-    let position = 1;
-
-    links.forEach(link => {
-        schemaItems.push({
-            "@type": "ListItem",
-            "position": position++,
-            "url": link.href,
-            "name": link.textContent.trim()
-        });
-    });
-
-    injectSchemaList({
-        listId: pageUrl + "#latest-articles",
-        listName: "Latest Articles",
-        pageUrl,
-        schemaItems,
-        retryFn: null
-    });
-});
 
 
 // ─── Homepage: Series Topics Schema ───────────────────────────────────────────
@@ -213,8 +205,6 @@ document.addEventListener('latestPostsReady', function () {
 
     if (groups.length === 0) return;
 
-    // ── Build DOM ──────────────────────────────────────────────────────────────
-
     const title = document.createElement("div");
     title.className = "series-links-title";
     title.textContent = "More Reading";
@@ -239,8 +229,6 @@ document.addEventListener('latestPostsReady', function () {
 
     target.before(title);
     target.before(container);
-
-    // ── Inject Schema immediately after DOM is built ───────────────────────────
 
     const links = container.querySelectorAll('a');
     const seenUrls = new Set();
