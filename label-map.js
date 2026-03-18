@@ -3784,7 +3784,6 @@ window.labelMap = {
     "title": "Seven Candlesticks: The Return to Pure Imagination",
     "series": [
       "https://god.thway.uk/scrolls/label-genesis-1-series.html",
-      "https://god.thway.uk/scrolls/label-numbers--seven.html",
       "https://god.thway.uk/scrolls/label-object-symbolism.html",
       "https://god.thway.uk/scrolls/label-revelation-series.html"
     ]
@@ -5954,6 +5953,12 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-numbers--four.html",
       "https://god.thway.uk/scrolls/label-numbers--three.html",
       "https://god.thway.uk/scrolls/label-numbers-series.html"
+    ]
+  },
+  "https://god.thway.uk/when-unclean-spirit-returns-neville.html": {
+    "title": "The Returning Spirit: Why Removing an Old State Is Not Enough",
+    "series": [
+      "https://god.thway.uk/scrolls/label-numbers--seven.html"
     ]
   },
   "https://god.thway.uk/solomon-peace-of-fulfilled-desire.html": {
@@ -8167,7 +8172,7 @@ window.scrollGroups = {
     "https://god.thway.uk/peace-and-rest-in-song-of-solomon.html",
     "https://god.thway.uk/the-lineage-of-christ-journey-through.html",
     "https://god.thway.uk/the-seven-devils-cast-out-of-mary.html",
-    "https://god.thway.uk/the-seven-candlesticks-seven-demons-and.html",
+    "https://god.thway.uk/when-unclean-spirit-returns-neville.html",
     "https://god.thway.uk/the-seven-churches-of-revelation.html",
     "https://god.thway.uk/the-completion-of-creation-and.html",
     "https://god.thway.uk/what-does-seventy-times-seven-really.html",
