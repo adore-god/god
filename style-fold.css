@@ -425,7 +425,6 @@ color:#F2E5BD !important;
 	}
 #Verse-Link-Container:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
 
