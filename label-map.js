@@ -1243,6 +1243,7 @@ window.labelMap = {
     "series": [
       "https://god.thway.uk/scrolls/label-bible-verse-analysis.html",
       "https://god.thway.uk/scrolls/label-john-series.html",
+      "https://god.thway.uk/scrolls/label-numbers--twelve.html",
       "https://god.thway.uk/scrolls/label-parable-series.html"
     ]
   },
@@ -8207,9 +8208,10 @@ window.scrollGroups = {
     "https://god.thway.uk/the-calling-of-twelve-gospel-story.html",
     "https://god.thway.uk/ezekiel-city-self-lord-there-goddard.html",
     "https://god.thway.uk/crossing-jordan-symbolism-of-twelve.html",
-    "https://god.thway.uk/jesus-his-disciples-psychological-drama.html",
     "https://god.thway.uk/el/dorcas-tabitha-symbolism.html",
+    "https://god.thway.uk/from-figures-of-speech-to-divine.html",
     "https://god.thway.uk/john-1629-30-from-parables-to-plain.html",
+    "https://god.thway.uk/jesus-his-disciples-psychological-drama.html",
     "https://god.thway.uk/twelve-tribes-summary-law-of-assumption.html",
     "https://god.thway.uk/twelve-tribes-and-twelve-disciple.html",
     "https://god.thway.uk/israel-symbolism-according-to-neville.html",
