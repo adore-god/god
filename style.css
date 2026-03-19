@@ -440,7 +440,7 @@ ol, ul {
     border-radius: 8px;
     background: transparent;
     width:90%;
-    font-weight:500;
+    font-weight:800;
   } 
 
   .reddit-container-feed > div {
@@ -467,7 +467,7 @@ ol, ul {
 
   .reddit-container-feed a {
     text-decoration: none;
-
+font-weight:500;
   }
 
   .reddit-container-feed a:hover {
