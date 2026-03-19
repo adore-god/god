@@ -97,6 +97,7 @@ window.addEventListener("load", function () {
       if (postLinks.length) {
         mainNode.mainEntity = {
           "@type": "ItemList",
+          "@id": "https://god.thway.uk/#org",
           "name": "Latest Updated Articles",
           "itemListElement": postLinks.map((a, index) => ({
             "@type": "ListItem",
