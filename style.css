@@ -440,6 +440,7 @@ ol, ul {
     border-radius: 8px;
     background: transparent;
     width:90%;
+    font-weight:500;
   } 
 
   .reddit-container-feed > div {
