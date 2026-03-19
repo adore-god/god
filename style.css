@@ -177,6 +177,7 @@ input[type="text"]:focus {
   width: 87%;
   font-size: 0.8em; 
   display: block;
+  font-weight:500;
 }
 
 .sclPage li a {
