@@ -129,7 +129,8 @@ figure figcaption {
 	}
 
 img.key-icon {
-    width: 500px;
+    width: 100%;
+    max-width: 100% !important;
     height: auto;
     flex-shrink: 0; 
     mix-blend-mode: normal;
