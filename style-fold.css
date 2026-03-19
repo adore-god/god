@@ -414,6 +414,7 @@ blockquote {
 #VerseLinkBox a:link,
 #VerseLinkBox a:visited {
 color:#F2E5BD !important;
+display:block
 	}
 	
 #Verse-Link-Container a:link,

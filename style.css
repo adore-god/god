@@ -129,12 +129,13 @@ figure figcaption {
 	}
 
 img.key-icon {
-    width: 110px;
+    width: 500px;
     height: auto;
     flex-shrink: 0; 
     mix-blend-mode: normal;
     opacity: 1;
     border-radius:20px;
+    
 	}
 
 img.reddit {
@@ -982,7 +983,12 @@ table, td, th {
 #VerseLinkBox a:visited {
 
 	}
-
+#Verse-Link-Container,
+#VerseLinkBox {
+	display:block;
+    clear:both;
+	}
+	
 #Verse-Link-Container a,
 #Verse-Link-Container a:link,
 #Verse-Link-Container a:visited {
