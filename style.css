@@ -865,15 +865,6 @@ table, td, th {
     filter: none !important;
     mix-blend-mode: normal !important;
 }
-/* Make sure tables respect dark/light theme */
-@media (prefers-color-scheme: dark) {
-  table, td, th {
-    background-color: transparent !important;
-    color: #e0e0e0 !important;
-    filter: none !important;
-    mix-blend-mode: normal !important;
-  }
-}
 		
 /* =======================
    RESPONSIVE
@@ -1136,9 +1127,13 @@ color: var(--text);
 .share-menu button:hover {
   background: #000000;
   color: #F8F8FF;
-  
 }
-	
+table, td, th {
+    background-color: transparent !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+  }
+  
   } /*Don't delete  */
   
   
