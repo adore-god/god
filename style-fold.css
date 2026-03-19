@@ -395,12 +395,12 @@ blockquote {
   flex-wrap: wrap;
   margin: 1em auto;
   padding: 0.5em 0.5em;
-  max-width: 90%;
+  width: 100%;
   text-align: center;
   line-height: 1;
   font-size: 1em;
   color: #F2E5BD;
-  background: var(--verse-color);
+  background: var(--bg-color);
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;     
 }
@@ -414,7 +414,6 @@ blockquote {
 #VerseLinkBox a:link,
 #VerseLinkBox a:visited {
 color:#F2E5BD !important;
-display:block
 	}
 	
 #Verse-Link-Container a:link,
