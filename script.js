@@ -223,30 +223,38 @@ document.addEventListener("DOMContentLoaded", function () {
     const footer = document.querySelector(".start-here");
 
     if (footer) {
+        // We add inline CSS to ensure it stays on top of other elements
         footer.insertAdjacentHTML(
             "afterend",
-            '<div id="Verse-Link-Container"><img loading="lazy" width="688" height="384" class="key-icon" alt="Lingua Divina Bible Interpreter Key Logo" src="../images/icons/bible-key-lingua-divina-logo.webp"><div id="VerseLinkBox"><a id="translator-link" href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html">Bible Passage And Verse Translator</a></div></div>'
+            '<div id="Verse-Link-Container" style="position:relative; z-index:9999;">' +
+                '<a id="translator-link" href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html"><img loading="lazy" width="688" height="384" class="key-icon" alt="Logo" src="../images/icons/bible-key-lingua-divina-logo.webp"></a>' +
+                '<div id="VerseLinkBox">' +
+                    '<a id="translator-link" href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html" style="display:inline-block; position:relative; z-index:10000;">Bible Passage And Verse Translator</a>' +
+                '</div>' +
+            '</div>'
         );
 
         const link = document.getElementById("translator-link");
 
-        link.addEventListener("click", function (e) {
-            // Prevent immediate navigation
-            e.preventDefault();
+        if (link) {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+                const targetUrl = this.href;
 
-            const href = link.href;
+                // Fire GA4 if it exists
+                if (typeof gtag === "function") {
+                    gtag("event", "Bible_Translator_Link", {
+                        event_category: "Button",
+                        event_label: "Bible_Translator_Link",
+                    });
+                }
 
-            // Fire GA4 event
-            if (typeof gtag === "function") {
-                gtag("event", "Bible_Translator_Link", {
-                    event_category: "Button",
-                    event_label: "Bible_Translator_Link",
-                });
-            }
-
-            setTimeout(function () {
-                window.location.href = href;
-            }, 150); // 150ms is usually enough
-        });
+                // Just go. 100ms is plenty for the tag to fire.
+                setTimeout(() => {
+                    window.location.href = targetUrl;
+                }, 50);
+            });
+        }
     }
 });
+ 
