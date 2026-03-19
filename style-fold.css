@@ -50,7 +50,7 @@ body{
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-optical-sizing: auto;
-  opacity: 0.95
+  opacity: 0.9;
 }
 .container {
   max-width: 800px;
