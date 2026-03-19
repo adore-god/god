@@ -2668,6 +2668,13 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html"
     ]
   },
+  "https://god.thway.uk/el/the-name-bridge-jonathan-john-nathan.html": {
+    "title": "The Name Bridge: Jonathan \u2014 John \u2014 Nathan",
+    "series": [
+      "https://god.thway.uk/scrolls/label-david-series.html",
+      "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html"
+    ]
+  },
   "https://god.thway.uk/samuel-summary-neville-goddard-style.html": {
     "title": "Samuel Summary",
     "series": [
@@ -7017,6 +7024,7 @@ window.scrollGroups = {
     "https://god.thway.uk/david-jonathan-and-saul-neville-goddard.html",
     "https://god.thway.uk/davids-mighty-men-supporting-law-of.html",
     "https://god.thway.uk/the-father-son-symbolism-in-bible.html",
+    "https://god.thway.uk/el/the-name-bridge-jonathan-john-nathan.html",
     "https://god.thway.uk/samuel-summary-neville-goddard-style.html",
     "https://god.thway.uk/saul-and-woman-of-endor.html",
     "https://god.thway.uk/shimei-self-deprecating-voice-that.html",
@@ -8108,6 +8116,7 @@ window.scrollGroups = {
     "https://god.thway.uk/from-false-assumptions-to-true-i-am.html",
     "https://god.thway.uk/the-lineage-of-christ-journey-through.html",
     "https://god.thway.uk/lukes-genealogy-lineage-to-god.html",
+    "https://god.thway.uk/el/the-name-bridge-jonathan-john-nathan.html",
     "https://god.thway.uk/the-nails-and-name-crucifixion-yhvh-and.html",
     "https://god.thway.uk/the-last-shall-be-first-unlocking-power.html",
     "https://god.thway.uk/salmon-spiritual-precursor-in-lineage.html",
