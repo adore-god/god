@@ -792,17 +792,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-veil-series.html"
     ]
   },
-  "https://god.thway.uk/the-veil-between-worlds-conscious.html": {
-    "title": "The Veil: Unrecognised Imagination",
-    "series": [
-      "https://god.thway.uk/scrolls/label-architecture-series.html",
-      "https://god.thway.uk/scrolls/label-bride---bridegroom-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-2-23-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
-      "https://god.thway.uk/scrolls/label-object-symbolism.html",
-      "https://god.thway.uk/scrolls/label-veil-series.html"
-    ]
-  },
   "https://god.thway.uk/what-did-solomon-really-build.html": {
     "title": "What Did Solomon Really Build?",
     "series": [
@@ -2379,7 +2368,8 @@ window.labelMap = {
   "https://god.thway.uk/veil-symbolism-hidden-power-of.html": {
     "title": "Veils and Identity: How the Bible Marks the Interval of Assumption",
     "series": [
-      "https://god.thway.uk/scrolls/label-bride---bridegroom-series.html"
+      "https://god.thway.uk/scrolls/label-bride---bridegroom-series.html",
+      "https://god.thway.uk/scrolls/label-veil-series.html"
     ]
   },
   "https://god.thway.uk/the-woman-at-well-and-song-of-solomon.html": {
@@ -6707,7 +6697,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-tower-exploring-biblical.html",
     "https://god.thway.uk/the-urim-and-thummim-divine-guidance.html",
     "https://god.thway.uk/the-veil-of-temple-barrier-between.html",
-    "https://god.thway.uk/the-veil-between-worlds-conscious.html",
     "https://god.thway.uk/what-did-solomon-really-build.html",
     "https://god.thway.uk/why-bible-is-written-to-you-objective.html",
     "https://god.thway.uk/the-presence-in-bible-neville-goddards.html"
@@ -6962,7 +6951,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-symbolism-of-pairs-of-women-in.html",
     "https://god.thway.uk/tamar-and-absalom-when-imagination-is.html",
     "https://god.thway.uk/veil-symbolism-hidden-power-of.html",
-    "https://god.thway.uk/the-veil-between-worlds-conscious.html",
     "https://god.thway.uk/the-woman-at-well-and-song-of-solomon.html"
   ],
   "https://god.thway.uk/scrolls/label-brides-at-the-well.html": [
@@ -7410,7 +7398,6 @@ window.scrollGroups = {
     "https://god.thway.uk/solomon-and-queen-of-sheba-beautiful.html",
     "https://god.thway.uk/el/succession-woman-genesis.html",
     "https://god.thway.uk/the-hidden-power-of-tamar-how-palm.html",
-    "https://god.thway.uk/the-veil-between-worlds-conscious.html",
     "https://god.thway.uk/whose-wife-will-she-be-neville-goddard.html",
     "https://god.thway.uk/woman-clothed-with-sun-revelation.html",
     "https://god.thway.uk/biblical-archetypes-of-feminine.html",
@@ -7481,7 +7468,6 @@ window.scrollGroups = {
     "https://god.thway.uk/manifesting-and-holding-state-movement.html",
     "https://god.thway.uk/the-striped-rods-of-jacob-study-in.html",
     "https://god.thway.uk/the-ungodly-and-sinful-neville-goddard.html",
-    "https://god.thway.uk/the-veil-between-worlds-conscious.html",
     "https://god.thway.uk/the-virgin-birth-of-love.html",
     "https://god.thway.uk/whose-wife-will-she-be-neville-goddard.html",
     "https://god.thway.uk/why-jesus-distanced-himself-from-his.html",
@@ -8258,7 +8244,6 @@ window.scrollGroups = {
     "https://god.thway.uk/the-tower-exploring-biblical.html",
     "https://god.thway.uk/unveiling-armour-of-god-and.html",
     "https://god.thway.uk/the-urim-and-thummim-divine-guidance.html",
-    "https://god.thway.uk/the-veil-between-worlds-conscious.html",
     "https://god.thway.uk/drink-cup-law-of-assumption-in-jeremiah.html"
   ],
   "https://god.thway.uk/scrolls/label-parable-series.html": [
@@ -8777,7 +8762,7 @@ window.scrollGroups = {
   ],
   "https://god.thway.uk/scrolls/label-veil-series.html": [
     "https://god.thway.uk/the-veil-of-temple-barrier-between.html",
-    "https://god.thway.uk/the-veil-between-worlds-conscious.html"
+    "https://god.thway.uk/veil-symbolism-hidden-power-of.html"
   ],
   "https://god.thway.uk/scrolls/label-water-symbolism.html": [
     "https://god.thway.uk/who-has-wrapped-up-waters-riddle-and.html",
