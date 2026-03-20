@@ -229,32 +229,26 @@ document.addEventListener("DOMContentLoaded", function () {
             '<div id="Verse-Link-Container" style="position:relative; z-index:9999;">' +
                 '<a id="translator-link" href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html"><img loading="lazy" width="688" height="384" class="key-icon" alt="Logo" src="../images/icons/bible-key-lingua-divina-logo.webp"></a>' +
                 '<div id="VerseLinkBox">' +
-                    '<a id="translator-link" href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html" style="display:inline-block; position:relative; z-index:10000;">Bible Passage And Verse Translator</a>' +
+                    '<a id="translator-link-text" href="https://god.thway.uk/el/yhvh-ehyeh-linguistic-framework.html" style="display:inline-block; position:relative; z-index:10000;">Bible Passage And Verse Translator</a>' +
                 '</div>' +
             '</div>'
         );
 
-        const link = document.getElementById("translator-link");
+        // Target both the image link and the text link
+        const links = [document.getElementById("translator-link"), document.getElementById("translator-link-text")];
 
-        if (link) {
-            link.addEventListener("click", function (e) {
-                e.preventDefault();
-                const targetUrl = this.href;
-
-                // Fire GA4 if it exists
-                if (typeof gtag === "function") {
-                    gtag("event", "Bible_Translator_Link", {
-                        event_category: "Button",
-                        event_label: "Bible_Translator_Link",
-                    });
-                }
-
-                // Just go. 100ms is plenty for the tag to fire.
-                setTimeout(() => {
-                    window.location.href = targetUrl;
-                }, 50);
-            });
-        }
+        links.forEach(link => {
+            if (link) {
+                link.addEventListener("click", function () {
+                    // Fire GA4 if it exists - browser handles navigation naturally
+                    if (typeof gtag === "function") {
+                        gtag("event", "Bible_Translator_Link", {
+                            event_category: "Button",
+                            event_label: "Bible_Translator_Link",
+                        });
+                    }
+                });
+            }
+        });
     }
 });
- 
