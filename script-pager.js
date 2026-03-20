@@ -1,7 +1,7 @@
 (function waitForLabels() {
     const labelContainer = document.querySelector('.label-links');
     const map = window.labelMap;
-    const target = document.querySelector('.share-dropdown');
+    const target = document.querySelector('.latest-posts');
 
     if (!labelContainer || !map || !target) {
         setTimeout(waitForLabels, 100);
@@ -46,15 +46,15 @@
 
     if (groups.length === 0) return;
 
-    // --- UPDATED TITLE SECTION ---
+    // --- TITLE SECTION ---
     const titleContainer = document.createElement("div");
     titleContainer.className = "series-links-title";
     
     const h2Title = document.createElement("h2");
     h2Title.textContent = "More Reading";
     titleContainer.appendChild(h2Title);
-    // -----------------------------
 
+    // --- LINKS CONTAINER ---
     const container = document.createElement("div");
     container.id = "series-links-wrapper";
 
@@ -72,9 +72,9 @@
         container.appendChild(divider);
     });
 
-    // We use titleContainer now instead of 'title'
-    target.before(titleContainer);
-    target.before(container);
+    // --- PLACEMENT: AFTER THE SHARE DROP-DOWN ---
+    target.after(titleContainer);       // Places "More Reading" title after dropdown
+    titleContainer.after(container);    // Places the links container after the title
 })();
 
 window.addEventListener("load", function () {
