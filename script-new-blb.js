@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const { book, chapter, verse, startVerse } = ref.dataset;
     const query = verse ? `${book} ${chapter}:${verse}` : `${book} ${chapter}`;
-    const apiURL = `https://bible-api.com/${encodeURIComponent(query)}?translation=bbe`;
+    const apiURL = `https://bible-api.com/${encodeURIComponent(query)}?translation=kjv`;
 
     try {
       const response = await fetch(apiURL);
