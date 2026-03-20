@@ -2619,15 +2619,6 @@ window.labelMap = {
       "https://god.thway.uk/scrolls/label-women-in-the-bible-series.html"
     ]
   },
-  "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html": {
-    "title": "David and Bathsheba: The Sick Child",
-    "series": [
-      "https://god.thway.uk/scrolls/label-david-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
-      "https://god.thway.uk/scrolls/label-genesis-4-7-series.html",
-      "https://god.thway.uk/scrolls/label-spiritual-violations-series.html"
-    ]
-  },
   "https://god.thway.uk/david-and-saul-inner-battle-of-old-and.html": {
     "title": "David and Saul: The New Man Vs the Natural Man",
     "series": [
@@ -2673,6 +2664,15 @@ window.labelMap = {
     "series": [
       "https://god.thway.uk/scrolls/label-david-series.html",
       "https://god.thway.uk/scrolls/label-names-and-genealogies-series.html"
+    ]
+  },
+  "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html": {
+    "title": "Nathan, David and Bathsheba: The Sick Child",
+    "series": [
+      "https://god.thway.uk/scrolls/label-david-series.html",
+      "https://god.thway.uk/scrolls/label-genesis-2-24-series.html",
+      "https://god.thway.uk/scrolls/label-genesis-4-7-series.html",
+      "https://god.thway.uk/scrolls/label-spiritual-violations-series.html"
     ]
   },
   "https://god.thway.uk/samuel-summary-neville-goddard-style.html": {
@@ -7016,7 +7016,6 @@ window.scrollGroups = {
     "https://god.thway.uk/david-and-resurrection-of-assumption.html",
     "https://god.thway.uk/el/mind-war-firmness-integrity.html",
     "https://god.thway.uk/abital-fountain-of-wisdom-and-renewal.html",
-    "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html",
     "https://god.thway.uk/david-and-bathsheba-neville-goddard.html",
     "https://god.thway.uk/david-and-saul-inner-battle-of-old-and.html",
     "https://god.thway.uk/david-danced-neville-style.html",
@@ -7025,6 +7024,7 @@ window.scrollGroups = {
     "https://god.thway.uk/davids-mighty-men-supporting-law-of.html",
     "https://god.thway.uk/the-father-son-symbolism-in-bible.html",
     "https://god.thway.uk/el/the-name-bridge-jonathan-john-nathan.html",
+    "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html",
     "https://god.thway.uk/samuel-summary-neville-goddard-style.html",
     "https://god.thway.uk/saul-and-woman-of-endor.html",
     "https://god.thway.uk/shimei-self-deprecating-voice-that.html",
@@ -7425,7 +7425,6 @@ window.scrollGroups = {
     "https://god.thway.uk/behold-thy-son-deep-love-of-jesus-for.html",
     "https://god.thway.uk/bride-at-well-parallels-between-rebekah.html",
     "https://god.thway.uk/1-corinthians-7-neville-goddard-style.html",
-    "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html",
     "https://god.thway.uk/david-jonathan-and-saul-neville-goddard.html",
     "https://god.thway.uk/cleaving-in-garden-genesis-224-and-song.html",
     "https://god.thway.uk/eden-and-pleasure-sacred-delight-at.html",
@@ -7459,6 +7458,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-spiritual-meaning-of-solomons-700.html",
     "https://god.thway.uk/moab-and-israel-divided-offspring-of.html",
     "https://god.thway.uk/the-nails-and-name-crucifixion-yhvh-and.html",
+    "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html",
     "https://god.thway.uk/spiritual-union-and-imagination-new_9.html",
     "https://god.thway.uk/nothing-can-separate-us-romans-83739.html",
     "https://god.thway.uk/the-pearl-and-camel.html",
@@ -7491,7 +7491,6 @@ window.scrollGroups = {
     "https://god.thway.uk/cain-and-abel-cain-is-marked-beast.html",
     "https://god.thway.uk/the-cobra-crown-authority-over.html",
     "https://god.thway.uk/the-beast-and-lion-symbolic-journey-of.html",
-    "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html",
     "https://god.thway.uk/eden-and-pleasure-sacred-delight-at.html",
     "https://god.thway.uk/genesis-417-26-escalation-of-violence.html",
     "https://god.thway.uk/understanding-foolishness-and-folly.html",
@@ -7505,6 +7504,7 @@ window.scrollGroups = {
     "https://god.thway.uk/the-mark-of-beast-cains-mark-and-jesus.html",
     "https://god.thway.uk/unlocking-power-of-doors-neville.html",
     "https://god.thway.uk/hell-is-misinterpretation.html",
+    "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html",
     "https://god.thway.uk/the-spiritual-significance-of-passover.html",
     "https://god.thway.uk/the-plagues-of-egypt-symbolic-guide.html",
     "https://god.thway.uk/forgiveness-letting-go-of-past-to-free.html",
@@ -8657,14 +8657,14 @@ window.scrollGroups = {
     "https://god.thway.uk/in-wilderness-hidden-symbolism-of.html"
   ],
   "https://god.thway.uk/scrolls/label-spiritual-violations-series.html": [
-    "https://god.thway.uk/el/mind-war-firmness-integrity.html",
-    "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html",
     "https://god.thway.uk/david-and-bathsheba-neville-goddard.html",
     "https://god.thway.uk/el/dismembered-concubine.html",
     "https://god.thway.uk/leviticus-1822-man-shall-not-lie-with.html",
     "https://god.thway.uk/leviticus-rules-same-sex-union.html",
     "https://god.thway.uk/moab-and-israel-divided-offspring-of.html",
+    "https://god.thway.uk/el/mind-war-firmness-integrity.html",
     "https://god.thway.uk/exploring-symbolism-of-nabal-abigail.html",
+    "https://god.thway.uk/the-cost-of-false-assumption-david-sick.html",
     "https://god.thway.uk/union-beyond-law-tamar-reuben-and-true.html",
     "https://god.thway.uk/reubens-mistake-why-your-subconscious.html",
     "https://god.thway.uk/tamar-and-absalom-when-imagination-is.html"
