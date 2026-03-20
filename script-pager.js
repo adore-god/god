@@ -1,7 +1,12 @@
 (function waitForLabels() {
     const labelContainer = document.querySelector('.label-links');
     const map = window.labelMap;
-    const target = document.querySelector('.latest-posts');
+    
+    // --- DETERMINING TARGET BASED ON PAGE ---
+    // Checks if the path is empty or just "/"
+    const isIndexPage = window.location.pathname === "/" || window.location.pathname === "/index.html";
+    const targetSelector = isIndexPage ? '.latest-posts' : '.share-dropdown';
+    const target = document.querySelector(targetSelector);
 
     if (!labelContainer || !map || !target) {
         setTimeout(waitForLabels, 100);
@@ -72,9 +77,9 @@
         container.appendChild(divider);
     });
 
-    // --- PLACEMENT: AFTER THE SHARE DROP-DOWN ---
-    target.after(titleContainer);       // Places "More Reading" title after dropdown
-    titleContainer.after(container);    // Places the links container after the title
+    // --- PLACEMENT ---
+    target.after(titleContainer);       
+    titleContainer.after(container);    
 })();
 
 window.addEventListener("load", function () {
