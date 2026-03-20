@@ -70,8 +70,12 @@ document.addEventListener("DOMContentLoaded", function () {
         frag.appendChild(document.createTextNode(content.slice(lastIndex, match.index)));
 
         const span = document.createElement("cite");
-        span.className = "bibleref";
-        span.style.cssText = "cursor:help; border-bottom:1px dotted #888; text-decoration:none; font-style:normal;";
+span.className = "bibleref";
+span.style.cssText = "cursor:help; border-bottom:1px dotted #888; text-decoration:none; font-style:normal;";
+span.setAttribute("itemscope", "");
+span.setAttribute("itemtype", "https://schema.org/CreativeWork");
+span.setAttribute("itemid", "https://god.thway.uk/source/holy-bible");
+
 
         span.dataset.book = match[1];
         span.dataset.chapter = match[2];
@@ -148,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const { book, chapter, verse, startVerse } = ref.dataset;
     const query = verse ? `${book} ${chapter}:${verse}` : `${book} ${chapter}`;
-    const apiURL = `https://bible-api.com/${encodeURIComponent(query)}?translation=kjv`;
+    const apiURL = `https://bible-api.com/${encodeURIComponent(query)}?translation=bbe`;
 
     try {
       const response = await fetch(apiURL);
