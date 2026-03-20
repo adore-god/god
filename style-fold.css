@@ -414,14 +414,14 @@ blockquote {
 
 #VerseLinkBox a:link,
 #VerseLinkBox a:visited {
-color:#F2E5BD !important;
+color: var(--text) !important;
 	}
 	
 #Verse-Link-Container a:link,
 #Verse-Link-Container a:visited {
 text-decoration: none;
 font-weight: 600;
-color:#F2E5BD !important;	
+color: var(--text) !important;	
 	}
 #Verse-Link-Container:hover {
   transform: translateY(-3px);

@@ -976,11 +976,6 @@ table, td, th {
     color: var(--link);
   }
  
-#VerseLinkBox a,
-#VerseLinkBox a:link,
-#VerseLinkBox a:visited {
-
-	}
 #Verse-Link-Container,
 #VerseLinkBox {
 	display:block;
@@ -992,7 +987,7 @@ table, td, th {
 #Verse-Link-Container a:visited {
 text-decoration: none;
 font-weight: 600;
-color:#C6B489 !important;	
+color: var(--text) !important;	
 	}
   
 .aforce {
