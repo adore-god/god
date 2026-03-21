@@ -1,3 +1,20 @@
+(function() {
+    // 1. The new domain
+    var newDomain = "https://linguadivina.uk";
+    
+    // 2. Automatically grab the current path (e.g., /1-corinthians-7.html)
+    // plus any search terms or page anchors (#section1)
+    var path = window.location.pathname;
+    var search = window.location.search;
+    var hash = window.location.hash;
+
+    // 3. Send them to the exact same page on the new site
+    window.location.replace(newDomain + path + search + hash);
+})();
+
+
+
+
 // --- Cookie helpers ---
 function setCookie(name, value, days) {
     const d = new Date();
